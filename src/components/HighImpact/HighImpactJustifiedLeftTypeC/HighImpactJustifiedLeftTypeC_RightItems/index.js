@@ -1,3 +1,0 @@
-import HighImpactJustifiedLeftTypeC_RightItems from "./HighImpactJustifiedLeftTypeC_RightItems";
-
-export default HighImpactJustifiedLeftTypeC_RightItems;
