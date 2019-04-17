@@ -4,6 +4,7 @@ module.exports = {
           description: "Was born from the analysis of the basic communication needs of diverse digital products and the main editorial, design and development patterns whose objective is to be the starting point to generate interfaces in a fast and consistent way while, at the same time, is attached to the best practices and standards that modern digital products require to reach their end user in an efficient and satisfactory way.",
           author:"@WhiteLabelTeam"
       },
+  pathPrefix: "/widgets-beta",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
