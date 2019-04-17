@@ -1,0 +1,23 @@
+// SixItems Core
+
+.SixItemsV2 {
+
+	text-decoration: none;
+
+	@include Layout(Wrapper);
+	@include WidgetBottomSpace;
+
+	@include Morpher(Desktop) {
+
+		display: grid;
+		grid-template-columns: 70% 30%;
+
+	}
+
+	@include Morpher(Desktop-HD) {
+
+		display: grid;
+		grid-template-columns: 70% 30%;
+
+	}
+}

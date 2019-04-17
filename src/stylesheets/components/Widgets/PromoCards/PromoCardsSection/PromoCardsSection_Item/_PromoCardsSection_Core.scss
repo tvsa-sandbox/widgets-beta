@@ -1,0 +1,14 @@
+// PromoCards Section Core
+
+.PromoCards {
+    
+    @include WidgetBottomSpace;
+
+    &__Carousel {
+
+        display: flex;
+        margin: 0px auto;
+        width: 100%;
+
+    }
+}

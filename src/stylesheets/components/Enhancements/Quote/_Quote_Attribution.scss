@@ -1,0 +1,35 @@
+// Quote Attribution
+
+.Quote {
+    
+    &__AttributionContainer {
+
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        margin: 1% 0% 0% 0%;
+        position: absolute;
+        bottom: 0%;
+        width: 95%;
+        
+        @include Morpher(Laptop) {
+            
+            margin: 0%;
+            
+        }
+    }   
+    
+    &__Attribution {
+        
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+        width: 100%;
+        
+        @include Themer(color, Text-Light-Body);
+        @include Typer(SubTextInfo);
+        
+    }     
+}
+

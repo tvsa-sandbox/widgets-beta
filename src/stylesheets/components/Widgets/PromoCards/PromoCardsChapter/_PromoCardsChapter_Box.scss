@@ -1,0 +1,12 @@
+// PromoCardsChapter Box
+
+.PromoCards {
+    
+    @include WidgetBottomSpace;
+
+    &__BoxContainer {
+
+        min-width: 202px;
+
+    }
+}

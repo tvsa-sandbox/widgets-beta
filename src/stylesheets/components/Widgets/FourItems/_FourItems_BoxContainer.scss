@@ -1,0 +1,46 @@
+// FourItems Box Container
+
+.FourItems {
+
+	&__BoxContainer {
+		
+		@include Morpher(Desktop-HD) {
+
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(3,1fr);
+
+		}
+
+		@include Morpher(Desktop) {
+
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(3,1fr);
+
+		}
+
+		@include Morpher(Laptop) {
+
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(2,1fr);
+			grid-template-rows: 2;
+
+		}
+	}
+
+	&__Box {
+
+		@include Morpher(Laptop) {
+
+			&:nth-of-type(3) {
+
+				grid-column: 1 / 3;
+				margin: auto;
+				min-width: 50%;
+
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+// Header InnerSearch
+
+.InnerSearch {
+
+    display: flex;
+    order: 1;
+    padding: 1em;
+    width: 100%;
+
+    @include Morpher(All-Desktop) {
+
+        display: none;
+
+    }
+}

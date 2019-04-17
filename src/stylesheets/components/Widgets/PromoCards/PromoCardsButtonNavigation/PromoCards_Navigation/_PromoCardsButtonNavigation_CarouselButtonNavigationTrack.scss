@@ -1,0 +1,17 @@
+// PromoCards Button Navigation Carousel Track
+
+.PromoCards {
+
+    &__CarouselButtonNavigationTrack {
+
+        height: 47px;
+        margin: 0px auto;
+        overflow: hidden;
+
+        @include Morpher(All-Desktop) {
+
+            height: auto;
+
+        }
+    }
+}

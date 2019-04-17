@@ -1,0 +1,17 @@
+// VideoContainer Label
+
+.VideoContainer {
+
+    &__LabelContainer {
+
+        margin-bottom: 1em;
+
+    }
+
+    &__Label {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitle);
+
+    }
+}

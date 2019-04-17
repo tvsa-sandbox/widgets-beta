@@ -1,0 +1,58 @@
+// TvGuide Carousel Thumb
+
+.TvGuide {
+
+    &__CarouselThumbnails {
+
+            display: flex;
+            height: 90px;
+            margin: 0px auto;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            width: 100%;
+
+    }
+
+    &__CarouselThumbnails.Vertical {
+
+        display: block;
+        height: 250px;
+        min-width: 110%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+    }
+
+    &__ThumbContainer {
+
+            display: block;
+            margin-top: 3px;
+            width: 100%;
+
+        @include Morpher(Tablet) {
+
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+
+        }
+    }
+
+    &__ThumbContainer.Vertical {
+
+            display: block;
+            margin-top: 3px;
+            width: 100%;
+
+    }
+}

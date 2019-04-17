@@ -1,0 +1,31 @@
+// Content Carousel Thumb
+
+.ContentCarouselB {
+
+    &__CarouselThumbnails {
+
+        align-items: center;
+        display: flex;
+        height: 330px;
+        justify-content: flex-end;
+        margin: 0px auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        
+        @include Morpher(All-Desktop) {
+            
+            overflow: hidden;
+            
+        }
+    }
+
+    &__ThumbContainer {
+
+        height: auto;
+        margin: 6px 2px;
+
+        @include OrcaMarginReset;
+
+    }
+}

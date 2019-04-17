@@ -1,0 +1,14 @@
+// PromoCards Button Navigation Graphic
+
+.PromoCards {
+
+    &__CarouselItemButtonNavigationGraphicContainer {
+
+        display: none;
+        height: 110px;
+        width: 100%;
+
+        @include Spekter(16_9);
+
+    }
+}

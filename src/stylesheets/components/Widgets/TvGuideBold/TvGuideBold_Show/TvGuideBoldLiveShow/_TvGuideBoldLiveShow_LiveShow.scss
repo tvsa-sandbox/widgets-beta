@@ -1,0 +1,16 @@
+// TvGuideBold LiveShow
+
+.TvGuideBold {
+
+    &__LiveShow {
+
+        padding: 0px 0px 0px 10px;
+        position: relative;
+
+        @include Morpher(All-Desktop) {
+
+            padding: 0px 10px 0px 12px;
+
+        }
+    }
+}

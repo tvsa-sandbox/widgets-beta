@@ -1,0 +1,22 @@
+// PromoCards Chapter Carousel Item Thumbnail
+
+.PromoCards {
+
+    &__CarouselItemChapterThumbnail {
+
+        display: block;
+        position: relative;
+        width: 100%;
+
+        @include Themer(background, Color-1, before) {
+
+            background: linear-gradient(0deg,rgba(36,36,44,.8) 15%,rgba(36,36,44,0));
+            content: "";
+            height: 271px;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// FiveItems Core
+
+.FiveItems {
+	
+	@include WidgetBottomSpace;
+
+	&__ItemsContainer {
+		
+		@include WidgetBottomSpace;
+
+		@include Morpher(All-Desktop) {
+
+			@include Layout(Wrapper);
+
+		}
+
+		@include Morpher(Tablet) {
+
+			@include Layout(Wrapper-Tablet);
+
+		}
+	}
+}

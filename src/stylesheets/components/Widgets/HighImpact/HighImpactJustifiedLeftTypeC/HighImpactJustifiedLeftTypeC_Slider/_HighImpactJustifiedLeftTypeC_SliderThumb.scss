@@ -1,0 +1,28 @@
+// HighImpact Justified Left TypeC Slider Thumb
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderThumbnails {
+
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+
+    }
+
+    &__SliderThumbnails::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+    &__SliderThumbContainer {
+
+        min-width: 100%;
+        position: relative;
+
+    }
+}

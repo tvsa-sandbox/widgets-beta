@@ -1,0 +1,40 @@
+// Item Type A Label
+
+.Items {
+
+	&__ItemTypeALabelContainer {
+
+		bottom: 40px;
+		position: absolute;
+    	right: 40px;
+
+		@include Morpher(All-Desktop) {
+
+			bottom: 30px;
+			right: 30px;
+
+		}
+
+		@include Morpher(Laptop) {
+
+			bottom: 20px;
+			right: 20px;
+
+		}
+
+		@include Morpher(Smartphone) {
+
+			bottom: 12px;
+			right: 12px;
+
+		}
+	}
+
+	&__ItemTypeALabel {
+
+		text-transform: uppercase;
+
+		@include Typer(SubTextInfo);
+
+	}
+}

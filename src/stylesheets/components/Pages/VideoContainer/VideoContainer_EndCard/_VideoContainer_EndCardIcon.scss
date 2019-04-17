@@ -1,0 +1,35 @@
+// VideoContainer Label
+
+.VideoContainer {
+
+    &__EndCardIconContainer {
+
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        z-index: 1;
+
+        .Icn_Video {
+
+            &::before {
+
+                margin-left: 5px;
+
+            }
+        }
+    }
+
+    &__EndCardIcon {
+
+        border-radius: 50%;
+        height: 60px;
+        margin: auto;
+        width: 60px;
+
+        @include Themer(background, Color-9);
+        @include Themer(border, Color-1, 'solid 2px');
+
+    }
+}

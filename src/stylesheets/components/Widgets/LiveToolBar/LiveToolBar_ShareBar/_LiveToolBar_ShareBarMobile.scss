@@ -1,0 +1,17 @@
+// LiveToolBar ShareBarMobile
+
+.LiveToolBar {
+
+    &__ShareBarMobile {
+
+        bottom: 236px;
+        height: 0px;
+        margin: auto;
+        position: relative;
+        width: 58px;
+        z-index: 10;
+
+        @include Themer(background, Color-5);
+
+    }
+}

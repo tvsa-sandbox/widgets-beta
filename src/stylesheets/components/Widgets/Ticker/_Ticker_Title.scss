@@ -1,0 +1,47 @@
+// Ticker Title
+
+.Ticker  {
+
+	&__TitleContainer {
+
+        display: flex;
+        height: auto;
+        justify-content: center;
+		margin: 0px auto;
+        padding: 7px 10px;
+		position: relative;
+        text-align: right;
+        width: 100%;
+
+        @include Themer(background, Color-1);
+
+		@include Morpher(All-Desktop) {
+
+			display: flex;
+			height: 100%;
+            justify-content: center;
+            margin: 0px;
+            padding: 7px 15px;
+			position: relative;
+            width: 404px;
+
+            @include Themer(background, Color-4)
+
+		}
+	}
+
+    &__Title {
+
+        align-items: center;
+        display: flex;
+        height: 100%;
+        margin: 0px;
+		text-align: center;
+        text-decoration: none;
+		text-transform: uppercase;
+
+        @include Themer(color, White);
+        @include Typer(SubTextInfo);
+
+    }
+}

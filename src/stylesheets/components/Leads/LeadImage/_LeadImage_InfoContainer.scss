@@ -1,0 +1,78 @@
+// LeadImage Info Container
+
+.LeadImage {
+
+	&__InfoContainer {
+
+		bottom: 0px;
+		max-height: 85px;
+		position: absolute;
+
+		@include Themer (background, Color-2);
+
+		@include Morpher(Tablet) {
+
+			max-width: 60%;
+		}
+
+		@include Morpher(All-Desktop) {
+
+			max-width: 50%;
+
+		}
+
+		&-Inner {
+
+			bottom: 0px;
+			max-height: 85px;
+			position: absolute;
+
+			@include Themer (background, Color-2);
+
+			@include Morpher(Tablet) {
+
+				max-width: 60%;
+			}
+
+			@include Morpher(All-Desktop) {
+
+				max-width: 50%;
+
+			}
+
+		}
+	}
+
+	&__DescriptionContainer {
+
+		left: 20px;
+		padding: 7px 5px 0px 10px;
+		width: 100%;
+
+		&-Inner {
+
+			left: 20px;
+			padding: 7px 5px 0px 10px;
+			width: 100%;
+
+		}
+
+	}
+
+	&__Description {
+
+		text-align: left;
+
+		@include Typer(SubTextTag);
+		@include Themer(color, Text-Light-Headlines);
+
+		&-Inner {
+
+			text-align: left;
+
+			@include Typer(SubTextTag);
+			@include Themer(color, Text-Light-Headlines);
+
+		}
+	}
+}

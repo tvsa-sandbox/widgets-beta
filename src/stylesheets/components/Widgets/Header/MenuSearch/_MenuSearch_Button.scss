@@ -1,0 +1,23 @@
+// Header Core
+
+.MenuSearch {
+
+    &__LiveButtonContainer {
+
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__Button {
+
+        cursor: pointer;
+        text-transform: uppercase;
+
+        @include Hover;
+
+        @include Typer(HeaderExtraDesktop);
+
+        @include Themer(color, White);
+    }
+}

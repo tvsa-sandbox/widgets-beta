@@ -1,0 +1,16 @@
+// TvGuide Item Active Time
+
+.TvGuide {
+
+    &__LiveShow {
+
+        width: 100%;
+
+        &-Time {
+
+            @include Themer(color, Text-Light-Body);
+            @include Typer(SubTextInfo);
+
+        }
+    }
+}

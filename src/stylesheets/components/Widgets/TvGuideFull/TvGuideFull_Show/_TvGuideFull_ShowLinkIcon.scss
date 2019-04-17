@@ -1,0 +1,15 @@
+// Tv Guide Full Show Link Icon
+
+.TvGuideFull {
+
+	&__ShowLinkIcon {
+
+		background: none;
+		border: none;
+		cursor: pointer;
+		height: 30px;
+
+		@include Themer(color, Color-7);
+
+	}
+}

@@ -1,0 +1,20 @@
+//InlineVideo Carousel Item Duration
+
+.InlineVideo {
+
+    &__CarouselItemDurationContainer {
+
+        position: absolute;
+        text-align: center;
+        top: 78%;
+        width: 100%;
+
+    }
+    
+    &__CarouselItemDuration {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+}

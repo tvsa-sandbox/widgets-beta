@@ -1,0 +1,43 @@
+// HighImpactJustifiedLeftTypeC Slider Item Caption
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderItemCaptionAnchor {
+
+        height: auto;
+        position: absolute;
+		text-decoration: none;
+        top: 0px;
+		width: 100%;
+
+		@include Morpher(All-Desktop) {
+
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+
+		}
+
+    }
+
+    &__SliderItemCaption {
+
+        height: auto;
+        position: absolute;
+		text-decoration: none;
+        top: 0px;
+		width: 100%;
+
+        @include Themer(background, Color-1);
+
+		@include Morpher(All-Desktop) {
+
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+
+		}
+    }
+}

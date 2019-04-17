@@ -1,0 +1,25 @@
+// SlideShow Slider Item Label
+
+.SlideShow {
+    
+    &__SliderItemInfoContainer {
+        
+        display: flex;
+        margin: 2% 3%;
+        position: relative;
+        width: 90%;
+        
+    }
+    
+    &__SliderItemInfo {
+        
+        @include Themer(color, Color-7);
+        @include Typer(SubTextTag);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(ItemTitleDesktop);
+            
+        }    
+    }
+}

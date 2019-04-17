@@ -1,0 +1,32 @@
+// HighImpactCentered Left Items Description
+
+.HighImpactCentered {
+
+    &__LeftItemDescriptionContainer {
+
+        display: block;
+        padding: 5px;
+        width: 100%;
+
+    }
+
+    &__LeftItemDescription {
+
+        height: 100%;
+        margin: 0px;
+        max-height: 33px;
+        overflow: hidden;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
+
+        @include Morpher(All-Desktop) {
+
+            height: 100%;
+            max-height: 35px;
+
+            @include Typer(ItemTitleDescriptionDesktop);
+
+        }
+    }
+}

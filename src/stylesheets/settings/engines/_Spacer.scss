@@ -1,0 +1,40 @@
+// Spacer Engine | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+
+@mixin Spacer($type:margin, $direction:all, $amount:'base') {
+
+    @if not map-has-key($Spaces, $amount) {
+        @warn "No color found for #{$amount} in $Spces map. Ktnxbye.";
+      }
+
+        @each $space-name, $space-number in $Spaces {
+          
+            @if $space-name == $amount{
+
+            @if $type == padding {
+                @if $direction == all{
+                    padding: $space-number;
+                } @else if $direction == top {
+                    padding-top: $space-number
+                } @else if $direction == left {
+                    padding-left: $space-number
+                } @else if $direction == right {
+                    padding-right: $space-number;
+                } @else {
+                    padding-bottom: $space-number;
+                }
+            } @else {
+                @if $direction == all{
+                    margin: $space-number;
+                } @else if $direction == top {
+                    margin-top: $space-number;
+                } @else if $direction == left {
+                    margin-left: $space-number
+                } @else if $direction == right {
+                    margin-right: $space-number;
+                } @else {
+                    margin-bottom: $space-number;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+// VideoContainer
+
+.VideoContainer {
+
+    &__Body {
+
+        grid-area: Body;
+        position: relative;
+
+    }
+}

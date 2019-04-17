@@ -1,0 +1,46 @@
+// HighImpactJustifiedLeft Slider Item Info
+
+.HighImpactJustifiedLeft {
+
+    &__SliderItemInfoContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 64%;
+        width: 100%;
+        z-index: 2;
+
+        @include Morpher(Tablet) {
+
+            top: 65%;
+
+        }
+
+        @include Morpher(Laptop) {
+
+            top: 64%;
+
+        }
+
+        @include Morpher(Desktop) {
+
+            top: 64%;
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            top: 59%;
+
+        }
+    }
+
+    &__SliderItemInfo {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+}

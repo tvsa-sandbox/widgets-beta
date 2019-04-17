@@ -1,0 +1,24 @@
+// LiveStreaming Ads
+
+.LiveStreaming {
+    
+    &__AdsContainer {
+        
+        display: block;
+        height: 289px;
+        margin-top: 4px;
+        text-align: center;
+        width: 100%;
+        
+        @include Themer(background, Color-1);
+        @include Themer(color, White);
+        @include Typer(SubTextCredit);
+        
+        @include Morpher(All-Desktop) {
+            
+            margin-top: 0px;
+            max-width: 370px;
+            
+        }
+    }
+}

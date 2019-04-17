@@ -1,0 +1,19 @@
+// PromoCards Button Navigation Box
+
+.PromoCards {
+    
+    @include WidgetBottomSpace;
+
+    &__NavigationBoxContainer {
+
+		margin-bottom: 93px;
+        min-width: 135px;
+
+		@include Morpher(All-Desktop) {
+
+			margin-bottom: 0px;
+			width: 202px;
+
+		}
+    }
+}

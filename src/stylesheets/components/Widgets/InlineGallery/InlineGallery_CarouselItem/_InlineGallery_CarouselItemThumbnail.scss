@@ -1,0 +1,41 @@
+//InlineGallery Carousel Item Thumbnail
+
+.InlineGallery {
+
+    &__CarouselItemThumbnail {
+
+        display: block;
+        position: relative;
+
+        &-Active {
+
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            @include Themer(color, Text-Light-Body);
+
+            .InlineGallery__CarouselItemImageContainer, .InlineGallery__CarouselItemTitle {
+
+                opacity: .5;
+
+            }
+
+            &:before {
+
+                content: 'Estas viendo';
+                position: absolute;
+                top: 20%;
+                z-index: 1;
+
+                @include Typer(SubTextInfo);
+                
+                @include Morpher(All-Desktop) {
+
+                    @include Typer (SubTextInfoDesktop);    
+
+                }
+            }
+        }
+    }
+}

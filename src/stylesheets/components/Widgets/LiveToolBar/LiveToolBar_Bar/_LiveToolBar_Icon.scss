@@ -1,0 +1,36 @@
+// LiveToolBar Icon
+
+.LiveToolBar {
+
+    &__IconContainer {
+
+        border-radius: 50%;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        position: fixed;
+        right: 5px;
+        width: 30px;
+
+        @include Themer(background, Color-2);
+        @include Themer(border, Color-7, "1px solid");
+
+        .Icn_Video {
+
+            font-size: 12px;
+            height: auto;
+
+            &::before {
+
+                margin-left: 0px;
+
+            }
+        }
+    }
+
+    &__Icon {
+
+        @include Themer(color, Color-7);
+
+    }
+}

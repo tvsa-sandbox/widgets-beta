@@ -1,0 +1,21 @@
+// Item Type C Image
+
+.Items {
+
+	&__ItemTypeCImageContainer {
+
+		position: relative;
+		width: 100%;
+
+		@include Spekter(9_16);
+
+	}
+
+	&__ItemTypeCImage {
+
+		position: absolute;
+		top: 0px;
+		width: 100%;
+
+	}
+}

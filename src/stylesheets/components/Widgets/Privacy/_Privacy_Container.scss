@@ -1,0 +1,16 @@
+// Privacy Container
+
+.Privacy {
+
+    &__Container {
+
+		max-width: 1440px;
+        margin: 0px auto;
+
+        @include Morpher (All-Desktop) {
+
+            padding: 0% 3%;
+
+        }
+	}
+}

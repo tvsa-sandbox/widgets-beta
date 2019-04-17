@@ -1,0 +1,12 @@
+// HighImpactCentered Slider Item Image
+
+.HighImpactCentered {
+
+    &__SliderItemImageContainer {
+        
+        margin-top: 5px;
+
+        @include Spekter(16_9);
+
+    }
+}

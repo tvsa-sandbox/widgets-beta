@@ -1,0 +1,33 @@
+// PromoCards Select
+
+.PromoCards {
+
+    &__SelectContainer {
+
+        display: block;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+
+        }
+    }
+
+    &__Select {
+
+        border-radius: 0px;
+        border: 0px;
+        font-size: 15px;
+        height: 30px;
+        text-align: center;
+        width: 80%;
+
+        @include Themer(background, Color-3);
+        @include Themer(color, Text-Light);
+        @include Typer(SubTextButton);
+
+    }
+}

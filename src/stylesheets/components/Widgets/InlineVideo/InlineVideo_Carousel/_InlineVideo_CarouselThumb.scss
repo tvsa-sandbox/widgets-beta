@@ -1,0 +1,29 @@
+// Inline Video Carousel Thumb
+
+.InlineVideo {
+
+    &__CarouselThumbnails {
+
+        display: flex;
+        height: 275px;
+        margin: 0px auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+
+        @include Morpher(All-Desktop) {
+
+            overflow: hidden;
+
+        }
+    }
+
+    &__ThumbContainer {
+
+        height: auto;
+        margin: 2px 5px;
+
+        @include OrcaMarginReset;
+
+    }
+}

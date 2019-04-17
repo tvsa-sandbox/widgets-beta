@@ -1,0 +1,32 @@
+// SocialFollow Core
+
+.Share {
+
+	width: 100%;
+
+	@include Themer(background, Color-1);
+	
+	@include Morpher(Tablet) {
+		
+		height: 100%;
+		min-height: 70px;
+		width: 100%;
+		
+	}
+	
+	@include Morpher(All-Desktop) {
+		
+		height: 100%;
+		min-height: 100px;
+		width: 100%;
+		
+	}
+	
+	&__Container {
+
+		height: 100%;
+		position: relative;
+        width: 100%;
+		
+	}
+}

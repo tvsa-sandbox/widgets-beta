@@ -1,0 +1,31 @@
+// Footer Mobile
+
+.Footer {
+
+    &__NetworksMobile {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 50px);
+        width: 100%;
+
+        @include Themer(background, Color-14);
+        @include Layout(Full);
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+
+        }
+    }
+
+    &__Selector {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        @include Typer(FooterTextAbout)
+
+    }
+}

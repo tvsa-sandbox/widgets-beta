@@ -1,0 +1,32 @@
+// Video Item Player Title Container
+
+.Video {
+
+	&__ItemPlayerTitleContainer {
+        
+        bottom: 0px;
+        height: auto;
+        position: absolute;
+        width: 100%;
+
+        @include Themer (background, Color-2);
+
+	}
+    
+    &__ItemPlayerTitle {
+        
+        margin: 5px;
+        text-align: left;
+
+		@include Typer(SubTextTag);
+		@include Themer(color, Text-Light-Headlines);
+		
+		@include Morpher(All-Desktop) {
+			
+			margin: 20px;
+			
+			@include Typer(ItemTitle);
+			
+		}
+    }
+}

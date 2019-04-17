@@ -1,0 +1,46 @@
+// Settings / Global file | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+
+$ThemesUI: (
+    LasEstrellas,
+    WhiteLabel
+);
+
+@function CurrentTheme($list){
+
+	@return nth($list, length($list));
+
+}
+
+$UINameSpace: CurrentTheme($ThemesUI);
+// @each $item in $ThemesUI {
+//   $UINameSpace: append($UINameSpace, unquote($item));
+// }
+
+@debug $UINameSpace;
+
+@import './engines/ThemerUI';
+
+// Body container for wrapper according to design
+
+$BodyContainer: 1180px;
+$BodyContainerTablet: 500px;
+$Aside-Mobile: 768px;
+$Aside-Desktop: 414px;
+
+// Iconography Version
+
+$WFVersion: 'v2.0.0';
+
+// Fonts names definitions
+
+// $Font-1: '';
+// $Font-2: '';
+
+// Settings engines files routes
+
+@import './Colors';
+@import './Breakpoints';
+@import './Icons';
+@import './Placeholders';
+@import './Fonts';
+@import './Spaces';

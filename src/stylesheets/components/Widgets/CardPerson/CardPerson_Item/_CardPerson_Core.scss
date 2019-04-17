@@ -1,0 +1,40 @@
+// Card Person Core
+
+.CardPerson {
+
+    &__Card {
+
+        margin-left: 10px;
+        position: relative;
+        width: 300px;
+
+        @include OrcaMarginReset;
+        @include Themer(color, Text-Light-Headlines);
+
+        @include Themer(background, Color-2, before) {
+
+            bottom: 60px;
+            content: "seguir en redes";
+            height: 25px;
+            padding: 5px;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+            z-index: 1;
+
+            @include Typer(SubTextInfo);
+
+        }
+
+        @include Themer(background, Color-7, after) {
+
+            bottom: 59px;
+            height: 1px;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+
+        }
+    }
+}

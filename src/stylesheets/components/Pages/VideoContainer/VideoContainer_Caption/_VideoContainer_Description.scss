@@ -1,0 +1,11 @@
+// VideoContainer Description
+
+.VideoContainer {
+
+    &__Description {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyText);
+
+    }
+}

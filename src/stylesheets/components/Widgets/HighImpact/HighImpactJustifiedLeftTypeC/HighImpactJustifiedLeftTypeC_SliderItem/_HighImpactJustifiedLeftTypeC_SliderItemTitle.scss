@@ -1,0 +1,67 @@
+// HighImpactJustifiedLeftTypeC Slider Item Title
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderItemTitleContainer {
+
+        margin: 63.25% 2% 0%;
+        padding: 0px;
+        position: absolute;
+        top: 0px;
+        z-index: 0;
+
+        @include Morpher (All-Desktop) {
+
+            margin: inherit;
+            padding: 20px 10px 0px;
+            position: relative;
+            top: 67%;
+            z-index: 2;
+
+        }
+
+    }
+
+    &__SliderItemTitle {
+
+        align-items: flex-start;
+        display: flex;
+		height: auto;
+		margin: 0px;
+		max-height: 40px;
+        overflow: hidden;
+		position: relative;
+        text-align: left;
+
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitle);
+
+		@include Morpher(Laptop) {
+
+			max-height: 64px;
+            position: relative;
+
+            @include Typer(HeadlineSub);
+
+        }
+
+        @include Morpher(Desktop) {
+
+            max-height: 66px;
+            position: relative;
+
+            @include Typer(HeadlineSub);
+
+        }
+
+		@include Morpher(Desktop-HD) {
+
+            max-height: 97px;
+			overflow: hidden;
+            position: relative;
+
+            @include Typer(HeadlineMain);
+
+        }
+    }
+}

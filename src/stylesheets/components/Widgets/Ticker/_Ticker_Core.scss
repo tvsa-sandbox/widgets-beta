@@ -1,0 +1,20 @@
+// Ticker Core
+
+.Ticker {
+
+	height: auto;
+	margin: 0px auto;
+	width: 100%;
+
+	@include WidgetBottomSpace;
+
+    @include Morpher(All-Desktop) {
+
+		height: 60px;
+		margin: 0px auto;
+		width: 100%;
+
+		@include Layout(Full);
+
+	}
+}

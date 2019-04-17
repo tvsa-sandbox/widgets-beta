@@ -1,0 +1,24 @@
+// InlineGallery Silder Counter
+
+.InlineGallery {
+    
+    &__SliderCounterContainer {
+
+        position: absolute;
+        right: 0px;
+        z-index: 1;
+
+    }
+    
+    &__SliderCounter {
+        
+        padding: 3px 8px;
+        text-align: right;
+        
+        @include Morpher(All-Desktop) {
+            
+            padding: 5px 10px;
+            
+        }
+    }
+}

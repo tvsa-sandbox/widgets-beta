@@ -1,0 +1,49 @@
+// InlineGallery Silder Ads Button
+
+.InlineGallery {
+
+    &__SliderAdsButtonContainer {
+
+        bottom: 1%;
+		display: block;
+        position: absolute;
+        width: 100%;
+
+        @include Morpher(Tablet) {
+
+            bottom: 18%;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            bottom: 15%;
+
+        }
+    }
+
+    &__SliderAdsButton {
+
+        border: none;
+		cursor: pointer;
+		display: block;
+		height: 30px;
+		margin: 0px auto;
+		width: 110px;
+
+		@include ButtonBorder;
+		@include HoverCard;
+		@include Themer(background, Color-1);
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(SubTextCredit);
+
+        @include Morpher(All-Desktop) {
+
+            height: 45px;
+            width: 155px;
+
+            @include Typer(SubTextButton);
+
+        }
+    }
+}

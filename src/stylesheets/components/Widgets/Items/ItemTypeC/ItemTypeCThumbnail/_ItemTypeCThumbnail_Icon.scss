@@ -1,0 +1,36 @@
+// Item Type C Icon
+
+.Items {
+
+    &__ItemTypeCIconContainer {
+
+        position: absolute;
+        top: 44%;
+        width: 100%;
+        z-index: 1;
+
+        @include Morpher(Tablet) {
+
+            top: 46%;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            top: 43%;
+
+        }
+    }
+
+    &__ItemTypeCIcon {
+
+        border-radius: 50%;
+        height: 60px;
+        margin: auto;
+        width: 60px;
+
+        @include Themer(background, Color-4);
+        @include Themer(border, Color-1, 'solid 2px');
+
+    }
+}

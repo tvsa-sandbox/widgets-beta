@@ -1,0 +1,30 @@
+// Kolibri ThemerUI Engine | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+
+// @mixin ThemerUI{
+//
+// 	@for $TM from 1 through length($ThemesUI) {
+//
+// 		$SingleTheme: nth($ThemesUI, $TM);
+//
+// 		&.#{$SingleTheme} {
+// 			color: $SingleTheme;
+// 		}
+// 	}
+@mixin ThemerUI($selector, $skin: '.WhiteLabel') {
+
+  .#{$selector}  {
+
+        @content;
+
+	}
+}
+
+@mixin Element($nameElement : 'Element') {
+
+	&__#{$nameElement}.#{$UINameSpace} {
+
+		@content;
+
+	}
+}
+ // ThemerUI Engine

@@ -1,0 +1,52 @@
+// PromoCards Button Navigation 
+
+.PromoCards {
+
+	&__CarouselButtonNavigationContainer {
+
+		display: flex;
+		text-align: center;
+		width: 100%;
+
+		@include Morpher(All-Desktop) {
+
+			display: block;
+    		width: 100%;
+
+		}
+    }
+
+    &__ButtonNavigation {
+
+        border: 0px;
+        cursor: pointer;
+        margin: 6px;
+        min-width: 130px;
+		padding: 7px;
+
+		@include ButtonBorder;
+        @include HoverCard;
+        @include Themer(background, Color-4);
+        @include Themer(color, Text-Dark-Body);
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+
+    &__ButtonNavigationText {
+
+        text-transform: uppercase;
+
+        @include Themer(color, Text-Light-Headlines);
+		@include Typer(ItemTitleDescription);
+
+		@include Morpher(All-Desktop) {
+
+			@include Typer(ItemTitleExtra);
+
+		}
+    }
+}

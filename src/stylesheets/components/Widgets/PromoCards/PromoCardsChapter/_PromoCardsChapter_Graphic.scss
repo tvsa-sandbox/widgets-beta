@@ -1,0 +1,14 @@
+// PromoCards Chapter Graphic
+
+.PromoCards {
+
+    &__CarouselItemChapterGraphicContainer {
+
+        display: none;
+        height: 110px;
+        width: 100%;
+
+        @include Spekter(16_9);
+
+    }
+}

@@ -1,0 +1,29 @@
+// Header Core
+
+.MenuSearch {
+
+    align-items: center;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start;
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 25;
+
+    @include Themer (background, Gradient-1A);
+    @include Themer (color, White);
+
+}
+.ActiveSearch {
+    visibility: visible;
+    opacity: 1;
+}
+.InactiveSearch {
+    visibility: hidden;
+    opacity: 0;
+}

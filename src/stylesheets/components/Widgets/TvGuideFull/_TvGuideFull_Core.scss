@@ -1,0 +1,10 @@
+// TvGuideFull Core
+
+.TvGuideFull {
+	
+	width: 100%;
+	
+	@include Layout(Wrapper);
+	@include WidgetBottomSpace;
+	
+}

@@ -1,0 +1,15 @@
+// FiveItems Items Bottom
+
+.FiveItems {
+
+	&__ItemsBottom {
+
+		@include Morpher(All-Desktop) {
+
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(3, 1fr);
+
+		}
+	}
+}

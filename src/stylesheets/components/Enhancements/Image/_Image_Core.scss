@@ -1,0 +1,22 @@
+// Image Core
+
+.Image {
+
+	max-width: 716px;
+	min-height: 240px;
+	min-width: 320px;
+	position: relative;
+	width: 100%;
+
+	@include WidgetBottomSpace;
+
+	@include Morpher(All-Desktop) {
+
+		max-width: 716px;
+		min-height: 537px;
+		margin: 0 auto;
+
+		@include WidgetBottomSpace;
+
+	}
+}

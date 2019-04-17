@@ -1,0 +1,21 @@
+// EndCard Image
+
+.EndCard {
+
+    &__ImageContainer {
+
+        top: 0px;
+
+        @include Spekter(16_9);
+
+        position: absolute;
+
+    }
+
+    &__Image {
+
+        height: auto;
+        width: auto;
+
+    }
+}

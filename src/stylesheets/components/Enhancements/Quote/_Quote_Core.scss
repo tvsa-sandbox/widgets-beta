@@ -1,0 +1,8 @@
+// Quote Core
+
+.Quote {
+    
+    @include Layout(Wrapper);
+    @include WidgetBottomSpace;
+    
+}

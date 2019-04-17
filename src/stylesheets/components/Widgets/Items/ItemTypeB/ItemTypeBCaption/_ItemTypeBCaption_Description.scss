@@ -1,0 +1,24 @@
+// Item Type B Description
+
+.Items {
+
+    &__ItemTypeBDescription {
+
+        @include Typer(ItemTitleDescription);
+
+        font-size: 18px;
+        line-height: 20px;
+
+        @include Morpher (All-Desktop) {
+
+			@include Typer(ItemTitleDescriptionDesktop);
+
+		}
+
+        @include Morpher (Laptop) {
+
+			@include Typer(ItemTitleDescription);
+
+		}
+    }
+}

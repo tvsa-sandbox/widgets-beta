@@ -1,0 +1,13 @@
+// PromoCards Show Image
+
+.PromoCards {
+
+    &__CarouselItemShowImageContainer {
+        
+        display: block;
+        width: 100%;
+
+        @include Spekter(3_4);
+
+    }
+}

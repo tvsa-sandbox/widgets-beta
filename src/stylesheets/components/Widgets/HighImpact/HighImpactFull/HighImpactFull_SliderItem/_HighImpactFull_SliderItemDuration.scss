@@ -1,0 +1,56 @@
+// High Impact Full Slider Item Duration
+
+.HighImpact {
+
+    &__SliderItemDurationContainer {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+
+        @include Morpher(Tablet) {
+
+            top: 48%;
+            width: 70%
+
+        }
+
+        @include Morpher(Laptop) {
+
+            top: 45%;
+            width: 80%;
+
+        }
+
+        @include Morpher(Desktop) {
+
+            top: 47%;
+            width: 70%;
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            top: 50%;
+            width: 70%;
+
+        }
+    }
+
+    &__SliderItemDuration {
+
+        padding: 5px;
+
+        @include Themer(color, Text-Light-Body);
+        @include Typer(SubTextInfo);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(SubTextInfoDesktop);
+
+        }
+    }
+}

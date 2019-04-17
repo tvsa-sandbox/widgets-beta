@@ -1,0 +1,29 @@
+// Footer Desktop
+
+.Footer {
+
+    &__NetworksDesktop {
+
+        display: grid;
+        display: none;
+        grid-gap: 10px;
+        grid-template-columns: repeat(7, 60px);
+        grid-template-rows: repeat(1, 60px);
+        justify-content: center;
+        width: 100%;
+
+        @include Layout(Full);
+        @include Themer(background, Color-14);
+
+        @include Morpher(All-Desktop) {
+
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: repeat(7, 60px);
+            grid-template-rows: repeat(1, 60px);
+            justify-content: center;
+            width: 100%;
+
+        }
+    }
+}

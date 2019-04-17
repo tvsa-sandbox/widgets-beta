@@ -1,0 +1,11 @@
+// LeadVideo Core
+
+.LeadVideo {
+
+	margin: 0px auto 50px;
+	max-width: 1440px;
+	position: relative;
+
+	@include HoverCard;
+
+}

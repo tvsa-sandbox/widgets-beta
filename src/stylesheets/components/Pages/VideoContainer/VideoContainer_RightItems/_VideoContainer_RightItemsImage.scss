@@ -1,0 +1,12 @@
+// VideoContainer Right Items Image
+
+.VideoContainer {
+
+    &__RightItemImageContainer {
+
+        width: 100%;
+
+        @include Spekter(16_9);
+
+    }
+}

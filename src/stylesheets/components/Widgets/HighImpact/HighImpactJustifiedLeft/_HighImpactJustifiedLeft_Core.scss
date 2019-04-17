@@ -1,0 +1,46 @@
+// HighImpactJustifiedLeft Core
+
+.HighImpactJustifiedLeft {
+
+    display: grid;
+    grid-row-gap: 0px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'Slider'
+    'RightItems';
+    padding-bottom: 5%; // WidgetsBottomSpace
+
+    @include Morpher(Laptop) {
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'Slider Slider RightItems';
+
+    }
+
+    @include Morpher(Desktop) {
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'Slider Slider RightItems';
+
+        @include Layout(Wrapper);
+
+    }
+
+    @include Morpher(Desktop-HD) {
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        'Slider Slider RightItems';
+
+        @include Layout(Wrapper);
+
+    }
+}

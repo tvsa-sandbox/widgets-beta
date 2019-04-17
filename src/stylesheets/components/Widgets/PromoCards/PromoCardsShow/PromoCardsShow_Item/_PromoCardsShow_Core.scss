@@ -1,0 +1,23 @@
+// PromoCards Show Core
+
+.PromoCards {
+
+    &__CarouselItemShow {
+
+        display: block;
+        min-width: 202px;
+        position: relative;
+        transition: transform .6s;
+        width: 202px;
+
+    }
+
+    &__CarouselItemShow:Hover {
+
+        box-sizing: border-box;
+        outline: 8px solid #7e848c;
+        transform: scale(1.05);
+        z-index: 1;
+
+    }
+}

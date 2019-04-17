@@ -1,0 +1,39 @@
+// Header Core
+
+.Header {
+
+    &__Grid {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 1fr auto;
+        grid-template-areas:
+            "logo"
+            "navigation"
+            "dinamic";
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0px;
+        z-index: 25;
+        overflow-y: scroll;
+
+        @include Layout(Wrapper);
+        @include Themer(background, Black);
+
+        @include Morpher(All-Desktop){
+
+            grid-template-columns: 15% 65% 20%;
+            grid-template-rows: 1fr;
+            grid-template-areas:
+                "logo navigation dinamic";
+            position: relative;
+            width: 100%;
+            height: auto;
+            background: transparent !important;
+            overflow-y: hidden;
+
+        }
+    }
+
+}

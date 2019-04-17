@@ -1,0 +1,43 @@
+// HighImpactJustifiedLeftTypeC Slider Item Icon
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderItemIconContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 28.125%;
+        position: absolute;
+        top: 0%;
+        transform: translateY(-28.125%);
+        width: 100%;
+        z-index: 3;
+
+        @include Morpher(All-Desktop) {
+
+            padding-top: 28.125%;;
+            transform: translateY(-14.06%);
+
+        }
+
+        @include Morpher(Laptop) {
+
+            padding-top: 28.125%;;
+            transform: translateY(-28.125%);
+
+        }
+    }
+
+    &__SliderItemIcon {
+
+        background: rgba(126, 132, 140, .8);
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 25px;
+        height: auto;
+        transition: opacity .5s;
+        width: auto;
+
+    }
+}

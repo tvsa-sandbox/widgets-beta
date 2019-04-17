@@ -1,0 +1,13 @@
+// Inline Video Caption Date
+
+.InlineVideo {
+
+    &__Date {
+
+        display: block;
+        width: 100%;
+
+        @include Typer(SubTextInfo);
+
+    }
+}

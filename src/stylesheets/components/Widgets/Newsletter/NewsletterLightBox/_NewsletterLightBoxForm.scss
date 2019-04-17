@@ -1,0 +1,23 @@
+// NewsletterLightBox Form
+
+.NewsletterLightBox {
+
+    &__FormContainer {
+        
+        display: block;
+        height: 100%;
+        margin: 0 auto;
+        max-height: 118px;
+        max-width: 370px;
+        padding-left: 5%;
+        position: relative;
+        top: 14%;
+        width: 100%;
+        
+        @include Morpher(All-Desktop) {
+            
+            padding-left: 0%;
+            
+        }
+    }
+}

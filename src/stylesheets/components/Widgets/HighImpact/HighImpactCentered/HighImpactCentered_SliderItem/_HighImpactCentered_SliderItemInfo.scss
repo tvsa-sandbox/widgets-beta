@@ -1,0 +1,34 @@
+// HighImpactCentered Slider Item Info
+
+.HighImpactCentered {
+
+    &__SliderItemInfoContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 65%;
+        transform: translateY(-65%);
+        width: 100%;
+
+        @include Morpher(All-Desktop) {
+
+            top: 60%;
+            transform: translateY(-60%);
+
+        }
+    }
+
+    &__SliderItemInfo {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(SubTextInfoDesktop);
+
+        }
+    }
+}

@@ -1,0 +1,19 @@
+// FourItemsV Thumbnail
+
+.FourItemsV {
+
+	&__ItemThumbnail {
+
+		display: block;
+		position: relative;
+		width: 100%;
+        cursor: pointer;
+
+	}
+
+	&__ItemImageContainer {
+
+		@include Spekter(1_1);
+
+	}
+}

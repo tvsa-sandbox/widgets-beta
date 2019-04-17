@@ -1,0 +1,21 @@
+// Items Core
+
+.Items {
+    
+    @include Layout(Wrapper);
+    @include WidgetBottomSpace;
+    
+    @include Morpher(Tablet) {
+
+        @include Layout(Wrapper-Tablet);
+
+    }
+
+    @include Morpher(All-Desktop) {
+
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+    }
+}

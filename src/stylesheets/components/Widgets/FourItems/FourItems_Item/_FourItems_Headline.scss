@@ -1,0 +1,15 @@
+// FourItems Headline
+
+.FourItems {
+
+	&__Headline {
+
+		padding: 25px 25px;
+		text-align: left;
+
+		@include Hover;
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(ItemTitleVariant);
+
+	}
+}

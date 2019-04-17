@@ -1,0 +1,15 @@
+// PromoCards Show Caption
+
+.PromoCards {
+
+    &__CarouselItemShowCaption {
+
+        align-items: center;
+        bottom: 0%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,24 @@
+// Header Core
+
+.Header {
+
+    &__OpenSearch {
+
+            visibility: collapse;
+
+            @include Morpher(All-Desktop) {
+                visibility: visible;
+            }
+    }
+    &__OpenSearchButton {
+
+        cursor: pointer;
+
+        @include Themer(color, White);
+        @include Hover;
+
+        &::before {
+            font-size: 25px;
+        }
+    }
+}

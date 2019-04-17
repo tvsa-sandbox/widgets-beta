@@ -1,0 +1,59 @@
+// TvGuide Container
+
+.TvGuide {
+
+    &__Container {
+
+        width: 100%;
+
+        @include Morpher(Tablet) {
+
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            @include Layout(Full);
+
+        }
+
+        @include Morpher(Laptop) {
+
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            @include Layout(Full);
+
+        }
+
+        @include Morpher(Desktop) {
+
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            @include Layout(Wrapper);
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            @include Layout(Wrapper);
+
+        }
+    }
+
+    &__Container.Vertical {
+
+        display: block;
+
+    }
+}

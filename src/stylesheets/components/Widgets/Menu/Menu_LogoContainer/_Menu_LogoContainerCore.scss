@@ -1,0 +1,15 @@
+// Menu LogoContainer Core
+
+.Menu {
+
+    &__LogoContainer {
+
+        align-items: center;
+        color: white;
+        display: flex;
+        grid-area: Logo;
+        justify-content: felx-start;
+        text-decoration: none;
+
+    }
+}

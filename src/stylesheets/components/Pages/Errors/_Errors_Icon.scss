@@ -1,0 +1,10 @@
+// Errors Container
+
+.Errors {
+
+    &__Icon {
+
+        @include Themer(color, White);
+
+    }
+}

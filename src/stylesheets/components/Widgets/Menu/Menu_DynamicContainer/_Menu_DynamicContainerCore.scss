@@ -1,0 +1,14 @@
+// Menu DynamicContainer Core
+
+.Menu {
+
+    &__DynamicContainer {
+
+        align-items: center;
+        display: flex;
+        grid-area: Dynamic;
+        justify-content: flex-end;
+        text-decoration: none;
+
+    }
+}

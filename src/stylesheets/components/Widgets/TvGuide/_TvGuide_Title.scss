@@ -1,0 +1,76 @@
+// TvGuide Title
+
+.TvGuide {
+
+    &__TitleContainer {
+
+        display: block;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+
+        @include Morpher(Tablet) {
+
+            display: none;
+
+        }
+
+        @include Morpher(Laptop) {
+
+            display: none;
+
+        }
+
+        @include Morpher(Desktop) {
+
+            display: block;
+            padding: 6px;
+            text-align: right;
+            width: 30%;
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            display: block;
+            padding: 6px;
+            text-align: right;
+            width: 30%;
+
+        }
+    }
+
+    &__TitleContainer.Vertical {
+
+        display: block;
+
+        @include Morpher(Desktop) {
+
+            display: block;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            display: block;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+
+        }
+
+    }
+
+    &__Title {
+
+        text-decoration: none;
+
+        @include Hover;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitle);
+
+    }
+}

@@ -1,0 +1,20 @@
+// TvGuide Item Active LiveShow
+
+.TvGuide {
+
+    &__LiveShow {
+
+        padding: 0px 10px 10px 10px;
+        position: relative;
+
+    }
+
+    &__LiveShow.Vertical {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+
+    }
+}

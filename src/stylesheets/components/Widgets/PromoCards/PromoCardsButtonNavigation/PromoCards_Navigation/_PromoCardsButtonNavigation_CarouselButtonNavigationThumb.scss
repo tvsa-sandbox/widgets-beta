@@ -1,0 +1,35 @@
+// PromoCards Button Navigation Thumb Container
+
+.PromoCards {
+
+    &__CarouselButtonNavigationThumbnails {
+
+        align-items: center;
+		justify-content: center;
+        display: block;
+        height: auto;
+		overflow-x: scroll;
+		overflow-y: hidden;
+        width: 100%;
+
+        @include Morpher(All-Desktop) {
+
+			display: flex;
+			height: auto;
+            overflow: hidden;
+
+        }
+    }
+
+    &__CarouselButtonNavigationThumbContainer {
+
+        height: auto;
+        margin: 0px 6px;
+
+        @include Morpher(All-Desktop) {
+
+            margin: 0px 12px;
+
+        }
+    }
+}

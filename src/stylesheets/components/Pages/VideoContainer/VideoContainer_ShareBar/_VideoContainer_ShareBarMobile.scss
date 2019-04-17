@@ -1,0 +1,23 @@
+// VideoContainer Share Bar Mobile
+
+.VideoContainer {
+
+    &__ShareBarMobile {
+
+        bottom: 65px;
+        position: absolute;
+
+        @include Morpher(Tablet) {
+
+            position: absolute;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+            position: absolute;
+
+        }
+    }
+}

@@ -1,0 +1,35 @@
+//Content Carousel Item Info
+
+.ContentCarousel {
+
+    &__CarouselItemInfoContainer {
+
+        padding: 0px 10px;
+        text-transform: uppercase;
+
+    }
+
+    &__CarouselItemInfoType {
+
+        &-Modifier {
+
+            @include Themer(color, Text-Light-Headlines);
+            @include Typer(SubTextInfo);
+
+        }
+    }
+
+    &__CarouselItemInfoDate {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+
+    &__CarouselItemInfoTime {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+}

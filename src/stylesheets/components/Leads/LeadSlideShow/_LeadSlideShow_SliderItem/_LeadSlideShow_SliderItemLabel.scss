@@ -1,0 +1,25 @@
+// LeadSlideShow Slider Item Label
+
+.LeadSlideShow {
+
+    &__SliderItemLabelContainer {
+
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+
+        &-Inner {
+
+    		flex-wrap: wrap;
+            bottom: 0px;
+            display: flex;
+            height: auto;
+            position: absolute;
+            width: 100%;
+
+            @include Themer(background, Color-2);
+
+        }
+    }
+}

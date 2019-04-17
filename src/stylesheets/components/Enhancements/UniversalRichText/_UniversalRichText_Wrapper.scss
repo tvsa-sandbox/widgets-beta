@@ -1,0 +1,11 @@
+// UniversalRichText Wrapper
+
+.RichText {
+    
+    &-Wrapper {
+        
+        @include Layout(Wrapper);
+        @include WidgetBottomSpace;
+        
+    }
+}

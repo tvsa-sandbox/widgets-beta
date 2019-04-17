@@ -1,0 +1,10 @@
+// PromoCards Button Navigation Carousel Item Image
+
+.PromoCards {
+
+    &__CarouselItemButtonNavigationImageContainer {
+
+        @include Spekter(3_4);
+
+    }
+}

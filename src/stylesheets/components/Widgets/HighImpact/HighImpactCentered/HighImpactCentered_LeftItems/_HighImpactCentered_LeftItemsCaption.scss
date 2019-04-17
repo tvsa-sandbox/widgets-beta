@@ -1,0 +1,21 @@
+// HighImpactCentered Left Items Caption
+
+.HighImpactCentered {
+
+    &__LeftItemCaption {
+
+        display: block;
+        min-height: 88px;
+        padding: 5px;
+        width: 100%;
+
+        @include Themer(background, Color-1);
+
+        @include Morpher(All-Desktop) {
+
+            min-height: 88px;
+
+        }
+
+    }
+}

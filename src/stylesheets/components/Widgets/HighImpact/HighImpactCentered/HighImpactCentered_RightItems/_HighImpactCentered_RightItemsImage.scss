@@ -1,0 +1,18 @@
+// HighImpactCentered Right Items Image
+
+.HighImpactCentered {
+
+    &__RightItemImageContainer {
+
+        width: 100%;
+
+        @include Spekter(1_1);
+
+        &::before {
+
+			font-size: 110px !important; // Placeholder Icon | Unique Case for HighImpactCentered
+
+		}
+
+    }
+}

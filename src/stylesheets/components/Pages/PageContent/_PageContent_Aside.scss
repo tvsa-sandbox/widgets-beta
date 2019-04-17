@@ -1,0 +1,19 @@
+// Content Aside
+
+.PageContent {
+
+    &__Aside {
+
+        grid-area: Aside;
+        min-width: 320px;
+
+        @include Morpher(All-Desktop) {
+
+            justify-self: center;
+            margin: 0 auto;
+            max-width: 355px;
+            padding: 5px;
+
+        }
+    }
+}

@@ -1,0 +1,41 @@
+// NewsletterLightBox Form
+
+.NewsletterLightBox {
+
+    &__InputNameContainer {
+        
+        display: flex;
+        height: 52px;
+        margin: 0 auto;
+        max-height: 118px;
+        max-width: 370px;
+        position: relative;
+        top: 14%;
+        width: 100%;
+
+    }
+    
+    &__InputName {
+        
+        display: flex;
+        margin-right: 10px;
+        position: relative;
+        top: 10%;
+        
+        @include Themer(color, White);
+        @include Typer(ItemTitle);
+        
+    }
+    
+    &__InputNamePlaceHolder {
+        
+        border-radius: 11px;
+        height: 33px;
+        padding-left: 14px;
+        
+        @include Themer(color, Color-1);
+        @include Typer(SubTextTag);
+        @include Themer(border, Color-11, 'solid 2px');
+        
+    }
+}

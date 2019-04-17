@@ -1,0 +1,29 @@
+// EndCard ElementsRelatedCore
+
+.EndCard {
+
+    &__ElementsRelatedContainer {
+
+        bottom: 9px;
+        display: block;
+        flex-direction: column;
+        height: 97px;
+        max-width: 580px;
+        overflow: hidden;
+        padding: 20px 20px 0px;
+        position: absolute;
+        width: 100%;
+
+        @include Morpher(All-Desktop) {
+
+            bottom: 6%;
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            justify-content: space-evenly;
+            max-width: 700px;
+            padding: 0px 20px;
+
+        }
+    }
+}

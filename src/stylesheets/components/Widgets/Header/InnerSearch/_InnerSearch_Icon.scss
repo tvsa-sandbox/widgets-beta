@@ -1,0 +1,14 @@
+// Header InnerSearch
+
+.InnerSearch {
+
+    &__Icon {
+
+        cursor: pointer;
+
+        @include Themer(color, White);
+
+        @include Hover;
+
+    }
+}

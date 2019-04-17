@@ -1,0 +1,22 @@
+// Tv Guide Full Week Active Core
+
+.TvGuideFull {
+
+	&__Week {
+
+		&-Active {
+
+			border: 0px;
+			height: 85px;
+			width: 70%;
+	        cursor: pointer;
+
+	        @include HoverButton;
+	        @include Themer(background, Color-4);
+	        @include Themer(color, Text-Light-Headlines);
+	        @include Typer(SubTextButton);
+			@include Layout(Wrapper);
+
+		}
+	}
+}

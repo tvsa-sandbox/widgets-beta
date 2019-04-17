@@ -1,0 +1,43 @@
+// High Impact Full Slider Item Icon
+
+.HighImpact {
+
+    &__SliderItemIconContainer {
+
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include HoverButton;
+
+        @include Morpher(All-Desktop) {
+
+            height: 65px;
+
+        }
+    }
+
+    &__SliderItemIcon {
+
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 25px;
+        height: 50px;
+        transition: opacity .5s;
+        width: 50px;
+
+        @include Themer(background, Color-2);
+
+    }
+
+    .Icn_Video {
+
+        &::before {
+
+            margin-left: 5px;
+
+        }
+    }
+}

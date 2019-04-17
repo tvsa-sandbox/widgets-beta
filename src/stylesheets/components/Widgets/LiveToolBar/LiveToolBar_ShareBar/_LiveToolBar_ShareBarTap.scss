@@ -1,0 +1,12 @@
+// LiveToolBar ShareBarTap
+
+.LiveToolBar {
+
+    &__ShareBarTap {
+
+        padding: 10px;
+
+        @include Themer(background, Color-2);
+        
+    }
+}

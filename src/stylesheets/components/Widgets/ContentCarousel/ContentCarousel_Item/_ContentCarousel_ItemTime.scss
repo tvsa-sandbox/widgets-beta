@@ -1,0 +1,11 @@
+//Content Carousel Item Time
+
+.ContentCarousel {
+    
+    &__CarouselItemInfoTime {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+}

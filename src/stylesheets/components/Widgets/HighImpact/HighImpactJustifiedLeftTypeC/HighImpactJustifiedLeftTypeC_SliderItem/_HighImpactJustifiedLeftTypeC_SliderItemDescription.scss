@@ -1,0 +1,74 @@
+// HighImpactJustifiedLeftTypeC Slider Item Description
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderItemDescriptionContainer {
+
+        display: block;
+		height: auto;
+        margin: 77.25% 2% 0%;
+        padding: 0px;
+        position: absolute;
+		top: 0px;
+        z-index: 0;
+
+        @include Morpher(Laptop) {
+
+			margin: inherit;
+            padding: 10px 10px 5px;
+            position: relative;
+			top: 66%;
+            z-index: 2;
+
+        }
+
+        @include Morpher(Desktop) {
+
+			display: block;
+			height: auto;
+            margin: inherit;
+            padding: 5px 10px 5px;
+            position: relative;
+			top: 68%;
+            z-index: 2;
+
+        }
+
+		@include Morpher(Desktop-HD) {
+
+			display: block;
+			height: auto;
+            margin: inherit;
+            padding: 5px 10px 5px;
+            position: relative;
+			top: 68%;
+            z-index: 2;
+
+        }
+
+    }
+
+    &__SliderItemDescription {
+
+        align-items: center;
+		display: block;
+		line-height: 18px;
+		max-height: 50px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        text-align: justify;
+
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitleDescription);
+
+        @include Morpher(All-Desktop) {
+
+            height: auto;
+			max-height: 36px;
+			overflow: hidden;
+
+            @include Typer(ItemTitleDescriptionDesktop);
+
+        }
+    }
+}

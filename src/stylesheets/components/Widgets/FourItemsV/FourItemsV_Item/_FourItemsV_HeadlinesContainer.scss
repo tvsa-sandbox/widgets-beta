@@ -1,0 +1,50 @@
+// FourItemsV Headlines Container
+
+.FourItemsV {
+
+	&__HeadlinesContainer {
+
+		box-sizing: border-box;
+		display: flex;
+		flex-flow: wrap;
+		height: auto;
+        min-height: 222px;
+        padding: 0px;
+
+		@include Themer(background, Color-1);
+
+	}
+
+	&__Headlines {
+
+		display: flex;
+		text-decoration: none;
+		width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+		@include Hover;
+		@include Themer(background,Color-4,before) {
+
+			display: block;
+			height: 1px;
+			margin-top: 90%;
+			margin: auto;
+			position: absolute;
+            top: 0px;
+			width: 100%;
+
+		}
+
+		&:first-of-type {
+
+			&::before {
+
+				display: none;
+
+			}
+		}
+	}
+}

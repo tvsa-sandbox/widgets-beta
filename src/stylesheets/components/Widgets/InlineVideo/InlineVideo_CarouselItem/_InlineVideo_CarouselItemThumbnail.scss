@@ -1,0 +1,38 @@
+//InlineVideo Carousel Item Thumbnail
+
+.InlineVideo {
+
+    &__CarouselItemThumbnail {
+
+        position: relative;
+        width: 100%;
+
+    }
+
+        &__CarouselItemThumbnail {
+
+            &-Active {
+
+            display: block;
+            position: relative;
+
+            @include Themer(background, Color-2, before) {
+
+                align-items: center;
+                color: white;
+                content: "estas viendo";
+                display: flex;
+                height: 141px;
+                justify-content: center;
+                position: absolute;
+                text-transform: uppercase;
+                top: 0%;
+                width: 100%;
+                z-index: 1;
+
+                @include Typer(SubTextInfo);
+
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+//VideoContainer Item Image
+
+.VideoContainer {
+
+    &__ItemPlayerImageContainer {
+
+        display: block;
+        width: 100%;
+        z-index: 1;
+
+        @include Spekter(16_9);
+
+        position: absolute;
+
+    }
+}

@@ -1,0 +1,21 @@
+// LeadSlideShow Slider Track
+
+.LeadSlideShow {
+
+    &__SliderTrack {
+
+        height: 100%;
+		overflow-x: hidden;
+        overflow-y: hidden;
+		width: 100%;
+
+        &-Inner {
+
+            height: 100%;
+    		overflow-x: hidden;
+            overflow-y: hidden;
+    		width: 100%;
+
+        }
+    }
+}

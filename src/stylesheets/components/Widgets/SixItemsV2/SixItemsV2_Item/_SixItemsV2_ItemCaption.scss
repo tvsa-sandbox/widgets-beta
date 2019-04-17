@@ -1,0 +1,19 @@
+// SixItems Item Caption
+
+.SixItemsV2 {
+
+	&__ItemCaption {
+
+		min-height: 26%;
+		padding: 0px 0px 10px 5px;
+		position: relative;
+		width: 100%;
+
+		@include Themer(background, Color-1);
+
+		@include Morpher(All-Desktop) {
+
+			min-height: 100px;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+// Privacy Container
+
+@include ThemerUI(Privacy){
+
+    @include Element(Container) {
+
+        @extend %Privacy__Container;
+    }
+};
+
+// .Privacy {
+//
+//     &__Container {
+//
+// 		@extend %Privacy__Container;
+// 	}
+// }

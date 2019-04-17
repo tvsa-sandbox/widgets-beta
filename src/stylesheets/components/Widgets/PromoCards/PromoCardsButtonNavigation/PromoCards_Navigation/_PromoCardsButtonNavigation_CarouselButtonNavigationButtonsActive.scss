@@ -1,0 +1,60 @@
+// PromoCards Buttons Button Navigation
+
+.PromoCards {
+
+	&__CarouselButton-Active {
+
+        border: 0px;
+        cursor: pointer;
+		margin: 6px;
+        min-width: 130px;
+		padding: 7px;
+        text-transform: uppercase;
+
+		@include ButtonBorder;
+        @include HoverCard;
+        @include Themer(background, Color-1);
+
+        &:focus {
+
+            outline: none;
+
+        }
+
+        @include Morpher(Tablet) {
+
+            min-width: 150px;
+
+        }
+
+        @include Morpher(Laptop) {
+
+            min-width: 150px;
+
+        }
+
+		@include Morpher(All-Desktop) {
+
+			min-width: 170px;
+
+		}
+    }
+
+    &__CarouselButtonText-Active {
+
+        @include Typer(ItemTitleDescriptionDesktop);
+        @include Themer(color, Text-Light-Headlines);
+
+		@include Morpher(Tablet) {
+
+			@include Typer(SubTextButton);
+
+		}
+
+		@include Morpher(All-Desktop) {
+
+			@include Typer(SubTextButton);
+
+		}
+    }
+}

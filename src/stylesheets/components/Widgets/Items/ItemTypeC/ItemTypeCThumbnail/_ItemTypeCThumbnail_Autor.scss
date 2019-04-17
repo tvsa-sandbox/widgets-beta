@@ -1,0 +1,47 @@
+// Item Type C Autor
+
+.Items {
+
+	&__ItemTypeCAutorContainer {
+
+		bottom: 55px;
+		display: inline-block;
+		left: 132px;
+		padding: 10px 0px;
+		position: absolute;
+
+		@include Morpher(All-Desktop) {
+
+			left: 140px;
+
+		}
+
+        @include Morpher(Laptop) {
+
+			bottom: 45px;
+			left: 15px;
+			padding: 0px;
+
+	    }
+
+        @include Morpher(Tablet) {
+
+            left: 160px;
+
+	    }
+	}
+
+	&__ItemTypeCAutor {
+
+		margin-left: 8px;
+
+		@include Themer (color, White);
+		@include Typer(SubTextInfo);
+
+		@include Morpher(Laptop) {
+
+			margin-left: 0px;
+
+		}
+	}
+}

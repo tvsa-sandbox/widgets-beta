@@ -1,0 +1,52 @@
+// VideoContainer Share Bar Trigger
+
+.VideoContainer {
+
+    &__ShareBarTrigger {
+
+        align-items: center;
+        cursor: pointer;
+        display: block;
+        font-size: 10px;
+        height: 55px;
+        justify-content: center;
+        order: 2;
+        position: relative;
+        width: 55px;
+
+        @include Themer(background, Color-7);
+        @include Themer(color, Text-Dark-Body);
+
+        @include Themer(color, Text-Light-Body, after) {
+
+            content: "Comparte";
+            position: absolute;
+            text-transform: uppercase;
+            top: 57px;
+            width: auto;
+
+            @include Typer(SubTextInfo);
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: none !important;
+
+        }
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+
+    &__ShareBarTriggerText {
+
+        display: none;
+        position: relative;
+        top: 20%;
+
+	}
+}

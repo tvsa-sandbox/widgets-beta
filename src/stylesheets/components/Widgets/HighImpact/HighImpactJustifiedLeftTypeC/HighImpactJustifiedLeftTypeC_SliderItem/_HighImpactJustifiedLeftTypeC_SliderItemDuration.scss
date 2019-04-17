@@ -1,0 +1,31 @@
+// HighImpactJustifiedLeftTypeC Slider Item Duration
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderItemDurationContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 25.125%;
+        position: absolute;
+        top: 0px;
+        transform: translateY(25.125%);
+        width: 100%;
+        z-index: 2;
+
+        @include Morpher(Laptop) {
+
+            padding-top: 22.125%;
+            transform: translateY(22.125%);
+
+		}
+    }
+
+    &__SliderItemDuration {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+}

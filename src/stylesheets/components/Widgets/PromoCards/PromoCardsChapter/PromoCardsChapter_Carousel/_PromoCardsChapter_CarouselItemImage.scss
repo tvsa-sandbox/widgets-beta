@@ -1,0 +1,10 @@
+// PromoCards Chapter Carousel Item Image
+
+.PromoCards {
+
+    &__CarouselItemChapterImageContainer {
+
+        @include Spekter(3_4);
+
+    }
+}

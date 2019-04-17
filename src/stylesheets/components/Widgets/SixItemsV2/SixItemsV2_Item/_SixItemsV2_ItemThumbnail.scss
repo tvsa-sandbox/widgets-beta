@@ -1,0 +1,17 @@
+// SixItems Item Thumbnail
+
+.SixItemsV2 {
+
+	&__ItemThumbnail {
+
+		position: relative;
+		width: 100%;
+
+	}
+
+	&__ItemImageContainer {
+
+		@include Spekter(16_9);
+
+	}
+}

@@ -1,0 +1,30 @@
+// Ticker Carousel Track
+
+.Ticker {
+
+	&__CarouselTrack {
+
+		height: 100%;
+		overflow-x: hidden;
+        overflow-y: hidden;
+		width: 100%;
+
+	}
+
+	&__CarouselThumbnails {
+
+		display: flex;
+		height: 100%;
+		margin: 0px auto;
+		overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+
+	}
+
+	&__CarouselThumbnails::-webkit-scrollbar {
+
+		display: none;
+
+	}
+}

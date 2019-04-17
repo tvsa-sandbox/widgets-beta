@@ -1,0 +1,21 @@
+// Card Person Share Bar Mobile
+
+.CardPerson {
+
+    &__ShareBarMobile {
+
+        align-items: center;
+        display: block;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        order: 1;
+        width: 46px;
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+
+        }
+    }
+}

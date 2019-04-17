@@ -1,0 +1,21 @@
+// Errors Container
+
+.Errors {
+
+    &__TitleContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 1em 0px;
+        text-align: center;
+
+    }
+
+    &__Title {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(HeadlineMainDescription);
+
+    }
+}

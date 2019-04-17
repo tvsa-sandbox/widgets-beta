@@ -1,0 +1,68 @@
+// Card Person Share Bar Icons Desktop
+
+.Person {
+
+	&__ShareBarDesktop {
+
+		.Icn_Twitter {
+
+			opacity: 0.4;
+
+			@include Themer(color, Color-7);
+
+		}
+
+		.Icn_Twitter:Hover {
+
+			color:  #00aced;
+			opacity: 1;
+
+		}
+
+		.Icn_Facebook {
+
+			opacity: 0.4;
+
+			@include Themer(color, Color-7);
+
+		}
+
+		.Icn_Facebook:Hover {
+
+			color:  #3b5998;
+			opacity: 1;
+
+		}
+
+		.Icn_Instagram {
+
+			opacity: 0.4;
+
+			@include Themer(color, Color-7);
+
+		}
+
+		.Icn_Instagram:Hover {
+
+			color:  #F24664;
+			opacity: 1;
+
+		}
+
+		.Icn_Email {
+
+			opacity: 0.4;
+
+			@include Themer(color, Color-7);
+
+		}
+
+		.Icn_Email:Hover {
+
+			opacity: 1;
+
+			@include Themer(color, Color-7);
+
+		}
+	}
+}

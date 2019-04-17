@@ -1,0 +1,23 @@
+// Inline Video Core
+
+.InlineVideo {
+
+    margin: 0px auto;
+    padding: 5% 0%; // WidgetsBottomSpace
+    width: 100%;
+
+    @include Morpher(Tablet) {
+
+        margin: 0px auto;
+        width: 100%;
+
+    }
+
+    @include Morpher(All-Desktop) {
+
+        margin: 0px auto;
+        max-width: 750px;
+        width: 100%;
+
+    }
+}

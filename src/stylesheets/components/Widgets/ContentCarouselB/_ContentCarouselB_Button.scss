@@ -1,0 +1,29 @@
+// ContentCarousel Button
+
+.ContentCarouselB {
+
+    &__ButtonContainer {
+
+        border: none;
+        cursor: pointer;
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        margin: 30px auto 0px;
+        padding: 3px;
+        position: relative;
+        width: 200px;
+
+        @include ButtonBorder;
+        @include HoverCard;
+        @include Themer(background, Color-1);
+
+    }
+
+    &__Button {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextButton);
+
+    }
+}

@@ -1,0 +1,10 @@
+// FiveItems Bottom Image
+
+.FiveItems {
+
+    &__ItemBottomItemsImageContainer {
+
+        @include Spekter(4_3);
+
+    }
+}

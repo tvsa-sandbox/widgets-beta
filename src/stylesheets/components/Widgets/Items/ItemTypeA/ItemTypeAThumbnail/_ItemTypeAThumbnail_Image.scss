@@ -1,0 +1,22 @@
+// Item Type A Image
+
+.Items {
+
+    &__ItemTypeAImageContainer {
+
+        padding-top: 100%;
+        position: relative;
+        width: 100%;
+
+        @include Spekter(1_1);
+
+    }
+
+    &__ItemTypeAImage {
+
+        position: absolute;
+        top: 0px;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,23 @@
+// Item Type C Core
+
+.Items {
+
+	&__ItemTypeC {
+
+		cursor: pointer;
+		margin-bottom: 20px;
+		padding-top: 177.78%;
+		position: relative;
+		text-decoration: none;
+		width: 100%;
+
+		@include HoverCard;
+		@include Themer(background, Color-1);
+
+		@include Morpher(All-Desktop) {
+
+			margin-bottom: 0px;
+
+		}
+	}
+}

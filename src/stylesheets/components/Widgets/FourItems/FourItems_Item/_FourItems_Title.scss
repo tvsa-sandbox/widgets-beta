@@ -1,0 +1,37 @@
+// FourItems Title
+
+.FourItems {
+
+	&__ItemTitleContainer {
+
+		box-sizing: border-box;
+		height: 130px;
+		overflow: hidden;
+		padding: 8px;
+		position: absolute;
+		top: 60%;
+		width: 100%;
+		
+		@include Morpher(Tablet) {
+			
+			top: 65%;
+			
+		}
+		
+		@include Morpher(All-Desktop) {
+			
+			top: 65%;
+			
+		}
+	}
+
+	&__ItemTitle {
+
+		text-align: left;
+		
+		@include Hover;
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(HeadlineSubExtra);
+
+	}
+}

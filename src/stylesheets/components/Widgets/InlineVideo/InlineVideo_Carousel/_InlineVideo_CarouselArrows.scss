@@ -1,0 +1,89 @@
+// Inline Video Carousel Arrows
+
+.InlineVideo {
+
+    &__CarouselArrow {
+
+        &-Previous {
+
+            display: none;
+
+            @include Morpher(Tablet) {
+
+                align-items: center;
+                top: 28%;
+                cursor: pointer;
+                display: flex;
+                height: 60px;
+                justify-content: flex-start;
+                left: 0px;
+                position: absolute;
+                width: 40px;
+                z-index: 5;
+
+                @include HoverButton;
+                @include Themer(background, Color-2);
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                align-items: center;
+                top: 28%;
+                cursor: pointer;
+                display: flex;
+                height: 60px;
+                justify-content: flex-start;
+                left: 0px;
+                position: absolute;
+                width: 40px;
+                z-index: 5;
+
+                @include HoverButton;
+                @include Themer(background, Color-2);
+
+            }
+        }
+
+        &-Next {
+
+            display: none;
+
+            @include Morpher(Tablet) {
+
+                align-items: center;
+                top: 28%;
+                cursor: pointer;
+                display: flex;
+                height: 60px;
+                justify-content: flex-end;
+                position: absolute;
+                right: 0%;
+                width: 40px;
+                z-index: 5;
+
+                @include HoverButton;
+                @include Themer(background, Color-2);
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                align-items: center;
+                top: 28%;
+                cursor: pointer;
+                display: flex;
+                height: 60px;
+                justify-content: flex-end;
+                position: absolute;
+                right: 0%;
+                width: 40px;
+                z-index: 5;
+
+                @include HoverButton;
+                @include Themer(background, Color-2);
+
+            }
+        }
+    }
+}

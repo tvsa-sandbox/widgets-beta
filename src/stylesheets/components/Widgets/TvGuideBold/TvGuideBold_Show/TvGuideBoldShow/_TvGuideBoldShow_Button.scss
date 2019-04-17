@@ -1,0 +1,44 @@
+// TvGuideBold Show Button
+
+.TvGuideBold {
+
+    &__ShowButton {
+
+        align-items: center;
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        position: absolute;
+        right: 0px;
+        top: 20%;
+        width: 31%;
+
+        @include Themer(border, White, '2px solid');
+        @include Themer(background, Color-3);
+
+        @include Morpher(Tablet) {
+
+            top: 10%;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            height: 30px;
+
+        }
+    }
+
+    &__ShowButtonText {
+
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include Themer(color, Text-Dark-Headlines);
+        @include Typer(SubTextCredit);
+
+    }
+}

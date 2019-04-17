@@ -1,0 +1,56 @@
+// HighImpactCentered Core
+
+.HighImpactCentered {
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 5px;
+    grid-template-areas:
+        'Slider'
+        'LeftItems'
+        'RightItems';
+    margin: 0px auto;
+    padding-bottom: 5%; // WidgetsBottomSpace
+
+    @include Morpher(Tablet) {
+
+        grid-gap: 0px 20px;
+
+    }
+
+    @include Morpher(Laptop) {
+
+        display: grid;
+        grid-gap: 0px 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'Slider Slider'
+            'LeftItems RightItems';
+        margin: 0px auto;
+
+    }
+
+    @include Morpher(Desktop) {
+
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: minmax(239px, 301px) minmax(445px, 571px) minmax(316px, 363px);
+        grid-template-areas:
+            'LeftItems Slider RightItems';
+        margin: 0px auto;
+        max-width: 1440px;
+
+    }
+
+    @include Morpher(Desktop-HD) {
+
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: minmax(301px,348px) minmax(572px, 664px) minmax(362px,398px);
+        grid-template-areas:
+            'LeftItems Slider RightItems';
+        margin: 0px auto;
+        max-width: 1440px;
+
+    }
+}

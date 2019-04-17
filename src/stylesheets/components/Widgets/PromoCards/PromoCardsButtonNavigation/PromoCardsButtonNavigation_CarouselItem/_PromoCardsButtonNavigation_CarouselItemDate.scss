@@ -1,0 +1,30 @@
+// PromoCards Button Navigation Carousel Item Date
+
+.PromoCards {
+
+    &__CarouselItemButtonNavigationDateContainer {
+
+        bottom: 29%;
+        padding: 3% 2% 1% 5%;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        z-index: 2;
+
+    }
+
+    &__CarouselItemButtonNavigationDate {
+
+        display: block;
+        text-transform: uppercase;
+
+        @include Themer(color, Mini-Text-Light);
+        @include Typer(SubTextCredit);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(SubTextCreditDesktop);
+
+        }
+    }
+}

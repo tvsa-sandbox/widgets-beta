@@ -1,0 +1,31 @@
+// SlideShow Slider Item Counter
+
+.SlideShow {
+    
+    &__SliderItemCounter {
+        
+        display: flex;
+        margin: 2%;
+        position: absolute;
+        right: 0px;
+        top: 20%;
+        
+        @include Morpher (All-Desktop) {
+            
+            top: 10%;   
+            
+        }
+    }
+    
+    &__SliderItemCounterNumber {
+        
+        @include Themer(color, Color-7);
+        @include Typer(SubTextTag);
+        
+        @include Morpher (All-Desktop) {
+            
+            @include Typer(SubTextTagDesktop);
+            
+        }
+    }
+}

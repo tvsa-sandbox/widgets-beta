@@ -1,0 +1,34 @@
+// Privacy Description
+
+@include ThemerUI(Privacy){
+
+        @include Element(DescriptionContainer) {
+
+            @extend %Privacy__DescriptionContainer;
+        }
+
+        @include Element(Description) {
+
+            @extend %Privacy__Description;
+
+            @include Themer(color, Text-Light-Headlines);
+
+        }
+};
+
+
+// .Privacy {
+//
+//     &__DescriptionContainer {
+//
+//         @extend %Privacy__DescriptionContainer;
+//     }
+//
+//     &__Description {
+//
+//         @extend %Privacy__Description;
+//
+//         @include Themer(color, Text-Light-Headlines);
+//
+//     }
+// }
