@@ -1,0 +1,10 @@
+// Content CarouselB Item  Image
+
+.ContentCarouselB {
+
+    &__CarouselItemImageContainer {
+
+        @include Spekter(4_3);
+
+    }
+}

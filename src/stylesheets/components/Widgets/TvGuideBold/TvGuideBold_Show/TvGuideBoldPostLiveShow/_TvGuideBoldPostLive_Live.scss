@@ -1,0 +1,31 @@
+// TvGuideBold PostLiveShow Live
+
+.TvGuideBold {
+
+    &__PostLiveShow {
+
+        width: 100%;
+
+        &-Text {
+
+            display: block;
+            margin: 2px 0px;
+            position: relative;
+
+            @include Themer(color, Text-Light-Body);
+            @include Typer(SubTextInfo);
+
+            @include Morpher(Tablet) {
+
+                margin: 6px 0px;
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                margin: 6px 0px;
+
+            }
+        }
+    }
+}

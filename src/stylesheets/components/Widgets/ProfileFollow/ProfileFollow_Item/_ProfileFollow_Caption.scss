@@ -1,0 +1,30 @@
+// ProfileFollow Caption
+
+.ProfileFollow {
+
+	&__CarouselItemCaption {
+
+		display: block;
+		position: relative;
+
+	}
+
+	&__CarouselItemTitleContainer {
+
+		text-align: center;
+
+		@include Themer(color, Mini-Text-Light);
+
+	}
+
+	&__CarouselItemTitle {
+
+		@include Typer(SubTextTag);
+
+		@include Morpher(All-Desktop) {
+
+            @include Typer(SubTextTagDesktop);
+
+        }
+	}
+}

@@ -1,0 +1,28 @@
+// InlineGallery Aside Description
+
+.InlineGallery {
+
+    &__AsideDescriptionContainer {
+
+        margin-bottom: 18px;
+        width: 70%;
+
+        @include Morpher(All-Desktop) {
+
+            width: 100%;
+
+        }
+    }
+
+    &__AsideDescription {
+
+        @include Themer (color, Text-Light-Headlines);
+        @include Typer (ItemTitleDescription);
+        
+        @include Morpher(All-Desktop) {
+
+            @include Typer (ItemTitleDescriptionDesktop);    
+
+        }
+    }
+}

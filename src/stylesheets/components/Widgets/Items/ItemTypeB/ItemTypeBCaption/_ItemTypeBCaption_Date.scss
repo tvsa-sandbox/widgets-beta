@@ -1,0 +1,24 @@
+// Item Type B Date
+
+.Items {
+
+	&__ItemTypeBDateContainer {
+
+		display: inline-block;
+		padding: 12px 0px;
+
+		@include Morpher(Laptop) {
+
+			padding: 0px;
+
+		}
+	}
+
+	&__ItemTypeBDate {
+
+		margin-left: 8px;
+
+		@include Typer(SubTextInfo);
+
+	}
+}

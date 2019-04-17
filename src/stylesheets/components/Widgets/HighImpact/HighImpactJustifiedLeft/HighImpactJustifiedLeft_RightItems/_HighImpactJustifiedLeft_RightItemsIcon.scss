@@ -1,0 +1,24 @@
+// HighImpactJustifiedLeft Right Items Image
+
+.HighImpactJustifiedLeft {
+
+    &__RightItemIconContainer {
+
+        position: absolute;
+        top: 35%;
+        width: 100%;
+
+    }
+
+    &__RightItemIcon {
+
+        border-radius: 50%;
+        height: 60px;
+        margin: auto;
+        width: 60px;
+
+        @include Themer(background, Color-4);
+        @include Themer(border, Color-1, 'solid 2px');
+
+    }
+}

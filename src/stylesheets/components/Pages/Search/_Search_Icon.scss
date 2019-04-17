@@ -1,0 +1,10 @@
+// Search Container
+
+.Search {
+
+    &__Icon {
+
+        @include Themer(color, White);
+
+    }
+}

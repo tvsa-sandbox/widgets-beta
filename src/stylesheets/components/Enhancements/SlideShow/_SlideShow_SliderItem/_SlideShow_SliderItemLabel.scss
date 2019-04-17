@@ -1,0 +1,16 @@
+// SlideShow Slider Item Label
+
+.SlideShow {
+    
+    &__SliderItemLabelContainer {
+        
+        bottom: 0px;
+        display: flex;
+        height: auto;
+        position: relative;
+        width: 100%;
+        
+        @include Themer(background, Color-2);
+        
+    }
+}

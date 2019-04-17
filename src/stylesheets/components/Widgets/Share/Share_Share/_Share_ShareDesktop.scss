@@ -1,0 +1,33 @@
+// ShareBar Desktop
+
+.Share {
+    
+    &__ShareDesktopContainer {
+        
+        display: none;
+
+
+        @include Morpher(All-Desktop) {
+
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+
+    &__ShareDesktop {
+        
+        display: none;
+        
+        @include Morpher(All-Desktop) {
+            
+            align-items: center;
+            display: flex;
+            height: 40px;
+            justify-content: center;
+            width: 100%;
+            max-width: 350px;
+            
+        }
+    }
+}

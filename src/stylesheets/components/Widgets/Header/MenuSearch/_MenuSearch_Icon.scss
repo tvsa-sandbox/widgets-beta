@@ -1,0 +1,10 @@
+// Header Core
+
+.MenuSearch {
+
+    &__Icon {
+
+        @include Themer(color, White);
+
+    }
+}

@@ -1,0 +1,22 @@
+// TvGuideBold Carousel Button
+
+.TvGuideBold {
+
+    &__CarouselButton {
+
+        background: none;
+        border: 0px;
+        cursor: pointer;
+        height: 75px;
+        width: 40px;
+
+        @include Hover;
+        @include Themer(color, Color-7);
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// NewsletterLightBox Image
+
+.NewsletterLightBox {
+
+    &__ImageContainer {
+
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        top: 10%;
+        width: 100%;
+
+    }
+    
+    &__Image {
+        
+        display: flex;
+        height: auto;
+        width: auto;
+        
+    }
+}

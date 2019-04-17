@@ -1,0 +1,75 @@
+// Mixins | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+
+
+@mixin FontSmoothing {
+
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+
+}
+
+@mixin OrcaMarginReset {
+
+    &:first-child {
+
+        margin-left: 0px;
+
+    }
+}
+
+@mixin WidgetBottomSpace {
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+
+}
+
+@mixin ButtonBorder {
+
+        border-radius: 50px;
+        border: 2px solid white;
+
+}
+
+/* Global components map
+======================== */
+
+// $components : () !global;
+
+
+// /* Mixin to add component
+// ========================= */
+
+// @mixin add-component($componentName, $componentVariationName: "default", $componentVariationOptions: ()) {
+//   $components: map-merge($components, (
+//       #{$componentName}: (
+//         $componentVariationName: $componentVariationOptions
+//       )
+//   )) !global;
+// }
+
+
+// /* Mixin to extend global components map
+// ======================================== */
+
+// @mixin core-extend($componentName, $componentVariationName, $componentVariationOptions){
+//     // $components(all) > $component(ex: "inlineList") > $componentVariationName(ex: "dashboardModulesList")
+//     $components: core-extend($componentName, $componentVariationName, $componentVariationOptions);
+// }
+
+
+// /* Utils function to merge component options
+// ============================================ */
+
+// @function core-extend($componentName, $componentVariationName, $componentVariationOptions){
+//     $component: map-get($components, $componentName);
+//     $componentVariation: map-get($component, $componentVariationName);
+
+//     $newComponentVariation: map-merge($componentVariation, $componentVariationOptions);
+//     $newComponent: map-merge($component, ($componentVariationName: $newComponentVariation));
+
+//     @return map-merge($components, ($componentName: $newComponent));
+// }

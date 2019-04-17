@@ -1,0 +1,24 @@
+// HighImpactCentered Right Items Caption
+
+.HighImpactCentered {
+
+    &__RightItemCaption {
+
+        min-height: 156px;
+        padding: 10px;
+        width: 100%;
+
+        @include Morpher(All-Desktop) {
+
+            min-height: 171px;
+
+        }
+
+        @include Morpher(Desktop) {
+
+            height: 138px;
+            min-height: inherit;
+
+        }
+    }
+}

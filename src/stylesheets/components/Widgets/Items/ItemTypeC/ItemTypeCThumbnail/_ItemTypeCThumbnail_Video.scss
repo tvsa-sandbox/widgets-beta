@@ -1,0 +1,22 @@
+// Item Type C Video
+
+.Items {
+
+	&__ItemTypeCVideoContainer {
+
+		display: none;
+		position: relative;
+		width: 100%;
+
+		@include Spekter(9_16);
+
+	}
+
+	&__ItemTypeCVideo {
+
+		position: absolute;
+		top: 0px;
+		width: 100%;
+
+	}
+}

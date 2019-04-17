@@ -1,0 +1,20 @@
+// Tv Guide Full Week Container
+
+.TvGuideFull {
+
+	&__WeekContainer {
+
+		display: flex;
+		height: 85px;
+		width: 70%;
+        margin: 0px auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+		@include Morpher(Desktop) {
+
+            @include Layout(Wrapper);
+
+        }
+	}
+}

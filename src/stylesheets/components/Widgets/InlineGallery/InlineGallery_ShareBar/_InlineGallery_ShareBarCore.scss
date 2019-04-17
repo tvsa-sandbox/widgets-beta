@@ -1,0 +1,16 @@
+// Inline Gallery Share Bar Core
+
+.InlineGallery {
+
+    &__ShareBar {
+        
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        margin: 0px auto;
+        width: auto;
+        
+    }
+}

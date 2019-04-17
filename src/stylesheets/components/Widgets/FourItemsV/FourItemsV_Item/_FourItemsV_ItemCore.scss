@@ -1,0 +1,18 @@
+// FourItemsV Item Core
+
+.FourItemsV {
+
+	&__Item {
+
+		display: block;
+		margin-top: 0px;
+
+		@include Hover;
+
+		@include Morpher(All-Desktop) {
+
+			display: flex;
+
+		}
+	}
+}

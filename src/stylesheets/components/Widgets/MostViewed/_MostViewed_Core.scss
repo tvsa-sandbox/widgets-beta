@@ -1,0 +1,12 @@
+// MostViewed Core
+
+.MostViewed {
+	
+	margin: 5% auto;
+	padding: 20px 20px 30px 20px;
+	position: relative;
+
+	@include Themer(background, Color-10);
+	@include Layout(Aside);
+	
+}

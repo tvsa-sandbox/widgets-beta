@@ -1,0 +1,18 @@
+//InlineGallery Carousel Item Image
+
+.InlineGallery {
+
+    &__CarouselItemImageContainer {
+        
+        height: 143px;
+        
+        @include Spekter(4_3);
+
+    }
+    
+    &__CarouselItemImage {
+        
+        left: 0%;
+        
+    }
+}

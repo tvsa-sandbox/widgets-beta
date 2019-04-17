@@ -1,0 +1,19 @@
+// TvGuide Item Active Title
+
+.TvGuide {
+
+    &__LiveTvShow {
+
+        width: 100%;
+
+        &-Title {
+
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            @include Themer(color, Text-Light-Body);
+            @include Typer(SubTextInfo);
+
+        }
+    }
+}

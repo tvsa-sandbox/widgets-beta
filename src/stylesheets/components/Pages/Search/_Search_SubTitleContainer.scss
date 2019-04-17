@@ -1,0 +1,18 @@
+// Search Container
+
+.Search {
+
+    &__SubTitleContainer {
+
+        margin: 1em 0px;
+        text-align: center;
+
+    }
+
+    &__SubTitle {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyTextDesktop);
+
+    }
+}

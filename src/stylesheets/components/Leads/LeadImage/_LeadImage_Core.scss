@@ -1,0 +1,32 @@
+// Image Core
+
+.LeadImage {
+
+	min-width: 320px;
+	min-height: 240px;
+	position: relative;
+
+	@include WidgetBottomSpace;
+
+	@include Morpher(All-Desktop) {
+
+		margin: 0px auto;
+
+	}
+
+	&-Inner {
+
+		min-width: 320px;
+		min-height: 240px;
+		position: relative;
+
+		@include WidgetBottomSpace;
+
+		@include Morpher(All-Desktop) {
+
+			margin: 0px auto;
+
+		}
+
+	}
+}

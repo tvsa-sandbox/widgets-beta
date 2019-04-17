@@ -1,0 +1,40 @@
+// Item Type C Time
+
+.Items {
+
+	&__ItemTypeCTimeContainer {
+
+		bottom: 55px;
+		display: inline-block;
+		left: 12px;
+		padding: 10px 0px;
+		position: absolute;
+
+		@include Morpher(All-Desktop) {
+
+			left: 20px;
+
+		}
+
+        @include Morpher(Laptop) {
+
+			bottom: 60px;
+			left: 15px;
+			padding: 0px;
+
+	    }
+
+        @include Morpher(Tablet) {
+
+            left: 40px;
+
+	    }
+	}
+
+	&__ItemTypeCTime {
+
+		@include Themer (color, White);
+		@include Typer(SubTextInfo);
+
+	}
+}

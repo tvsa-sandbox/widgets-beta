@@ -1,0 +1,17 @@
+// VideoContainer Title
+
+.VideoContainer {
+
+    &__TitleContainer {
+
+        margin-bottom: 1em;
+
+    }
+
+    &__Title {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyTextDesktop);
+
+    }
+}

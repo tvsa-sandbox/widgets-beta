@@ -1,0 +1,28 @@
+// PromoCards Button Navigation Carousel Item Thumbnail
+
+.PromoCards {
+
+    &__CarouselItemButtonNavigationTitleContainer {
+
+        bottom: 0%;
+        box-sizing: border-box;
+        padding: 5%;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        z-index: 2;
+
+    }
+
+    &__CarouselItemButtonNavigationTitle {
+
+        display: block;
+        max-height: 50px;
+        overflow: hidden;
+        text-transform: uppercase;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
+
+    }
+}

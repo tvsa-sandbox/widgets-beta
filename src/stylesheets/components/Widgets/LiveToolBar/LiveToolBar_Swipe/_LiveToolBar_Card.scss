@@ -1,0 +1,33 @@
+// LiveToolBar Card
+
+.LiveToolBar {
+
+    &__CardsContainer {
+
+        align-items: center;
+        display: flex;
+        padding: 10px 5px;
+        width: 220px;
+        
+    }
+
+    &__Card {
+
+        width: 220px;
+
+        @include Themer(border-right, Color-4, "1px Solid ");
+        @include Themer(color, Text-Light-Body);
+
+        &-Time {
+
+            @include Typer(SubTextInfo);
+            
+        }
+
+        &-Show {
+
+            @include Typer(SubTextInfo);
+            
+        }
+    }
+}

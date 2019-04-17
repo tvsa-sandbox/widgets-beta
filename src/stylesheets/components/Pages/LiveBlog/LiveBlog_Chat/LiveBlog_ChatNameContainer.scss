@@ -1,0 +1,19 @@
+// LiveBlog Chat Container
+
+.LiveBlog {
+
+    &__ChatNameContainer {
+
+        display: inline-flex;
+        margin-right: 1em;
+        
+    }
+
+    &__ChatName {
+
+        text-transform: uppercase;
+
+        @include Typer(SubTextCredit);
+
+    }
+}

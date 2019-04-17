@@ -1,0 +1,10 @@
+// HighImpactJustifiedLeft Right Items Image
+
+.HighImpactJustifiedLeft {
+
+    &__RightItemImageContainer {
+
+        @include Spekter(16_9);
+
+    }
+}

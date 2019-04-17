@@ -1,0 +1,36 @@
+// LiveBlog Share Bar Core
+
+.LiveBlog {
+
+    &__ShareBar {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        width: auto;
+
+    }
+
+    &__ShareContainer {
+
+        @include Morpher(Smartphone) {
+
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            width: auto;
+
+        }
+
+        @include Morpher(Tablet) {
+
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            width: auto;
+
+        }
+    }
+}

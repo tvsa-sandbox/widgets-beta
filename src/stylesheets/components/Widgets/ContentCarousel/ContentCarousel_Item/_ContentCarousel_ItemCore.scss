@@ -1,0 +1,16 @@
+//Content Carousel Item Core
+
+.ContentCarousel {
+
+    &__CarouselItem {
+
+        display: block;
+        margin-right: 12px;
+        min-width: 288px;
+        text-decoration: none;
+        width: 288px;
+        
+        @include HoverCard;
+        
+    }
+}

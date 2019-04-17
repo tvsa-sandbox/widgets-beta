@@ -1,0 +1,50 @@
+// FiveItems Top Icon
+
+.FiveItems {
+
+    &__ItemTopItemsIconContainer {
+        
+        display: flex !important;
+        justify-content: center;
+        position: absolute;
+        top: 20%;
+        width: 100%;
+        
+        @include Morpher(Tablet) {
+            
+            top: 25%;
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            top: 35%;
+            
+        }
+    }
+
+    &__ItemTopItemsIcon {
+
+        border-radius: 50%;
+        height: 50px;
+        margin: 0px auto;
+        width: 50px;
+
+        @include Themer(background, Color-4);
+        @include Themer(border, Color-1, 'solid 2px');
+        
+        @include Morpher(Tablet) {
+
+            height: 60px;
+            width: 60px;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            height: 60px;
+            width: 60px;
+
+        }
+    }
+}

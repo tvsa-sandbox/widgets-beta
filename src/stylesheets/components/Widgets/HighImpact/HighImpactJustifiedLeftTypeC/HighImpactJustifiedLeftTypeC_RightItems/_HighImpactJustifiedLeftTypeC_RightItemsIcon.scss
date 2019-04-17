@@ -1,0 +1,30 @@
+// HighImpactJustifiedLeftTypeC Right Items Image
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__RightItemIconContainer {
+
+        display: flex;
+        height: auto;
+        justify-content: center;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: auto;
+        z-index: 2;
+
+    }
+
+    &__RightItemIcon {
+
+        border-radius: 50%;
+        cursor: pointer;
+        height: auto;
+        width: auto;
+
+        @include Themer(background, Color-4);
+        @include Themer(border, Color-1, 'solid 2px');
+
+    }
+}

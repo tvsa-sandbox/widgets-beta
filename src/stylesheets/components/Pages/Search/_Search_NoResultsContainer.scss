@@ -1,0 +1,19 @@
+// Search Container
+
+.Search {
+
+    &__NoResultsContainer {
+
+        margin: 0px auto;
+        max-width: 500px;
+        text-align: center;
+
+    }
+
+    &__NoResults {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyTextSubtitleDesktop);
+
+    }
+}

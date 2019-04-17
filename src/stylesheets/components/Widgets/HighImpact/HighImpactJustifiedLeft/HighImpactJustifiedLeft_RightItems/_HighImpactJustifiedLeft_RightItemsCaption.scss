@@ -1,0 +1,14 @@
+// HighImpactJustifiedLeft Right Items Caption
+
+.HighImpactJustifiedLeft {
+
+    &__RightItemCaption {
+
+        display: block;
+        padding: 10px;
+        width: 100%;
+
+        @include Themer(background, Color-1);
+
+    }
+}

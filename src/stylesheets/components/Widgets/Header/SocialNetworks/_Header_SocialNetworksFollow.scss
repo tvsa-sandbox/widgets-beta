@@ -1,0 +1,28 @@
+// Header SocialNetworks
+
+.Header {
+
+    &__FollowUsContainer {
+
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+
+        }
+    }
+
+    &__FollowUs {
+
+        letter-spacing: 3.36px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include Typer(HeaderLink);
+        @include Themer(color, White);
+
+    }
+}

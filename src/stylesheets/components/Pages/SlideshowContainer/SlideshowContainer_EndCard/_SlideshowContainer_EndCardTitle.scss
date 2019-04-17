@@ -1,0 +1,16 @@
+// SlideshowContainer End Card
+
+.SlideshowContainer {
+
+    &__EndCardTitleContainer {
+
+        margin: 10px 0px;
+
+    }
+
+    &__EndCardTitle {
+
+        @include Themer(color, White);
+
+    }
+}

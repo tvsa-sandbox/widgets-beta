@@ -1,0 +1,25 @@
+// HighImpactCentered Slider Item Description
+
+.HighImpactCentered {
+
+    &__SliderItemDescriptionContainer {
+
+        padding: 6px;
+
+    }
+
+    &__SliderItemDescription {
+
+        line-height: 18px;
+        text-align: justify;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(ItemTitleDescriptionDesktop);
+            
+        }
+    }
+}

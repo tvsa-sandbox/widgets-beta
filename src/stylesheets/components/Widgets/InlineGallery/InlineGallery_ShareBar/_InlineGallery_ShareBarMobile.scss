@@ -1,0 +1,26 @@
+// Inline Gallery Share Bar Mobile
+
+.InlineGallery {
+    
+    &__ShareBarMobile {
+        
+        bottom: 84%;
+        position: absolute;
+        right: 4%;
+        z-index: 3;
+
+        @include Morpher(Tablet) {
+            
+            bottom: 75%;
+            position: absolute;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+            position: absolute;
+
+        }
+    }
+}

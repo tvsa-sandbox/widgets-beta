@@ -1,0 +1,45 @@
+// Image Picture
+
+.LeadImage {
+
+	&__PictureContainer {
+
+		position: relative;
+		width: 100%;
+
+		@include Spekter(4_3);
+
+		@include Morpher(All-Desktop) {
+
+			@include Spekter(40_17);
+
+		}
+
+		&-Inner {
+
+			position: relative;
+			width: 100%;
+
+			@include Spekter(4_3);
+
+			@include Morpher(All-Desktop) {
+
+				@include Spekter(4_3);
+
+			}
+		}
+	}
+
+	&__Picture {
+
+		height: 100%;
+		width: 100%;
+
+		&-Inner {
+
+			height: 100%;
+			width: 100%;
+
+		}
+	}
+}

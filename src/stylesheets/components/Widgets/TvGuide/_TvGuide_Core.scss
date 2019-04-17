@@ -1,0 +1,11 @@
+// TvGuide Core
+
+.TvGuide {
+
+    margin: 0px auto;
+    width: 100%;
+
+    @include Themer(background, Color-4);
+    @include WidgetBottomSpace;
+
+}

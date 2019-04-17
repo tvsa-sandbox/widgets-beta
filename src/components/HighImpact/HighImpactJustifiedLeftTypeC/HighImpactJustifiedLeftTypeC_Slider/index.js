@@ -1,0 +1,3 @@
+import HighImpactJustifiedLeftTypeC_Slider from "./HighImpactJustifiedLeftTypeC_Slider";
+
+export default HighImpactJustifiedLeftTypeC_Slider;

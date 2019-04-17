@@ -1,0 +1,15 @@
+// Header Core
+
+.MenuSearch {
+
+    &__Close {
+
+        cursor: pointer;
+        padding: 60px 0px;
+
+        @include Hover;
+
+        @include Themer(color, White);
+
+    }
+}

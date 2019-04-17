@@ -1,0 +1,37 @@
+// MostViewed Title
+
+.MostViewed {
+
+    &__TitleContainer {
+
+        bottom: 8%;
+        position: relative;
+        text-align: center;
+        top: 3px;
+
+        @include Themer(background,Color-2,after){
+
+            height: 2px;
+            left: 0px;
+            margin: 12px auto;
+            position: absolute;
+            right: 0px;
+            width: 90%;
+
+        }
+    }
+
+    &__Title {
+
+        margin-top: 23px;
+
+        @include Themer(color, Text-Dark-Headlines);
+        @include Typer(HeadlineSub);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(HeadlineSubDesktop);
+            
+        }
+    }
+}

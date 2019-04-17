@@ -1,0 +1,12 @@
+//  SlideShow Core
+
+.SlideShow {
+    
+    display: block;
+    margin: 0px auto;
+    max-width: 768px;
+    width: 100%;
+    
+    @include WidgetBottomSpace;
+    
+}

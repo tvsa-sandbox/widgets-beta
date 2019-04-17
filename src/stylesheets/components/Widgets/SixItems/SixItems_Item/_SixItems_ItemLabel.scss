@@ -1,0 +1,23 @@
+// SixItems Item Label
+
+.SixItems {
+
+	&__ItemLabelContainer {
+
+		left: 0px;
+		padding: 5px;
+		position: absolute;
+		top: 0px;
+		width: 200px;
+
+		@include Themer(background, Color-2);
+
+	}
+
+	&__ItemLabel {
+
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(SubTextTag);
+
+	}
+}

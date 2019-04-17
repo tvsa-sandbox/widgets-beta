@@ -1,0 +1,77 @@
+// HighImpact Justified Left TypeC Slider Arrows
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderArrow {
+
+        &-Previous {
+
+            -webkit-tap-highlight-color: transparent;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 60px;
+            justify-content: flex-start;
+            left: 0px;
+            padding-top: 35.125%;
+            position: absolute;
+            top: 0%;
+            transform: translateY(-35.125%);
+            user-select: none;
+            width: 40px;
+            z-index: 5;
+
+            @include HoverButton;
+
+            @include Morpher(All-Desktop) {
+
+                padding-top: 28.125%;
+                transform: inherit;
+
+            }
+
+            @include Morpher(Laptop) {
+
+                padding-top: 35.125%;
+                transform: translateY(-35.125%);
+
+            }
+
+        }
+
+        &-Next {
+
+            -webkit-tap-highlight-color: transparent;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 60px;
+            justify-content: flex-end;
+            padding-top: 35.125%;
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            transform: translateY(-35.125%);
+            user-select: none;
+            width: 40px;
+            z-index: 5;
+
+            @include HoverButton;
+
+            @include Morpher(All-Desktop) {
+
+                padding-top: 28.125%;
+                transform: inherit;
+
+            }
+
+            @include Morpher(Laptop) {
+
+                padding-top: 35.125%;
+                transform: translateY(-35.125%);
+
+            }
+
+        }
+    }
+}

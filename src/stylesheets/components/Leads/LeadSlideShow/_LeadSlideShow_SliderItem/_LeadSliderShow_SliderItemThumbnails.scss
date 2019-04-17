@@ -1,0 +1,17 @@
+// LeadSlideShow Slider Item Thumbnails
+
+.LeadSlideShow {
+
+    &__SliderItemThumbnail {
+
+        overflow: hidden;
+		position: relative;
+
+        &-Inner {
+
+            overflow: hidden;
+    		position: relative;
+
+        }
+    }
+}

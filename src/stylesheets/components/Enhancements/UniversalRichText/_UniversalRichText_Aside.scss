@@ -1,0 +1,20 @@
+// UniversalRichText Aside and Full
+
+.RichText {
+
+    &-Aside {
+
+        width: 100%;
+        margin: auto;
+
+        @include Layout(Aside);
+        @include WidgetBottomSpace;
+
+    }
+
+    &-Full {
+
+        width: 100%;
+
+    }
+}

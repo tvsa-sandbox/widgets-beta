@@ -1,0 +1,407 @@
+// Header Core
+
+.Header {
+
+    &__LinksContainer {
+
+        order: 2;
+        padding-bottom: 0px;
+        padding: 1em;
+        width: 100%;
+
+        @include Morpher(All-Desktop) {
+
+            display: flex;
+            justify-content: center;
+            padding: 0px 10px;
+            width: auto;
+
+        }
+    }
+
+    &__Links {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 0px;
+        position: relative;
+
+        @include Typer(HeaderLink);
+
+        @include Morpher(All-Desktop) {
+
+            margin: 0px 10px;
+            padding-bottom: 10px;
+
+        }
+
+        &:first-child {
+
+            &:before {
+
+                color: white;
+                content: "tv-online";
+                height: 60px;
+                letter-spacing: 3.36px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+
+                @include Morpher(All-Desktop) {
+
+                    display: none;
+
+                }
+            }
+
+            &:after {
+
+                background: red;
+                content: "";
+                display: block;
+                height: 2px;
+                position: absolute;
+                top: 30px;
+                transform: translatex(50%);
+                width: 50%;
+
+                @include Morpher(All-Desktop) {
+
+                    bottom: 0px;
+                    top: inherit;
+                    transform: none;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            &:before {
+                color: white;
+                content: "espectáculos";
+                height: 60px;
+                letter-spacing: 3.36px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+
+                @include Morpher(All-Desktop) {
+
+                    display: none;
+
+                }
+            }
+
+            &:after {
+
+                background: blue;
+                content: "";
+                display: block;
+                height: 2px;
+                position: absolute;
+                top: 30px;
+                transform: translatex(50%);
+                width: 50%;
+
+                @include Morpher(All-Desktop) {
+
+                    bottom: 0px;
+                    top: inherit;
+                    transform: none;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        &:last-child {
+
+            &:before {
+
+                color: white;
+                content: "estilo de vida";
+                height: 60px;
+                letter-spacing: 3.36px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+
+                @include Morpher(All-Desktop) {
+
+                    display: none;
+
+                }
+            }
+
+            &:after {
+
+                content: "";
+                display: block;
+                background: green;
+                position: absolute;
+                width: 50%;
+                height: 2px;
+                top: 30px;
+                transform: translatex(50%);
+
+                @include Morpher(All-Desktop) {
+
+                    bottom: 0px;
+                    top: inherit;
+                    transform: none;
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+
+    &__SubLinks {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 0px;
+        position: relative;
+
+        @include Typer(HeaderLink);
+
+        @include Morpher(All-Desktop) {
+
+            margin: 0px 10px;
+            padding-bottom: 10px;
+
+        }
+
+        &:first-child {
+
+            &:before {
+
+                color: white;
+                content: "tv-online";
+                height: 60px;
+                letter-spacing: 3.36px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+
+                @include Morpher(All-Desktop) {
+
+                    display: none;
+
+                }
+            }
+
+            &:after {
+
+                background: red;
+                content: "";
+                display: block;
+                height: 2px;
+                position: absolute;
+                top: 30px;
+                transform: translatex(50%);
+                width: 50%;
+
+                @include Morpher(All-Desktop) {
+
+                    bottom: 0px;
+                    top: inherit;
+                    transform: none;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            &:before {
+                color: white;
+                content: "espectáculos";
+                height: 60px;
+                letter-spacing: 3.36px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+
+                @include Morpher(All-Desktop) {
+
+                    display: none;
+
+                }
+            }
+
+            &:after {
+
+                background: blue;
+                content: "";
+                display: block;
+                height: 2px;
+                position: absolute;
+                top: 30px;
+                transform: translatex(50%);
+                width: 50%;
+
+                @include Morpher(All-Desktop) {
+
+                    bottom: 0px;
+                    top: inherit;
+                    transform: none;
+                    width: 100%;
+
+                }
+            }
+        }
+
+        &:last-child {
+
+            &:before {
+
+                color: white;
+                content: "estilo de vida";
+                height: 60px;
+                letter-spacing: 3.36px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 100%;
+
+                @include Morpher(All-Desktop) {
+
+                    display: none;
+
+                }
+            }
+
+            &:after {
+
+                content: "";
+                display: block;
+                background: green;
+                position: absolute;
+                width: 50%;
+                height: 2px;
+                top: 30px;
+                transform: translatex(50%);
+
+                @include Morpher(All-Desktop) {
+
+                    bottom: 0px;
+                    top: inherit;
+                    transform: none;
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+
+    &__Link {
+
+        width: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px;
+
+        @include Hover;
+        @include Typer(HeaderLink);
+
+        @include Themer(border-bottom, Color-13 ,"1px solid");
+        @include Themer(color, Text-Light-Body);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(FooterTextContact);
+
+            @include Themer(border-bottom, Color-13 ,"0px solid");
+            width: auto;
+            padding: 0 5px;
+
+        }
+
+        &-Live {
+
+            padding: 10px;
+            padding-left: 10px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: 100%;
+
+            @include Hover;
+            @include Typer(HeaderLink);
+
+            @include Themer(border-bottom, Color-13 ,"1px solid");
+            @include Themer(color, Text-Light-Body);
+
+            @include Themer(background, Color-7, before) {
+
+                animation: pulsar 2s .5s ease-in-out infinite;
+                animation-play-state: running;
+                border-radius: 50%;
+                height: 7px;
+                left: 0px;
+                position: absolute;
+                top: 30%;
+                width: 7px;
+            }
+
+            @include Morpher(All-Desktop) {
+
+                @include Typer(FooterTextContact);
+
+                @include Themer(border-bottom, Color-13 ,"0px solid");
+                width: auto;
+                padding: 0 5px;
+                padding-left: 10px;
+
+            }
+        }
+    }
+
+    &__SubLink {
+
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+
+        @include Hover;
+        @include Typer(HeaderLink);
+
+        @include Themer(border-bottom, Color-13 ,"1px solid");
+        @include Themer(color, Text-Light-Body);
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+
+        }
+    }
+
+    &__MainLink {
+
+        display: none;
+        padding: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 100%;
+
+        @include Hover;
+        @include Typer(HeaderLink);
+
+        @include Themer(border-bottom, Color-13 ,"1px solid");
+        @include Themer(color, Text-Light-Body);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(FooterTextContact);
+            display: block;
+
+            @include Themer(border-bottom, Color-13 ,"0px solid");
+            width: auto;
+            padding: 0 5px;
+
+        }
+    }
+}

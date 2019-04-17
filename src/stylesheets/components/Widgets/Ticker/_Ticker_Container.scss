@@ -1,0 +1,27 @@
+// Ticker Container
+
+.Ticker {
+
+	&__Container {
+
+		align-items: center;
+		display: flex;
+        flex-direction: column;
+		height: auto;
+		width: 100%;
+
+		@include Layout(Full);
+
+		@include Morpher(All-Desktop) {
+
+			align-items: center;
+			display: flex;
+            flex-direction: row;
+			height: 60px;
+			justify-content: flex-start;
+			margin: auto;
+            max-width: 1440px;
+
+		}
+	}
+}

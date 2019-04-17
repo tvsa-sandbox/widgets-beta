@@ -1,0 +1,56 @@
+// TvGuideBold Show Core
+
+.TvGuideBold {
+
+    &__ShowContainer {
+
+        display: block;
+        height: 100%;
+        min-width: 300px;
+        padding: 10px;
+        text-decoration: none;
+        width: 100%;
+
+        @include Hover;
+
+        @include Morpher(Tablet) {
+
+            min-width: 352px;
+            padding: 7px 2px 0px 5px;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            min-width: 375px;
+            padding: 7px 15px 0px 5px;
+
+        }
+
+
+        &-Link {
+
+            display: block;
+            height: 100%;
+            min-width: 210px;
+            padding: 10px;
+            text-decoration: none;
+            width: 100%;
+
+            @include Hover;
+            @include Themer(background, Color-9);
+
+            @include Morpher(Tablet) {
+
+                margin-left: 1px;
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                margin-left: 1px;
+
+            }
+        }
+    }
+}

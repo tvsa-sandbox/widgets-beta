@@ -1,0 +1,16 @@
+// HighImpactCentered Left Items Image
+
+.HighImpactCentered {
+
+    &__LeftItemImageContainer {
+
+        @include Spekter(16_9);
+
+        &::before {
+
+			font-size: 120px !important; // Placeholder Icon | Unique Case for HighImpactCentered
+
+		}
+
+    }
+}

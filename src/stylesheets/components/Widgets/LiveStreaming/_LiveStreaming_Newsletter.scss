@@ -1,0 +1,28 @@
+// LiveStreaming Share
+
+.LiveStreaming {
+    
+    &__Newsletter {
+        
+        display: flex;
+        height: 140px;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-left: 4px;
+        max-width: 370px;
+        width: 74%;
+        
+        @include Morpher(Tablet) {
+            
+            width: 67%;
+            
+        }  
+        
+        @include Morpher(All-Desktop) {
+            
+            margin-left: 0px;
+            width: 100%;
+            
+        }    
+    }
+}

@@ -1,0 +1,33 @@
+// PromoCards Section Title
+
+.PromoCards {
+
+    &__CarouselItemSectionTitleContainer {
+
+        display: block;
+        position: absolute;
+        top: 45%;
+        width: 100%;
+        z-index: 2;
+
+    }
+
+    &__CarouselItemSectionTitle {
+
+        margin: 0px auto;
+        padding: 8px;
+        text-align: center;
+        text-transform: inherit;
+        width: 90%;
+
+        @include Themer(background, Color-2);
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitle);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(SubTextTagDesktop);
+
+        }
+    }
+}

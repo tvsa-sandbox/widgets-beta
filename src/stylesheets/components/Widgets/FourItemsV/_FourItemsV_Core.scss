@@ -1,0 +1,19 @@
+// FourItemsV Core
+
+.FourItemsV {
+
+	@include WidgetBottomSpace;
+
+	@include Morpher(Desktop-HD) {
+
+		@include Layout(Wrapper);
+
+	}
+
+	@include Morpher(Tablet) {
+
+		max-width: 500px;
+		margin: 0px auto;
+
+	}
+}

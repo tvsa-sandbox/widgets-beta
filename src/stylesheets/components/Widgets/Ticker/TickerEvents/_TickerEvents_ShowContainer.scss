@@ -1,0 +1,36 @@
+// Ticker Show Container
+
+.Ticker {
+
+	&__ShowContainer {
+
+		align-items: flex-start;
+		display: flex;
+        flex-direction: column;
+		height: auto;
+		justify-content: center;
+        padding: 0px 20px;
+		position: relative;
+		text-decoration: none;
+		width: 290px;
+
+		@include Themer(background, Color-1, before) {
+
+			height: 65%;
+			position: absolute;
+			top: 50%;
+            right: 0%;
+            transform: translateY(-50%);
+            width: 1px;
+
+		}
+
+        @include Morpher(All-Desktop) {
+
+			display: flex;
+            flex-direction: column;
+            height: 100%;
+
+		}
+	}
+}

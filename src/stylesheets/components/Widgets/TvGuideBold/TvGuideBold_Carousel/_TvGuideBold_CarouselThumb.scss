@@ -1,0 +1,57 @@
+// TvGuideBold Carousel Thumb
+
+.TvGuideBold {
+
+    &__CarouselThumbnails {
+
+            display: flex;
+            height: 106px;
+            margin: 0px auto;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            width: 100%;
+
+    }
+
+    &__ThumbContainer {
+
+            display: block;
+            margin-right: 5px;
+            height: 85px;
+            width: 100%;
+
+            &:nth-child(odd) {
+
+                @include Themer(background, Color-1);
+
+            }
+
+            &:nth-child(even) {
+
+                @include Themer(background, Color-4);
+
+            }
+
+        @include Morpher(Tablet) {
+
+            align-items: center;
+            display: flex;
+            height: 90px;
+            justify-content: center;
+            margin-top: 0px;
+            width: 100%;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            align-items: center;
+            display: flex;
+            height: 90px;
+            justify-content: center;
+            margin-top: 0px;
+            width: 100%;
+
+        }
+    }
+}

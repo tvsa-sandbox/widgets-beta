@@ -1,0 +1,45 @@
+// Video Item Player Info Container
+
+.Video {
+
+    &__ItemPlayerInfoContainer {
+
+		bottom: 39%;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		width: 100%;
+        align-items: center;
+
+		@include Morpher(Tablet) {
+            
+			bottom: 39%;
+
+		}
+        
+        @include Morpher(Laptop) {
+
+			bottom: 40%;
+
+		}
+
+		@include Morpher(Desktop) {
+
+			bottom: 44%;
+
+		}
+        
+        @include Morpher(Desktop-HD) {
+
+			bottom: 47%;
+
+		}
+	}
+
+	&__ItemPlayerInfoContainer {
+
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(SubTextInfo);
+
+	}
+}

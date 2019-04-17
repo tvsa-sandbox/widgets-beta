@@ -1,0 +1,61 @@
+// HighImpact Full Slider Arrows
+
+.HighImpact {
+
+    &__SliderArrow {
+
+        &-Previous {
+
+            -webkit-tap-highlight-color: transparent;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 60px;
+            justify-content: flex-start;
+            left: 0%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            user-select: none;
+            width: 40px;
+            z-index: 10;
+
+            @include Morpher(All-Desktop) {
+
+                left: 9%;
+
+            }
+
+            @include HoverButton;
+            @include Themer(background, Color-2);
+
+        }
+
+        &-Next {
+
+            -webkit-tap-highlight-color: transparent;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 60px;
+            justify-content: flex-end;
+            position: absolute;
+            right: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+            user-select: none;
+            width: 40px;
+            z-index: 10;
+
+            @include Morpher(All-Desktop) {
+
+                right: 9%;
+
+            }
+
+            @include HoverButton;
+            @include Themer(background, Color-2);
+
+        }
+    }
+}

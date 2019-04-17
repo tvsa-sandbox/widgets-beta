@@ -1,0 +1,32 @@
+// High Impact Full Slider Item Core
+
+.HighImpact {
+
+    &__SliderItem {
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+    &__SliderItemAirTimeContainer,
+    &__SliderItemDescriptionContainer,
+    &__SliderItemDurationContainer,
+    &__SliderItemIconContainer,
+    &__SliderItemInfoContainer,
+    &__SliderItemLogoContainer,
+    &__SliderItemSourceContainer,
+    &__SliderItemTitleContainer, {
+
+        left: 0px;
+        margin: auto;
+        position: absolute;
+        right: 0px;
+
+        @include Morpher(All-Desktop) {
+
+            @include Layout(Wrapper);
+
+        }
+    }
+}

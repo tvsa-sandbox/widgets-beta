@@ -1,0 +1,24 @@
+// HighImpact Justified Left TypeC Slider Button
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderButton {
+
+        background: none;
+        border: 0px;
+        cursor: pointer;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        width: auto;
+
+        @include Themer(background, Color-2);
+        @include Themer(color, Color-7);
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+}

@@ -1,0 +1,52 @@
+// Image Info Container
+
+.Image {
+
+	&__InfoContainer {
+
+		bottom: 0px;
+		left: 19px;
+		max-height: 85px;
+		position: absolute;
+
+		@include Themer (background, Color-2);
+
+		@include Themer(background, Color-1, after) {
+
+			bottom: 0px;
+			height: 100%;
+			position: absolute;
+			right: 100%;
+			width: 20px;
+
+		}
+
+		@include Morpher(Tablet) {
+
+			max-width: 60%;
+		}
+
+		@include Morpher(All-Desktop) {
+
+			max-width: 50%;
+			
+		}
+	}
+
+	&__DescriptionContainer {
+
+		left: 20px;
+		padding: 7px 5px 0px 10px;
+		width: 100%;
+
+	}
+
+	&__Description {
+
+		text-align: left;
+
+		@include Typer(SubTextTag);
+		@include Themer(color, Text-Light-Headlines);
+
+	}
+}

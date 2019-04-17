@@ -1,0 +1,47 @@
+// HighImpactJustifiedLeftTypeC Slider Item Info
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__SliderItemInfoContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 30% 0% 0% 0%;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 2;
+
+        @include Morpher(Tablet) {
+
+
+
+        }
+
+        @include Morpher(Laptop) {
+
+
+
+        }
+
+        @include Morpher(Desktop) {
+
+
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+
+
+        }
+    }
+
+    &__SliderItemInfo {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+}

@@ -1,0 +1,19 @@
+// Inline Video Carousel Core
+
+.InlineVideo {
+
+    &__CarouselContainer {
+
+        width: 100%;
+
+    }
+
+    &__Carousel {
+
+        height: 245px;
+        margin: 0px auto;
+        max-width: 1130px;
+        position: relative;
+
+    }
+}

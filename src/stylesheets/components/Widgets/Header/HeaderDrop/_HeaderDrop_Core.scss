@@ -1,0 +1,10 @@
+// HeaderDrop Core
+
+.HeaderDrop {
+
+    display: flex;
+    height: 40px;
+
+    @include Themer(background, Black);
+
+}

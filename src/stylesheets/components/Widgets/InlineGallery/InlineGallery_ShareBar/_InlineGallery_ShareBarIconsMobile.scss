@@ -1,0 +1,45 @@
+// Inline Gallery Share Bar Icons Mobile
+
+.InlineGallery {
+    
+    &__ShareBarMobile {
+        
+        .Icn_Twitter,
+        .Icn_Facebook,
+        .Icn_Email,
+        .Icn_WhatsApp {
+            
+            @include Hover;
+            @include Themer(color, Color-7);
+            
+        }
+        
+        .Icn_Twitter {
+            
+            background: #00aced;
+            width: 55px;
+            
+        }
+        
+        .Icn_Facebook {
+            
+            background: #3b5998;
+            width: 55px;
+            
+        }
+        
+        .Icn_Email {
+            
+            @include Themer(background, Color-1);
+            width: 55px;
+            
+        }
+        
+        .Icn_WhatsApp {
+            
+            @include Themer(background, Black);
+            width: 55px;
+            
+        }
+    }
+}

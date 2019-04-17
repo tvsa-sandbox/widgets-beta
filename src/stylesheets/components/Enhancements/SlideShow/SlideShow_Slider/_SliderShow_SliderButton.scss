@@ -1,0 +1,22 @@
+// SliderShow Slider Button
+
+.SlideShow {
+
+    &__SliderButton {
+
+        background: none;
+        border: 0px;
+        cursor: pointer;
+        height: 60px;
+        width: 40px;
+
+        @include Themer(background, Color-2);
+        @include Themer(color, Color-7);
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+}

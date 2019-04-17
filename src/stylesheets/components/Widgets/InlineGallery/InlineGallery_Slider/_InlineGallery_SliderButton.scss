@@ -1,0 +1,20 @@
+// InlineGallery Slider Button
+
+.InlineGallery {
+
+    &__SliderButton {
+
+        background: transparent;
+        border: 0px;
+        cursor: pointer;
+        
+        @include HoverButton;
+        @include Themer(color, Color-7);
+        
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+}

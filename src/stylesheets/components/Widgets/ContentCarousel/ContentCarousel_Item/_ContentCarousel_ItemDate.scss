@@ -1,0 +1,11 @@
+//Content Carousel Item Date
+
+.ContentCarousel {
+
+    &__CarouselItemInfoDate {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+}

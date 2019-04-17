@@ -1,0 +1,23 @@
+// Header Core
+
+.MenuSearch {
+
+    &__BoxContainer {
+
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin: 3em 0px;
+        min-width: 500px;
+
+        @include Themer(border-bottom, White, "2px solid");
+
+    }
+
+    &__Box {
+
+        flex-grow: 1;
+
+    }
+}

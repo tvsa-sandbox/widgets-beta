@@ -1,0 +1,16 @@
+// Menu DynamicLogo
+
+.Menu {
+
+    &__DynamicLogo {
+
+        height: 34px;
+        margin: 4px 15px 0px 0px;
+        text-decoration: none;
+        width: 34px;
+
+        @include Themer(color, White);
+        @include Hover;
+
+    }
+}

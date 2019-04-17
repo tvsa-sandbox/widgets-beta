@@ -1,0 +1,19 @@
+// InlineGallery Silder Thumb
+
+.InlineGallery {
+    
+    &__SliderThumbnails {
+
+        align-items: center;
+        display: flex;
+        margin: 0px auto;
+        overflow: scroll;
+    
+    }
+    
+    &__SliderThumbContainer {
+
+        min-width: 100%;
+    
+    }
+}

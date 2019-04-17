@@ -1,0 +1,22 @@
+// HighImpactCentered Left Items Core
+
+.HighImpactCentered {
+
+    &__LeftItems {
+
+        grid-area: LeftItems;
+        text-decoration: none;
+
+    }
+
+    &__LeftItem {
+
+        display: block;
+        margin-top: 5px;
+        text-decoration: none;
+        width: 100%;
+        
+        @include HoverCard;
+
+    }
+}

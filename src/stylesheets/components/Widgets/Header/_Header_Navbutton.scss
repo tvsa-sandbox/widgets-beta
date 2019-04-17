@@ -1,0 +1,34 @@
+// Header Core
+
+.Header {
+
+    &__CloseNav {
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+
+        }
+    }
+
+    &__CloseNavButton {
+
+        @include Themer (color, White);
+
+    }
+
+    &__OpenNav {
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+
+        }
+    }
+    
+    &__OpenNavButton {
+
+        @include Themer (color, White);
+
+    }
+}

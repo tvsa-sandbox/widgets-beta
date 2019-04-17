@@ -1,0 +1,19 @@
+// NewsletterBox Core
+
+.NewsletterBox {
+
+    display: flex;
+    height: 148px;
+    justify-content: center;
+    margin: 0px auto;
+    max-width: 370px;
+    width: 100%;
+
+    @include Themer(background, Color-1);
+    
+    @include Morpher(All-Desktop) {
+        
+        height: 140px;
+    
+    }
+}

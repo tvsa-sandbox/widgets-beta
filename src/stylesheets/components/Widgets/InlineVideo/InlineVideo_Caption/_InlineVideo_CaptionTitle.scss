@@ -1,0 +1,14 @@
+// Inline Video Caption Title 
+
+.InlineVideo {
+
+    &__Title {
+
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+
+        @include Typer(ItemTitle);
+
+    }
+}

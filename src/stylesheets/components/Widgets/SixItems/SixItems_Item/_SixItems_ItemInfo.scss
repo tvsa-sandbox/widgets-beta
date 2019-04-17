@@ -1,0 +1,69 @@
+// SixItems Item Info  
+
+.SixItems {
+
+	&__ItemInfoContainer {
+
+		padding: 5px;
+
+		@include Themer(color, Color-1);
+
+	}
+
+	&__ItemInfoType {
+
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(SubTextInfo);
+
+		&-Modifier {
+			
+			margin-right: 8px;
+
+			@include Themer(color, Text-Light-Headlines);
+			@include Typer(SubTextInfo);
+			
+			@include Themer(background, Color-2, after) {
+
+				background: none;
+				content: "-";
+				margin-left: 2px;
+				position: absolute;
+				top: 13px;
+
+				@include Typer(SubTextInfo);
+
+			}
+
+		}
+	}
+
+	&__ItemInfoDate {
+
+		margin-right: 6px;
+
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(SubTextInfo);
+
+		@include Themer(background, Color-2, after) {
+
+			background: none;
+			content: "/";
+			margin-left: 2px;
+			position: absolute;
+			text-transform: uppercase;
+			top: 12px;
+
+			@include Typer(SubTextInfo);
+
+		}
+	}
+
+	&__ItemInfoTime {
+
+		margin-left: 3px;
+
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(SubTextInfo);
+
+	}
+}

@@ -1,0 +1,25 @@
+// NewsletterLightBox Conditions Text
+
+.NewsletterLightBox {
+
+    &__ConditionsText {
+        
+        margin-left: 5px;
+
+        @include Themer(color, White);
+        @include Typer(SubTextInfo);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(ItemTitle);
+            
+        }        
+    }
+    
+    &__ConditionsAnchor {
+        
+        margin-left: 3px;
+        text-decoration: underline;
+        
+    }
+}

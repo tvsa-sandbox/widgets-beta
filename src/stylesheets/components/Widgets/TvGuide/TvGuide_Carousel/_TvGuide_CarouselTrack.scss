@@ -1,0 +1,39 @@
+// TvGuide Carousel Track
+
+.TvGuide {
+
+    &__CarouselTrack {
+
+        display: flex;
+        height: 75px;
+        margin: 0px auto;
+        overflow: hidden;
+
+        @include Morpher(Tablet) {
+
+            display: flex;
+            height: 75px;
+            margin: 0px auto;
+            overflow: hidden;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: flex;
+            height: 75px;
+            margin: 0px auto;
+            overflow: hidden;
+
+        }
+    }
+
+    &__CarouselTrack.Vertical {
+
+        display: flex;
+        height: 249px;
+        margin: 0px auto;
+        overflow: hidden;
+
+    }
+}

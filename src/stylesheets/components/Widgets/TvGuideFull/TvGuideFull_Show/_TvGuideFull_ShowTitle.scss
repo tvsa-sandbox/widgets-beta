@@ -1,0 +1,29 @@
+// Tv Guide Full Show Title
+
+.TvGuideFull {
+
+	&__ShowTitleContainer {
+
+		margin: 5px 0px 0px 10px;
+		width: 100%;
+
+		@include Morpher(All-Desktop) {
+
+			margin: 10px 0px 0px 10px;
+			width: 80%;
+
+		}
+	}
+
+	&__ShowTitle {
+
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(SubTextTag);
+
+		@include Morpher(All-Desktop) {
+
+			@include Typer(SubTextTagDesktop)
+
+		}
+	}
+}

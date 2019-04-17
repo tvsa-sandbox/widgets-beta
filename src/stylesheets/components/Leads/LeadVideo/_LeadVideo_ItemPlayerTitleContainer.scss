@@ -1,0 +1,32 @@
+// LeadVideo Item Player Title Container
+
+.LeadVideo {
+
+	&__ItemTitleContainer {
+
+        bottom: 0px;
+        height: auto;
+        position: absolute;
+        width: 100%;
+
+        @include Themer (background, Color-2);
+
+	}
+
+    &__ItemTitle {
+
+        margin: 5px;
+        text-align: left;
+
+		@include Themer(color, Text-Light-Headlines);
+		@include Typer(SubTextTag);
+
+		@include Morpher(All-Desktop) {
+
+			margin: 20px;
+
+			@include Typer(ItemTitle);
+
+		}
+    }
+}

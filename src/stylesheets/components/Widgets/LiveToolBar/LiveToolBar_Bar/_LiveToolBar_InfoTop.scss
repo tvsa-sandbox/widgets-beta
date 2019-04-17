@@ -1,0 +1,10 @@
+// LiveToolBar Info Top
+
+.LiveToolBar {
+
+    &__InfoTop {
+
+        @include Themer(color, Mini-Text-Light);
+        
+    }
+}

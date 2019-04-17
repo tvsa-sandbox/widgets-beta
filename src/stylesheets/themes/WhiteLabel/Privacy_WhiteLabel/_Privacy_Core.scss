@@ -1,0 +1,17 @@
+// Privacy Core
+
+@include ThemerUI(Privacy) {
+
+    @extend %Privacy;
+
+    @include Themer (background, Color-1);
+
+};
+
+// .Privacy {
+//
+// 	@extend %Privacy;
+//
+// 	@include Themer (background, Color-1);
+//
+// }

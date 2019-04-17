@@ -1,0 +1,30 @@
+// PromoCards Chapter Carousel Item Date
+
+.PromoCards {
+
+    &__CarouselItemChapterDateContainer {
+
+        bottom: 23%;
+        padding: 3%;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        z-index: 2;
+
+    }
+
+    &__CarouselItemChapterDate {
+
+        display: block;
+        text-transform: uppercase;
+
+        @include Themer(color, Mini-Text-Light);
+        @include Typer(SubTextCredit);
+        
+        @include Morpher(All-Desktop) {
+
+            @include Typer(SubTextCreditDesktop);
+
+        }
+    }
+}

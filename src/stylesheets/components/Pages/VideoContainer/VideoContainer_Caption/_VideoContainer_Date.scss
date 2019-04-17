@@ -1,0 +1,17 @@
+// VideoContainer Date
+
+.VideoContainer {
+
+    &__DateContainer {
+
+        margin-bottom: 1em;
+
+    }
+
+    &__Date {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitle);
+
+    }
+}

@@ -1,0 +1,16 @@
+// Tv Guide Full Shows Container
+
+.TvGuideFull {
+
+	&__ShowsContainer {
+
+        width: 100%;
+
+
+		@include Morpher(All-Desktop) {
+
+            @include Layout(Wrapper);
+
+        }
+	}
+}

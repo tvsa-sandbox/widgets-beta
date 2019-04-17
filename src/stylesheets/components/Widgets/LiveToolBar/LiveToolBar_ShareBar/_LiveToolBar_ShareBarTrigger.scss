@@ -1,0 +1,21 @@
+// LiveToolBar ShareBarTrigger
+
+.LiveToolBar {
+
+    &__ShareBarTrigger {
+
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
+        
+    }
+
+    &__ShareBarTriggerText {
+
+        @include Themer(color, Color-5);
+        @include Typer(SubTextInfo);
+        
+    }
+}

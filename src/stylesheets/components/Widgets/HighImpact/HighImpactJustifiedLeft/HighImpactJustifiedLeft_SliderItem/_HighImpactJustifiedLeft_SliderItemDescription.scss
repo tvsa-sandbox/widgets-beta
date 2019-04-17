@@ -1,0 +1,25 @@
+// HighImpactJustifiedLeft Slider Item Description
+
+.HighImpactJustifiedLeft {
+
+    &__SliderItemDescriptionContainer {
+
+        padding: 5px;
+
+    }
+
+    &__SliderItemDescription {
+
+        line-height: 18px;
+        text-align: justify;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(ItemTitleDescriptionDesktop);
+            
+        }
+    }
+}

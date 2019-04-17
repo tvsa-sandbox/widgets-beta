@@ -1,0 +1,14 @@
+// LiveToolBar Swipe Core
+
+.LiveToolBar {
+
+    &__SwipeContainer {
+
+        bottom: 55px;
+        height: 60px;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        
+    }
+}

@@ -1,0 +1,20 @@
+// HighImpactJustifiedLeft Slider Item Caption
+
+.HighImpactJustifiedLeft {
+
+    &__SliderItemCaption {
+
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+
+        @include Themer(background, Color-1);
+
+    }
+
+    &__SliderItemCaptionAnchor {
+
+        text-decoration: none;
+
+    }
+}

@@ -1,0 +1,11 @@
+// SocialFollow Core
+
+.SocialFollow {
+	
+	margin: 5% auto;
+	padding-top: 1%;
+
+	@include Layout(Aside);
+	@include Themer(background, Color-10);
+
+}

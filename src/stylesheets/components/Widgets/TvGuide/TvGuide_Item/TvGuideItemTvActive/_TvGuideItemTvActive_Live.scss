@@ -1,0 +1,62 @@
+// TvGuide Item Active Live
+
+.TvGuide {
+
+    &__LiveTvShow {
+
+        width: 100%;
+
+        &-Live {
+
+			display: block;
+			margin: 5px 0px;
+			padding: 0px 10px;
+			position: relative;
+			text-align: left;
+			text-transform: uppercase;
+
+            @include Typer(SubTextInfo);
+            @include Themer(color, Text-Light-Body);
+
+            @include Themer(background, Color-7, before) {
+
+                animation: pulsar 2s .5s ease-in-out infinite;
+                animation-play-state: running;
+                border-radius: 50%;
+                height: 7px;
+                left: 0px;
+                position: absolute;
+                top: 3px;
+                width: 7px;
+
+            }
+        }
+    }
+}
+
+@keyframes pulsar {
+
+	0% {
+
+		height: 7px;
+		opacity: 0.2;
+		width: 7px;
+
+	}
+
+	50% {
+
+		height: 8px;
+		opacity: 1;
+		width: 8px;
+
+	}
+
+	100% {
+
+		height: 7px;
+		opacity: 0.2;
+		width: 7px;
+
+	}
+}

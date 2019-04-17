@@ -1,0 +1,14 @@
+// TvGuideFull Week Core
+
+.TvGuideFull {
+
+	&__Week {
+
+		cursor: pointer;
+		width: 100%;
+
+		@include HoverButton;
+		@include Themer(background, Color-9);
+
+	}
+}

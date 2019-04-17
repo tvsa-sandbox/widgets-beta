@@ -1,0 +1,24 @@
+// InlineGallery Core
+
+.InlineGallery {
+    
+    padding-bottom: 5%; // WidgetsBottomSpace
+    
+    @include Morpher(All-Desktop) {
+        
+        @include Layout(Wrapper);
+        
+    }
+    
+    &__MixSliderContainer {
+        
+        display: grid;
+        grid-template-columns: 100%;
+        
+        @include Morpher(All-Desktop) {
+            
+            grid-template-columns: 70% 30%;
+            
+        }
+    }
+}

@@ -1,0 +1,15 @@
+// VideoContainer EndCardItem
+
+
+.VideoContainer {
+
+    &__EndCardItem {
+
+        display: flex;
+        max-height: 90px;
+        max-width: 265px;
+        overflow: hidden;
+        text-decoration: none;
+
+    }
+}

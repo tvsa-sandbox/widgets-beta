@@ -1,0 +1,13 @@
+// Inline Video Carousel Track
+
+.InlineVideo {
+
+    &__CarouselTrack {
+
+        display: flex;
+        height: 260px;
+        margin: 0px auto;
+        overflow: hidden;
+
+    }
+}

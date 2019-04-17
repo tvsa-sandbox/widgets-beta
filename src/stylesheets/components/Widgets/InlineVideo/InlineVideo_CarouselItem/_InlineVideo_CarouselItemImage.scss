@@ -1,0 +1,12 @@
+//InlineVideo Carousel Item Image
+
+.InlineVideo {
+
+    &__CarouselItemImageContainer {
+
+        width: 100%;
+        
+        @include Spekter(16_9);
+
+    }
+}

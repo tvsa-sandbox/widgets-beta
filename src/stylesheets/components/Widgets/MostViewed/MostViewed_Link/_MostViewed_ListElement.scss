@@ -1,0 +1,47 @@
+// MostViewed List Element
+
+.MostViewed {
+
+    &__ListElement {
+
+        display: flex;
+		position: relative;
+    	padding-bottom: 6%;
+        top: 14px;
+        width: 100%;
+
+        @include Hover;
+
+		@include Themer(color, Color-2,before) {
+
+			content: counter(my-sec-counter);
+			counter-increment: my-sec-counter 1;
+			left: 5%;
+			position: relative;
+			top: 0px;
+			z-index: 1;
+
+			@include Typer(ListNumbers);
+
+		}
+
+		@include Themer(background,Color-2,after) {
+
+			height: 1px;
+            left: 3%;
+			margin: 0px auto;
+			position: absolute;
+            top: 0%;
+			width: 93%;
+
+		}
+
+        &:first-child {
+
+            @include Themer(background,Color-2,after) {
+
+                display: none;
+            }
+        }
+    }
+}

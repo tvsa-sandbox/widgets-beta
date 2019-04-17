@@ -1,0 +1,20 @@
+// Tv Guide Full Show Call
+
+.TvGuideFull {
+
+	&__ShowCall {
+
+		display: none;
+
+		@include Morpher(All-Desktop) {
+
+			display: block;
+			text-decoration: none;
+			position: relative;
+			right: 10px;
+
+			@include Typer(ItemTitleDescription);
+
+		}
+	}
+}

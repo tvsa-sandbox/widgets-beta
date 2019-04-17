@@ -1,0 +1,17 @@
+// EndCard ElementsThumbTextNext
+
+.EndCard {
+
+    &__ElementsThumbTextNext {
+
+        margin: 0px;
+
+        @include Typer(ItemTitleDescription);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitleDescriptionDesktop);
+
+        }
+    }
+}

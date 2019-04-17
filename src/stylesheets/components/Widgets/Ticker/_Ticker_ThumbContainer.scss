@@ -1,0 +1,27 @@
+// Ticker ThumbContainer
+
+.Ticker {
+
+	&__ThumbContainer {
+
+		display: flex;
+
+		a {
+
+			.Ticker__ShowTitleContainer {
+
+				width: 93%;
+
+			}
+
+            .Ticker__ShowDescriptionContainer {
+
+                width: 93%;
+
+            }
+
+            @include HoverUnderline;
+
+		}
+	}
+}

@@ -1,0 +1,19 @@
+// ContentCarouselB Item Title
+
+.ContentCarouselB {
+
+    &__CarouselItemTitleContainer {
+
+        padding: 0px 10px 10px 10px;
+
+    }
+
+    &__CarouselItemTitle {
+
+        text-transform: uppercase;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
+
+    }
+}

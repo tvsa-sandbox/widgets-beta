@@ -1,0 +1,15 @@
+// TvGuideFull Week Day
+
+.TvGuideFull {
+
+	&__Day {
+
+		display: block;
+		padding-bottom: 5px;
+		text-transform: uppercase;
+
+		@include Themer(color, Text-Light-Body);
+		@include Typer(SubTextButton);
+
+	}
+}

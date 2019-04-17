@@ -1,0 +1,3 @@
+import HighImpactJustifiedLeft_RightItems from "./HighImpactJustifiedLeft_RightItems";
+
+export default HighImpactJustifiedLeft_RightItems;

@@ -1,0 +1,22 @@
+// HighImpactJustifiedLeftTypeC Right Item Duration
+
+.HighImpactJustifiedLeftTypeC {
+
+    &__RightItemDurationContainer {
+
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        width: 50%;
+
+    }
+
+    &__RightItemDuration {
+
+        text-align: right;
+
+        @include Themer(color, Text-Light-Body);
+        @include Typer(SubTextInfo);
+
+    }
+}

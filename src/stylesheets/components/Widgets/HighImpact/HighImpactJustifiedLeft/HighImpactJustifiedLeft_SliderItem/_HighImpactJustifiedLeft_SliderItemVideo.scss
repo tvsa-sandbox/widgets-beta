@@ -1,0 +1,18 @@
+// HighImpactJustifiedLeft Slider Item Video
+
+.HighImpactJustifiedLeft {
+
+    &__SliderItemVideoContainer {
+
+        @include Spekter(16_9);
+
+    }
+
+    &__SliderItemVideo {
+
+        position: absolute;
+        top: 0px;
+        width: 100%;
+
+    }
+}

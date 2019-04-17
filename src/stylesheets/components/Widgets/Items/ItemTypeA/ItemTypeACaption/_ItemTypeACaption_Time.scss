@@ -1,0 +1,22 @@
+// Item Type A Time
+
+.Items {
+
+	&__ItemTypeATimeContainer {
+
+		display: inline-block;
+		padding: 12px 0px;
+
+		@include Morpher(Laptop) {
+
+			padding: 0px;
+
+		}
+	}
+
+	&__ItemTypeATime {
+
+		@include Typer(SubTextInfo);
+
+	}
+}

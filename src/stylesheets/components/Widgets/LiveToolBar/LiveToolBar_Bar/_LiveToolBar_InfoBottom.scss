@@ -1,0 +1,10 @@
+// LiveToolBar Info Bottom
+
+.LiveToolBar {
+
+    &__InfoBottom {
+
+        @include Themer(color, Color-5);
+        
+    }
+}

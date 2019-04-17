@@ -1,0 +1,22 @@
+// HighImpactCentered Right Items Thumbnail
+
+.HighImpactCentered {
+
+    &__RightItemThumbnail {
+
+        text-decoration: none;
+        width: 100%;
+
+        @include Morpher(Smartphone) {
+
+            max-width: 137px;
+
+        }
+
+        @include Morpher(Tablet) {
+
+            max-width: 187px;
+
+        }
+    }
+}

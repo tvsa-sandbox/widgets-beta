@@ -1,0 +1,22 @@
+// EndCard ElementsRelatedButton
+
+.EndCard {
+
+    &__ElementsRelatedButtonContainer {
+
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 1;
+
+    }
+
+    &__ElementsRelatedButton {
+
+        cursor: pointer;
+        padding: 0px;
+
+        @include Hover;
+
+    }
+}

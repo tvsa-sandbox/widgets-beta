@@ -1,0 +1,24 @@
+// HighImpactJustifiedLeft Slider Item Title
+
+.HighImpactJustifiedLeft {
+
+    &__SliderItemTitleContainer {
+
+        padding: 0px 6px;
+
+    }
+
+    &__SliderItemTitle {
+
+        text-align: left;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDesktop);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTextTitle);
+
+        }
+    }
+}

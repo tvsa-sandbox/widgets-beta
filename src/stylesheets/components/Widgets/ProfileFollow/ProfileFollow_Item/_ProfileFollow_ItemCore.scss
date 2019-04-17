@@ -1,0 +1,15 @@
+// ProfileFollow Core
+
+.ProfileFollow {
+
+	&__CarouselItem {
+
+		display: block;
+		margin: 0px 12px;
+		text-decoration: none;
+		width: 158px;
+
+		@include Hover;
+
+	}
+}

@@ -1,0 +1,34 @@
+// Privacy Title
+
+.Privacy {
+
+    &__TitleContainer {
+
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 5px 10px;
+        position: relative;
+
+        @include Morpher(All-Desktop) {
+
+            justify-content: left;
+
+        }
+    }
+
+    &__Title {
+
+        margin: 10px 10px 20px;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitle);
+
+        @include Morpher(All-Desktop) {
+
+            margin: 10px;
+
+            @include Typer(ItemTitleDesktop);
+
+        }
+    }
+}

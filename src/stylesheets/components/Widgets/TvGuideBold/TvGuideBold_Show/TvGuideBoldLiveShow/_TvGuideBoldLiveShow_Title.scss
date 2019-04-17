@@ -1,0 +1,34 @@
+// TvGuideBold LiveShow Title
+
+.TvGuideBold {
+
+    &__LiveShow {
+
+        width: 100%;
+
+        &-Title {
+
+            margin: 4px 0px 0px 0px;
+            white-space: nowrap;
+
+            @include Themer(color, Text-Light-Body);
+            @include Typer(SubTextCreditDesktop);
+
+            @include Morpher(Tablet) {
+
+                margin: 7px 0px 5px 0px;
+
+                @include Typer(ItemTitle);
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                margin: 2px 0px;
+
+                @include Typer(ItemTitle);
+
+            }
+        }
+    }
+}

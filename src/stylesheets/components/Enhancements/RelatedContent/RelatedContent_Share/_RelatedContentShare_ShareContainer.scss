@@ -1,0 +1,37 @@
+// RelatedContent ShareBar Container
+
+.RelatedContent {
+    
+    &__ShareContainer {
+        
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        height: 54px;
+        left: 0%;
+        margin: 2% 0%;
+        position: relative;
+        top: 50px;
+        width: 13%;
+        
+        @include Morpher(Tablet) {
+        
+            height: 43px;
+            left: 46%;
+            top: 50px;
+            grid-column: 1;
+            grid-row: 4;
+        
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            height: 43px;
+            left: 67%;
+            top: 50px;
+            grid-column: 1;
+            grid-row: 4;
+            
+        }
+    }
+}

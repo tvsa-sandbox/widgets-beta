@@ -1,0 +1,61 @@
+// Privacy ShowMore
+
+
+%Privacy {
+
+    &__ShowMoreContainer {
+
+		bottom: 8px;
+		cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        text-transform: uppercase;
+
+        @include Hover;
+
+        @include Morpher(Tablet) {
+
+            bottom: 10px;
+
+        }
+
+        @include Morpher(Laptop) {
+
+			bottom: 0px;
+            justify-content: flex-end;
+            right: 27%;
+
+        }
+
+        @include Morpher(Desktop) {
+
+			bottom: 0px;
+            justify-content: flex-end;
+            right: 24%;
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+			bottom: 0px;
+            justify-content: flex-end;
+            right: 13%;
+
+        }
+    }
+
+    &__ShowMore {
+
+        margin: 0px 10px;
+        text-decoration: none;
+
+        @include Typer(ItemTitle);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitleDesktop);
+
+        }
+    }
+}

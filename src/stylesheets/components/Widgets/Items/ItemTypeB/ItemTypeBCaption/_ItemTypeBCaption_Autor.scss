@@ -1,0 +1,31 @@
+// Item Type B Autor
+
+.Items {
+
+	&__ItemTypeBAutorContainer {
+
+		display: inline-block;
+		padding: 12px 0px;
+
+		@include Morpher(Laptop) {
+
+			display: block;
+			padding: 0px;
+
+		}
+	}
+
+	&__ItemTypeBAutor {
+
+		margin-left: 8px;
+
+		@include Typer(SubTextInfo);
+
+		@include Morpher(Laptop) {
+
+			display: block;
+			margin-left: 0px;
+
+		}
+	}
+}

@@ -1,0 +1,24 @@
+// SixItems Item Duration
+
+.SixItems {
+
+	&__ItemDurationContainer {
+
+		height: 42px;
+		left: 110px;
+		position: absolute;
+		top: 3px;
+		width: 70px;
+
+ 	}
+
+	&__ItemDuration {
+
+		bottom: 45%;
+		margin-left: 25%;
+		position: absolute;
+
+		@include Themer(color, Text-Light-Headlines);
+
+ 	}
+}

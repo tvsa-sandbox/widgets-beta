@@ -1,0 +1,12 @@
+// PromoCards Section Image
+
+.PromoCards {
+
+    &__CarouselItemSectionImageContainer {
+
+        display: block;
+        
+        @include Spekter(3_4);
+
+    }
+}

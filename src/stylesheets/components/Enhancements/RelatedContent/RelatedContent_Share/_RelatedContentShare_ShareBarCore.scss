@@ -1,0 +1,18 @@
+// RelatedContent ShareBar Core
+
+.RelatedContent {
+    
+    &__ShareBar {
+
+        display: flex;
+        margin: 5px 0px;
+        text-decoration: none;
+        width: 100%;
+        
+        @include Morpher(All-Desktop) {
+            
+            margin: 10px 0px;
+            
+        }
+    }
+}

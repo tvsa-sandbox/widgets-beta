@@ -1,0 +1,34 @@
+//VideoContainer Item Info
+
+.VideoContainer {
+
+    &__ItemPlayerInfoContainer {
+
+        bottom: 21%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+
+        @include Morpher(Tablet) {
+
+            bottom: 26%;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            bottom: 26%;
+
+        }
+    }
+
+    &__ItemPlayerInfo {
+
+        text-transform: uppercase;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+}

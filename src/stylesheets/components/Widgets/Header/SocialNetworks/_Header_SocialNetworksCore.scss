@@ -1,0 +1,32 @@
+// Header SocialNetworks
+
+.Header {
+
+    &__SocialNetworks {
+
+        width: 100%;
+        padding: 1em 0px;
+        margin-bottom: 1em;
+
+        @include Themer(border-bottom, Color-13 ,"1px solid");
+
+        @include Morpher(All-Desktop) {
+
+            margin: 0px 10px;
+            padding: 0px;
+            width: auto;
+
+            @include Themer(border-bottom, Color-13 ,"0px solid");
+
+        }
+    }
+
+    &__SocialContainer {
+
+        display: flex;
+        justify-content: space-between;
+        max-width: 200px;
+        margin: 0px auto;
+
+    }
+}

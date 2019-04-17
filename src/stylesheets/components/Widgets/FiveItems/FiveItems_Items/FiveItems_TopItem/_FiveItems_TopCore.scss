@@ -1,0 +1,21 @@
+// FiveItems Top Core
+
+.FiveItems {
+
+    &__ItemTopItems {
+
+        display: block;
+        margin: 20px 0px;
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+
+        @include HoverCard;
+        
+        @include Morpher(All-Desktop) {
+
+            margin: 0px;
+            
+        }
+    }
+}

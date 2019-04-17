@@ -1,0 +1,10 @@
+// LiveToolBar Core
+
+.LiveToolBar {
+
+    @include Morpher(All-Desktop) {
+
+        display: none;
+        
+    }
+}

@@ -1,0 +1,75 @@
+// Quote Text
+
+.Quote {
+    
+    &__TextContainer {
+        
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        margin: 15% 0%;
+        
+        @include Morpher(Tablet) {
+            
+            margin: 5% 0%;
+            width: 80%;
+            
+        }
+        
+        @include Morpher(Laptop) {
+            
+            margin: 5% 0%;
+            width: 90%;
+            
+        }
+        
+        @include Morpher(Desktop) {
+            
+            margin: 5% 0%;
+            
+        }
+        
+        @include Morpher(Desktop-HD) {
+            
+            margin: 5% 0%;
+            
+        }
+    }
+    
+    &__Text {
+        
+        margin: 0px;
+        position: absolute;
+        text-align: center;
+        
+        
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitleDescription);
+        
+        @include Morpher(Tablet) {
+            
+            @include Typer(ItemTitleDescriptionDesktop);
+            
+        }
+        
+        @include Morpher(Laptop) {
+            
+            @include Typer(HeadlineSubExtra);
+            
+        }
+        
+        @include Morpher(Desktop) {
+            
+            @include Typer(HeadlineSubExtraDesktop);
+            
+        }
+        
+        @include Morpher(Desktop-HD) {
+            
+            @include Typer(HeadlineSubExtraDesktop);
+            
+        }
+    }
+}

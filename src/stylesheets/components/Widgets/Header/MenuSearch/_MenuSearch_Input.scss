@@ -1,0 +1,19 @@
+// Header Core
+
+.MenuSearch {
+
+    &__Input {
+
+        -webkit-appearance: none;
+        align-self: stretch;
+        background: transparent;
+        border: none;
+        box-sizing: content-box;
+        flex-grow: 1;
+        padding:  0px 1em;
+
+        @include Typer(HeaderExtraDesktop);
+        @include Themer(color, White);
+
+    }
+}
