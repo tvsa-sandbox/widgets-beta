@@ -5,7 +5,7 @@
         @include Element(ButtonContainer) {
 
             @extend %Privacy__ButtonContainer;
-            @include Spacer(margin, all, lg);
+            
         }
 
         @include Element(Button) {

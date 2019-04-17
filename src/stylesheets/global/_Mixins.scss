@@ -37,39 +37,39 @@
 /* Global components map
 ======================== */
 
-$components : () !global;
+// $components : () !global;
 
 
-/* Mixin to add component
-========================= */
+// /* Mixin to add component
+// ========================= */
 
-@mixin add-component($componentName, $componentVariationName: "default", $componentVariationOptions: ()) {
-  $components: map-merge($components, (
-      #{$componentName}: (
-        $componentVariationName: $componentVariationOptions
-      )
-  )) !global;
-}
-
-
-/* Mixin to extend global components map
-======================================== */
-
-@mixin core-extend($componentName, $componentVariationName, $componentVariationOptions){
-    // $components(all) > $component(ex: "inlineList") > $componentVariationName(ex: "dashboardModulesList")
-    $components: core-extend($componentName, $componentVariationName, $componentVariationOptions);
-}
+// @mixin add-component($componentName, $componentVariationName: "default", $componentVariationOptions: ()) {
+//   $components: map-merge($components, (
+//       #{$componentName}: (
+//         $componentVariationName: $componentVariationOptions
+//       )
+//   )) !global;
+// }
 
 
-/* Utils function to merge component options
-============================================ */
+// /* Mixin to extend global components map
+// ======================================== */
 
-@function core-extend($componentName, $componentVariationName, $componentVariationOptions){
-    $component: map-get($components, $componentName);
-    $componentVariation: map-get($component, $componentVariationName);
+// @mixin core-extend($componentName, $componentVariationName, $componentVariationOptions){
+//     // $components(all) > $component(ex: "inlineList") > $componentVariationName(ex: "dashboardModulesList")
+//     $components: core-extend($componentName, $componentVariationName, $componentVariationOptions);
+// }
 
-    $newComponentVariation: map-merge($componentVariation, $componentVariationOptions);
-    $newComponent: map-merge($component, ($componentVariationName: $newComponentVariation));
 
-    @return map-merge($components, ($componentName: $newComponent));
-}
+// /* Utils function to merge component options
+// ============================================ */
+
+// @function core-extend($componentName, $componentVariationName, $componentVariationOptions){
+//     $component: map-get($components, $componentName);
+//     $componentVariation: map-get($component, $componentVariationName);
+
+//     $newComponentVariation: map-merge($componentVariation, $componentVariationOptions);
+//     $newComponent: map-merge($component, ($componentVariationName: $newComponentVariation));
+
+//     @return map-merge($components, ($componentName: $newComponent));
+// }
