@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `WhiteLabel V2.0 Atomic Ghost`,
+        short_name: `WhiteLabel`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
