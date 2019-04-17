@@ -27,7 +27,7 @@ module.exports = {
       options: {
         name: `WhiteLabel V2.0 Atomic Ghost`,
         short_name: `WhiteLabel`,
-        start_url: `/`,
+        start_url: `/widgets-beta`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
