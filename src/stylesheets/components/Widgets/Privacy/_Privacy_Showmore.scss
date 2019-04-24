@@ -1,6 +1,7 @@
 // Privacy ShowMore
 
-.Privacy {
+
+%Privacy {
 
     &__ShowMoreContainer {
 
@@ -49,13 +50,7 @@
         margin: 0px 10px;
         text-decoration: none;
 
-        @include Themer(color, Text-Light-Headlines);
         @include Typer(ItemTitle);
 
-        @include Morpher(All-Desktop) {
-
-            @include Typer(ItemTitleDesktop);
-
-        }
     }
 }
