@@ -1,25 +1,69 @@
 // Kolibri Typer Engine | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
 
+@function pxtorem($pxsize) {
+    $remSize: $pxsize / 16px;
+    @return #{$remSize}rem;
+}
+
+@function units($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function lhtorem($line) {
+    $lineValue: $line * 1.5;
+    $lu: units($lineValue) / 16;
+    @return #{$lu}rem;
+}
+
+@mixin responsive-font($min-vw: 320px, $max-vw: 1440px, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: pxtorem($min-font-size);
+      line-height: lhtorem($min-font-size);
+
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{units($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{units($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: pxtorem($max-font-size);
+        line-height: lhtorem($max-font-size);
+      }
+    }
+  }
+}
+
 @mixin Typer($FontKind) {
 
     @for $T from 1 through length($TypographyStyles) {
 
         $FF: nth(nth(nth($TypographyStyles, $T),2),1);
         $FW: nth(nth(nth($TypographyStyles, $T),2),2);
-        $FS: nth(nth(nth($TypographyStyles, $T),2),3);
-        $LS: nth(nth(nth($TypographyStyles, $T),2),4);
-        $LH: nth(nth(nth($TypographyStyles, $T),2),5);
+        $FSMAX: nth(nth(nth($TypographyStyles, $T),2),3);
+        $FSMIN: nth(nth(nth($TypographyStyles, $T),2),4);
+        $LS: nth(nth(nth($TypographyStyles, $T),2),5);
+        //$LH: nth(nth(nth($TypographyStyles, $T),2),6);
 
         $FontVariant: nth(nth($TypographyStyles, $T),1);
 
         @if $FontKind == $FontVariant {
 
-            font-family: $FF , sans-serif;
+            @if ($FF == sans-serif) {
+              font-family:unquote($FF);
+            }
+
+            @else {
+             font-family: $FF , sans-serif;
+            }
+
             font-weight: $FW;
-            font-size: $FS;
-            font-display: swap; 
+            @include responsive-font(320px,  1440px, $FSMAX, $FSMIN);
+            font-display: swap;
             letter-spacing: $LS;
-            line-height: $LH;
 
             @include FontSmoothing;
 

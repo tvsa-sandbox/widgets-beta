@@ -53,15 +53,16 @@
 
 // Footer Font (Roboto)
 
-@include font-face(roboto-medium, "..#{$StaticsPath}/fonts/roboto/roboto-medium");
-@include font-face(roboto-regular, "..#{$StaticsPath}/fonts/roboto/roboto-regular");
+// @include font-face(roboto-medium, "..#{$StaticsPath}/fonts/roboto/roboto-medium");
+// @include font-face(roboto-regular, "..#{$StaticsPath}/fonts/roboto/roboto-regular");
 
 // Font 1 Example
 
 // @include font-face(#{$Font-1}-black, "..#{$StaticsPath}/fonts/#{$Font-1}/#{$Font-1}-black");
 // @include font-face(#{$Font-1}-bold, "..#{$StaticsPath}/fonts/#{$Font-1}/#{$Font-1}-bold");
+// @include font-face(#{$Font-2}-bold, "..#{$StaticsPath}/fonts/#{$Font-2}/#{$Font-2}-bold");
 // @include font-face(#{$Font-1}-extrabold, "..#{$StaticsPath}/fonts/#{$Font-1}/#{$Font-1}-extrabold");
 // @include font-face(#{$Font-1}-light, "..#{$StaticsPath}/fonts/#{$Font-1}/#{$Font-1}-light");
-// @include font-face(#{$Font-1}-medium, "..#{$StaticsPath}/fonts/#{$Font-1}/#{$Font-1}-medium");
+// @include font-face(#{$Font-2}-medium, "..#{$StaticsPath}/fonts/#{$Font-2}/#{$Font-2}-medium");
 // @include font-face(#{$Font-1}-regular, "..#{$StaticsPath}/fonts/#{$Font-1}/#{$Font-1}-regular");
 // @include font-face(#{$Font-1}-thin, "..#{$StaticsPath}/fonts/#{$Font-1}/#{$Font-1}-thin");
