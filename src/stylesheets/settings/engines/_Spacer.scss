@@ -1,6 +1,6 @@
 // Spacer Engine | WhiteLabel MarkUp v2.1.6 Atomic Ghost | 1/5/19
 
-/* examples 
+/* examples
 
 @include Spacer(padding,all, base xl);
 @include Spacer(margin,top, xl);
@@ -9,59 +9,58 @@
 
 @mixin Spacer($type:margin, $direction:all, $amount:'base') {
 
-        @if not map-has-key($Spaces, $amount) {
+    @if not map-has-key($Spaces, $amount) {
 
-             $values: ();
+        $values: ();
 
-            @for $i from 1 through length($amount) {
-              
-                $val: map-get($Spaces, nth($amount, $i));
+        @for $i from 1 through length($amount) {
 
-                $values: append($values, pxtorem($val), space);
-                
+            $val: map-get($Spaces, nth($amount, $i));
+
+            $values: append($values, pxtorem($val), space);
+
+        }
+
+        //@warn "valor de #{$values} en shorthand";
+
+        @if $type == padding {
+            @if $direction == all {
+                padding: $values;
+            }
+        } @else {
+
+            @if $direction == all {
+                margin: $values;
             }
 
-            @warn "valor de #{$values}";
+        }
+    }
 
-                @if $type == padding {
-                    @if $direction == all {
-                        padding: $values;
-                    } 
-                } @else {
+    $sval: pxtorem(map-get($Spaces, $amount));
 
-                    @if $direction == all {
-                        margin: $values;
-                    }
-
-                }
-          }
-
-          $sval: pxtorem(map-get($Spaces, $amount));
-
-            @if $type == padding {
-                @if $direction == all{
-                    padding: $sval;
-                } @else if $direction == top {
-                    padding-top: $sval;
-                } @else if $direction == left {
-                    padding-left: $sval;
-                } @else if $direction == right {
-                    padding-right: $sval;
-                } @else {
-                    padding-bottom: $sval;
-                }
-            } @else {
-                @if $direction == all{
-                    margin: $sval;
-                } @else if $direction == top {
-                    margin-top: $sval;
-                } @else if $direction == left {
-                    margin-left: $sval;
-                } @else if $direction == right {
-                    margin-right: $sval;
-                } @else {
-                    margin-bottom: $sval;
-                }
-            }
-
+    @if $type == padding {
+        @if $direction == all{
+            padding: $sval;
+        } @else if $direction == top {
+            padding-top: $sval;
+        } @else if $direction == left {
+            padding-left: $sval;
+        } @else if $direction == right {
+            padding-right: $sval;
+        } @else {
+            padding-bottom: $sval;
+        }
+    } @else {
+        @if $direction == all{
+            margin: $sval;
+        } @else if $direction == top {
+            margin-top: $sval;
+        } @else if $direction == left {
+            margin-left: $sval;
+        } @else if $direction == right {
+            margin-right: $sval;
+        } @else {
+            margin-bottom: $sval;
+        }
+    }
 }
