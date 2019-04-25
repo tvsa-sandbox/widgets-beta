@@ -1,4 +1,4 @@
-// Spacer Engine | WhiteLabel MarkUp v2.1.5 Atomic Ghost | 1/5/19
+// Spacer Engine | WhiteLabel MarkUp v2.1.6 Atomic Ghost | 1/5/19
 
 /* examples 
 
@@ -17,7 +17,7 @@
               
                 $val: map-get($Spaces, nth($amount, $i));
 
-                $values: append($values, $val, space);
+                $values: append($values, pxtorem($val), space);
                 
             }
 
@@ -36,29 +36,31 @@
                 }
           }
 
+          $sval: pxtorem(map-get($Spaces, $amount));
+
             @if $type == padding {
                 @if $direction == all{
-                    padding: map-get($Spaces, $amount);
+                    padding: $sval;
                 } @else if $direction == top {
-                    padding-top: map-get($Spaces, $amount);
+                    padding-top: $sval;
                 } @else if $direction == left {
-                    padding-left: map-get($Spaces, $amount);
+                    padding-left: $sval;
                 } @else if $direction == right {
-                    padding-right: map-get($Spaces, $amount);
+                    padding-right: $sval;
                 } @else {
-                    padding-bottom: map-get($Spaces, $amount);
+                    padding-bottom: $sval;
                 }
             } @else {
                 @if $direction == all{
-                    margin: map-get($Spaces, $amount);
+                    margin: $sval;
                 } @else if $direction == top {
-                    margin-top: map-get($Spaces, $amount);
+                    margin-top: $sval;
                 } @else if $direction == left {
-                    margin-left: map-get($Spaces, $amount);
+                    margin-left: $sval;
                 } @else if $direction == right {
-                    margin-right: map-get($Spaces, $amount);
+                    margin-right: $sval;
                 } @else {
-                    margin-bottom: map-get($Spaces, $amount);
+                    margin-bottom: $sval;
                 }
             }
 

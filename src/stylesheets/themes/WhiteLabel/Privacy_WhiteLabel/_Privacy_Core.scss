@@ -5,6 +5,5 @@
     @extend %Privacy;
 
     @include Themer (background, Color-1);
-    @include Spacer (padding, top, xl);
 
 };
