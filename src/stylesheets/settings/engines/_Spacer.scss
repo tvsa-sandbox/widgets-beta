@@ -1,40 +1,65 @@
-// Spacer Engine | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+// Spacer Engine | WhiteLabel MarkUp v2.1.5 Atomic Ghost | 1/5/19
+
+/* examples 
+
+@include Spacer(padding,all, base xl);
+@include Spacer(margin,top, xl);
+
+*/
 
 @mixin Spacer($type:margin, $direction:all, $amount:'base') {
 
-    @if not map-has-key($Spaces, $amount) {
-        @warn "No color found for #{$amount} in $Spces map. Ktnxbye.";
-      }
+        @if not map-has-key($Spaces, $amount) {
 
-        @each $space-name, $space-number in $Spaces {
-          
-            @if $space-name == $amount{
+             $values: ();
+
+            @for $i from 1 through length($amount) {
+              
+                $val: map-get($Spaces, nth($amount, $i));
+
+                $values: append($values, $val, space);
+                
+            }
+
+            @warn "valor de #{$values}";
+
+                @if $type == padding {
+                    @if $direction == all {
+                        padding: $values;
+                    } 
+                } @else {
+
+                    @if $direction == all {
+                        margin: $values;
+                    }
+
+                }
+          }
 
             @if $type == padding {
                 @if $direction == all{
-                    padding: $space-number;
+                    padding: map-get($Spaces, $amount);
                 } @else if $direction == top {
-                    padding-top: $space-number
+                    padding-top: map-get($Spaces, $amount);
                 } @else if $direction == left {
-                    padding-left: $space-number
+                    padding-left: map-get($Spaces, $amount);
                 } @else if $direction == right {
-                    padding-right: $space-number;
+                    padding-right: map-get($Spaces, $amount);
                 } @else {
-                    padding-bottom: $space-number;
+                    padding-bottom: map-get($Spaces, $amount);
                 }
             } @else {
                 @if $direction == all{
-                    margin: $space-number;
+                    margin: map-get($Spaces, $amount);
                 } @else if $direction == top {
-                    margin-top: $space-number;
+                    margin-top: map-get($Spaces, $amount);
                 } @else if $direction == left {
-                    margin-left: $space-number
+                    margin-left: map-get($Spaces, $amount);
                 } @else if $direction == right {
-                    margin-right: $space-number;
+                    margin-right: map-get($Spaces, $amount);
                 } @else {
-                    margin-bottom: $space-number;
+                    margin-bottom: map-get($Spaces, $amount);
                 }
             }
-        }
-    }
+
 }
