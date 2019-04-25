@@ -17,7 +17,7 @@
 }
 
 @function lhtorem($line) {
-    $lineValue: $line * 1.5;
+    $lineValue: $line * 1.4;
     $lu: units($lineValue) / 16;
     @return #{$lu}rem;
 }
