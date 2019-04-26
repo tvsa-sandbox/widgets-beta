@@ -1,4 +1,53 @@
-// Kolibri Spekter Engine | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+// Spekter Mix Engine | WhiteLabel MarkUp v2.1.0 Atomic Ghost | 26/5/19
 
-@import "./Spekter/Spekter_Ratios";
-@import "./Spekter/Spekter_Mix";
+@mixin Spekter($AspectValue, $Pos: false, $BgT: false,) {
+
+    $Aspect: map-get($Aspects, $AspectValue);
+
+    @if  $Pos == absolute {
+
+        // position arg
+        position: absolute;
+
+    } @else {
+        position: relative;
+    }
+
+    padding-top: $Aspect;
+    width: 100%;
+
+    img {
+
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+
+    @include Themer(background, $PlaceholderBackground, before);
+    @include Themer(color, $PlaceholderIconColor, before) {
+        content: $PlaceholderIcon;
+        align-items: center;
+        @if  $BgT == transparent {
+
+            // transparent
+
+            &::before {
+
+                display: none;
+
+            }
+
+        } @else {
+
+            display: flex;
+
+        }
+        font-family: Iconography;
+        @include responsive-font(320px, 1440px, ($PlaceholderIconSize - 100), $PlaceholderIconSize);
+        height: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+    }
+} // Spekter Mix Engine
