@@ -1,6 +1,6 @@
 // Themer Engine | WhiteLabel MarkUp v2.1.5 Atomic Ghost | 26/5/19
 
-@mixin Themer($Property, $ColorCat, $ExtraValues:"") {
+@mixin Themer($Property, $ColorCat , $ExtraValues:"") {
 
     $Properties: (
     background,
@@ -12,19 +12,20 @@
     border-bottom,
     box-shadow,
     text-shadow,
+    linear-gradient,
     );
 
     @if list-has-key($Properties, $Property) {
 
         $Colorquery: map-deep-get($Palettes, $UINameSpace, $ColorCat);
-        
+
         & {
 
             @if $ExtraValues == before {
 
                 &::before {
                     content: '';
-                    #{$Property}: unquote($Color);
+                    #{$Property}: unquote($Colorquery);
                     @content;
                 }
 
@@ -32,11 +33,34 @@
 
                 &::after {
                     content: '';
-                    #{$Property}: unquote($Color);
+                    #{$Property}: unquote($Colorquery);
                     @content;
                 }
 
-            } @else {
+            } @else if $Property == linear-gradient {
+
+                $Colors:();
+
+                @for $i from 1 through length($Colorquery) {
+
+                    $color: map-deep-get($Palettes, $UINameSpace, nth($ColorCat, $i));
+
+                    $Colors: append($Colors, $color, comma);
+
+                }
+
+            //$Gradcolors: nth(nth($ColorCat, 1), 1);
+
+            @warn "Los colores son #{$Colors}";
+
+            @if $ExtraValues == "" {
+                $ExtraValues: "180deg";
+              }
+
+
+            background:  linear-gradient( unquote($ExtraValues), unquote($Colorquery) );
+
+        } @else {
 
                 #{$Property}: unquote($Colorquery) unquote($ExtraValues);
 
