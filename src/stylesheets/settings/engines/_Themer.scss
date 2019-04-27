@@ -49,8 +49,6 @@
 
                 }
 
-            @warn "Los gradiente es #{$Colors}";
-
             @if $ExtraValues == "" {
                 $ExtraValues: "180deg";
               }
