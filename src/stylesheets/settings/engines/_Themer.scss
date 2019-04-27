@@ -65,7 +65,7 @@
 
     } @else {
 
-        @error "'#{$Property}' no es una propiedad permitida. (Solo background, color, border, text-shadow o box-shadow).";
+        @error "'#{$Property}' no es una propiedad permitida. (Solo background, color, border, text-shadow, box-shadow y linear-gradient).";
 
     }
 } // Themer Engine
