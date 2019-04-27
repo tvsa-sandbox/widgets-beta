@@ -4,6 +4,6 @@
 
     @extend %Privacy;
 
-    @include Themer (linear-gradient, Color-1 Color-2);
+    @include Themer (linear-gradient, Color-1 Color-2,"to top");
 
 };

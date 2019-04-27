@@ -41,24 +41,22 @@
 
                 $Colors:();
 
-                @for $i from 1 through length($Colorquery) {
+                @for $i from 1 through length($ColorCat) {
 
                     $color: map-deep-get($Palettes, $UINameSpace, nth($ColorCat, $i));
 
-                    $Colors: append($Colors, $color, comma);
+                    $Colors: append($Colors, unquote($color), comma);
 
                 }
 
-            //$Gradcolors: nth(nth($ColorCat, 1), 1);
-
-            @warn "Los colores son #{$Colors}";
+            @warn "Los gradiente es #{$Colors}";
 
             @if $ExtraValues == "" {
                 $ExtraValues: "180deg";
               }
 
 
-            background:  linear-gradient( unquote($ExtraValues), unquote($Colorquery) );
+            background:  linear-gradient( unquote($ExtraValues), $Colors );
 
         } @else {
 
