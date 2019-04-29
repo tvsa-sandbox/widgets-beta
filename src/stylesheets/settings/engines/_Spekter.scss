@@ -27,6 +27,7 @@
     @include Themer(color, $PlaceholderIconColor, before) {
         content: $PlaceholderIcon;
         align-items: center;
+        display: flex;
         font-family: Iconography;
         @include responsive-font(320px, 1440px, ($PlaceholderIconSize - 100), $PlaceholderIconSize);
         height: 100%;
@@ -39,14 +40,6 @@
     @if  $BgT == transparent {
 
         // transparent
-
-        &::before {
-
-            display: none;
-
-        }
-
-    } @else {
 
         &::before {
 
