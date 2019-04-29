@@ -1,4 +1,4 @@
-// Spekter Mix Engine | WhiteLabel MarkUp v2.1.0 Atomic Ghost | 26/5/19
+// Spekter Mix Engine | WhiteLabel MarkUp v2.1.1 Atomic Ghost | 29/5/19
 
 @mixin Spekter($AspectValue, $Pos: false, $BgT: false,) {
 
@@ -27,21 +27,6 @@
     @include Themer(color, $PlaceholderIconColor, before) {
         content: $PlaceholderIcon;
         align-items: center;
-        @if  $BgT == transparent {
-
-            // transparent
-
-            &::before {
-
-                display: none;
-
-            }
-
-        } @else {
-
-            display: flex;
-
-        }
         font-family: Iconography;
         @include responsive-font(320px, 1440px, ($PlaceholderIconSize - 100), $PlaceholderIconSize);
         height: 100%;
@@ -49,5 +34,25 @@
         position: absolute;
         top: 0px;
         width: 100%;
+    }
+
+    @if  $BgT == transparent {
+
+        // transparent
+
+        &::before {
+
+            display: none;
+
+        }
+
+    } @else {
+
+        &::before {
+
+            display: none;
+
+        }
+
     }
 } // Spekter Mix Engine
