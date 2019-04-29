@@ -1,12 +1,10 @@
-// Morpher Mix Engine | WhiteLabel MarkUp v2.1.0 Atomic Ghost | 26/5/19
+// Morpher Mix Engine | WhiteLabel MarkUp v2.1.1 Atomic Ghost | 26/5/19
 
 @mixin Morpher($Device) {
 
 	@if map-has-key($Breakpoints, $Device) {
 
 		$DeviceQuery: map-get($Breakpoints, $Device);
-
-		//@warn "el break es #{$DeviceQuery}";
 
 		@if $Device == All-Desktop {
 
@@ -16,8 +14,15 @@
 
         	}
 
-		} @else {
-			
+		} @else if $Device == Desktop-HD {
+
+			$Val1: nth($DeviceQuery, 1);
+
+	        @media (min-width: $Val1) {
+	            @content;
+	        }
+	    } @else {
+
 			$Val1: nth($DeviceQuery, 1);
 			$Val2: nth($DeviceQuery, 2);
 
@@ -34,4 +39,3 @@
     }
 
 }
-
