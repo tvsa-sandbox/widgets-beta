@@ -24,7 +24,7 @@
             }
         }
 
-        @warn "valor de #{$values} en shorthand";
+        //@warn "valor de #{$values} en shorthand";
 
         @if $type == padding {
             @if $direction == all {
