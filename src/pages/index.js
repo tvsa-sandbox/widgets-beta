@@ -5,13 +5,13 @@ import Layout from "../layouts";
 // Components
 
 import Privacy from "../components/Privacy/Privacy";
+import Calendar from "../components/Calendar/Calendar";
 
 
 const IndexPage = () => (
     <Layout>
-        
         <Privacy />
-        
+        <Calendar />
     </Layout>
 );
 

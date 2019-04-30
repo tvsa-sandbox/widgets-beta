@@ -1,0 +1,33 @@
+// Calendar Close
+
+@include ThemerUI(Calendar){
+
+        @include Element(CloseContainer) {
+
+            @extend %Calendar__CloseContainer;
+        }
+
+        @include Element(Close) {
+
+    		@extend %Calendar__Close;
+
+            @include Themer(color, White);
+
+        }
+};
+
+// .Calendar {
+//
+//     &__CloseContainer {
+//
+//         @extend %Calendar__CloseContainer;
+//     }
+//
+//     &__Close {
+//
+// 		@extend %Calendar__Close;
+//
+//         @include Themer(color, White);
+//
+//     }
+// }

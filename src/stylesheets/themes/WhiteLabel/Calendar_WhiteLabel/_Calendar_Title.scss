@@ -1,0 +1,34 @@
+// Calendar Title
+
+@include ThemerUI(Calendar) {
+
+    @include Element(TitleContainer) {
+
+        @extend %Calendar__TitleContainer;
+
+    }
+
+    @include Element(Title) {
+
+        @extend %Calendar__Title;
+
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+};
+
+// .Calendar {
+//
+//     &__TitleContainer.#{$UINameSpace}  {
+//
+//         @extend %Calendar__TitleContainer;
+//     }
+//
+//     &__Title.#{$UINameSpace} {
+//
+//         @extend %Calendar__Title;
+//
+//         @include Themer(color, Text-Light-Headlines);
+//
+//     }
+// }

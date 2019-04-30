@@ -1,0 +1,55 @@
+// Calendar Description
+
+%Calendar {
+
+    &__DescriptionContainer {
+
+        display: flex;
+        bottom: 9px;
+        margin: 0px 0px 17px 8px;
+        position: relative;
+        text-align: left;
+        width: 97%;
+
+        @include Morpher(Tablet) {
+
+            padding: 12px 0px 12px 12px;
+            width: 95%;
+
+        }
+
+        @include Morpher(Laptop) {
+
+            margin: 2px 0px 7px 12px;
+            width: 95%;
+
+        }
+
+        @include Morpher(Desktop) {
+
+            margin: 12px 0px 10px 20px;
+            width: 93%;
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            margin: 12px 0px 0px 20px;
+            width: 95%;
+
+        }
+    }
+
+    &__Description {
+
+        text-align: left;
+
+        @include Typer(SubTextCredit);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitleExtraDesktop);
+
+        }
+    }
+}

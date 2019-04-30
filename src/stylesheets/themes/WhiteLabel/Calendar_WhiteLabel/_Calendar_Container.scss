@@ -1,0 +1,9 @@
+// Calendar Container
+
+@include ThemerUI(Calendar){
+
+    @include Element(Container) {
+
+        @extend %Calendar__Container;
+    }
+};

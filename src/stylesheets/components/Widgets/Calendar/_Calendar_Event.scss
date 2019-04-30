@@ -1,0 +1,31 @@
+// Calendar Event
+
+%Calendar {
+
+    &__EventContainer {
+
+        position: relative;
+        width: 100%;
+        display: flex;
+
+        @include Themer(background, Color-9, before) {
+
+            content: "";
+            width: 5px;
+            position: absolute;
+            transition: .5s ease-in-out;
+            height: 100%;
+
+        }
+
+        &:hover {
+
+            @include Themer(background, Color-9, before) {
+
+                width: 100%;
+                z-index: 0;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+// Calendar Core
+
+@include ThemerUI(Calendar) {
+
+    @extend %Calendar;
+
+    @include Themer (background, Color-1);
+
+};
