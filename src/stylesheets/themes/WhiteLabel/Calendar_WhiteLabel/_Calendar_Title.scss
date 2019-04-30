@@ -2,17 +2,134 @@
 
 @include ThemerUI(Calendar) {
 
-    @include Element(TitleContainer) {
+    @include Element(CurrentContainer) {
 
-        @extend %Calendar__TitleContainer;
+        @extend %Calendar__CurrentContainer;
+
+        @include Themer(color, White, before) {
+
+            bottom: 0px;
+            content: "nuestros próximos eventos";
+            position: absolute;
+            text-transform: uppercase;
+            z-index: 2;
+
+            @include Typer(SubTextInfo);
+
+        }
 
     }
 
-    @include Element(Title) {
+    @include Element(CurrentDateContainer) {
 
-        @extend %Calendar__Title;
+        @extend %Calendar__CurrentDateContainer;
+
+        @include Themer(background, Color-6, before) {
+
+            content: " ";
+            height: 2px;
+            position: absolute;
+            top: 0px;
+            width: 40%;
+            z-index: 2;
+
+        }
+
+    }
+
+    @include Element(CurrentDateDay) {
+
+        @extend %Calendar__CurrentDateDay;
 
         @include Themer(color, Text-Light-Headlines);
+
+    }
+
+    @include Element(CurrentDateNumber) {
+
+        @extend %Calendar__CurrentDateNumber;
+
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+
+    @include Element(CurrentDateMonth) {
+
+        @extend %Calendar__CurrentDateMonth;
+
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+
+    @include Element(CurrentDateTimeContainer) {
+
+        @extend %Calendar__CurrentDateTimeContainer;
+
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+
+    @include Element(CurrentDateTimeHour) {
+
+        @extend %Calendar__CurrentDateTimeHour;
+
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+
+    @include Element(CurrentDateTimeMinutes) {
+
+        @extend %Calendar__CurrentDateTimeMinutes;
+
+        @include Themer(color, White, before) {
+
+            content: " : ";
+            position: relative;
+            animation: time 2s .5s ease-in-out infinite;
+            animation-play-state: running;
+
+        }
+
+        @include Themer(color, White, after) {
+
+            content: " PM ";
+            position: relative;
+
+        }
+
+        @include Themer(color, Text-Light-Headlines);
+
+        @keyframes time {
+
+        	0% {
+
+        		opacity: 0.2;
+
+        	}
+
+        	50% {
+
+        		opacity: 1;
+
+        	}
+
+        	100% {
+
+        		opacity: 0.2;
+
+        	}
+        }
+    }
+
+    @include Element(CurrentImageContainer) {
+
+        @extend %Calendar__CurrentImageContainer;
+
+    }
+
+    @include Element(CurrentImage) {
+
+        @extend %Calendar__CurrentImage;
 
     }
 };

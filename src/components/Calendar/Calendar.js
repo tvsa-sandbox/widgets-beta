@@ -4,10 +4,29 @@ import { Link } from "gatsby";
 const Calendar = () => (
     <section className="Calendar WhiteLabel">
         <div className="Calendar__Container WhiteLabel">
-            <div className="Calendar__TitleContainer WhiteLabel">
-                <h2 className="Calendar__Title WhiteLabel">
-                    Título
-                </h2>
+            <div className="Calendar__CurrentContainer WhiteLabel">
+                <div className="Calendar__CurrentImageContainer WhiteLabel">
+                    <img className="Calendar__CurrentImage WhiteLabel" src="https://static.vix.com/es/sites/default/files/styles/1x1/public/imj/imujer/5/522035185.jpg?itok=SyAk9fOK"/>
+                </div>
+                <div className="Calendar__CurrentDateContainer WhiteLabel">
+                    <h2 className="Calendar__CurrentDateDay WhiteLabel">
+                        Martes
+                    </h2>
+                    <h2 className="Calendar__CurrentDateNumber WhiteLabel">
+                        30
+                    </h2>
+                    <h2 className="Calendar__CurrentDateMonth WhiteLabel">
+                        Abril
+                    </h2>
+                </div>
+                <div className="Calendar__CurrentDateTimeContainer WhiteLabel">
+                    <h2 className="Calendar__CurrentDateTimeHour WhiteLabel">
+                        1
+                    </h2>
+                    <h2 className="Calendar__CurrentDateTimeMinutes WhiteLabel">
+                        48
+                    </h2>
+                </div>
             </div>
             <div className="Calendar__EventsContainer WhiteLabel">
                 <div className="Calendar__EventContainer WhiteLabel">

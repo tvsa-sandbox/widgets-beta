@@ -2,18 +2,101 @@
 
 %Calendar {
 
-    &__TitleContainer {
+    &__CurrentContainer {
 
+        align-items: center;
         display: flex;
+        flex-direction: column-reverse;
+        height: 150px;
         justify-content: center;
-        padding: 10px;
+        margin: 0px auto;
         position: relative;
+        width: 100%;
 
     }
 
-    &__Title {
+    &__CurrentDateContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 5px 0px 10px 0px;
+        position: relative;
+        width: 100%;
+
+    }
+
+    &__CurrentDateDay {
+
+        z-index: 2;
+
+        @include Typer(FooterTextContact);
+
+    }
+
+    &__CurrentDateNumber {
+
+        margin: 0px 5px;
+        z-index: 2;
+
+        @include Typer(ItemTitleDescription);
+
+    }
+
+    &__CurrentDateMonth {
+
+        z-index: 2;
+
+        @include Typer(FooterTextContact);
+
+    }
+
+    &__CurrentDateTimeContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    &__CurrentDateTimeHour {
+
+        z-index: 2;
 
         @include Typer(ItemTitle);
+
+    }
+
+    &__CurrentDateTimeMinutes {
+
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        width: auto;
+
+        @include Typer(ItemTitle);
+
+    }
+
+    &__CurrentImageContainer {
+
+        height: 75%;
+        opacity: 0.7;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 0px;
+
+    }
+
+    &__CurrentImage{
+
+        max-width: 300px;
+        width: 100%;
 
     }
 }
