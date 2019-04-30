@@ -17,11 +17,14 @@
 
             $val: map-get($Spaces, nth($amount, $i));
 
-            $values: append($values, pxtorem($val), space);
-
+            @if $val == auto {
+                $values: append($values, $val, space);
+            } @else {
+                $values: append($values, pxtorem($val), space);
+            }
         }
 
-        //@warn "valor de #{$values} en shorthand";
+        @warn "valor de #{$values} en shorthand";
 
         @if $type == padding {
             @if $direction == all {
