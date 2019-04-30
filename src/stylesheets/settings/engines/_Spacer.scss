@@ -29,41 +29,29 @@
         @if $type == padding {
             @if $direction == all {
                 padding: $values;
+            } @else if $direction == top {
+            padding-top: $val;
+            } @else if $direction == left {
+                padding-left: $val;
+            } @else if $direction == right {
+                padding-right: $val;
+            } @else {
+                padding-bottom: $val;
             }
         } @else {
 
             @if $direction == all {
                 margin: $values;
+            } @else if $direction == top {
+                margin-top: $sval;
+            } @else if $direction == left {
+                margin-left: $sval;
+            } @else if $direction == right {
+                margin-right: $sval;
+            } @else {
+                margin-bottom: $sval;
             }
 
-        }
-    }
-
-    $sval: pxtorem(map-get($Spaces, $amount));
-
-    @if $type == padding {
-        @if $direction == all{
-            padding: $sval;
-        } @else if $direction == top {
-            padding-top: $sval;
-        } @else if $direction == left {
-            padding-left: $sval;
-        } @else if $direction == right {
-            padding-right: $sval;
-        } @else {
-            padding-bottom: $sval;
-        }
-    } @else {
-        @if $direction == all{
-            margin: $sval;
-        } @else if $direction == top {
-            margin-top: $sval;
-        } @else if $direction == left {
-            margin-left: $sval;
-        } @else if $direction == right {
-            margin-right: $sval;
-        } @else {
-            margin-bottom: $sval;
         }
     }
 }

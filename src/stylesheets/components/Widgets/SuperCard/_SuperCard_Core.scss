@@ -3,7 +3,7 @@
 %SuperCard {
 
     display: flex;
-    margin: 0px auto;
+    @include Spacer(margin,all, zero auto);
     max-width: 1440px;
     width: 100%;
 
