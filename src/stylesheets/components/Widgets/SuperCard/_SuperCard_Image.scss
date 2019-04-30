@@ -1,0 +1,9 @@
+// SuperCard Core
+
+%SuperCard {
+
+    &__ImageContainer {
+
+        @include Spekter(16-9);
+    }
+}

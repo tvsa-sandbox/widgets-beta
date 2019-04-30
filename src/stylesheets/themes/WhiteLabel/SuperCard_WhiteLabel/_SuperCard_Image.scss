@@ -1,0 +1,9 @@
+// SuperCard Core
+
+@include ThemerUI(SuperCard) {
+
+    @include Element(ImageContainer) {
+        @extend %SuperCard__ImageContainer;
+    }
+
+};

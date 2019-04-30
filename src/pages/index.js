@@ -5,13 +5,15 @@ import Layout from "../layouts";
 // Components
 
 import Privacy from "../components/Privacy/Privacy";
+import SuperCard from "../components/SuperCard/SuperCard";
 
 
 const IndexPage = () => (
     <Layout>
-        
+    
+        <SuperCard />
         <Privacy />
-        
+
     </Layout>
 );
 
