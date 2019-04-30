@@ -1,4 +1,4 @@
-// Spacer Engine | WhiteLabel MarkUp v2.1.6 Atomic Ghost | 25/5/19
+// Spacer Engine | WhiteLabel MarkUp v2.1.7 Atomic Ghost | 2/5/19
 
 /* examples
 
@@ -17,8 +17,11 @@
 
             $val: map-get($Spaces, nth($amount, $i));
 
-            $values: append($values, pxtorem($val), space);
-
+            @if $val == auto {
+                $values: append($values, $val, space);
+            } @else {
+                $values: append($values, pxtorem($val), space);
+            }
         }
 
         //@warn "valor de #{$values} en shorthand";
