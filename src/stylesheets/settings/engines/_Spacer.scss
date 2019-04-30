@@ -1,4 +1,4 @@
-// Spacer Engine | WhiteLabel MarkUp v2.1.7 Atomic Ghost | 2/5/19
+// Spacer Engine | WhiteLabel MarkUp v2.1.8 Atomic Ghost | 2/5/19
 
 /* examples
 
@@ -37,33 +37,34 @@
             }
 
         }
-    }
-
-    $sval: pxtorem(map-get($Spaces, $amount));
-
-    @if $type == padding {
-        @if $direction == all{
-            padding: $sval;
-        } @else if $direction == top {
-            padding-top: $sval;
-        } @else if $direction == left {
-            padding-left: $sval;
-        } @else if $direction == right {
-            padding-right: $sval;
-        } @else {
-            padding-bottom: $sval;
-        }
     } @else {
-        @if $direction == all{
-            margin: $sval;
-        } @else if $direction == top {
-            margin-top: $sval;
-        } @else if $direction == left {
-            margin-left: $sval;
-        } @else if $direction == right {
-            margin-right: $sval;
+
+        $sval: pxtorem(map-get($Spaces, $amount));
+
+        @if $type == padding {
+            @if $direction == all{
+                padding: $sval;
+            } @else if $direction == top {
+                padding-top: $sval;
+            } @else if $direction == left {
+                padding-left: $sval;
+            } @else if $direction == right {
+                padding-right: $sval;
+            } @else {
+                padding-bottom: $sval;
+            }
         } @else {
-            margin-bottom: $sval;
+            @if $direction == all{
+                margin: $sval;
+            } @else if $direction == top {
+                margin-top: $sval;
+            } @else if $direction == left {
+                margin-left: $sval;
+            } @else if $direction == right {
+                margin-right: $sval;
+            } @else {
+                margin-bottom: $sval;
+            }
         }
     }
 }
