@@ -8,16 +8,12 @@
         justify-content: center;
         padding: 10px;
         position: relative;
+
     }
 
     &__Title {
 
         @include Typer(ItemTitle);
 
-        @include Morpher(All-Desktop) {
-
-            @include Typer(ItemTitleDesktop);
-
-        }
     }
 }

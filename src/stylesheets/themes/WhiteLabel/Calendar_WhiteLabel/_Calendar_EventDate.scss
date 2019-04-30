@@ -1,10 +1,67 @@
 // Calendar EventDate
 
-@include ThemerUI(Calendar){
+@include ThemerUI(Calendar) {
 
-        @include Element(EventDateContainer) {
+    @include Element(EventDateContainer) {
 
-            @extend %Calendar__EventDateContainer;
+        @extend %Calendar__EventDateContainer;
 
-        }
+    }
+
+    @include Element(EventDateMonth) {
+
+        @extend %Calendar__EventDateMonth;
+
+        @include Themer(color, Text-Dark-Body);
+
+    }
+
+    @include Element(EventDateNumber) {
+
+        @extend %Calendar__EventDateNumber;
+
+        line-height: 2rem;
+
+        @include Themer(color, Text-Dark-Body);
+
+    }
+
+    @include Element(EventDateDay) {
+
+        @extend %Calendar__EventDateDay;
+
+        @include Themer(color, Text-Dark-Body);
+
+    }
+
+    @include Element(EventDescriptionContainer) {
+
+        @extend %Calendar__EventDescriptionContainer;
+
+        @include Themer(color, Text-Dark-Body);
+
+    }
+
+    @include Element(EventDescriptionLink) {
+
+        @extend %Calendar__EventDescriptionLink;
+
+        @include Themer(color, Text-Dark-Body);
+
+    }
+
+    @include Element(EventDescriptionTime) {
+
+        @extend %Calendar__EventDescriptionTime;
+
+        @include Themer(color, Text-Dark-Body);
+
+    }
+
+    @include Element(EventAdressLink) {
+
+        @extend %Calendar__EventAdressLink;
+
+        @include Themer(color, Text-Dark-Body);
+    }
 };

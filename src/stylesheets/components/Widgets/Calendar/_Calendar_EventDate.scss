@@ -5,7 +5,66 @@
     &__EventDateContainer {
 
         display: flex;
+        flex-direction: column;
+        margin: 10px 10px 10px 15px;
+        max-width: 50px;
         width: 100%;
+        z-index: 2;
+
+    }
+
+    &__EventDateMonth {
+
+        z-index: 2;
+
+        @include Typer(SubTextInfo);
+
+    }
+
+    &__EventDateNumber {
+
+        z-index: 2;
+
+        @include Typer(HeadlineMainDescription);
+
+    }
+
+    &__EventDateDay {
+
+        z-index: 2;
+
+        @include Typer(FooterTextCopyright);
+
+    }
+
+    &__EventDescriptionContainer {
+
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        width: 100%;
+        z-index: 2;
+
+    }
+
+    &__EventDescriptionLink {
+
+        margin: 0px;
+        text-decoration: none;
+
+        @include Typer(ItemTitleDescription)
+
+    }
+
+    &__EventDescriptionTime {
+
+        @include Typer(SubTextInfo)
+
+    }
+
+    &__EventAdressLink {
+
+        @include Typer(FooterTextContact);
 
     }
 }
