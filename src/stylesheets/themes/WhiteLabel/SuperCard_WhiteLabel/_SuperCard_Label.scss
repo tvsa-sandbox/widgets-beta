@@ -12,6 +12,8 @@
 
         @extend %SuperCard__Label;
 
+        @include Typer(SubTextCredit);
+
         @include Themer(color, Text-Dark-Headlines);
     }
 

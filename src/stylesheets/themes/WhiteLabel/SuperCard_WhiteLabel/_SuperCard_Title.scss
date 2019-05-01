@@ -1,0 +1,18 @@
+// SuperCard Core
+
+@include ThemerUI(SuperCard) {
+
+    @include Element(TitleContainer) {
+        @extend %SuperCard__TitleContainer;
+
+    }
+
+    @include Element(Title) {
+
+        @extend %SuperCard__Title;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(HeadlineMain);
+    }
+
+};

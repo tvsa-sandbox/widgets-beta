@@ -13,7 +13,7 @@ const SuperCard = () => (
                 </picture>
             </div>
             <div className="SuperCard__IconContainer WhiteLabel">
-                <div className="SuperCard__TypeAIcon Icn_Video WhiteLabel">
+                <div className="SuperCard__Icon Icn_Video WhiteLabel">
                     <span className="Display">
                         Display
                     </span>
@@ -28,28 +28,23 @@ const SuperCard = () => (
         <div className="SuperCard__Caption WhiteLabel">
             <div className="SuperCard__TitleContainer WhiteLabel">
                 <h3 className="SuperCard__Title WhiteLabel">
-                    Mira cómo luce Miss España sin maquillaje
+                    “No, no soy yo la que lo está cargando”: Nuevos detalles del embarazo de Joy Huerta
                 </h3>
             </div>
             <div className="SuperCard__DescriptionContainer WhiteLabel">
                 <p className="SuperCard__Description WhiteLabel">
-                    En la red circula una imagen de Ángela Ponce, Miss España, luciendo su rostro al natural
+                    La cantante fue cuestionada si es ella quien lleva en el vientre a la bebé que espera junto a su esposa y dijo que pronto dará más noticias
                 </p>
             </div>
-            <div className="SuperCard__TimeContainer WhiteLabel">
-                <time className="SuperCard__TypeATime WhiteLabel">
-                    11:11
-                </time>
-            </div>
-            <div className="SuperCard__Container WhiteLabel">
+            <div className="SuperCard__DateContainer WhiteLabel">
                 <time datetime="2018-11-20 20:00" className="SuperCard__Date WhiteLabel">
                     20 de Noviembre
                 </time>
             </div>
-            <div className="SuperCard__CalltoActionContainer WhiteLabel">
-                <span className="SuperCard__CalltoAction WhiteLabel">
+            <div className="SuperCard__ButtonContainer WhiteLabel">
+                <button className="SuperCard__Button WhiteLabel">
                     Ver contenido
-                </span>
+                </button>
             </div>
         </div>
     </section>

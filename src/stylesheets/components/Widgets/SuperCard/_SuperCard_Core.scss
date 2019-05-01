@@ -2,9 +2,14 @@
 
 %SuperCard {
 
-    display: flex;
-    max-width: 1440px;
+    max-width: 1180px;
     width: 100%;
 
-    @include Spacer(margin, all, zero auto);
+    @include Spacer(margin, all, xl auto);
+
+    @include Morpher(All-Desktop) {
+
+		display: flex;
+
+    }
 }

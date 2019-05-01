@@ -5,13 +5,14 @@
     &__LabelContainer {
 
         position: absolute;
-        left: 0px;
+        right: 0px;
         top: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 2;
 
-        @include Spacer(padding,all, sm )
+        @include Spacer(padding,all, sm );
     }
 
     &__Label {
