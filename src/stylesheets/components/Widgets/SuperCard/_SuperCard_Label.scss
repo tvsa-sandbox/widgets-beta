@@ -1,0 +1,22 @@
+// SuperCard Core
+
+%SuperCard {
+
+    &__LabelContainer {
+
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include Spacer(padding,all, sm )
+    }
+
+    &__Label {
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

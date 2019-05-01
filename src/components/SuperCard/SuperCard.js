@@ -4,12 +4,12 @@ import { withPrefix } from "gatsby";
 
 const SuperCard = () => (
     <section className="SuperCard WhiteLabel">
-        <Link className="SuperCard__Thumbnail WhiteLabel">
+        <Link to="/" className="SuperCard__Thumbnail WhiteLabel">
             <div className="SuperCard__ImageContainer WhiteLabel">
                 <picture>
                     <source media="(min-width: 768px)" srcSet={withPrefix("/static/aspect-ratio-images/9x16-389x692.jpg")} />
                     <source media="(min-width: 414px)" srcSet={withPrefix("/static/aspect-ratio-images/3x4-414x552.jpg")} />
-                    <img className="SuperCard__ImageContainer" src={withPrefix("/static/aspect-ratio-images/3x4-320x426.jpg")} alt="Test" />
+                    <img className="SuperCard__Image" src={withPrefix("/static/aspect-ratio-images/3x4-320x426.jpg")} alt="Test" />
                 </picture>
             </div>
             <div className="SuperCard__IconContainer WhiteLabel">

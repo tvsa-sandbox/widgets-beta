@@ -1,0 +1,13 @@
+// SuperCard Core
+
+@include ThemerUI(SuperCard) {
+
+    @include Element(IconContainer) {
+        @extend %SuperCard__IconContainer;
+    }
+
+    @include Element(Icon) {
+        @extend %SuperCard__Icon;
+    }
+
+};

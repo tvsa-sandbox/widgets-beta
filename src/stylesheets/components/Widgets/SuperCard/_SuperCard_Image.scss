@@ -4,6 +4,12 @@
 
     &__ImageContainer {
 
-        @include Spekter(16-9);
+        @include Spekter(3_4);
+
+        @include Morpher(All-Desktop) {
+
+            @include Spekter(9_16);
+
+        }
     }
 }
