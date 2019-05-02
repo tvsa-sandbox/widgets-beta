@@ -15,7 +15,7 @@
             z-index: 2;
 
             @include Typer(SubTextInfo);
-            @include IconShadow;
+            @include Shadow;
 
         }
 
@@ -43,7 +43,7 @@
         @extend %Calendar__CurrentDateDay;
 
         @include Themer(color, Text-Light-Headlines);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -52,7 +52,7 @@
         @extend %Calendar__CurrentDateNumber;
 
         @include Themer(color, Text-Light-Headlines);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -61,7 +61,7 @@
         @extend %Calendar__CurrentDateMonth;
 
         @include Themer(color, Text-Light-Headlines);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -70,7 +70,7 @@
         @extend %Calendar__CurrentDateTimeContainer;
 
         @include Themer(color, Text-Light-Headlines);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -79,7 +79,7 @@
         @extend %Calendar__CurrentDateTimeHour;
 
         @include Themer(color, Text-Light-Headlines);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -94,7 +94,7 @@
             animation: time 2s .5s ease-in-out infinite;
             animation-play-state: running;
 
-            @include IconShadow;
+            @include Shadow;
 
         }
 
@@ -103,7 +103,7 @@
             content: " PM ";
             position: relative;
 
-            @include IconShadow;
+            @include Shadow;
 
         }
 

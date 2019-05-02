@@ -31,7 +31,7 @@
         z-index: 2;
 
         @include Typer(FooterTextContact);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -41,7 +41,7 @@
         z-index: 2;
 
         @include Typer(ItemTitleDescription);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -50,7 +50,7 @@
         z-index: 2;
 
         @include Typer(FooterTextContact);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -68,7 +68,7 @@
         z-index: 2;
 
         @include Typer(ItemTitle);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
@@ -82,7 +82,7 @@
         width: auto;
 
         @include Typer(ItemTitle);
-        @include IconShadow;
+        @include Shadow;
 
     }
 
