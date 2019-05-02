@@ -6,6 +6,9 @@ const Calendar = () => (
         <div className="Calendar__Container WhiteLabel">
             <div className="Calendar__CurrentContainer WhiteLabel">
                 <div className="Calendar__CurrentImageContainer WhiteLabel">
+                    <picture>
+                        <img className="Calendar__CurrentImage WhiteLabel" src="./static/aspect-ratio-images/16x9-414x233.jpg" alt="ImageEvent" />
+                    </picture>
                     <img className="Calendar__CurrentImage WhiteLabel" src="https://static.vix.com/es/sites/default/files/styles/1x1/public/imj/imujer/5/522035185.jpg?itok=SyAk9fOK" alt="Evento"/>
                 </div>
                 <div className="Calendar__CurrentDateContainer WhiteLabel">

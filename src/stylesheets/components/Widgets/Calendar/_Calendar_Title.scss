@@ -9,7 +9,7 @@
         flex-direction: column-reverse;
         height: 150px;
         justify-content: center;
-        margin: 0px auto;
+        margin: 0px 0px 27px 0px;
         position: relative;
         width: 100%;
 
@@ -83,19 +83,17 @@
 
     &__CurrentImageContainer {
 
-        height: 75%;
-        opacity: 0.7;
+        opacity: 0.5;
         overflow: hidden;
-        position: absolute;
         top: 0px;
-        width: 100%;
         z-index: 0px;
+
+        @include Spekter(16_9, absolute);
 
     }
 
     &__CurrentImage{
 
-        max-width: 300px;
         width: 100%;
 
     }
