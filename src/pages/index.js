@@ -5,12 +5,14 @@ import Layout from "../layouts";
 // Components
 
 import Privacy from "../components/Privacy/Privacy";
+import Positions from "../components/Positions/Positions";
 
 
 const IndexPage = () => (
     <Layout>
         
         <Privacy />
+        <Positions />
         
     </Layout>
 );
