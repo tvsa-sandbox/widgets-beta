@@ -55,6 +55,14 @@
 
 }
 
+@mixin RoundedModify($TopLeft:20px, $TopRight:20px, $BottomLeft:20px, $BottomRight:20px) {
+    border-radius: $TopLeft $TopRight $BottomLeft $BottomRight;
+}
+
+@mixin IconShadow {
+    text-shadow: #464646 1px 1px 10px;
+}
+
 /* Global components map
 ======================== */
 
