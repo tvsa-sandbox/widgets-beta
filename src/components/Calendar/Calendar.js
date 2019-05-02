@@ -51,8 +51,13 @@ const Calendar = () => (
                         <p className="Calendar__EventDescriptionTime WhiteLabel">
                             14:00 - 00:30
                         </p>
-                        <Link to="/" className="Calendar__EventAdressLink WhiteLabel">
-                            Curva 4, autódromo hermanos rodríguez, CDMX, México
+                        <Link to="/" className="Calendar__EventAdressLinkContainer WhiteLabel">
+                            <div className="Calendar__EventAdressLinkIconContainer WhiteLabel">
+                                <img className="Calendar__EventAdressLinkIcon" src="http://www.pngall.com/wp-content/uploads/2017/05/Map-Marker-PNG-Picture.png" alt="Map Marker"/>
+                            </div>
+                            <div className="Calendar__EventAdressLinkTextContainer WhiteLabel">
+                                <p className="Calendar__EventAdressLinkText WhiteLabel">Curva 4, autódromo hermanos rodríguez, CDMX, México</p>
+                            </div>
                         </Link>
                     </div>
                 </div>
@@ -75,8 +80,13 @@ const Calendar = () => (
                         <p className="Calendar__EventDescriptionTime WhiteLabel">
                             14:00 - 00:30
                         </p>
-                        <Link to="/" className="Calendar__EventAdressLink WhiteLabel">
-                            Curva 4, autódromo hermanos rodríguez, CDMX, México
+                        <Link to="/" className="Calendar__EventAdressLinkContainer WhiteLabel">
+                            <div className="Calendar__EventAdressLinkIconContainer WhiteLabel">
+                                <img className="Calendar__EventAdressLinkIcon" src="http://www.pngall.com/wp-content/uploads/2017/05/Map-Marker-PNG-Picture.png" alt="Map Marker"/>
+                            </div>
+                            <div className="Calendar__EventAdressLinkTextContainer WhiteLabel">
+                                <p className="Calendar__EventAdressLinkText WhiteLabel">Curva 4, autódromo hermanos rodríguez, CDMX, México</p>
+                            </div>
                         </Link>
                     </div>
                 </div>
@@ -99,8 +109,13 @@ const Calendar = () => (
                         <p className="Calendar__EventDescriptionTime WhiteLabel">
                             14:00 - 00:30
                         </p>
-                        <Link to="/" className="Calendar__EventAdressLink WhiteLabel">
-                            Ángel de la Independencia, CDMX, México
+                        <Link to="/" className="Calendar__EventAdressLinkContainer WhiteLabel">
+                            <div className="Calendar__EventAdressLinkIconContainer WhiteLabel">
+                                <img className="Calendar__EventAdressLinkIcon" src="http://www.pngall.com/wp-content/uploads/2017/05/Map-Marker-PNG-Picture.png" alt="Map Marker"/>
+                            </div>
+                            <div className="Calendar__EventAdressLinkTextContainer WhiteLabel">
+                                <p className="Calendar__EventAdressLinkText WhiteLabel">Ángel de la Independencia, CDMX, México</p>
+                            </div>
                         </Link>
                     </div>
                 </div>

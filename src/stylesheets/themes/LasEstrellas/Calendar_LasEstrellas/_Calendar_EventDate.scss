@@ -12,7 +12,7 @@
 
         @extend %Calendar__EventDateMonth;
 
-        @include Themer(color, Text-Dark-Body);
+        @include Themer(color, Text-Dark-Headlines);
 
     }
 
@@ -22,7 +22,7 @@
 
         line-height: 2rem;
 
-        @include Themer(color, Text-Dark-Body);
+        @include Themer(color, Text-Dark-Headlines);
 
     }
 
@@ -30,7 +30,7 @@
 
         @extend %Calendar__EventDateDay;
 
-        @include Themer(color, Text-Dark-Body);
+        @include Themer(color, Text-Dark-Headlines);
 
     }
 
@@ -38,7 +38,7 @@
 
         @extend %Calendar__EventDescriptionContainer;
 
-        @include Themer(color, Text-Dark-Body);
+        @include Themer(color, Text-Dark-Headlines);
 
     }
 
@@ -46,7 +46,8 @@
 
         @extend %Calendar__EventDescriptionLink;
 
-        @include Themer(color, Text-Dark-Body);
+        @include Hover;
+        @include Themer(color, Text-Dark-Headlines);
 
     }
 
@@ -54,11 +55,9 @@
 
         @extend %Calendar__EventDescriptionTime;
 
-        @include Themer(color, Text-Dark-Body);
+        @include Themer(color, Text-Dark-Headlines);
 
     }
-
-
 
     @include Element(EventAdressLinkContainer) {
 
