@@ -59,7 +59,7 @@
     border-radius: $TopLeft $TopRight $BottomLeft $BottomRight;
 }
 
-@mixin IconShadow {
+@mixin Shadow {
     text-shadow: #464646 1px 1px 10px;
 }
 
