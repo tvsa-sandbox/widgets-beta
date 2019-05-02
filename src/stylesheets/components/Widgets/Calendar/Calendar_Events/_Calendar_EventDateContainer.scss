@@ -1,0 +1,16 @@
+// Calendar EventDate
+
+%Calendar {
+
+    &__EventDateContainer {
+
+        display: flex;
+        flex-direction: column;
+        max-width: 50px;
+        width: 100%;
+        z-index: 2;
+
+        @include Spacer(margin, all, md xs md md);
+
+    }
+}

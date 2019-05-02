@@ -2,46 +2,13 @@
 
 @include ThemerUI(Calendar) {
 
-    @include Element(CurrentContainer) {
-
-        @extend %Calendar__CurrentContainer;
-
-        @include Themer(color, White, before) {
-
-            bottom: 0px;
-            content: "nuestros próximos eventos";
-            position: absolute;
-            text-transform: uppercase;
-            z-index: 2;
-
-            @include Typer(SubTextInfo);
-
-        }
-
-    }
-
-    @include Element(CurrentDateContainer) {
-
-        @extend %Calendar__CurrentDateContainer;
-
-        @include Themer(background, Color-6, before) {
-
-            content: " ";
-            height: 2px;
-            position: absolute;
-            top: 0px;
-            width: 40%;
-            z-index: 2;
-
-        }
-
-    }
-
     @include Element(CurrentDateDay) {
 
         @extend %Calendar__CurrentDateDay;
 
-        @include Themer(color, Text-Light-Headlines);
+        @include Themer(color, Text-Light-Body);
+        @include Typer(FooterTextContact);
+        @include Shadow;
 
     }
 
@@ -49,7 +16,9 @@
 
         @extend %Calendar__CurrentDateNumber;
 
-        @include Themer(color, Text-Light-Headlines);
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitleDescription);
+        @include Shadow;
 
     }
 
@@ -57,7 +26,9 @@
 
         @extend %Calendar__CurrentDateMonth;
 
-        @include Themer(color, Text-Light-Headlines);
+        @include Themer(color, Text-Light-Body);
+        @include Typer(FooterTextContact);
+        @include Shadow;
 
     }
 
@@ -65,7 +36,7 @@
 
         @extend %Calendar__CurrentDateTimeContainer;
 
-        @include Themer(color, Text-Light-Headlines);
+        @include Themer(color, Text-Light-Body);
 
     }
 
@@ -73,7 +44,9 @@
 
         @extend %Calendar__CurrentDateTimeHour;
 
-        @include Themer(color, Text-Light-Headlines);
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitle);
+        @include Shadow;
 
     }
 
@@ -90,14 +63,12 @@
 
         }
 
-        @include Themer(color, White, after) {
+        @include Themer(color, Text-Light-Body, after) {
 
             content: " PM ";
             position: relative;
 
         }
-
-        @include Themer(color, Text-Light-Headlines);
 
         @keyframes time {
 
@@ -119,6 +90,10 @@
 
         	}
         }
+
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitle);
+        @include Shadow;
     }
 
     @include Element(CurrentImageContainer) {

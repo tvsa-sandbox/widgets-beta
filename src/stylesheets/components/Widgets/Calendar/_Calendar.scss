@@ -2,6 +2,9 @@
 
 @import './Calendar_Container';
 @import './Calendar_Core';
-@import './Calendar_Event';
-@import './Calendar_EventDate';
-@import './Calendar_Title';
+
+//Calendar Current
+@import './Calendar_Current/Calendar_Current';
+
+//Calendar Event
+@import './Calendar_Events/Calendar_Events';

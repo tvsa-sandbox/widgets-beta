@@ -1,0 +1,10 @@
+// Calendar EventDate
+
+@include ThemerUI(Calendar) {
+
+    @include Element(EventDateContainer) {
+
+        @extend %Calendar__EventDateContainer;
+
+    }
+};

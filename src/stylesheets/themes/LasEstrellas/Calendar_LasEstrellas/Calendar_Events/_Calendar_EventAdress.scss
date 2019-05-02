@@ -1,0 +1,32 @@
+// Calendar EventDate
+
+@include ThemerUI(Calendar) {
+
+    @include Element(EventAdressLinkContainer) {
+
+        @extend %Calendar__EventAdressLinkContainer;
+
+        @include Hover;
+
+    }
+
+    @include Element(EventAdressLinkIconContainer) {
+
+        @extend %Calendar__EventAdressLinkIconContainer;
+
+    }
+
+    @include Element(EventAdressLinkTextContainer) {
+
+        @extend %Calendar__EventAdressLinkTextContainer;
+
+    }
+
+    @include Element(EventAdressLinkText) {
+
+        @extend %Calendar__EventAdressLinkText;
+
+        @include Themer(color, Black);
+        @include Typer(FooterTextContact);
+    }
+};

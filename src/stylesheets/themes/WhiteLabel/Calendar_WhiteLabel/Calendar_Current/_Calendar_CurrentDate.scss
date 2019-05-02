@@ -2,47 +2,12 @@
 
 @include ThemerUI(Calendar) {
 
-    @include Element(CurrentContainer) {
-
-        @extend %Calendar__CurrentContainer;
-
-        @include Themer(color, White, before) {
-
-            bottom: 0px;
-            content: "nuestros próximos eventos";
-            position: absolute;
-            text-transform: uppercase;
-            z-index: 2;
-
-            @include Typer(SubTextInfo);
-            @include Shadow;
-
-        }
-
-    }
-
-    @include Element(CurrentDateContainer) {
-
-        @extend %Calendar__CurrentDateContainer;
-
-        @include Themer(background, Color-6, before) {
-
-            content: " ";
-            height: 2px;
-            position: absolute;
-            top: 0px;
-            width: 40%;
-            z-index: 2;
-
-        }
-
-    }
-
     @include Element(CurrentDateDay) {
 
         @extend %Calendar__CurrentDateDay;
 
         @include Themer(color, Text-Light-Headlines);
+        @include Typer(FooterTextContact);
         @include Shadow;
 
     }
@@ -52,6 +17,7 @@
         @extend %Calendar__CurrentDateNumber;
 
         @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
         @include Shadow;
 
     }
@@ -61,6 +27,7 @@
         @extend %Calendar__CurrentDateMonth;
 
         @include Themer(color, Text-Light-Headlines);
+        @include Typer(FooterTextContact);
         @include Shadow;
 
     }
@@ -70,7 +37,6 @@
         @extend %Calendar__CurrentDateTimeContainer;
 
         @include Themer(color, Text-Light-Headlines);
-        @include Shadow;
 
     }
 
@@ -79,6 +45,7 @@
         @extend %Calendar__CurrentDateTimeHour;
 
         @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitle);
         @include Shadow;
 
     }
@@ -94,8 +61,6 @@
             animation: time 2s .5s ease-in-out infinite;
             animation-play-state: running;
 
-            @include Shadow;
-
         }
 
         @include Themer(color, Text-Light-Headlines, after) {
@@ -103,11 +68,7 @@
             content: " PM ";
             position: relative;
 
-            @include Shadow;
-
         }
-
-        @include Themer(color, Text-Light-Headlines);
 
         @keyframes time {
 
@@ -129,6 +90,10 @@
 
         	}
         }
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitle);
+        @include Shadow;
     }
 
     @include Element(CurrentImageContainer) {

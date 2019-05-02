@@ -9,10 +9,10 @@
         @include Themer(background, Color-1, before) {
 
             content: "";
-            height: 100%;
+            width: 5px;
             position: absolute;
             transition: .5s ease-in-out;
-            width: 5px;
+            height: 100%;
 
         }
 
