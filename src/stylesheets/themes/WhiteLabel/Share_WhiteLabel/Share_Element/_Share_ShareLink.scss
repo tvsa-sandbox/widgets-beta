@@ -1,0 +1,14 @@
+// ShareBar Link
+@include ThemerUI(Share) {
+
+    @include Element(ShareLink) {
+
+        @extend %Share__ShareLink;
+    }
+
+    @include Element(ShareLink) {
+
+        @extend %Share__ShareLink;
+    }
+
+}

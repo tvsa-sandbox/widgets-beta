@@ -1,0 +1,13 @@
+// ShareBar Link Text
+@include ThemerUI(Share) {
+
+    @include Element(ShareLink-TextContainer) {
+
+        @extend %Share__ShareLink-TextContainer;
+    }
+
+    @include Element(ShareLink-Text) {
+
+        @extend %Share__ShareLink-Text;
+    }
+}

@@ -5,13 +5,15 @@ import Layout from "../layouts";
 // Components
 
 import Privacy from "../components/Privacy/Privacy";
+import Share from "../components/Share/Share";
 
 
 const IndexPage = () => (
     <Layout>
-        
+
         <Privacy />
-        
+        <Share />
+
     </Layout>
 );
 
