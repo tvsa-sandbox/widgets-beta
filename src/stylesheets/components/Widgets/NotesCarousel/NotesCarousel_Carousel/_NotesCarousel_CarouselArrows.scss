@@ -1,0 +1,105 @@
+// NotesCarousel Carousel Arrows
+
+.NotesCarousel {
+
+
+    &__CarouselArrowsContainer{
+
+        display: inline-block;
+        height: 120px;
+        position: absolute;
+        width: 50px;
+
+    }
+
+    &__CarouselArrow {
+
+        &-Previous {
+
+            display: none;
+
+            @include Morpher(Tablet) {
+
+                align-items: center;
+                cursor: pointer;
+                display: block;
+                height: 60px;
+                margin-left: 5px;
+                width: 45px;
+                z-index: 5;
+
+                @include HoverButton;
+                @include Themer(background, Color-2);
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                align-items: center;
+                cursor: pointer;
+                display: block;
+                font-size: 30px !important;
+                height: 60px;
+                margin-left: 5px;
+                width: 45px;
+                z-index: 5;
+
+                @include HoverButton;
+                @include Themer(background, Color-2);
+
+            }
+        }
+
+        &-Next {
+
+            display: none;
+
+            @include Morpher(Tablet) {
+
+                align-items: center;
+                display: block;
+                cursor: pointer;
+                display: block;
+                height: 60px;
+                margin-left: 5px;
+                width: 45px;
+                z-index: 5;
+
+                @include HoverButton;
+                @include Themer(background, Color-2);
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                align-items: center;
+                cursor: pointer;
+                display: block;
+                height: 60px;
+                margin-left: 5px;
+                width: 45px;
+                z-index: 5;
+
+                @include HoverButton;
+                @include Themer(background, Color-2);
+
+            }
+        }
+    }
+
+    .Icn_ArrowLeft {
+
+        cursor: pointer;
+        font-size: 30px !important;
+        height: 60px;
+
+    }
+
+    .Icn_ArrowRight {
+
+        cursor: pointer;
+        font-size: 30px !important;
+        height: 60px;
+
+    }
+}

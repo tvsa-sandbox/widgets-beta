@@ -1,0 +1,19 @@
+// NotesCarousel Item Image
+
+.NotesCarousel {
+
+    &__ItemImageContainer {
+
+        height: 100px;
+        position: relative;
+        width: 100px;
+
+    }
+
+    &__ItemImage {
+
+        border-radius: 5px 0px 0px 5px;
+        width: 100%;
+
+    }
+}

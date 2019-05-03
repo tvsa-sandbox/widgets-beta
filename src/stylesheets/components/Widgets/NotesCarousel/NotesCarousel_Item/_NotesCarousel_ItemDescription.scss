@@ -1,0 +1,21 @@
+// NotesCarousel Item Description
+
+.NotesCarousel {
+
+    &__ItemDescriptionContainer {
+
+        display: none;
+
+    }
+
+    &__ItemDescription {
+
+        display: block;
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0px;
+        padding: 6px;
+
+    }
+}
