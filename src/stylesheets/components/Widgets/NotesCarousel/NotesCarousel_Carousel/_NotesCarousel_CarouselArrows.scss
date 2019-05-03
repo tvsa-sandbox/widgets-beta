@@ -31,7 +31,6 @@
                 align-items: center;
                 cursor: pointer;
                 display: block;
-                font-size: 30px !important;
                 height: 85px;
                 margin-left: 5px;
                 width: 45px;
@@ -62,7 +61,6 @@
                 @include HoverButton;
                 @include Themer(background, Color-2);
 
-
             }
         }
     }
@@ -70,7 +68,6 @@
     .Icn_ArrowLeft {
 
         cursor: pointer;
-        font-size: 30px !important;
         height: 60px;
 
         @include Themer(background, Color-3);
@@ -78,6 +75,12 @@
         @include Morpher (All-Desktop) {
 
             height: 85px;
+
+            &:before {
+
+                font-size: 30px;
+
+            }
 
         }
 
@@ -86,7 +89,6 @@
     .Icn_ArrowRight {
 
         cursor: pointer;
-        font-size: 30px !important;
         height: 60px;
 
         @include Themer(background, Color-3);
@@ -95,6 +97,11 @@
 
             height: 85px;
 
+            &:before {
+
+                font-size: 30px;
+
+            }
         }
     }
 }

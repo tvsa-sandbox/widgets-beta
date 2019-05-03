@@ -1,6 +1,6 @@
 // NotesCarousel Item Caption
 
-@include ThemerUI(NotesCarousel){
+@include ThemerUI(NotesCarousel) {
 
     @include Element(ItemCaption) {
 
@@ -23,7 +23,6 @@
                     display:none;
 
                 }
-
             }
         }
     }
