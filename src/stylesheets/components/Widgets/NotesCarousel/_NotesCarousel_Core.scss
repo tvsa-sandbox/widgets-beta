@@ -1,0 +1,11 @@
+// NotesCarousel Core
+
+%NotesCarousel {
+
+    margin: auto;
+    max-width: 1180px;
+    width: 100%;
+
+    @include Spacer(margin, all, xxl auto xxl auto);
+
+}

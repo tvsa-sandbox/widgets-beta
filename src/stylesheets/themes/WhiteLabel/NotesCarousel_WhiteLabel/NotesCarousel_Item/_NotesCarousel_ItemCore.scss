@@ -1,0 +1,10 @@
+// NotesCarousel Item Core
+
+@include ThemerUI(NotesCarousel) {
+
+    @include Element(Item) {
+
+        @extend %NotesCarousel__Item;
+
+    }
+};

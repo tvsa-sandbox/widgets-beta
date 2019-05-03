@@ -1,0 +1,17 @@
+// NotesCarousel Carousel Core
+
+%NotesCarousel {
+
+    &__Carousel {
+
+        height: 120px;
+        margin: 0px auto;
+        position: relative;
+
+        @include Morpher (All-Desktop) {
+
+            height: 170px;
+
+        }
+    }
+}

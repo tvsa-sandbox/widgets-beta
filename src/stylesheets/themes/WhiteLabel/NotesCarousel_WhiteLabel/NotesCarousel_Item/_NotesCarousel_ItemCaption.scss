@@ -1,0 +1,29 @@
+// NotesCarousel Item Caption
+
+@include ThemerUI(NotesCarousel) {
+
+    @include Element(ItemCaption) {
+
+        @extend %NotesCarousel__ItemCaption;
+
+        &:hover {
+
+            @include Morpher(All-Desktop) {
+
+                @include Themer(background, Color-9);
+
+                .NotesCarousel__ItemDescriptionContainer.WhiteLabel {
+
+                    display: block;
+
+                }
+
+                .NotesCarousel__ItemTitleContainer.WhiteLabel {
+
+                    display:none;
+
+                }
+            }
+        }
+    }
+};
