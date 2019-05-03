@@ -6,7 +6,6 @@ import Layout from "../layouts";
 
 import Calendar from "../components/Calendar/Calendar";
 import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
-import Privacy from "../components/Privacy/Privacy";
 
 
 const IndexPage = () => (
@@ -14,8 +13,6 @@ const IndexPage = () => (
 
         <NotesCarousel />
         <Calendar />
-        <Privacy />
-
 
     </Layout>
 );
