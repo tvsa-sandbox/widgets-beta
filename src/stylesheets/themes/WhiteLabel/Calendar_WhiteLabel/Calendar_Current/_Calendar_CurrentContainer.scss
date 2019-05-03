@@ -1,0 +1,22 @@
+// Calendar Title
+
+@include ThemerUI(Calendar) {
+
+    @include Element(CurrentContainer) {
+
+        @extend %Calendar__CurrentContainer;
+
+        @include Themer(color, White, before) {
+
+            bottom: 0px;
+            content: "nuestros próximos eventos";
+            position: absolute;
+            text-transform: uppercase;
+            z-index: 2;
+
+            @include Typer(SubTextInfo);
+
+        }
+
+    }
+};

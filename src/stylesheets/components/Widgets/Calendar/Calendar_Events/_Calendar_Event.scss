@@ -1,0 +1,22 @@
+// Calendar Event
+
+%Calendar {
+
+    &__EventContainer {
+
+        align-items: center;
+        display: flex;
+        position: relative;
+        width: 100%;
+
+        @include Spacer(margin, all, lg zero);
+
+    }
+
+    &__EventsContainer {
+
+        height: 100%;
+        width: 100%;
+
+    }
+}
