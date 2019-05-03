@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logic from "../Carousel/Logic";
-import NotesCarousel_Item from "./Item/NotesCarousel_Item";
+import NotesCarouselItem from "./Item/NotesCarousel_Item";
 
 class NotesCarousel extends Component {
     componentDidMount() {
@@ -19,11 +19,11 @@ class NotesCarousel extends Component {
 
                     <div className="NotesCarousel__CarouselTrack WhiteLabel" id="Track-ucy0snoq1tocn">
                         <div className="NotesCarousel__CarouselThumbnails WhiteLabel" id="ItemList-ucy0snoq1tocn">
-                            <NotesCarousel_Item id="item-ucy0snoq1tocn1" />
-                            <NotesCarousel_Item id="item-ucy0snoq1tocn2" />
-                            <NotesCarousel_Item id="item-ucy0snoq1tocn3" />
-                            <NotesCarousel_Item id="item-ucy0snoq1tocn4" />
-                            <NotesCarousel_Item id="item-ucy0snoq1tocn5" />
+                            <NotesCarouselItem id="item-ucy0snoq1tocn1" />
+                            <NotesCarouselItem id="item-ucy0snoq1tocn2" />
+                            <NotesCarouselItem id="item-ucy0snoq1tocn3" />
+                            <NotesCarouselItem id="item-ucy0snoq1tocn4" />
+                            <NotesCarouselItem id="item-ucy0snoq1tocn5" />
                         </div>
                     </div>
 
