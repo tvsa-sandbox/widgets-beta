@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Logic from "../Carousel/Logic";
-import { withPrefix } from "gatsby-link";
 import NotesCarousel_Item from "./Item/NotesCarousel_Item";
 
 class NotesCarousel extends Component {
