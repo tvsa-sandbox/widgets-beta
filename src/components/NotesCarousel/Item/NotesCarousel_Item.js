@@ -8,7 +8,7 @@ const NotesCarousel_Item = (props) => (
 
           <div className="NotesCarousel__ItemThumbnail WhiteLabel">
               <div className="NotesCarousel__ItemImageContainer WhiteLabel">
-                  <img src={withPrefix("/static/aspect-ratio-images/image2.jpg")} className="NotesCarousel__ItemImage WhiteLabel" />
+                  <img src={withPrefix("/static/aspect-ratio-images/image2.jpg")} className="NotesCarousel__ItemImage WhiteLabel" alt="Image title"/>
               </div>
           </div>
 
