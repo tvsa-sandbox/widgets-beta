@@ -1,28 +1,31 @@
-// Kolibri Typer Engine | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+// Typer Engine | WhiteLabel MarkUp v2.1.6 Atomic Ghost | 25/5/19
+
+/*
+    examples
+    @include Typer(ItemTitle);
+*/
 
 @mixin Typer($FontKind) {
 
-    @for $T from 1 through length($TypographyStyles) {
+    $query: map-get($TypographyStyles, $FontKind);
 
-        $FF: nth(nth(nth($TypographyStyles, $T),2),1);
-        $FW: nth(nth(nth($TypographyStyles, $T),2),2);
-        $FS: nth(nth(nth($TypographyStyles, $T),2),3);
-        $LS: nth(nth(nth($TypographyStyles, $T),2),4);
-        $LH: nth(nth(nth($TypographyStyles, $T),2),5);
+    $FF: nth($query, 1);
+    $FW: nth($query, 2);
+    $FSMAX: nth($query, 3);
+    $FSMIN: nth($query, 4);
+    $LS: nth($query, 5);
 
-        $FontVariant: nth(nth($TypographyStyles, $T),1);
-
-        @if $FontKind == $FontVariant {
-
-            font-family: $FF , sans-serif;
-            font-weight: $FW;
-            font-size: $FS;
-            font-display: swap; 
-            letter-spacing: $LS;
-            line-height: $LH;
-
-            @include FontSmoothing;
-
-        }
+    @if ($FF == sans-serif) {
+        font-family:unquote($FF);
+    } @else {
+        font-family: $FF , sans-serif;
     }
+
+    font-weight: $FW;
+    @include responsive-font(320px,  1440px, $FSMAX, $FSMIN);
+    font-display: swap;
+    letter-spacing: $LS;
+
+    @include FontSmoothing;
+
 }

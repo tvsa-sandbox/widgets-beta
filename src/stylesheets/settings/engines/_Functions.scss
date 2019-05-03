@@ -1,0 +1,23 @@
+// Functions Library | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 25/5/19
+
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@function pxtorem($pxsize) {
+    $remSize: $pxsize / 16px;
+    @return #{$remSize}rem;
+}
+
+@function units($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@function lhtorem($line) {
+    $lineValue: $line * 1.4;
+    $lu: units($lineValue) / 16;
+    @return #{$lu}rem;
+}

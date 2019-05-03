@@ -1,39 +1,69 @@
-// Spacer Engine | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+// Spacer Engine | WhiteLabel MarkUp v2.1.8 Atomic Ghost | 2/5/19
+
+/* examples
+
+@include Spacer(padding,all, base xl);
+@include Spacer(margin,top, xl);
+
+*/
 
 @mixin Spacer($type:margin, $direction:all, $amount:'base') {
 
     @if not map-has-key($Spaces, $amount) {
-        @warn "No color found for #{$amount} in $Spces map. Ktnxbye.";
-      }
 
-        @each $space-name, $space-number in $Spaces {
-          
-            @if $space-name == $amount{
+        $values: ();
 
-            @if $type == padding {
-                @if $direction == all{
-                    padding: $space-number;
-                } @else if $direction == top {
-                    padding-top: $space-number
-                } @else if $direction == left {
-                    padding-left: $space-number
-                } @else if $direction == right {
-                    padding-right: $space-number;
-                } @else {
-                    padding-bottom: $space-number;
-                }
+        @for $i from 1 through length($amount) {
+
+            $val: map-get($Spaces, nth($amount, $i));
+
+            @if $val == auto {
+                $values: append($values, $val, space);
             } @else {
-                @if $direction == all{
-                    margin: $space-number;
-                } @else if $direction == top {
-                    margin-top: $space-number;
-                } @else if $direction == left {
-                    margin-left: $space-number
-                } @else if $direction == right {
-                    margin-right: $space-number;
-                } @else {
-                    margin-bottom: $space-number;
-                }
+                $values: append($values, pxtorem($val), space);
+            }
+        }
+
+        //@warn "valor de #{$values} en shorthand";
+
+        @if $type == padding {
+            @if $direction == all {
+                padding: $values;
+            }
+        } @else {
+
+            @if $direction == all {
+                margin: $values;
+            }
+
+        }
+    } @else {
+
+        $sval: pxtorem(map-get($Spaces, $amount));
+
+        @if $type == padding {
+            @if $direction == all{
+                padding: $sval;
+            } @else if $direction == top {
+                padding-top: $sval;
+            } @else if $direction == left {
+                padding-left: $sval;
+            } @else if $direction == right {
+                padding-right: $sval;
+            } @else {
+                padding-bottom: $sval;
+            }
+        } @else {
+            @if $direction == all{
+                margin: $sval;
+            } @else if $direction == top {
+                margin-top: $sval;
+            } @else if $direction == left {
+                margin-left: $sval;
+            } @else if $direction == right {
+                margin-right: $sval;
+            } @else {
+                margin-bottom: $sval;
             }
         }
     }

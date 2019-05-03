@@ -1,7 +1,7 @@
 // Spaces Settings File | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
 
 $Spaces: (
-
+        zero: 0px, //Cero
         xs: 3px, // xtra small space
         sm: 6px, // small space
         md: 9px, // medium space
@@ -11,6 +11,7 @@ $Spaces: (
         xxl: 24px, // 1xtra large space
         2xl: 36px, // 2xtra large space
         4xl: 48px, // 4xtra large space
+        auto: auto, //auto val
 );
 
 @import './engines/Spacer';

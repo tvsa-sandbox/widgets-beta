@@ -1,0 +1,16 @@
+// Calendar Title
+
+@include ThemerUI(Calendar) {
+
+    @include Element(CurrentImageContainer) {
+
+        @extend %Calendar__CurrentImageContainer;
+
+    }
+
+    @include Element(CurrentImage) {
+
+        @extend %Calendar__CurrentImage;
+
+    }
+};

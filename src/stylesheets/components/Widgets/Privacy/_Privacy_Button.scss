@@ -1,59 +1,27 @@
 // Privacy Button
 
-.Privacy {
+%Privacy {
 
     &__ButtonContainer {
 
         display: flex;
-        justify-content: flex-end;
         margin: 1%;
         position: relative;
-        right: 0%;
 
-        @include HoverButton;
 
-        @include Morpher(Laptop) {
-
-            display: flex;
-            justify-content: flex-end;
-            margin: 10px 4px;
-            right: 10%;
-            top: 11%;
-
-        }
-
-        @include Morpher(Desktop) {
-
-            display: flex;
-            justify-content: flex-end;
-            margin: 10px 4px;
-            right: 10%;
-            top: 10%;
-
-        }
-
-        @include Morpher(Desktop-HD) {
-
-            display: flex;
-            justify-content: flex-end;
-            margin: 10px 4px;
-            top: 10%;
-
-        }
     }
 
     &__Button {
 
+        @extend %Button;
+
         border-radius: 50px;
         bottom: 6px;
-        cursor: pointer;
         padding: 5px 25px;
         position: absolute;
         right: 2%;
         text-transform: uppercase;
 
-        @include Themer(background, Color-7);
-        @include Themer(color, Text-Dark-Headlines);
         @include Typer(ItemTitle);
 
         @include Morpher(Tablet) {
@@ -67,16 +35,12 @@
 			bottom: 5px;
 	        padding: 5px 40px;
 
-            @include Typer(ItemTitleDesktop);
-
         }
 
 		@include Morpher(Desktop-HD) {
 
 			bottom: 5px;
 	        padding: 5px 40px;
-
-            @include Typer(ItemTitleDesktop);
 
         }
     }

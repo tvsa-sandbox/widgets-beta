@@ -1,0 +1,10 @@
+// NotesCarousel Carousel Track
+
+@include ThemerUI(NotesCarousel) {
+
+    @include Element(CarouselTrack) {
+
+        @extend %NotesCarousel__CarouselTrack;
+
+    }
+};

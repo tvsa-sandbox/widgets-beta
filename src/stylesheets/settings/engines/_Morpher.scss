@@ -1,4 +1,41 @@
-// Kolibri Morpher Engine | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+// Morpher Mix Engine | WhiteLabel MarkUp v2.1.1 Atomic Ghost | 29/5/19
 
-@import "./Morpher/Morpher_Ranges";
-@import "./Morpher/Morpher_Mix";
+@mixin Morpher($Device) {
+
+	@if map-has-key($Breakpoints, $Device) {
+
+		$DeviceQuery: map-get($Breakpoints, $Device);
+
+		@if $Device == All-Desktop {
+
+			@media (min-width: $DeviceQuery) {
+
+            	@content;
+
+        	}
+
+		} @else if $Device == Desktop-HD {
+
+			$Val1: nth($DeviceQuery, 1);
+
+	        @media (min-width: $Val1) {
+	            @content;
+	        }
+	    } @else {
+
+			$Val1: nth($DeviceQuery, 1);
+			$Val2: nth($DeviceQuery, 2);
+
+			@media (min-width: $Val1) and (max-width: $Val2) {
+            	@content;
+        	}
+
+		}
+
+	} @else {
+
+        @warn ' !!! The Breakpoint  #{$Device}, doesn\'t exist, please verify !!! El Breakpoint #{$Device} no existe, por favor verifica !!!';
+
+    }
+
+}
