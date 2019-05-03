@@ -12,7 +12,7 @@
         @extend %SuperCard__Date;
 
         @include Themer(color, Text-Light-Headlines);
-        @include Typer(ItemTitleVariant);
+        @include Typer(ItemTitleDescription);
     }
 
 };

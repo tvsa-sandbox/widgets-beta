@@ -8,9 +8,6 @@
         width: 100%;
         display: block;
        
-
-        @include HoverCard;
-
         @include Morpher(All-Desktop) {
 
         	 max-width: 389px;

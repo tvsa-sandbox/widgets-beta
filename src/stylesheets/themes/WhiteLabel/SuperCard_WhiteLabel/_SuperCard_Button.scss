@@ -14,7 +14,7 @@
         @extend %SuperCard__Button;
 
         @include Themer(color, Text-Dark-Headlines);
-        @include Typer(ItemTitleVariant);
+        @include Typer(ItemTitleDescription);
     }
 
 };

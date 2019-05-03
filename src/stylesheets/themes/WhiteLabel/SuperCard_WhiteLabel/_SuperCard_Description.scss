@@ -12,7 +12,7 @@
         @extend %SuperCard__Description;
 
         @include Themer(color, Text-Light-Headlines);
-        @include Typer(HeadlineSubExtra);
+        @include Typer(ItemTitleExtra);
     }
 
 };

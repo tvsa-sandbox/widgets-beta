@@ -4,6 +4,8 @@
 
     @include Element(Caption) {
         @extend %SuperCard__Caption;
+
+        @include Themer(background, Black);
     }
 
 };
