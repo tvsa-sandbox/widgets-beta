@@ -1,13 +1,12 @@
 // NotesCarousel Carousel Track
 
-.NotesCarousel {
+%NotesCarousel {
 
     &__CarouselTrack {
 
         display: inline-block;
-        height: 150px;
         overflow: hidden;
-        width: calc(100% - 50px);
+        width: 100%;
 
     }
 }

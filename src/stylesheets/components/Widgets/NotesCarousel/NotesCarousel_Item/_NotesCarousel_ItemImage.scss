@@ -1,6 +1,6 @@
 // NotesCarousel Item Image
 
-.NotesCarousel {
+%NotesCarousel {
 
     &__ItemImageContainer {
 
@@ -12,8 +12,18 @@
 
     &__ItemImage {
 
-        border-radius: 5px 0px 0px 5px;
+        border-radius: 50% 0px 0px 50%;
         width: 100%;
 
+    }
+
+    @include Morpher (All-Desktop) {
+
+        &__ItemImageContainer {
+
+            height: 150px;
+            width: 150px;
+
+        }
     }
 }

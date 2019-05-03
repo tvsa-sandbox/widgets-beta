@@ -1,12 +1,12 @@
 // NotesCarousel Carousel Thumb Container
 
-.NotesCarousel {
+%NotesCarousel {
 
     &__CarouselThumbContainer {
 
+        cursor: pointer;
         display: inline-block;
         margin: 10px;
-        /*width: 520px;*/
 
     }
 }

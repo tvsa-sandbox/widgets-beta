@@ -1,0 +1,16 @@
+// NotesCarousel Item Title
+
+@include ThemerUI(NotesCarousel){
+
+    @include Element(ItemTitleContainer) {
+
+        @extend %NotesCarousel__ItemTitleContainer;
+
+    }
+
+    @include Element(ItemTitle) {
+
+        @extend %NotesCarousel__ItemTitle;
+
+    }
+};

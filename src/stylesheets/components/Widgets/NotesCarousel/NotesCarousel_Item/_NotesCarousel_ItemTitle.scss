@@ -1,21 +1,20 @@
 // NotesCarousel Item Title
 
-.NotesCarousel {
+%NotesCarousel {
 
     &__ItemTitleContainer {
 
-        
+
 
     }
 
     &__ItemTitle {
 
-        font-family: sans-serif;
-        font-size: 14px;
-        line-height: 16px;
         margin: 0px;
         padding: 6px;
         text-transform: uppercase;
+
+        @include Typer(SubTextCredit);
 
     }
 }

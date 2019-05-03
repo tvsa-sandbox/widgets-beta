@@ -1,6 +1,6 @@
 // NotesCarousel Carousel Core
 
-.NotesCarousel {
+%NotesCarousel {
 
     &__Carousel {
 
@@ -8,5 +8,10 @@
         margin: 0 auto;
         position: relative;
 
+        @include Morpher (All-Desktop) {
+
+            height: 170px;
+
+        }
     }
 }

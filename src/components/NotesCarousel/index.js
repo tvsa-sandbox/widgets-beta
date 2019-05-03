@@ -1,3 +1,3 @@
-import Privacy from "./NotesCarousel";
+import NotesCarousel from "./NotesCarousel";
 
 export default NotesCarousel;

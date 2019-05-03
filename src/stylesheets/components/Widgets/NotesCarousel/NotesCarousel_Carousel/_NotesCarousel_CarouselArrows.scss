@@ -2,13 +2,21 @@
 
 .NotesCarousel {
 
-
     &__CarouselArrowsContainer{
 
-        display: inline-block;
-        height: 120px;
-        position: absolute;
-        width: 50px;
+        display: none;
+
+        @include Morpher (All-Desktop) {
+
+            display: inline-block;
+            height: 170px;
+            position: absolute;
+            right: 0px;
+            width: 50px;
+
+            @include Themer(background, Color-3);
+
+        }
 
     }
 
@@ -18,28 +26,13 @@
 
             display: none;
 
-            @include Morpher(Tablet) {
-
-                align-items: center;
-                cursor: pointer;
-                display: block;
-                height: 60px;
-                margin-left: 5px;
-                width: 45px;
-                z-index: 5;
-
-                @include HoverButton;
-                @include Themer(background, Color-2);
-
-            }
-
             @include Morpher(All-Desktop) {
 
                 align-items: center;
                 cursor: pointer;
                 display: block;
                 font-size: 30px !important;
-                height: 60px;
+                height: 85px;
                 margin-left: 5px;
                 width: 45px;
                 z-index: 5;
@@ -54,34 +47,21 @@
 
             display: none;
 
-            @include Morpher(Tablet) {
-
-                align-items: center;
-                display: block;
-                cursor: pointer;
-                display: block;
-                height: 60px;
-                margin-left: 5px;
-                width: 45px;
-                z-index: 5;
-
-                @include HoverButton;
-                @include Themer(background, Color-2);
-
-            }
-
             @include Morpher(All-Desktop) {
 
                 align-items: center;
+                bottom: 0px;
                 cursor: pointer;
                 display: block;
-                height: 60px;
+                height: 85px;
                 margin-left: 5px;
+                position: absolute;
                 width: 45px;
                 z-index: 5;
 
                 @include HoverButton;
                 @include Themer(background, Color-2);
+
 
             }
         }
@@ -93,6 +73,14 @@
         font-size: 30px !important;
         height: 60px;
 
+        @include Themer(background, Color-3);
+
+        @include Morpher (All-Desktop) {
+
+            height: 85px;
+
+        }
+
     }
 
     .Icn_ArrowRight {
@@ -101,5 +89,12 @@
         font-size: 30px !important;
         height: 60px;
 
+        @include Themer(background, Color-3);
+
+        @include Morpher (All-Desktop) {
+
+            height: 85px;
+
+        }
     }
 }

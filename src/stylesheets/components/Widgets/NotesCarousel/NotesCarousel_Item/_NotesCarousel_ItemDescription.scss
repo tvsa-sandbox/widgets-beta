@@ -1,6 +1,6 @@
 // NotesCarousel Item Description
 
-.NotesCarousel {
+%NotesCarousel {
 
     &__ItemDescriptionContainer {
 
@@ -11,11 +11,10 @@
     &__ItemDescription {
 
         display: block;
-        font-family: sans-serif;
-        font-size: 14px;
-        line-height: 16px;
         margin: 0px;
         padding: 6px;
+
+        @include Typer(FooterTextContact);
 
     }
 }

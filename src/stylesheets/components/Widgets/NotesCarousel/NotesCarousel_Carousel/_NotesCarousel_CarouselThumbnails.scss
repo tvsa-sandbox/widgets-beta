@@ -1,13 +1,20 @@
 // NotesCarousel Carousel Thumbnails
 
-.NotesCarousel {
+%NotesCarousel {
 
     &__CarouselThumbnails {
 
         align-items: center;
         display: flex;
-        overflow: hidden;
+        overflow-x: scroll;
+        overflow-y: hidden;
         width: 100%;
+
+    }
+
+    @include Morpher (All-Desktop) {
+
+        overflow: hidden;
 
     }
 }

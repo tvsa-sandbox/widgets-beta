@@ -1,0 +1,10 @@
+// NotesCarousel Carousel Thumb Container
+
+@include ThemerUI(NotesCarousel){
+
+    @include Element(CarouselThumbContainer) {
+
+        @extend %NotesCarousel__CarouselThumbContainer;
+
+    }
+};
