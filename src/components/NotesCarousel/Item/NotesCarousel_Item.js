@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 import { withPrefix } from "gatsby-link";
 
 const NotesCarousel_Item = (props) => (
