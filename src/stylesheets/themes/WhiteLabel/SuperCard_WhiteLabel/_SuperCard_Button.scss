@@ -5,7 +5,7 @@
     @include Element(ButtonContainer) {
         @extend %SuperCard__ButtonContainer;
 
-        @include Themer(color, Color-1);
+        @include Themer(color, Color-3);
 
     }
 

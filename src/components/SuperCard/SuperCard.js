@@ -21,7 +21,7 @@ const SuperCard = () => (
             </div>
             <div className="SuperCard__LabelContainer WhiteLabel">
                 <span className="SuperCard__Label WhiteLabel">
-                    Label
+                    13/20
                 </span>
             </div>
         </Link>

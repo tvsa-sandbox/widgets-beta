@@ -9,8 +9,6 @@
     	flex-direction: column;
     	justify-content: center;
 
-
-
         @include Spacer(padding, all, xl 2xl);
 
         @include Morpher(All-Desktop) {
