@@ -1,53 +1,51 @@
-import React from "react";
-import { Link } from "gatsby";
-import { withPrefix } from "gatsby";
+import React, { Component } from "react";
+import Logic from "../Carousel/Logic";
+import SupercardItem from "./SuperCard_Item";
+import SupercardItem2 from "./SuperCard_Item2";
 
-const SuperCard = () => (
-    <section className="SuperCard WhiteLabel">
-        <Link to="/" className="SuperCard__Thumbnail WhiteLabel">
-            <div className="SuperCard__ImageContainer WhiteLabel">
-                <picture>
-                    <source media="(min-width: 768px)" srcSet={withPrefix("/static/aspect-ratio-images/9x16-389x692.jpg")} />
-                    <source media="(min-width: 414px)" srcSet={withPrefix("/static/aspect-ratio-images/3x4-414x552.jpg")} />
-                    <img className="SuperCard__Image" src={withPrefix("/static/aspect-ratio-images/3x4-320x426.jpg")} alt="Test" />
-                </picture>
-            </div>
-            <div className="SuperCard__IconContainer WhiteLabel">
-                <div className="SuperCard__Icon Icn_Video WhiteLabel">
-                    <span className="Display">
-                        Display
-                    </span>
+
+class SuperCard extends Component {
+    componentDidMount() {
+        const LOGIC = new Logic();
+        LOGIC.init = {
+            id: "ucy0snoq1tocn",
+            isMixed: false,
+            moveItems: 1,
+        };
+    }
+
+  render() {
+      return (
+            <section className="SuperCard WhiteLabel">
+                <div className="SuperCard__CarouselArrow-Previous WhiteLabel" id="Previous-ucy0snoq1tocn">
+                    <button id="ArrowPrevious-ucy0snoq1tocn" className="SuperCard__CarouselButton Icn_ArrowLeft WhiteLabel" type="button">
+                        <span className="Display">
+                            Arrow Previous
+                        </span>
+                    </button>
                 </div>
-            </div>
-            <div className="SuperCard__LabelContainer WhiteLabel">
-                <span className="SuperCard__Label WhiteLabel">
-                    13/20
-                </span>
-            </div>
-        </Link>
-        <div className="SuperCard__Caption WhiteLabel">
-            <div className="SuperCard__TitleContainer WhiteLabel">
-                <h3 className="SuperCard__Title WhiteLabel">
-                    “No, no soy yo la que lo está cargando”: Nuevos detalles del embarazo de Joy Huerta
-                </h3>
-            </div>
-            <div className="SuperCard__DescriptionContainer WhiteLabel">
-                <p className="SuperCard__Description WhiteLabel">
-                    La cantante fue cuestionada si es ella quien lleva en el vientre a la bebé que espera junto a su esposa y dijo que pronto dará más noticias
-                </p>
-            </div>
-            <div className="SuperCard__DateContainer WhiteLabel">
-                <time datetime="2018-11-20 20:00" className="SuperCard__Date WhiteLabel">
-                    20 de Noviembre
-                </time>
-            </div>
-            <div className="SuperCard__ButtonContainer WhiteLabel">
-                <button className="SuperCard__Button WhiteLabel">
-                    Ver contenido
-                </button>
-            </div>
-        </div>
-    </section>
-);
+
+                <div className="SuperCard__Carousel WhiteLabel" id="Carousel-ucy0snoq1tocn">
+
+                    <div className="SuperCard__CarouselTrack WhiteLabel" id="Track-ucy0snoq1tocn">
+                        <div className="SuperCard__CarouselThumbnails WhiteLabel" id="ItemList-ucy0snoq1tocn">
+                            <SupercardItem id="item-ucy0snoq1tocn1"/>
+                            <SupercardItem2 id="item-ucy0snoq1tocn2"/>
+                            <SupercardItem id="item-ucy0snoq1tocn3"/>
+                        </div>
+                    </div>
+
+                </div>
+                <div className="SuperCard__CarouselArrow-Next WhiteLabel"  id="Next-ucy0snoq1tocn">
+                    <button className="SuperCard__CarouselButton Icn_ArrowRight WhiteLabel" type="button" id="ArrowNext-ucy0snoq1tocn" >
+                        <span className="Display">
+                            Arrow Next
+                        </span>
+                    </button>
+                </div>
+            </section>
+        );
+    }
+}
 
 export default SuperCard;
