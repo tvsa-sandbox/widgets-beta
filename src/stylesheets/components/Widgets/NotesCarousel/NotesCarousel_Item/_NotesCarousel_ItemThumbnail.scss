@@ -1,0 +1,20 @@
+// NotesCarousel Item Thumbnail
+
+%NotesCarousel {
+
+    &__ItemThumbnail {
+
+        position: relative;
+        width: 100px;
+
+    }
+
+    @include Morpher (All-Desktop) {
+
+        &__ItemThumbnail {
+
+            width: 150px;
+
+        }
+    }
+}
