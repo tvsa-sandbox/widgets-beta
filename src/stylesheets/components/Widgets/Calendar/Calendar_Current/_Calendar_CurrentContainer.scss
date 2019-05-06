@@ -1,0 +1,18 @@
+// Calendar Title
+
+%Calendar {
+
+    &__CurrentContainer {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        height: 150px;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+
+        @include Spacer(margin, all, zero zero xxl zero);
+
+    }
+}

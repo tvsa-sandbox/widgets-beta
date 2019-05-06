@@ -1,0 +1,21 @@
+// NotesCarousel Item Title
+
+%NotesCarousel {
+
+    &__ItemTitleContainer {
+
+        display: inline-block;
+        margin: auto;
+
+    }
+
+    &__ItemTitle {
+
+        margin: 0px;
+        padding: 6px;
+        text-transform: uppercase;
+
+        @include Typer(SubTextCredit);
+
+    }
+}

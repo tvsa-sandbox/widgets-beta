@@ -1,0 +1,30 @@
+// Calendar EventDate
+
+@include ThemerUI(Calendar) {
+
+    @include Element(EventDescriptionContainer) {
+
+        @extend %Calendar__EventDescriptionContainer;
+
+        @include Themer(color, Text-Dark-Headlines);
+
+    }
+
+    @include Element(EventDescriptionLink) {
+
+        @extend %Calendar__EventDescriptionLink;
+
+        @include Themer(color, Text-Dark-Headlines);
+        @include Typer(ItemTitleDescription);
+
+    }
+
+    @include Element(EventDescriptionTime) {
+
+        @extend %Calendar__EventDescriptionTime;
+
+        @include Themer(color, Text-Dark-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+};
