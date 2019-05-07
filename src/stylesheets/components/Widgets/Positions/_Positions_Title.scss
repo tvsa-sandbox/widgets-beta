@@ -1,0 +1,30 @@
+// Positions Title
+
+.Positions {
+
+    &__TitleContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: left;
+        padding: 10px 0px 5px 10px;
+        position: relative;
+        width: 100%;
+
+    }
+
+    &__Title {
+
+        margin: 10px 10px 20px;
+        text-transform: uppercase;
+
+        @include Typer(ItemTitle);
+        @include Themer(Color, White);
+
+        @include Morpher(All-Desktop) {
+
+            margin: 10px;
+
+        }
+    }
+}

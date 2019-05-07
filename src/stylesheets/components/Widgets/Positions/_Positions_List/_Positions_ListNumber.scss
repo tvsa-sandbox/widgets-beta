@@ -1,0 +1,32 @@
+// Positions List Number
+
+.Positions {
+    
+    &__ListNumberContainer {
+
+        width: 10%;
+        padding: 0px 5px;
+        
+        @include Morpher(All-Desktop) {
+            
+            width: 5%;
+            
+        }
+    }
+    
+    &__ListNumber {
+        
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 25%;
+        
+        @include Typer(SubTextButton);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(SubTextInfo);
+            
+        }
+    }
+}

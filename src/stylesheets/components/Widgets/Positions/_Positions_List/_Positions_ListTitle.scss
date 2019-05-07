@@ -1,0 +1,26 @@
+// Positions List Title
+
+.Positions {
+    
+    &__ListTitleContainer {
+
+        align-items: center;
+        display: flex;
+        margin: 20px;
+        width: auto;
+
+    }
+    
+    &__ListTitle {
+        
+        text-transform: uppercase;
+        
+        @include Typer(ItemTitle);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(ItemTitleDescription);
+            
+        }
+    }
+}

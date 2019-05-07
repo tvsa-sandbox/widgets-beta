@@ -1,0 +1,66 @@
+// Positions List Info
+
+.Positions {
+    
+    &__ListInfoContainer {
+
+        align-items: center;
+        display: none;
+        justify-content: center;
+        margin: 9px;
+        width: 9%;
+        
+        @include Morpher(All-Desktop) {
+            
+            display: flex;
+            margin: 20px;
+            
+        }
+        
+        &-Pts {
+            
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            margin: 9px;
+            width: 30%;
+            
+            &:before {
+                
+                content: "";
+                display: -ms-flexbox;
+                width: 0px; 
+                height: 0px;
+                border-style: solid;
+                border-width: 13px;
+                border-bottom-width: 0px;
+                border-color: white transparent transparent transparent;
+                margin-right: 20%;
+                
+            }
+            
+            @include Morpher(All-Desktop) {
+                
+                width: 9%;
+                justify-content: center;
+                
+                &:before {
+                    
+                    display: none;
+                    
+                }
+            }
+        }
+    }
+    
+    &__ListInfo {
+        
+        @include Typer(ItemTitle);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(ItemTitleDescription);
+            
+        }
+    }
+}

@@ -1,0 +1,35 @@
+// Positions Info Core
+
+.Positions {
+    
+    &__InfoContainer {
+
+        width: 80%;
+        right: 0px;
+        position: absolute;
+        margin-right: 0px;
+        
+        
+        @include Morpher(All-Desktop) {
+            
+            margin-right: 8px;
+            
+        }
+    }
+    
+    &__Info {
+        
+        display: flex;
+		width: 100%;
+        margin: 0px auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 30px;
+
+        @include Morpher(Desktop) {
+
+            @include Layout(Wrapper);
+
+        }
+    }
+}

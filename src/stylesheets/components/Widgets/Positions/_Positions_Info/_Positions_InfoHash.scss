@@ -1,0 +1,51 @@
+// Positions Info Hash
+
+.Positions {
+    
+    &__InfoHash {
+
+        border-radius: 5px;
+        display: none;
+        height: 30px;
+        justify-content: center;
+        margin-right: 5px;
+        right: 0;
+        width: 100%;
+
+		@include HoverButton;
+		@include Themer(background, Color-9);
+        @include Typer(SubTextInfo);
+        @include Themer(Color, White);
+        
+        @include Morpher(All-Desktop) {
+            
+            display: flex;
+            
+        }
+        
+        &-Pts {
+            
+            border-radius: 5px;
+            display: flex;
+            height: 30px;
+            justify-content: center;
+            margin-right: 3px;
+            position: absolute;
+            right: 0;
+            width: 50%;
+
+    		@include HoverButton;
+    		@include Themer(background, Color-9);
+            @include Typer(SubTextInfo);
+            @include Themer(Color, White);
+            
+            @include Morpher(All-Desktop) {
+                
+                width: 100%;
+                margin-right: 5px;
+                position: unset;
+                
+            }
+        }
+    }
+}

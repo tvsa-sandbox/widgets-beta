@@ -1,0 +1,35 @@
+// Positions List Image
+
+.Positions {
+    
+    &__ListImageContainer {
+
+        border-radius: 5px;
+        cursor: pointer;
+        height: auto;
+        padding: 5px 0px;
+        width: 94px;
+ 
+    }
+    
+    &__ListImage {
+        
+        border-radius: 5px;
+        position: relative;
+        top: 5px;
+        width: 60px;
+        
+        &:hover {
+            
+            -moz-transition: opacity 500ms;
+            -ms-transition: opacity 500ms;
+            -o-transition: opacity 500ms;
+            -webkit-transform:scale(1.1);transform:scale(1.1);
+            -webkit-transition: opacity 500ms;
+            content: "PUMAS";
+            filter: blur(2px);
+            transition: opacity 500ms;
+            
+        }
+    }
+}

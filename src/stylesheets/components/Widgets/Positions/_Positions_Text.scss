@@ -1,0 +1,28 @@
+// Positions Text
+
+.Positions {
+
+    &__TextContainer {
+
+        display: flex;
+        justify-content: left;
+        left: 3%;
+        margin: 15px 0px;
+        position: relative;
+        width: 100%;
+        
+        @include Morpher (All-Desktop) {
+            
+            margin-bottom: 15px;
+            
+        }
+    }
+
+    &__Text {
+
+        @include Typer(ItemTitle);
+        @include Themer(Color, White);
+
+
+    }
+}
