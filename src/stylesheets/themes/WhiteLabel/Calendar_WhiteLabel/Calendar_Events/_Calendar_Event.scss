@@ -16,14 +16,17 @@
 
         }
 
-        &:hover {
+        @include Morpher(All-Desktop) {
 
-            @include Themer(background, Color-3, before) {
+            &:hover {
 
-                opacity: 0.7;
-                width: 100%;
-                z-index: 0;
+                @include Themer(background, Color-3, before) {
 
+                    opacity: 0.7;
+                    width: 100%;
+                    z-index: 0;
+
+                }
             }
         }
     }
@@ -41,8 +44,6 @@
                 @include Themer(background, Color-5, before);
 
             }
-
         }
-
     }
 };
