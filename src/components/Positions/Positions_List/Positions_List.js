@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 
 const Positions_List = () => (    
             <div className="Positions__ListElement WhiteLabel">
