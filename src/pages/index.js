@@ -4,16 +4,16 @@ import Layout from "../layouts";
 
 // Components
 
-import Privacy from "../components/Privacy/Privacy";
-import Positions from "../components/Positions/Positions";
+import Calendar from "../components/Calendar/Calendar";
+import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
 
 
 const IndexPage = () => (
     <Layout>
-        
-        <Privacy />
-        <Positions />
-        
+
+        <NotesCarousel />
+        <Calendar />
+
     </Layout>
 );
 

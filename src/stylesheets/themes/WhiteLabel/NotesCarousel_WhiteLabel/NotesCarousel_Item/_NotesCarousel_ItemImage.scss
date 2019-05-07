@@ -1,0 +1,16 @@
+// NotesCarousel Item Image
+
+@include ThemerUI(NotesCarousel) {
+
+    @include Element(ItemImageContainer) {
+
+        @extend %NotesCarousel__ItemImageContainer;
+
+    }
+
+    @include Element(ItemImage) {
+
+        @extend %NotesCarousel__ItemImage;
+
+    }
+};

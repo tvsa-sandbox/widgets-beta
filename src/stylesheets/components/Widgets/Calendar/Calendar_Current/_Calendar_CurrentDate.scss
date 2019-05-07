@@ -1,0 +1,51 @@
+// Calendar Title
+
+%Calendar {
+
+    &__CurrentDateDay {
+
+        z-index: 2;
+
+    }
+
+    &__CurrentDateNumber {
+
+        z-index: 2;
+
+        @include Spacer(margin, all, zero sm);
+
+    }
+
+    &__CurrentDateMonth {
+
+        z-index: 2;
+
+    }
+
+    &__CurrentDateTimeContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    &__CurrentDateTimeHour {
+
+        z-index: 2;
+
+    }
+
+    &__CurrentDateTimeMinutes {
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: auto;
+
+        @include Spacer(margin, all, zero);
+        @include Spacer(padding, all, zero);
+
+    }
+}

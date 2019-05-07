@@ -1,0 +1,29 @@
+// NotesCarousel Item Image
+
+%NotesCarousel {
+
+    &__ItemImageContainer {
+
+        height: 100px;
+        position: relative;
+        width: 100px;
+
+    }
+
+    &__ItemImage {
+
+        border-radius: 50% 0px 0px 50%;
+        width: 100%;
+
+    }
+
+    @include Morpher (All-Desktop) {
+
+        &__ItemImageContainer {
+
+            height: 150px;
+            width: 150px;
+
+        }
+    }
+}
