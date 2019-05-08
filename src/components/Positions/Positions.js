@@ -1,7 +1,9 @@
 import React from "react";
 import { withPrefix } from "gatsby";
-import Positions_List from "./Positions_List/Positions_List";
-import Positions_Info from "./Positions_Info/Positions_Info";
+import PositionsList from "./Positions_List/Positions_List";
+import PositionsListB from "./Positions_ListB/Positions_ListB";
+import PositionsListC from "./Positions_ListC/Positions_ListC";
+import PositionsInfo from "./Positions_Info/Positions_Info";
 
 const Positions = () => (
     <section className="Positions WhiteLabel">
@@ -27,14 +29,14 @@ const Positions = () => (
                     </h2>
     	        </div>
                 <div className="Positions__InfoContainer WhiteLabel">
-                    <Positions_Info />
+                    <PositionsInfo />
                 </div>
                 <div className="Positions__ListContainer WhiteLabel">
-                    <Positions_List />
-                    <Positions_List />
-                    <Positions_List />
-                    <Positions_List />
-                    <Positions_List />
+                    <PositionsList />
+                    <PositionsListB />
+                    <PositionsListC />
+                    <PositionsList />
+                    <PositionsList />
                 </div>
             </div>
     </section>

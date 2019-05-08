@@ -1,10 +1,10 @@
 import React from "react";
 
-const Positions_List = () => (    
+const Positions_ListB = () => (    
             <div className="Positions__ListElement WhiteLabel">
                 <div className="Positions__ListNumberContainer WhiteLabel">
                     <div className="Positions__ListNumber WhiteLabel">
-                        # 1
+                        # 2
                     </div>
                 </div>
                 <div className="Positions__ListImageContainer WhiteLabel">
@@ -15,7 +15,7 @@ const Positions_List = () => (
                 </div>
                 <div className="Positions__ListTitleContainer WhiteLabel" ds-title="Divi Soup">
                     <div className="Positions__ListTitle WhiteLabel">
-                        Pumas
+                        Guadalajara
                     </div>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
@@ -25,22 +25,22 @@ const Positions_List = () => (
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
-                        12
+                        11
                     </div>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
-                        2
+                        4
                     </div>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
-                        2
+                        33
                     </div>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
-                        39
+                        16
                     </div>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
@@ -50,15 +50,15 @@ const Positions_List = () => (
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
-                        26
+                        17
                     </div>
                 </div>
                 <div className="Positions__ListInfoContainer-Pts WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
-                        38
+                        37
                     </div>
                 </div>
             </div>
 );
 
-export default Positions_List;
+export default Positions_ListB;

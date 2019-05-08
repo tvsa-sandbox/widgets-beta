@@ -6,14 +6,16 @@
 
         align-items: center;
         display: flex;
-        margin: 20px;
-        width: auto;
-
+        width: 150px;
+        
+        @include Morpher(All-Desktop) {
+            
+            width: 120px;
+            
+        }
     }
     
     &__ListTitle {
-        
-        text-transform: uppercase;
         
         @include Typer(ItemTitle);
         

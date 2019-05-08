@@ -4,7 +4,7 @@
     
     &__ListNumberContainer {
 
-        width: 10%;
+        width: 15%;
         padding: 0px 5px;
         
         @include Morpher(All-Desktop) {
@@ -19,7 +19,7 @@
         display: flex;
         justify-content: center;
         position: relative;
-        top: 25%;
+        top: 35%;
         
         @include Typer(SubTextButton);
         
