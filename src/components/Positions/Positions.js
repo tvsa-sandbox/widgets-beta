@@ -3,6 +3,8 @@ import { withPrefix } from "gatsby";
 import PositionsList from "./Positions_List/Positions_List";
 import PositionsListB from "./Positions_ListB/Positions_ListB";
 import PositionsListC from "./Positions_ListC/Positions_ListC";
+import PositionsListD from "./Positions_ListD/Positions_ListD";
+import PositionsListE from "./Positions_ListE/Positions_ListE";
 import PositionsInfo from "./Positions_Info/Positions_Info";
 
 const Positions = () => (
@@ -65,8 +67,8 @@ const Positions = () => (
                     <PositionsList />
                     <PositionsListB />
                     <PositionsListC />
-                    <PositionsList />
-                    <PositionsList />
+                    <PositionsListD />
+                    <PositionsListE />
                 </div>
             </div>
     </section>
