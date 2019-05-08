@@ -1,0 +1,29 @@
+// Calendar EventDate
+
+%Calendar {
+
+    &__EventDescriptionContainer {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 2;
+
+        @include Spacer(margin, all, zero xs zero zero);
+
+    }
+
+    &__EventDescriptionLink {
+
+        text-decoration: none;
+
+        @include Spacer(margin, all, zero);
+
+    }
+
+    &__EventDescriptionTime {
+
+        width: auto;
+
+    }
+}

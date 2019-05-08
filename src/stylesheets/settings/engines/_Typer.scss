@@ -1,4 +1,4 @@
-// Typer Engine | WhiteLabel MarkUp v2.1.6 Atomic Ghost | 25/5/19
+// Typer Engine | WhiteLabel MarkUp v2.1.7 Atomic Ghost | 15/5/19
 
 /*
     examples
@@ -23,7 +23,6 @@
 
     font-weight: $FW;
     @include responsive-font(320px,  1440px, $FSMAX, $FSMIN);
-    font-display: swap;
     letter-spacing: $LS;
 
     @include FontSmoothing;
