@@ -12,7 +12,7 @@
         width: 100%;
 
         @include Themer(background, Color-1);
-        @include Themer(color, Text-Dark);
+        @include Themer(color, Mini-Text-Dark);
 
         &:focus {
 

@@ -7,9 +7,9 @@
         @extend %Share__ShareCore;
 
     }
-        @include Element(ShareContainer) {
+    @include Element(ShareContainer) {
 
-            @extend %Share__ShareContainer;
+        @extend %Share__ShareContainer;
 
-        }
+    }
 }

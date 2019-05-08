@@ -1,0 +1,16 @@
+// Mosaic Item Logo
+
+@include ThemerUI(Mosaic){
+
+        @include Element(ItemLogoContainer) {
+
+            @extend %Mosaic__ItemLogoContainer;
+
+        }
+
+        @include Element(ItemLogo) {
+
+            @extend %Mosaic__ItemLogo;
+
+        }
+};

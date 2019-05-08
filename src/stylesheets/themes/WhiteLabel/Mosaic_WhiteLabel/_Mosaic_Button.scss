@@ -1,0 +1,16 @@
+// Mosaic Item button
+
+@include ThemerUI(Mosaic){
+
+    @include Element(ButtonContainer) {
+
+        @extend %Mosaic__ButtonContainer;
+
+    }
+
+    @include Element(Button) {
+
+        @extend %Mosaic__Button;
+
+    }
+}

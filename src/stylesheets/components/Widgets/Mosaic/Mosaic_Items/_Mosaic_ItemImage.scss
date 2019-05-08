@@ -1,0 +1,20 @@
+// Mosaic Item Image
+
+%Mosaic {
+
+    &__ItemImageContainer {
+
+        display: block;
+		position: relative;
+		width: 100%;
+
+        @include Spekter(16_9);
+
+    }
+
+    &__ItemImage {
+
+        height: 100%;
+
+    }
+}

@@ -1,0 +1,16 @@
+// Mosaic Item Title
+
+@include ThemerUI(Mosaic){
+
+        @include Element(TitleContainer) {
+
+            @extend %Mosaic__TitleContainer;
+
+        }
+
+        @include Element(Title) {
+
+            @extend %Mosaic__Title;
+
+        }
+};

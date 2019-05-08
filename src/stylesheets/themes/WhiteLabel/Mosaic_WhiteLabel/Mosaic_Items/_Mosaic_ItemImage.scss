@@ -1,0 +1,16 @@
+// Mosaic Item Image
+
+@include ThemerUI(Mosaic){
+
+        @include Element(ItemImageContainer) {
+
+            @extend %Mosaic__ItemImageContainer;
+
+        }
+
+        @include Element(ItemImage) {
+
+            @extend %Mosaic__ItemImage;
+
+        }
+};

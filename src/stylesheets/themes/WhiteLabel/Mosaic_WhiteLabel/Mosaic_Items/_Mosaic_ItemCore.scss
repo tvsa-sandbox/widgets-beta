@@ -1,0 +1,15 @@
+// Mosaic Item Core
+
+@include ThemerUI(Mosaic){
+
+        @include Element(ItemsContainer) {
+
+            @extend %Mosaic__ItemsContainer;
+
+        }
+
+        @include Element(Item) {
+
+            @extend %Mosaic__Item;
+        }
+};

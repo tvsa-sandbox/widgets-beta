@@ -6,13 +6,15 @@ import Layout from "../layouts";
 
 import Privacy from "../components/Privacy/Privacy";
 import Share from "../components/Share/Share";
+import Mosaic from "../components/Mosaic";
 
 
 const IndexPage = () => (
     <Layout>
 
         <Privacy />
-        <Share />
+        <Mosaic />
+
 
     </Layout>
 );

@@ -3,11 +3,11 @@
 
     @include Element(ShareTrigger) {
 
-        @extend %Share__ShareTrigger;
+        @extend %Share__Trigger;
     }
 
     @include Element(ShareTriggerText) {
 
-        @extend %Share__ShareTriggerText;
+        @extend %Share__TriggerText;
     }
 }

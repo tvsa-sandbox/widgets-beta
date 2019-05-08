@@ -3,13 +3,13 @@
 
     @include Element(ShareDesktopContainer) {
 
-        @extend %Share__ShareDesktopContainer;
+        @extend %Share__DesktopContainer;
     }
 
 
     @include Element(ShareDesktop) {
 
-        @extend %Share__ShareDesktop;
+        @extend %Share__Desktop;
 
     }
 }

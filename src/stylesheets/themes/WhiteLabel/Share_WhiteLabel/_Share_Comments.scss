@@ -1,64 +1,19 @@
 // Share Comments
 
-%Share {
+@include ThemerUI(Share) {
 
-    &__ShareCommentsContainer {
+    @include Element(ShareCommentsContainer) {
 
-        display: inline-block;
-        height: 72px;
-        justify-content: center;
-        max-width: 370px;
-        position: absolute;
-        top: 76px;
-        width: 22%;
-
-        @include Hover;
-        @include Themer(background, Color-1);
-
-        @include Morpher(Tablet) {
-
-            height: 70px;
-            top: 78px;
-            width: 29%;
-
-        }
-
-        @include Morpher(All-Desktop) {
-
-            display: none;
-
-        }
+        @extend %Share__CommentsContainer;
     }
 
-    &__ShareComments {
+    @include Element(ShareComments) {
 
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        margin: 7px 0px 0px;
-        width: 100%;
-
-        @include Themer(background, Color-1);
-
-        @include Morpher(All-Desktop) {
-
-            display: none;
-
-        }
+        @extend %Share__ShareComments;
     }
 
-    &__ShareCommentsText {
+    @include Element(ShareCommentsText) {
 
-        display: flex;
-        justify-content: center;
-
-        @include Themer(color, White);
-        @include Typer(SubTextInfo);
-
-        @include Morpher(All-Desktop) {
-
-            display: none;
-
-        }
+        @extend %Share__ShareCommentsText;
     }
 }
