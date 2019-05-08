@@ -2,6 +2,33 @@
 
 // Hover for links and buttons
 
+@mixin SpecialHover ($HTOpacity:.5s, $HOpacity: .7, $HShadow:null, $HDecoration:none, $HColor:Color-3){
+
+    @include Transition($TDuration:$HTOpacity);
+
+    &:hover {
+
+        opacity: $HOpacity;
+
+        @if $HShadow == shadow {
+
+            @include Themer(box-shadow, #000000, '0px 0px 20px');
+
+        }
+
+        text-decoration: $HDecoration;
+
+        @include Themer(color, $HColor);
+
+    }
+}
+
+@mixin Transition ($TProperty:opacity, $TDuration:0.5s, $TTiming:linear, $TDelay:0s) {
+
+    transition: $TProperty $TDuration $TTiming $TDelay;
+
+}
+
 @mixin Hover {
 
     transition: opacity .5s;
@@ -21,7 +48,7 @@
 
         opacity: .7;
 
-        @include Themer(box-shadow, #000000, '0px 0px 20px'); 
+        @include Themer(box-shadow, #000000, '0px 0px 20px');
 
     }
 }
@@ -45,7 +72,7 @@
 
 		opacity: .7;
 		text-decoration: underline;
-        
+
 		@include Themer(color, Color-3);
 
 	}
