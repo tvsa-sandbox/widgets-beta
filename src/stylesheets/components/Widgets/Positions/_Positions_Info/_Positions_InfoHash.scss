@@ -17,35 +17,17 @@
         @include Typer(SubTextInfo);
         @include Themer(Color, White);
         
+        @include Morpher(Tablet) {
+            
+            display: flex;
+            margin-right: 3px;
+            
+        }
+        
         @include Morpher(All-Desktop) {
             
             display: flex;
             
-        }
-        
-        &-Pts {
-            
-            border-radius: 5px;
-            display: flex;
-            height: 30px;
-            justify-content: center;
-            margin-right: 3px;
-            position: absolute;
-            right: 0;
-            width: 30%;
-
-    		@include HoverButton;
-    		@include Themer(background, Color-9);
-            @include Typer(SubTextInfo);
-            @include Themer(Color, White);
-            
-            @include Morpher(All-Desktop) {
-                
-                width: 100%;
-                margin-right: 5px;
-                position: unset;
-                
-            }
         }
     }
 }

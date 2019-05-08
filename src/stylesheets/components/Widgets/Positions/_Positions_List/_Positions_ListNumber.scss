@@ -7,6 +7,12 @@
         width: 15%;
         padding: 0px 5px;
         
+        @include Morpher(Tablet) {
+            
+            width: 10%;
+            
+        }
+        
         @include Morpher(All-Desktop) {
             
             width: 5%;
@@ -22,6 +28,12 @@
         top: 35%;
         
         @include Typer(SubTextButton);
+        
+        @include Morpher(Tablet) {
+            
+            @include Typer(SubTextTag);
+            
+        }
         
         @include Morpher(All-Desktop) {
             

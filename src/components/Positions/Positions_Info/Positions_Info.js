@@ -23,7 +23,7 @@ const Positions_Info = () => (
             <button className="Positions__InfoHash WhiteLabel">
                 DIF
             </button>
-            <button className="Positions__InfoHash-Pts WhiteLabel">
+            <button className="Positions__InfoHash WhiteLabel">
                 PTS
             </button>
         </div>

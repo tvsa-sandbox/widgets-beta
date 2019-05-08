@@ -9,8 +9,27 @@
         position: absolute;
         margin-right: 0px;
         
+        @include Morpher(Tablet) {
+            
+            width: 74%;
+            
+        }
         
-        @include Morpher(All-Desktop) {
+        @include Morpher(Laptop) {
+            
+            margin-right: 6px;
+            width: 78%;
+            
+        }
+        
+        @include Morpher(Desktop) {
+            
+            margin-right: 8px;
+            width: 79%;
+            
+        }
+        
+        @include Morpher(Desktop-HD) {
             
             margin-right: 8px;
             

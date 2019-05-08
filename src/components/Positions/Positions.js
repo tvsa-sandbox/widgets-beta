@@ -28,6 +28,36 @@ const Positions = () => (
                         Posiciones
                     </h2>
     	        </div>
+                <section className="Positions__SelectorMobile WhiteLabel">
+                    <div className="Positions__Selector WhiteLabel">
+                            <select className="Positions__ListSelector WhiteLabel">
+                                <option value="#">
+                                    JJ
+                                </option>
+                                <option value="#">
+                                    JG
+                                </option>
+                                <option value="#">
+                                    JP
+                                </option>
+                                <option value="#">
+                                    JE
+                                </option>
+                                <option value="#">
+                                    GF
+                                </option>
+                                <option value="#">
+                                    GC
+                                </option>
+                                <option value="#">
+                                    DIF
+                                </option>
+                                <option value="#">
+                                    PTS
+                                </option>
+                            </select>
+                        </div>
+                </section>
                 <div className="Positions__InfoContainer WhiteLabel">
                     <PositionsInfo />
                 </div>

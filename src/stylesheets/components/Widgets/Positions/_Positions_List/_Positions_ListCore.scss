@@ -4,9 +4,20 @@
     
     &__ListContainer {
 
-        margin-top: 60px;
+        margin-top: 7px;
         width: 100%;
- 
+        
+        @include Morpher(Tablet) {
+            
+            margin-top: 60px;
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            margin-top: 60px;
+            
+        }
     }
     
     &__ListElement {
