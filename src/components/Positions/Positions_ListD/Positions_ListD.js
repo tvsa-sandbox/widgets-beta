@@ -4,7 +4,7 @@ const Positions_ListD = () => (
             <div className="Positions__ListElement WhiteLabel">
                 <div className="Positions__ListNumberContainer WhiteLabel">
                     <div className="Positions__ListNumber WhiteLabel">
-                        # 3
+                        # 4
                     </div>
                 </div>
                 <div className="Positions__ListImageContainer WhiteLabel">

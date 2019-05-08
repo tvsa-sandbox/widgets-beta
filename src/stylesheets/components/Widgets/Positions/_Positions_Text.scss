@@ -1,6 +1,6 @@
 // Positions Text
 
-.Positions {
+%Positions {
 
     &__TextContainer {
 
@@ -29,8 +29,6 @@
         
         text-transform: uppercase;
 
-        @include Typer(ItemTitle);
-        @include Themer(Color, White);
 
     }
 }
