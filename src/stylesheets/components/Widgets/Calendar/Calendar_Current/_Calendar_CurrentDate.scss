@@ -6,6 +6,8 @@
 
         z-index: 2;
 
+        @include SpecialHover(0.7s, 0.5);
+
     }
 
     &__CurrentDateNumber {

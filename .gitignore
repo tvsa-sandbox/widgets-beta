@@ -14,3 +14,4 @@ public/*
 !public/static
 public/static/*
 !public/static/aspect-ratio-images/
+!public/static/sassdoc/
