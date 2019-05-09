@@ -14,6 +14,7 @@ const IndexPage = () => (
 
         <Privacy />
         <Mosaic />
+        <Share />
 
 
     </Layout>

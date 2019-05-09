@@ -10,7 +10,7 @@ const Mosaic = () => (
         </div>
         <div className="Mosaic__ItemsContainer WhiteLabel">
             <Link to="/" className="Mosaic__Item WhiteLabel">
-                <div className="Mosaic__ItemImageContainer WhiteLabel">
+                <div className="Mosaic__ItemImageContainer WhiteLabel-Hidden">
                     <picture>
                         <source media="(min-width: 0px) and (max-width: 414px)" srcSet="./static/aspect-ratio-images/16x9-Graphic1-209x114.jpg" />
                         <source media="(min-width: 415px) and (max-width: 768px)" srcSet="./static/aspect-ratio-images/16x9-Graphic1-258x145.jpg" />
