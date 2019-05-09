@@ -24,7 +24,6 @@
     &__Selector {
 
         align-items: center;
-        background: #5E6276;
         border-radius: 5px;
         height: 30px;
         justify-content: center;
@@ -34,8 +33,6 @@
         top: 19%;
         width: 25%;
         
-        @include Themer(background, Color-9);
-        
     }
     
     &__ListSelector {
@@ -44,9 +41,6 @@
         display: flex;
         justify-content: center;
         margin-left: 35%;
-    
-        @include Typer(ItemTitle);
-        @include Themer(Color, White);
     
     }
 }

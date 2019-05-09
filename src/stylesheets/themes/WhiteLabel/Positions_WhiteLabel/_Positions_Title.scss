@@ -12,5 +12,13 @@
 
         @extend %Privacy__Title;
         
+        @include Typer(ItemTitle);
+        @include Themer(Color, White);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(HeadlineSub);
+
+        }
     }
 };

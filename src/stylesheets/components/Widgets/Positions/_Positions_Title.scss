@@ -18,14 +18,9 @@
         margin: 10px 10px 20px;
         text-transform: uppercase;
 
-        @include Typer(ItemTitle);
-        @include Themer(Color, White);
-
         @include Morpher(All-Desktop) {
 
             margin: 10px;
-            
-            @include Typer(HeadlineSub);
 
         }
     }

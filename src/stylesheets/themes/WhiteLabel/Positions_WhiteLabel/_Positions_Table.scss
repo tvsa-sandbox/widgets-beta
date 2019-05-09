@@ -1,18 +1,10 @@
 // Positions Table
 
-.Positions {
+@include ThemerUI(Positions) {
 
-    &__TableContainer {
+    @include Element(TableContainer) {
         
-        display: block;
-        position: relative;
-        width: 100%;
-        padding: 2px;
+        @extend %Positions__TableContainer;
         
-        @include Morpher(All-Desktop) {
-            
-            padding: 10px;
-            
-        }
     }
 }
