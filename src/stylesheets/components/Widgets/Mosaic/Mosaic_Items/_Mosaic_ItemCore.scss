@@ -2,7 +2,7 @@
 
 %Mosaic {
 
-    
+
 
     &__ItemsContainer {
 
@@ -22,6 +22,18 @@
         position: relative;
 
         @include HoverCard;
+
+        .FocusCardItem {
+	&:hover {
+		.FocusCards__ImageContainer {
+			&:not(:hover) {
+				.FocusCard__Image {
+					filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+				}
+			}
+		}
+	}
+}
 
     }
 }
