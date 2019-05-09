@@ -11,12 +11,6 @@
 
         @include Spacer(margin, all, lg zero);
 
-        &::before {
-
-            @extend %SideLine;
-
-        }
-
     }
 
     &__EventsContainer {
