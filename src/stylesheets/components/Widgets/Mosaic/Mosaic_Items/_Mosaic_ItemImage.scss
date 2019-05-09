@@ -17,6 +17,11 @@
 		width: 100%;
 
         }
+        &:hover {
+		.Mosaic__Image {
+			transform: scale(1.05) translateZ(0);
+		}
+	}
     }
 
     &__ItemImage {
