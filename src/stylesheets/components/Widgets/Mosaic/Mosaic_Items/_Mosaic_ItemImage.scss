@@ -4,44 +4,41 @@
 
     &__ItemImageContainer {
 
-        display: block;
 		position: relative;
 		width: 100%;
+        display: block;
 
         @include Spekter(16_9);
 
-        &:before {
+        &::before {
+
 		content: '';
 		display: block;
-		height: 158px;
+		border-radius: 20px;
+		height: 156px;
 		width: 100%;
+		background: rgba(230,230,230,0);
 
-        }
-        &:hover {
-		.Mosaic__Image {
-			transform: scale(1.05) translateZ(0);
+	        &:hover {
+				.Mosaic__ItemImage {
+
+					transform: scale(1.05) translateZ(2);
+				}
+			}
 		}
 	}
-    }
+
 
     &__ItemImage {
 
-    height: 100%;
-    background-position: center;
-    filter: brightness(0.90) saturate(1.2) contrast(0.85);
-    position: absolute;
-    transform: scale(1) translateZ(0);
-    transition: filter 200ms linear, transform 200ms linear;
+		background-position: center;
+	  	filter: brightness(0.90) saturate(1.2) contrast(0.85);
+	  	position: absolute;
+	  	transform: scale(1) translateZ(0);
+	  	transition: filter 200ms linear, transform 200ms linear;
+	    border-radius: 20px;
+	    height: 100%;
 
     }
 
-    .Mosaic__ItemImageContainer:hover .Mosaic__ItemImage{
-
-      transform: scale(1.05) translateZ(0);
-    }
-
-    .Mosaic__Item:hover .Mosaic__ItemImageContainer:not(:hover) .Mosaic__ItemImage{
-
-      filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
-    }
 }
