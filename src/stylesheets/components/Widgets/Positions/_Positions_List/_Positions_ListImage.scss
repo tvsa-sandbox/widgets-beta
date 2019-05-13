@@ -28,9 +28,8 @@
         width: 60px;
         
         &:hover {
-            
-            transition: opacity 500ms;
-            content: "PUMAS";
+
+            content: "";
             filter: blur(2px);
             transition: opacity 500ms;
             
