@@ -1,20 +1,13 @@
 // Positions Container
 
-.Positions {
+@include ThemerUI(Positions) {
 
-    &__Container {
-
-		display: flex;
-        width: 100%;
-        padding: 10px;
+    @include Element(Container) {
+        
+        @extend %Positions__Container;
         
         @include Themer(border-bottom, Color-13 ,"2px solid");
-        
-        @include Morpher(All-Desktop) {
-            
-            padding: 20px;
-            
-        }
+
 	}
-}
+};
 

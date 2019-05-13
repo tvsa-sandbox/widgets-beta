@@ -13,18 +13,5 @@
     
     &__ListTitle {
         
-        @include Typer(ItemTitle);
-        
-        @include Morpher(Tablet) {
-            
-            @include Typer(ItemTitle);
-            
-        }
-        
-        @include Morpher(All-Desktop) {
-            
-            @include Typer(ItemTitleDescription);
-            
-        }
     }
 }

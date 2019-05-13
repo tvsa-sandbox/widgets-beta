@@ -1,54 +1,23 @@
 // Positions List Info
 
-.Positions {
+@include ThemerUI(Positions) {
     
-    &__ListInfoContainer {
-
-        align-items: center;
-        display: none;
-        justify-content: center;
-        margin: 9px;
-        width: 9%;
+    @include Element(ListInfoContainer) {
         
-        @include Morpher(Tablet) {
-            
-            display: flex;
-            margin: 20px;
-            
-        }
+        @extend %Positions__ListInfoContainer;
         
-        @include Morpher(All-Desktop) {
-            
-            display: flex;
-            margin: 20px;
-            
-        }
         
-        &-Pts {
-            
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            margin: 9px;
-            width: 30%;
-            
-            @include Morpher(Tablet) {
-                
-                width: 9%;
-                justify-content: center;
-
-            }
-            
-            @include Morpher(All-Desktop) {
-                
-                width: 9%;
-                justify-content: center;
-
-            }
-        }
     }
     
-    &__ListInfo {
+    &__ListInfoContainer-Pts.WhiteLabel { //develop
+        
+        @extend %Positions__ListInfoContainer-Pts;
+        
+    }
+
+    @include Element(ListInfo) {
+        
+        @extend %Positions__ListInfo;
         
         @include Typer(ItemTitle);
         
@@ -58,4 +27,4 @@
             
         }
     }
-}
+};

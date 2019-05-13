@@ -8,8 +8,6 @@
         width: 100%;
         padding: 10px;
         
-        @include Themer(border-bottom, Color-13 ,"2px solid");
-        
         @include Morpher(All-Desktop) {
             
             padding: 20px;

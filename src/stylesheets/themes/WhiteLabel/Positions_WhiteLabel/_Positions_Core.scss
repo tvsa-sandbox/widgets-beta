@@ -1,12 +1,10 @@
 // Positions Core
 
-.Positions {
+@include ThemerUI(Positions) {
 
-    margin-top: 10%;
-    overflow: hidden;
-    width: 100%;
+    @include Element(Positions);
 	
 	@include Layout(Wrapper);
     @include Themer(background, Color-1);
 
-}
+};

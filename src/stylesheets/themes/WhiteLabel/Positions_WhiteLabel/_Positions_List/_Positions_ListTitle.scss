@@ -1,17 +1,16 @@
 // Positions List Title
 
-.Positions {
+@include ThemerUI(Positions) {
     
-    &__ListTitleContainer {
+    @include Element(ListTitleContainer) {
 
-        align-items: center;
-        display: flex;
-        width: 100%;
-        max-width: 100px;
+        @extend %Positions__ListTitleContainer;
 
     }
     
-    &__ListTitle {
+    @include Element(ListTitle) {
+        
+        @extend %Positions__ListTitle;
         
         @include Typer(ItemTitle);
         

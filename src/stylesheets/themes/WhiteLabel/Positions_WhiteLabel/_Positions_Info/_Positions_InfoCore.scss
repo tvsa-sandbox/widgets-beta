@@ -1,54 +1,16 @@
 // Positions Info Core
 
-.Positions {
+@include ThemerUI(Positions) {
     
-    &__InfoContainer {
+    @include Element(InfoContainer) {
 
-        width: 80%;
-        right: 0px;
-        position: absolute;
-        margin-right: 0px;
-        
-        @include Morpher(Tablet) {
-            
-            width: 74%;
-            
-        }
-        
-        @include Morpher(Laptop) {
-            
-            margin-right: 6px;
-            width: 78%;
-            
-        }
-        
-        @include Morpher(Desktop) {
-            
-            margin-right: 8px;
-            width: 79%;
-            
-        }
-        
-        @include Morpher(Desktop-HD) {
-            
-            margin-right: 8px;
-            
-        }
+        @extend %Positions__InfoContainer;
+
     }
     
-    &__Info {
+    @include Element(Info) {
         
-        display: flex;
-		width: 100%;
-        margin: 0px auto;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        height: 30px;
+        @extend %Positions__Info;
 
-        @include Morpher(Desktop) {
-
-            @include Layout(Wrapper);
-
-        }
     }
-}
+};

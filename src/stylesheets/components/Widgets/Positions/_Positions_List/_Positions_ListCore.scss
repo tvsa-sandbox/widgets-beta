@@ -27,13 +27,5 @@
 		text-decoration: none;
         border-radius: 5px;
 
-		@include Themer(background, Color-2);
-		@include Themer(color, Text-Light-Body);
-        
-        &:hover {
-            
-            @include Themer(background, Color-11);
-            
-        }
     }
 }

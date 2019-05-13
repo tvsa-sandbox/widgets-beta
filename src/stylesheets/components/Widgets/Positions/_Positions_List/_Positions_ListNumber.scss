@@ -26,19 +26,6 @@
         justify-content: center;
         position: relative;
         top: 35%;
-        
-        @include Typer(SubTextButton);
-        
-        @include Morpher(Tablet) {
-            
-            @include Typer(SubTextTag);
-            
-        }
-        
-        @include Morpher(All-Desktop) {
-            
-            @include Typer(SubTextInfo);
-            
-        }
+
     }
 }

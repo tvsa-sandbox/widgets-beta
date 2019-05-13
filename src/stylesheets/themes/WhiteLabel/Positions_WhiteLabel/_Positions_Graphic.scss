@@ -1,17 +1,10 @@
 // Positions Graphic
 
-.Positions {
+@include ThemerUI(Positions) {
 
-    &__GraphicContainer {
+    @include Element(GraphicContainer) {
         
-        align-items: center;
-        display: flex;
-        width: 50%;
+        @extend %Positions__GraphicContainer;
         
-        @include Morpher(All-Desktop) {
-            
-            width: 30%;
-            
-        }
     }
-}
+};

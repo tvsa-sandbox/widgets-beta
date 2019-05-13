@@ -28,34 +28,27 @@
             
             align-items: center;
             display: flex;
-            justify-content: center;
-            margin: 9px;
-            width: 30%;
+            justify-content: flex-end;
+            margin: 20px;
+            width: 20%;
             
             @include Morpher(Tablet) {
                 
-                width: 9%;
                 justify-content: center;
+                width: 9%;
 
             }
             
             @include Morpher(All-Desktop) {
                 
-                width: 9%;
                 justify-content: center;
+                width: 9%;
 
             }
         }
     }
     
     &__ListInfo {
-        
-        @include Typer(ItemTitle);
-        
-        @include Morpher(All-Desktop) {
-            
-            @include Typer(ItemTitleDescription);
-            
-        }
+
     }
 }

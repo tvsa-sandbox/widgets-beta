@@ -1,33 +1,14 @@
 // Positions Info Hash
 
-.Positions {
+@include ThemerUI(Positions) {
     
-    &__InfoHash {
+    @include Element(InfoHash) {
 
-        border-radius: 5px;
-        display: none;
-        height: 30px;
-        justify-content: center;
-        margin-right: 5px;
-        right: 0;
-        width: 100%;
+        @extend %Positions__InfoHash;
 
-		@include HoverButton;
 		@include Themer(background, Color-9);
         @include Typer(SubTextInfo);
         @include Themer(Color, White);
-        
-        @include Morpher(Tablet) {
-            
-            display: flex;
-            margin-right: 3px;
-            
-        }
-        
-        @include Morpher(All-Desktop) {
-            
-            display: flex;
-            
-        }
+
     }
-}
+};

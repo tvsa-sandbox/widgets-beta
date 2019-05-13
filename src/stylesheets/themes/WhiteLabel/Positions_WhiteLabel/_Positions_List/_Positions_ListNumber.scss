@@ -1,31 +1,16 @@
 // Positions List Number
 
-.Positions {
+@include ThemerUI(Positions) {
     
-    &__ListNumberContainer {
+    @include Element(ListNumberContainer) {
 
-        width: 15%;
-        padding: 0px 5px;
-        
-        @include Morpher(Tablet) {
-            
-            width: 10%;
-            
-        }
-        
-        @include Morpher(All-Desktop) {
-            
-            width: 5%;
-            
-        }
+        @extend %Positions__ListNumberContainer;
+
     }
     
-    &__ListNumber {
+    @include Element(ListNumber) {
         
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: 35%;
+        @extend %Positions__ListNumber;
         
         @include Typer(SubTextButton);
         
