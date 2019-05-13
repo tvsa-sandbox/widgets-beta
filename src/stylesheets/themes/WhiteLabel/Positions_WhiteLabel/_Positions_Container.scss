@@ -1,0 +1,13 @@
+// Positions Container
+
+@include ThemerUI(Positions) {
+
+    @include Element(Container) {
+        
+        @extend %Positions__Container;
+        
+        @include Themer(border-bottom, Color-13 ,"2px solid");
+
+	}
+};
+

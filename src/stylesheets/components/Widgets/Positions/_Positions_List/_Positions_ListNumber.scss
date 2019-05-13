@@ -1,0 +1,33 @@
+// Positions List Number
+
+%Positions {
+    
+    &__ListNumberContainer {
+
+        width: 15%;
+        padding: 0px 5px;
+        
+        @include Spacer(padding,all, zero sm);
+        
+        @include Morpher(Tablet) {
+            
+            width: 10%;
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            width: 5%;
+            
+        }
+    }
+    
+    &__ListNumber {
+        
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 35%;
+
+    }
+}

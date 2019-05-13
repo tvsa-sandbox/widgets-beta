@@ -1,0 +1,57 @@
+// Positions List Info
+
+%Positions {
+    
+    &__ListInfoContainer {
+
+        align-items: center;
+        display: none;
+        justify-content: center;
+        width: 9%;
+        
+        @include Spacer(margin,all, md);
+        
+        @include Morpher(Tablet) {
+            
+            display: flex;
+            
+            @include Spacer(margin,all, xl);
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            display: flex;
+            
+            @include Spacer(margin,all, xl);
+            
+        }
+        
+        &-Pts {
+            
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+            @include Spacer(margin,all, xl);
+            width: 20%;
+            
+            @include Morpher(Tablet) {
+                
+                justify-content: center;
+                width: 9%;
+
+            }
+            
+            @include Morpher(All-Desktop) {
+                
+                justify-content: center;
+                width: 9%;
+
+            }
+        }
+    }
+    
+    &__ListInfo {
+
+    }
+}

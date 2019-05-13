@@ -1,0 +1,14 @@
+// Positions Info Hash
+
+@include ThemerUI(Positions) {
+    
+    @include Element(InfoHash) {
+
+        @extend %Positions__InfoHash;
+
+		@include Themer(background, Color-9);
+        @include Typer(SubTextInfo);
+        @include Themer(Color, White);
+
+    }
+};

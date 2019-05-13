@@ -1,0 +1,17 @@
+// Positions Graphic
+
+%Positions {
+
+    &__GraphicContainer {
+        
+        align-items: center;
+        display: flex;
+        width: 50%;
+        
+        @include Morpher(All-Desktop) {
+            
+            width: 30%;
+            
+        }
+    }
+}
