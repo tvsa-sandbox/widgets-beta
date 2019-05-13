@@ -5,30 +5,8 @@
     @include Element(EventContainer) {
 
         @extend %Calendar__EventContainer;
+        @include Themer(background, Color-1, before);
 
-        @include Themer(background, Color-3, before) {
-
-            content: "";
-            width: 5px;
-            position: absolute;
-            transition: .5s ease-in-out;
-            height: 100%;
-
-        }
-
-        @include Morpher(All-Desktop) {
-
-            &:hover {
-
-                @include Themer(background, Color-3, before) {
-
-                    opacity: 0.7;
-                    width: 100%;
-                    z-index: 0;
-
-                }
-            }
-        }
     }
 
     @include Element(EventsContainer) {

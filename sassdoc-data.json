@@ -1,0 +1,79 @@
+[
+  {
+    "description": "",
+    "commentRange": {
+      "start": 7,
+      "end": 28
+    },
+    "context": {
+      "type": "mixin",
+      "name": "SpecialHover",
+      "code": "\n\n    @include Transition($TDuration:$HTDuration);\n\n    &:hover {\n\n        opacity: $HOpacity;\n\n        @if $HShadow == shadow {\n\n            @include Themer(box-shadow, #000000, '0px 0px 20px');\n\n        }\n\n        text-decoration: $HDecoration;\n\n        @include Themer(color, $HColor);\n\n    }\n",
+      "line": {
+        "start": 30,
+        "end": 50
+      }
+    },
+    "group": [
+      "interactions"
+    ],
+    "parameter": [
+      {
+        "type": "transition-duration",
+        "name": "HTDuration",
+        "default": ".5s",
+        "description": "Éste valor determina la velocidad con la que se va a mostrar el efecto del Hover, cuando se tenga que aplicar este valor a un botón, éste tendrá que ser de .3s"
+      },
+      {
+        "type": "opacity",
+        "name": "HOpacity",
+        "default": ".7",
+        "description": "Éste valor determina opacidad que se le aplica al elemento cuando el Hover se activa"
+      },
+      {
+        "type": "box-shadow",
+        "name": "HShadow",
+        "default": "null",
+        "description": "Éste valor determina si se le aplica el box-shadow configurado por defecto al elemento cuando se activa el Hover, para realizar esa acción se le tiene que asignar el valor shadow"
+      },
+      {
+        "type": "text-decoration",
+        "name": "HDecoration",
+        "default": "none",
+        "description": "Éste valor determina si se le aplica algún valor a la propiedad de text-decoration cuando se activa el Hover"
+      },
+      {
+        "type": "color",
+        "name": "HColor",
+        "default": "Color-3",
+        "description": "Éste valor aplicar el color de la interacción al momento de activar el Hover, ésta propiedad solo admite valores de nuestra paleta de colores"
+      }
+    ],
+    "example": [
+      {
+        "type": "scss",
+        "code": "@include SpecialHover(.7s, .5, shadow, underline, Color-3);\n\n.item {\n\n    transition: opacity .7s;\n\n    &:hover {\n\n        opacity: .5;\n        box-shadow: 0px 0px 20px #000000;\n        text-decoration: underline;\n        color: #E3E3E3;\n\n    }\n}"
+      }
+    ],
+    "author": [
+      "WhiteLabel MarkUp"
+    ],
+    "since": [
+      {
+        "version": "v2.1.0"
+      },
+      {
+        "version": "1/5/19"
+      },
+      {
+        "version": "AtomicGhost"
+      }
+    ],
+    "access": "public",
+    "require": [],
+    "file": {
+      "path": "global/_Interactions.scss",
+      "name": "_Interactions.scss"
+    }
+  }
+]
