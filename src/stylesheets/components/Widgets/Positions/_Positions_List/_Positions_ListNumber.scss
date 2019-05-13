@@ -7,6 +7,8 @@
         width: 15%;
         padding: 0px 5px;
         
+        @include Spacer(padding,all, zero sm);
+        
         @include Morpher(Tablet) {
             
             width: 10%;

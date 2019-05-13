@@ -7,20 +7,23 @@
         align-items: center;
         display: none;
         justify-content: center;
-        margin: 9px;
         width: 9%;
+        
+        @include Spacer(margin,all, md);
         
         @include Morpher(Tablet) {
             
             display: flex;
-            margin: 20px;
+            
+            @include Spacer(margin,all, xl);
             
         }
         
         @include Morpher(All-Desktop) {
             
             display: flex;
-            margin: 20px;
+            
+            @include Spacer(margin,all, xl);
             
         }
         
@@ -29,7 +32,7 @@
             align-items: center;
             display: flex;
             justify-content: flex-end;
-            margin: 20px;
+            @include Spacer(margin,all, xl);
             width: 20%;
             
             @include Morpher(Tablet) {

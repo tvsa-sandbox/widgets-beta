@@ -7,9 +7,10 @@
         display: flex;
         justify-content: center;
         left: 3%;
-        margin: 15px 0px;
         position: relative;
         width: 100%;
+        
+        @include Spacer(margin,all, lg zero);
         
         @include Morpher (Tablet) {
 
@@ -18,9 +19,10 @@
         }
         
         @include Morpher (All-Desktop) {
-            
-            margin-bottom: 15px;
+
             justify-content: left;
+            
+            @include Spacer(margin,bottom, lg);
             
         }
     }
@@ -28,7 +30,6 @@
     &__Text {
         
         text-transform: uppercase;
-
 
     }
 }

@@ -4,18 +4,19 @@
     
     &__ListContainer {
 
-        margin-top: 7px;
         width: 100%;
+        
+        @include Spacer(margin,top, md);
         
         @include Morpher(Tablet) {
             
-            margin-top: 60px;
+            @include Spacer(margin,top, 4xl);
             
         }
         
         @include Morpher(All-Desktop) {
             
-            margin-top: 60px;
+            @include Spacer(margin,top, 4xl);
             
         }
     }
@@ -26,6 +27,8 @@
         margin-bottom: 10px;
 		text-decoration: none;
         border-radius: 5px;
+        
+        @include Spacer(margin,bottom, md);
 
     }
 }

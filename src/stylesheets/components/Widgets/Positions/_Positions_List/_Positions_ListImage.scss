@@ -10,9 +10,12 @@
         padding: 5px 0px;
         width: 94px;
         
+        @include Spacer(padding,all, sm zero);
+        
         @include Morpher(Tablet) {
             
             padding: 7px 8px 7px 0px;
+            @include Spacer(margin,all, sm sm sm zero);
             
         }
     }

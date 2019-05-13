@@ -40,8 +40,9 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        margin: 0% auto;
-        padding-left: 13%;
+        
+        @include Spacer(padding,left, base);
+        @include Spacer(margin,all, zero auto);
     
     }
 }

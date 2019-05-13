@@ -4,10 +4,11 @@
     
     &__InfoContainer {
 
-        width: 80%;
-        right: 0px;
         position: absolute;
-        margin-right: 0px;
+        right: 0px;
+        width: 80%;
+
+        @include Spacer(margin,right, zero);
         
         @include Morpher(Tablet) {
             
@@ -16,22 +17,24 @@
         }
         
         @include Morpher(Laptop) {
-            
-            margin-right: 6px;
+
             width: 78%;
+            
+            @include Spacer(margin,right, sm);
             
         }
         
         @include Morpher(Desktop) {
-            
-            margin-right: 8px;
+
             width: 79%;
+            
+            @include Spacer(margin,right, md);
             
         }
         
         @include Morpher(Desktop-HD) {
             
-            margin-right: 8px;
+            @include Spacer(margin,right, md);
             
         }
     }
@@ -40,10 +43,11 @@
         
         display: flex;
 		width: 100%;
-        margin: 0px auto;
         overflow-x: scroll;
         overflow-y: hidden;
         height: 30px;
+        
+        @include Spacer(margin,all, zero auto);
 
         @include Morpher(Desktop) {
 

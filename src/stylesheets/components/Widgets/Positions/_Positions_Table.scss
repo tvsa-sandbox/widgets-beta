@@ -7,11 +7,12 @@
         display: block;
         position: relative;
         width: 100%;
-        padding: 2px;
+        
+        @include Spacer(padding,all, xs);
         
         @include Morpher(All-Desktop) {
             
-            padding: 10px;
+            @include Spacer(padding,all, md);
             
         }
     }

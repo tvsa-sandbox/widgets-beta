@@ -8,16 +8,18 @@
         display: none;
         height: 30px;
         justify-content: center;
-        margin-right: 5px;
         right: 0;
         width: 100%;
+        
+        @include Spacer(margin,right, sm);
 
 		@include HoverButton;
         
         @include Morpher(Tablet) {
             
             display: flex;
-            margin-right: 3px;
+            
+            @include Spacer(margin,right, xs);
             
         }
         
