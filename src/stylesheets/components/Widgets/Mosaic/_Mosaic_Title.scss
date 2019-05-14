@@ -11,6 +11,8 @@
         margin: 10px auto;
         width: 100%;
 
+        //importar mixin margen
+
     }
 
     &__Title {
@@ -24,6 +26,8 @@
         position: relative;
         text-align: center;
         width: auto;
+
+        //importar mixin margen
 
     }
 }

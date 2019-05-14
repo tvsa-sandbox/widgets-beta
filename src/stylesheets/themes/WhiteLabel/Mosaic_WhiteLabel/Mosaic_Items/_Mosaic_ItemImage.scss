@@ -16,11 +16,15 @@
     		background: rgba(230,230,230,0);
 
     	        &:hover {
+
     				.Mosaic__ItemImage {
 
     					transform: scale(1.05) translateZ(2);
+
     				}
+
     			}
+
     		}
 
         }

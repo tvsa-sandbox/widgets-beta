@@ -2,26 +2,33 @@
 
 @include ThemerUI(Mosaic){
 
-        @include Element(ItemsContainer) {
+    @include Element(ItemsContainer) {
 
-            @extend %Mosaic__ItemsContainer;
+        @extend %Mosaic__ItemsContainer;
 
-            &:hover {
-    			.Mosaic__ItemImageContainer{
+        &:hover {
 
-    				&:not(:hover) {
-    					.Mosaic__ItemImage {
+			.Mosaic__ItemImageContainer{
 
-    						filter: brightness(0.6) saturate(0) contrast(1.2) blur(30px);
-    					}
-    				}
-    			}
-    		}
+				&:not(:hover) {
 
-        }
+					.Mosaic__ItemImage {
 
-        @include Element(Item) {
+						filter: brightness(0.8) saturate(0) contrast(1.2) blur(3px);
 
-            @extend %Mosaic__Item;
-        }
+					}
+
+				}
+
+			}
+
+		}
+
+    }
+
+    @include Element(Item) {
+
+        @extend %Mosaic__Item;
+
+    }
 };
