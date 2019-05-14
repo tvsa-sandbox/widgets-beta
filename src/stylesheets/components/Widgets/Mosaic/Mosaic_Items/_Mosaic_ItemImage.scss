@@ -10,22 +10,6 @@
 
         @include Spekter(16_9);
 
-        &::before {
-
-		content: '';
-		display: block;
-		border-radius: 20px;
-		height: 156px;
-		width: 100%;
-		background: rgba(230,230,230,0);
-
-	        &:hover {
-				.Mosaic__ItemImage {
-
-					transform: scale(1.05) translateZ(2);
-				}
-			}
-		}
 	}
 
 

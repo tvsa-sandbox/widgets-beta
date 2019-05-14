@@ -19,11 +19,5 @@
 		height: 45px;
 		width: 200px;
 
-		@include ButtonBorder;
-		@include HoverCard;
-		@include Themer(background, Color-1);
-		@include Themer(color, Text-Light-Headlines);
-		@include Typer(SubTextButton);
-
     }
 }

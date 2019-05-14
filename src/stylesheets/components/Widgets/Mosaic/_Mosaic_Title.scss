@@ -25,15 +25,5 @@
         text-align: center;
         width: auto;
 
-		@include Themer(background, Color-1);
-        @include Themer(color, Text-Light-Headlines);
-		@include Typer(ItemTitle);
-
-        @include Morpher(All-Desktop) {
-
-            @include Typer(HeadlineSub);
-
-        }
-
     }
 }

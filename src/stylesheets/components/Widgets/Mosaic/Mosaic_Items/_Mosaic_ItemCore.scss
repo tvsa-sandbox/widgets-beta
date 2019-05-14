@@ -9,17 +9,6 @@
         grid-template-columns: repeat(2, 1fr);
 		width: 100%;
 
-		&:hover {
-			.Mosaic__ItemImageContainer{
-
-				&:not(:hover) {
-					.Mosaic__ItemImage {
-
-						filter: brightness(0.6) saturate(0) contrast(1.2) blur(30px);
-					}
-				}
-			}
-		}
 
         @include Morpher(All-Desktop) {
 
