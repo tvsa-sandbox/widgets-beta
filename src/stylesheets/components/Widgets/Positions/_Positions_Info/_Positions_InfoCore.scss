@@ -42,10 +42,8 @@
     &__Info {
         
         display: flex;
-		width: 100%;
-        overflow-x: scroll;
-        overflow-y: hidden;
         height: 30px;
+        width: 100%;
         
         @include Spacer(margin,all, zero auto);
 
