@@ -1,0 +1,30 @@
+// Positions List Info
+
+@include ThemerUI(Positions) {
+    
+    @include Element(ListInfoContainer) {
+        
+        @extend %Positions__ListInfoContainer;
+        
+        
+    }
+    
+    &__ListInfoContainer-Pts.WhiteLabel { //develop
+        
+        @extend %Positions__ListInfoContainer-Pts;
+        
+    }
+
+    @include Element(ListInfo) {
+        
+        @extend %Positions__ListInfo;
+        
+        @include Typer(ItemTitle);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(ItemTitleDescription);
+            
+        }
+    }
+};

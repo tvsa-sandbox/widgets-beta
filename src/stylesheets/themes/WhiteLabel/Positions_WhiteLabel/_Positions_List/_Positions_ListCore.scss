@@ -1,0 +1,24 @@
+// Positions List Core
+
+@include ThemerUI(Positions) {
+    
+    @include Element(ListContainer) {
+
+        @extend %Positions__ListContainer;
+
+    }
+    
+    @include Element(ListElement) {
+
+        @extend %Positions__ListElement;
+
+		@include Themer(background, Color-2);
+		@include Themer(color, Text-Light-Body);
+        
+        &:hover {
+            
+            @include Themer(background, Color-11);
+            
+        }
+    }
+};

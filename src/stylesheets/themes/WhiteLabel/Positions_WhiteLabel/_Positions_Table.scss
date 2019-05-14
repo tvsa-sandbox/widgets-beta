@@ -1,0 +1,10 @@
+// Positions Table
+
+@include ThemerUI(Positions) {
+
+    @include Element(TableContainer) {
+        
+        @extend %Positions__TableContainer;
+        
+    }
+};

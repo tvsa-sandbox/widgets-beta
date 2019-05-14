@@ -1,0 +1,19 @@
+// Positions Text
+
+@include ThemerUI(Positions) {
+
+    @include Element(TextContainer) {
+
+        @extend %Positions__TextContainer;
+        
+    }
+
+    @include Element(Text) {
+    
+        @extend %Positions__Text;
+        
+        @include Typer(ItemTitle);
+        @include Themer(Color, White);
+    
+    }
+};
