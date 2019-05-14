@@ -43,8 +43,7 @@
         
         display: flex;
 		width: 100%;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        overflow: hidden;
         height: 30px;
         
         @include Spacer(margin,all, zero auto);
