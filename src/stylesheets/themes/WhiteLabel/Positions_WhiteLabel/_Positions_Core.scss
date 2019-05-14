@@ -1,0 +1,10 @@
+// Positions Core
+
+@include ThemerUI(Positions) {
+
+    @include Element(Positions);
+	
+	@include Layout(Wrapper);
+    @include Themer(background, Color-1);
+
+};

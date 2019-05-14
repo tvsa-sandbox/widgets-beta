@@ -1,0 +1,29 @@
+// Positions List Title
+
+@include ThemerUI(Positions) {
+    
+    @include Element(ListTitleContainer) {
+
+        @extend %Positions__ListTitleContainer;
+
+    }
+    
+    @include Element(ListTitle) {
+        
+        @extend %Positions__ListTitle;
+        
+        @include Typer(ItemTitle);
+        
+        @include Morpher(Tablet) {
+            
+            @include Typer(ItemTitle);
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(ItemTitleDescription);
+            
+        }
+    }
+}

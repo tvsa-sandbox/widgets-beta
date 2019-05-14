@@ -1,0 +1,58 @@
+// Positions Info Core
+
+%Positions {
+    
+    &__InfoContainer {
+
+        position: absolute;
+        right: 0px;
+        width: 80%;
+
+        @include Spacer(margin,right, zero);
+        
+        @include Morpher(Tablet) {
+            
+            width: 74%;
+            
+        }
+        
+        @include Morpher(Laptop) {
+
+            width: 78%;
+            
+            @include Spacer(margin,right, sm);
+            
+        }
+        
+        @include Morpher(Desktop) {
+
+            width: 79%;
+            
+            @include Spacer(margin,right, md);
+            
+        }
+        
+        @include Morpher(Desktop-HD) {
+            
+            @include Spacer(margin,right, md);
+            
+        }
+    }
+    
+    &__Info {
+        
+        display: flex;
+		width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 30px;
+        
+        @include Spacer(margin,all, zero auto);
+
+        @include Morpher(Desktop) {
+
+            @include Layout(Wrapper);
+
+        }
+    }
+}
