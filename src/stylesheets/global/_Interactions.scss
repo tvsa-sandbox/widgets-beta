@@ -1,6 +1,6 @@
 ////
 /// @author WhiteLabel MarkUp
-/// @since v2.5.0
+/// @since v2.5.1
 /// @since 1/5/19
 /// @since AtomicGhost
 
@@ -44,16 +44,11 @@
 
         text-decoration: $HDecoration;
 
-        @if $HColor null {
-
-            color: inherit;
-
-        } @else {
+        @if not $HColor == null {
 
             @include Themer(color, $HColor);
 
         }
-
     }
 }
 
