@@ -1,0 +1,49 @@
+// Positions Mobile
+
+%Positions {
+
+    &__SelectorMobile {
+
+        height: 40px;
+        position: relative;
+        width: 100%;
+        
+        @include Morpher(Tablet) {
+
+            display: none;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: none;
+
+        }
+    }
+
+    &__Selector {
+
+        align-items: center;
+        border-radius: 5px;
+        height: 30px;
+        justify-content: center;
+        position: absolute;
+        right: 3px;
+        text-align: center;
+        top: 19%;
+        width: 25%;
+        
+    }
+    
+    &__ListSelector {
+    
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        
+        @include Spacer(padding,left, base);
+        @include Spacer(margin,all, zero auto);
+    
+    }
+}
+

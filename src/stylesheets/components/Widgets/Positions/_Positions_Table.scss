@@ -1,0 +1,19 @@
+// Positions Table
+
+%Positions {
+
+    &__TableContainer {
+        
+        display: block;
+        position: relative;
+        width: 100%;
+        
+        @include Spacer(padding,all, xs);
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Spacer(padding,all, md);
+            
+        }
+    }
+}
