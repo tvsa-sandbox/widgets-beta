@@ -12,5 +12,7 @@
 
         @extend %NotesCarousel__ItemTitle;
 
+        @include Typer(SubTextCredit);
+
     }
 };
