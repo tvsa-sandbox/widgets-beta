@@ -1,1 +1,10 @@
 // NotesCarousel Carousel Arrows
+
+@include ThemerUI(NotesCarousel) {
+
+    @include Element(CarouselArrowsContainer) {
+
+        @extend %NotesCarousel__CarouselArrowsContainer;
+
+    }
+};

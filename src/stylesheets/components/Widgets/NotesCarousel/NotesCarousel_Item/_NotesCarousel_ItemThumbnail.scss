@@ -7,11 +7,7 @@
         position: relative;
         width: 100px;
 
-    }
-
-    @include Morpher (All-Desktop) {
-
-        &__ItemThumbnail {
+        @include Morpher (All-Desktop) {
 
             width: 150px;
 
