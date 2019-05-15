@@ -8,13 +8,13 @@
 
         @include Spekter(3_4);
 
-        @include HoverCard;
+        @include Hover;
 
         @include Morpher(All-Desktop) {
 
             @include Spekter(9_16);
 
-            clip-path: polygon(0 100%, 14% 0, 100% 0, 101% 100%);
+            clip-path: polygon(0 100%, 20% 0, 100% 0, 101% 100%);
 
         }
     }

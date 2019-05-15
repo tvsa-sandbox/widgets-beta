@@ -4,4 +4,17 @@
 
     @extend %SuperCard;
 
+    @include Themer(background, Black);
+
+    @include Morpher(All-Desktop){
+
+        @include Themer(background, Color-9);
+
+    }
+
+    @include Element(Container) {
+
+        @extend %SuperCard__Container;
+
+    };
 };

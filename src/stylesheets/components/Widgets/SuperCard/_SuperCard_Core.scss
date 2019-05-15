@@ -2,15 +2,19 @@
 
 %SuperCard {
 
-    max-width: 1180px;
-    width: 100%;
-    position: relative;
+    @include WidgetBottomSpace;
 
-    @include Spacer(margin, all, xl auto);
+    &__Container {
+        max-width: 1180px;
+        width: 100%;
+        position: relative;
 
-    @include Morpher(All-Desktop) {
+        @include Spacer(margin, all, xl auto);
 
-		display: flex;
+        @include Morpher(All-Desktop) {
 
+    		display: flex;
+
+        }
     }
 }
