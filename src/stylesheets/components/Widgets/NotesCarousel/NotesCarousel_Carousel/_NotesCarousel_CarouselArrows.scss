@@ -36,7 +36,7 @@
                 width: 45px;
                 z-index: 5;
 
-                @include HoverButton;
+                @include Hover(.3s, .5);
                 @include Themer(background, Color-2);
 
             }
@@ -58,7 +58,7 @@
                 width: 45px;
                 z-index: 5;
 
-                @include HoverButton;
+                @include Hover(.3s, .5);
                 @include Themer(background, Color-2);
 
             }

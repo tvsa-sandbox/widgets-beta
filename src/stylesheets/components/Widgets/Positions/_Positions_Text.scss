@@ -1,0 +1,35 @@
+// Positions Text
+
+%Positions {
+
+    &__TextContainer {
+
+        display: flex;
+        justify-content: center;
+        left: 3%;
+        position: relative;
+        width: 100%;
+        
+        @include Spacer(margin,all, lg zero);
+        
+        @include Morpher (Tablet) {
+
+            justify-content: left;
+            
+        }
+        
+        @include Morpher (All-Desktop) {
+
+            justify-content: left;
+            
+            @include Spacer(margin,bottom, lg);
+            
+        }
+    }
+
+    &__Text {
+        
+        text-transform: uppercase;
+
+    }
+}

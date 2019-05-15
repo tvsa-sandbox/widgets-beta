@@ -7,7 +7,7 @@
     },
     "context": {
       "type": "mixin",
-      "name": "SpecialHover",
+      "name": "Hover",
       "code": "\n\n    @include Transition($TDuration:$HTDuration);\n\n    &:hover {\n\n        opacity: $HOpacity;\n\n        @if $HShadow == shadow {\n\n            @include Themer(box-shadow, #000000, '0px 0px 20px');\n\n        }\n\n        text-decoration: $HDecoration;\n\n        @include Themer(color, $HColor);\n\n    }\n",
       "line": {
         "start": 30,
@@ -52,7 +52,7 @@
     "example": [
       {
         "type": "scss",
-        "code": "@include SpecialHover(.7s, .5, shadow, underline, Color-3);\n\n.item {\n\n    transition: opacity .7s;\n\n    &:hover {\n\n        opacity: .5;\n        box-shadow: 0px 0px 20px #000000;\n        text-decoration: underline;\n        color: #E3E3E3;\n\n    }\n}"
+        "code": "@include Hover(.7s, .5, shadow, underline, Color-3);\n\n.item {\n\n    transition: opacity .7s;\n\n    &:hover {\n\n        opacity: .5;\n        box-shadow: 0px 0px 20px #000000;\n        text-decoration: underline;\n        color: #E3E3E3;\n\n    }\n}"
       }
     ],
     "author": [

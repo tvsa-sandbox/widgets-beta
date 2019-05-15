@@ -4,14 +4,17 @@ import Layout from "../layouts";
 
 // Components
 
-// import Privacy from "../components/Privacy/Privacy";
-import SuperCard from "../components/SuperCard/SuperCard";
+import Calendar from "../components/Calendar/Calendar";
+import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
+import Positions from "../components/Positions/Positions";
 
 
 const IndexPage = () => (
     <Layout>
 
-        <SuperCard />
+        <NotesCarousel />
+        <Calendar />
+        <Positions />
 
     </Layout>
 );

@@ -1,0 +1,10 @@
+// Positions Graphic
+
+@include ThemerUI(Positions) {
+
+    @include Element(GraphicContainer) {
+        
+        @extend %Positions__GraphicContainer;
+        
+    }
+};

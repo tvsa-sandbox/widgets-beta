@@ -1,0 +1,16 @@
+// Positions Info Core
+
+@include ThemerUI(Positions) {
+    
+    @include Element(InfoContainer) {
+
+        @extend %Positions__InfoContainer;
+
+    }
+    
+    @include Element(Info) {
+        
+        @extend %Positions__Info;
+
+    }
+};

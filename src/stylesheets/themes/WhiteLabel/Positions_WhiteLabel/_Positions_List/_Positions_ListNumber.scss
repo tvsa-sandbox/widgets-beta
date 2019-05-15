@@ -1,0 +1,29 @@
+// Positions List Number
+
+@include ThemerUI(Positions) {
+    
+    @include Element(ListNumberContainer) {
+
+        @extend %Positions__ListNumberContainer;
+
+    }
+    
+    @include Element(ListNumber) {
+        
+        @extend %Positions__ListNumber;
+        
+        @include Typer(SubTextButton);
+        
+        @include Morpher(Tablet) {
+            
+            @include Typer(SubTextTag);
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(SubTextInfo);
+            
+        }
+    }
+}
