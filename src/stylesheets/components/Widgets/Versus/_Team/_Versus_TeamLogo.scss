@@ -5,10 +5,9 @@
     &__TeamLogoContainer {
         
         height: 50px;
-        margin: 9px;
         width: 50px;
         
-        @include Spacer(margin,all, zero auto md auto);
+        @include Spacer(margin,all, zero auto xs auto);
         
         @include Morpher(All-Desktop) {
             

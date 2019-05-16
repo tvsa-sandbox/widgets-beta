@@ -13,6 +13,7 @@
         @extend %Versus__TeamName;
         
         @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitleDescription);
         
     }
 }

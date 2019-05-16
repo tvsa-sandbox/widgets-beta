@@ -13,8 +13,13 @@
 
         @extend %Versus__Title;
         
-        @include Typer(HeadlineSub);
         @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitle);
         
+        @include Morpher(All-Desktop) {
+            
+            @include Typer(HeadlineSub);
+            
+        }
     }
 }

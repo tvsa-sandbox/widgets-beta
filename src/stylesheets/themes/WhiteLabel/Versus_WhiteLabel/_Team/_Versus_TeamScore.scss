@@ -18,7 +18,13 @@
         @extend %Versus__TeamScore;
         
         @include Themer(color, Text-Light-Body);
+        @include Typer(SubTextTag);
         
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitle);
+            
+        }
     }
 }
 
