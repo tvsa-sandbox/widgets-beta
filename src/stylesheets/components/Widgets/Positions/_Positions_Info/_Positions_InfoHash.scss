@@ -1,7 +1,7 @@
 // Positions Info Hash
 
 %Positions {
-    
+
     &__InfoHash {
 
         border-radius: 5px;
@@ -10,23 +10,23 @@
         justify-content: center;
         right: 0;
         width: 100%;
-        
+
         @include Spacer(margin,right, sm);
 
-		@include HoverButton;
-        
+        @include Hover(.3s, .5);
+
         @include Morpher(Tablet) {
-            
+
             display: flex;
-            
+
             @include Spacer(margin,right, xs);
-            
+
         }
-        
+
         @include Morpher(All-Desktop) {
-            
+
             display: flex;
-            
+
         }
     }
 }

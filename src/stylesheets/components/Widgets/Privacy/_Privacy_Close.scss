@@ -10,7 +10,7 @@
         position: relative;
         right: 0px;
 
-        @include HoverButton;
+        @include Hover(.3s, .5);
 
         @include Morpher(All-Desktop) {
 
