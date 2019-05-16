@@ -1,0 +1,24 @@
+// Versus Team Score
+
+@include ThemerUI(Versus) {
+    
+    @include Element(TeamScoreContainer) {
+        
+        @extend %Versus__TeamScoreContainer;
+        
+        @include Modify(Visit)  {
+            
+            @extend %Versus__TeamScoreContainer-Visit;
+            
+        }
+    }
+    
+    @include Element(TeamScore) {
+        
+        @extend %Versus__TeamScore;
+        
+        @include Themer(color, Text-Light-Body);
+        
+    }
+}
+

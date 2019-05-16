@@ -1,0 +1,20 @@
+// Versus Info
+
+@include ThemerUI(Versus) {
+    
+    @include Element(InfoContainer) {
+        
+        @extend %Versus__InfoContainer;
+        
+    }
+    
+    @include Element(Info) {
+        
+        @extend %Versus__Info;
+        
+        @include Themer(color, Text-Light-Body);
+        @include Typer(SubTextInfo);
+        
+    }
+}
+

@@ -1,0 +1,22 @@
+// Versus Info Core
+
+%Versus {
+    
+    &__InfoContainer {
+        
+        align-items: center;
+        display: flex;
+        height: 120px;
+        justify-content: center;
+        width: 20%;
+        
+    }
+    
+    &__Info {
+        
+        display: inline-grid;
+        text-align: center;
+        
+    }
+}
+

@@ -1,0 +1,22 @@
+// Versus Team Name
+
+%Versus {
+
+    &__TeamNameContainer {
+        
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        max-width: 120px;
+        width: 100%;
+        
+        @include Spacer(margin,all, zero auto);
+        
+    }
+    
+    &__TeamName {
+        
+        
+        
+    }
+}
