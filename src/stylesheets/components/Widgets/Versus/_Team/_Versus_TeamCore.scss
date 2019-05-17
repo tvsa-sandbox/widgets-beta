@@ -1,0 +1,41 @@
+// Versus Team Core
+
+%Versus {
+    
+    &__TeamContainer {
+        
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        
+    }
+    
+    &__Team {
+
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        
+        @include Morpher(All-Desktop) {
+            
+            display: flex;
+            
+        }
+        
+        &-Visit {
+
+            display: inline-block;
+            flex-direction: row-reverse;
+            height: 100%;
+            width: 100%;
+            
+            @include Morpher(All-Desktop) {
+                
+                display: flex;
+                
+            }
+        }
+    }
+}
+
