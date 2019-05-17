@@ -12,11 +12,9 @@
     }
     
     &__Team {
-        
-        align-items: center;
+
         display: inline-block;
         height: 100%;
-        justify-content: center;
         width: 100%;
         
         @include Morpher(All-Desktop) {
@@ -26,12 +24,10 @@
         }
         
         &-Visit {
-            
-            align-items: center;
+
             display: inline-block;
             flex-direction: row-reverse;
             height: 100%;
-            justify-content: center;
             width: 100%;
             
             @include Morpher(All-Desktop) {
