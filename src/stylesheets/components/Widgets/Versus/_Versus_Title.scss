@@ -1,0 +1,27 @@
+// Versus Title
+
+%Versus {
+
+    &__TitleContainer {
+
+        display: flex;
+        height: 70px;
+        width: 80%;
+        
+        @include Spacer(margin,all, zero md);
+        
+        @include Morpher(All-Desktop) {
+            
+            height: 80px;
+            
+        }
+    }
+
+    &__Title {
+
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        
+    }
+}

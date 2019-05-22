@@ -1,0 +1,11 @@
+// Versus Team Logo
+
+@include ThemerUI(Versus) {
+    
+    @include Element(TeamLogoContainer) {
+        
+        @extend %Versus__TeamLogoContainer;
+        
+    }
+}
+
