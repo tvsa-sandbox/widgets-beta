@@ -9,6 +9,15 @@
 		@include Themer(background, Color-9);
         @include Typer(SubTextInfo);
         @include Themer(Color, White);
-
+        
+        @include Modify(First) {
+            
+            @extend %Positions__InfoHash-First;
+            
+            @include Themer(background, Color-9);
+            @include Typer(SubTextInfo);
+            @include Themer(Color, White);
+            
+        }
     }
 };
