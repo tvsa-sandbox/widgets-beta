@@ -7,6 +7,7 @@ import Layout from "../layouts";
 import Calendar from "../components/Calendar/Calendar";
 import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
 import Positions from "../components/Positions/Positions";
+import Versus from "../components/Versus/Versus";
 
 
 const IndexPage = () => (
@@ -15,6 +16,7 @@ const IndexPage = () => (
         <NotesCarousel />
         <Calendar />
         <Positions />
+        <Versus />
 
     </Layout>
 );
