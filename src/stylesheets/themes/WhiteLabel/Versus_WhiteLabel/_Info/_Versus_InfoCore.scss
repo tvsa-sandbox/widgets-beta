@@ -47,7 +47,7 @@
             
             @include Morpher(All-Desktop) {
                 
-                @include Spacer(margin,all, sm zero);
+                @include Spacer(margin,botom, sm);
                 @include Typer(SubTextCredit);
             }
         }

@@ -6,7 +6,7 @@
 
         display: flex;
         justify-content: center;
-        left: 3%;
+        left: 0%;
         position: relative;
         width: 100%;
         
@@ -15,12 +15,14 @@
         @include Morpher (Tablet) {
 
             justify-content: left;
+            left: 3%;
             
         }
         
         @include Morpher (All-Desktop) {
 
             justify-content: left;
+            left: 3%;
             
             @include Spacer(margin,bottom, lg);
             
