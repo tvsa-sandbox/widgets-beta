@@ -1,4 +1,4 @@
-// Typer Engine | WhiteLabel MarkUp v2.1.8 Atomic Ghost | 15/5/19
+// Typer Engine | WhiteLabel MarkUp v2.1.9 Atomic Ghost | 21/5/19
 
 /*
     examples
@@ -28,7 +28,11 @@
                $FSMAX: nth($query, 4);
 
           }
-        $LS: nth($query, 5);
+          @if not $LS {
+
+                $LS: nth($query, 5);
+
+         }
 
         @if ($FF == sans-serif) {
             font-family:unquote($FF);
