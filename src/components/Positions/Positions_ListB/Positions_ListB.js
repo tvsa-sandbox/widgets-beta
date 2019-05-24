@@ -18,22 +18,22 @@ const Positions_ListB = () => (
                         Guadalajara
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         16
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         11
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         4
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         33
                     </div>
@@ -53,7 +53,7 @@ const Positions_ListB = () => (
                         17
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer-Pts WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         37
                     </div>

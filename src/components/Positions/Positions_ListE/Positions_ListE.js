@@ -18,22 +18,22 @@ const Positions_ListE = () => (
                         Paris Saint Germain
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         16
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         10
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         2
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         4
                     </div>
@@ -53,7 +53,7 @@ const Positions_ListE = () => (
                         10
                     </div>
                 </div>
-                <div className="Positions__ListInfoContainer-Pts WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
                     <div className="Positions__ListInfo WhiteLabel">
                         13
                     </div>

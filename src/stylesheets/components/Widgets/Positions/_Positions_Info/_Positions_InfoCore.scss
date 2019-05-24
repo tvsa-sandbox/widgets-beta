@@ -15,7 +15,7 @@
         @include Morpher(Tablet) {
             
             position: absolute;
-            width: 74%;
+            width: 71%;
             
         }
         
@@ -40,6 +40,7 @@
         @include Morpher(Desktop-HD) {
             
             position: absolute;
+            width: 80%;
             
             @include Spacer(margin,right, xs);
             
