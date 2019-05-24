@@ -6,20 +6,18 @@
         
         @extend %Positions__ListInfoContainer;
         
-        
+        @include Modify(First) {
+            
+            @extend %Positions__ListInfoContainer-First;
+            
+        }
     }
     
-    &__ListInfoContainer-Pts.WhiteLabel { //develop
-        
-        @extend %Positions__ListInfoContainer-Pts;
-        
-    }
-
     @include Element(ListInfo) {
         
         @extend %Positions__ListInfo;
         
-        @include Typer(ItemTitle);
+        @include Typer(ItemTitleDescription);
         
         @include Morpher(All-Desktop) {
             

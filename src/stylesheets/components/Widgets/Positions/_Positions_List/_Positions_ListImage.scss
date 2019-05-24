@@ -8,7 +8,7 @@
         cursor: pointer;
         height: auto;
         padding: 5px 0px;
-        width: 94px;
+        width: 130px;
         
         @include Spacer(padding,all, sm zero);
         
@@ -16,6 +16,12 @@
             
             padding: 7px 8px 7px 0px;
             @include Spacer(margin,all, sm sm sm zero);
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            width: 94px;
             
         }
     }
