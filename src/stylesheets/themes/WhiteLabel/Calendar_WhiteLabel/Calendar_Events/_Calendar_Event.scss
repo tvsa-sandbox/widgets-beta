@@ -5,6 +5,7 @@
     @include Element(EventContainer) {
 
         @extend %Calendar__EventContainer;
+
         @include Themer(background, Color-1, before);
 
     }
