@@ -3,38 +3,45 @@
 %Positions {
     
     &__InfoContainer {
-
-        position: absolute;
+        
         right: 0px;
-        width: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
 
         @include Spacer(margin,right, zero);
         
         @include Morpher(Tablet) {
             
-            width: 74%;
+            position: absolute;
+            width: 71%;
             
         }
         
         @include Morpher(Laptop) {
 
+            position: absolute;
             width: 78%;
             
-            @include Spacer(margin,right, sm);
+            @include Spacer(margin,right, xs);
             
         }
         
         @include Morpher(Desktop) {
 
+            position: absolute;
             width: 79%;
             
-            @include Spacer(margin,right, md);
+            @include Spacer(margin,right, xs);
             
         }
         
         @include Morpher(Desktop-HD) {
             
-            @include Spacer(margin,right, md);
+            position: absolute;
+            width: 80%;
+            
+            @include Spacer(margin,right, xs);
             
         }
     }
@@ -43,13 +50,23 @@
         
         display: flex;
         height: 30px;
-        width: 100%;
+        width: 44%;
         
-        @include Spacer(margin,all, zero auto);
+        @include Morpher(Tablet) {
 
-        @include Morpher(Desktop) {
-
+            width: 100%;
+            
             @include Layout(Wrapper);
+            @include Spacer(margin,all, zero auto);
+
+        }
+        
+        @include Morpher(All-Desktop) {
+
+            width: 100%;
+            
+            @include Layout(Wrapper);
+            @include Spacer(margin,all, zero auto);
 
         }
     }

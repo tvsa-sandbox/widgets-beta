@@ -12,7 +12,7 @@
         
         @extend %Positions__ListNumber;
         
-        @include Typer(SubTextButton);
+        @include Typer(SubTextInfo);
         
         @include Morpher(Tablet) {
             
