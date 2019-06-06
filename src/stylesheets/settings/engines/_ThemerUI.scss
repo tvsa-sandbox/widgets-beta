@@ -1,4 +1,4 @@
-// ThemerUI Engine | WhiteLabel MarkUp v2.1.0 Atomic Ghost | 1/5/19
+// ThemerUI Engine | WhiteLabel MarkUp v2.2.0 Atomic Ghost | 14/5/19
 
 @mixin ThemerUI($selector, $skin: '.WhiteLabel') {
 
@@ -20,7 +20,11 @@
 
 @mixin Modify($nameModify : 'Modify') {
 
-	&-#{$nameModify}.#{$UINameSpace} {
+	$e: &;
+
+	$Element: str-replace(#{$e}, ".#{$UINameSpace}", '');
+
+	@at-root #{$Element}-#{$nameModify}.#{$UINameSpace} {
 
 		@content;
 

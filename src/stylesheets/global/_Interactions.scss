@@ -1,6 +1,6 @@
 ////
 /// @author WhiteLabel MarkUp
-/// @since v2.1.0
+/// @since v2.5.1
 /// @since 1/5/19
 /// @since AtomicGhost
 
@@ -11,7 +11,7 @@
 /// @param {text-decoration} $HDecoration [none] - Éste valor determina si se le aplica algún valor a la propiedad de text-decoration cuando se activa el Hover
 /// @param {color} $HColor [null] - Éste valor aplicar el color de la interacción al momento de activar el Hover, ésta propiedad solo admite valores de nuestra paleta de colores
 /// @example
-///   @include SpecialHover(.7s, .5, shadow, underline, Color-3);
+///   @include Hover(.7s, .5, shadow, underline, Color-3);
 ///
 ///   .item {
 ///
@@ -74,40 +74,8 @@
     }
 }
 
-@mixin HoverCard {
+@mixin Transition ($TProperty:opacity, $TDuration:0.5s, $TTiming:ease, $TDelay:0s, $Extras:null) {
 
-    transition: opacity .5s;
+    transition: $TProperty $TDuration $TTiming $TDelay, $Extras;
 
-    &:hover {
-
-        opacity: .7;
-
-        @include Themer(box-shadow, #000000, '0px 0px 20px');
-
-    }
-}
-
-@mixin HoverButton {
-
-    transition: opacity .3s;
-
-    &:hover {
-
-        opacity: .5;
-
-    }
-}
-
-@mixin HoverUnderline {
-
-	transition: opacity .5s;
-
-	&:hover {
-
-		opacity: .7;
-		text-decoration: underline;
-
-		@include Themer(color, Color-3);
-
-	}
 }

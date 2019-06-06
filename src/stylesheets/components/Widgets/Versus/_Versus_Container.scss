@@ -1,0 +1,14 @@
+// Versus Container
+
+%Versus {
+
+    &__Container {
+
+        display: block;
+        width: 100%;
+        
+        @include Spacer(margin,top, md);
+        
+	}
+}
+

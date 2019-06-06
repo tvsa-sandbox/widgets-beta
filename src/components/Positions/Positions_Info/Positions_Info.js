@@ -2,30 +2,30 @@ import React from "react";
 
 const Positions_Info = () => (    
         <div className="Positions__Info WhiteLabel">
-            <button className="Positions__InfoHash WhiteLabel">
+            <span className="Positions__InfoHash-First WhiteLabel">
                 JJ
-            </button>
-            <button className="Positions__InfoHash WhiteLabel">
+            </span>
+            <span className="Positions__InfoHash-First WhiteLabel">
                 JG
-            </button>
-            <button className="Positions__InfoHash WhiteLabel">
+            </span>
+            <span className="Positions__InfoHash-First WhiteLabel">
                 JE
-            </button>
-            <button className="Positions__InfoHash WhiteLabel">
+            </span>
+            <span className="Positions__InfoHash-First WhiteLabel">
                 JP
-            </button>
-            <button className="Positions__InfoHash WhiteLabel">
+            </span>
+            <span className="Positions__InfoHash WhiteLabel">
                 GF
-            </button>
-            <button className="Positions__InfoHash WhiteLabel">
+            </span>
+            <span className="Positions__InfoHash WhiteLabel">
                 GC
-            </button>
-            <button className="Positions__InfoHash WhiteLabel">
+            </span>
+            <span className="Positions__InfoHash WhiteLabel">
                 DIF
-            </button>
-            <button className="Positions__InfoHash WhiteLabel">
+            </span>
+            <span className="Positions__InfoHash-First WhiteLabel">
                 PTS
-            </button>
+            </span>
         </div>
 );
 

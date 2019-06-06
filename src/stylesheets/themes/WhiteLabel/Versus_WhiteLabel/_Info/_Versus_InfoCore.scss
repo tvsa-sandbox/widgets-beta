@@ -1,0 +1,65 @@
+// Versus Info
+
+@include ThemerUI(Versus) {
+    
+    @include Element(InfoContainer) {
+        
+        @extend %Versus__InfoContainer;
+        
+    }
+    
+    @include Element(Info) {
+        
+        @extend %Versus__Info;
+        
+        @include Modify(Typer) {
+            
+            @extend %Versus__Info-Typer;
+            
+            @include Themer(color, Mini-Text-Light);
+            @include Typer(FooterTextCopyright);
+            
+        }
+        
+        @include Modify(Date) {
+            
+            @extend %Versus__Info-Date;
+            
+            @include Spacer(margin,all, xs zero);
+            @include Themer(color, Text-Light-Body);
+            @include Typer(SubTextCredit);
+            
+            @include Morpher(All-Desktop) {
+                
+                @include Spacer(margin,all, sm zero);
+                @include Typer(SubTextTag);
+                
+            }
+        }
+        
+        @include Modify(Time) {
+            
+            @extend %Versus__Info-Time;
+            
+            @include Spacer(margin,all, xs zero);
+            @include Themer(color, Text-Light-Body);
+            @include Typer(FooterTextContact);
+            
+            @include Morpher(All-Desktop) {
+                
+                @include Spacer(margin,botom, sm);
+                @include Typer(SubTextCredit);
+            }
+        }
+        
+        @include Modify(Stadium) {
+            
+            @extend %Versus__Info-Stadium;
+            
+            @include Themer(color, Mini-Text-Light);
+            @include Typer(FooterTextCopyright);
+            
+        }
+    }
+}
+

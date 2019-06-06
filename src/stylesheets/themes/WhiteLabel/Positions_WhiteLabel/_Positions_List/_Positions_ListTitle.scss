@@ -12,7 +12,7 @@
         
         @extend %Positions__ListTitle;
         
-        @include Typer(ItemTitle);
+        @include Typer(SubTextTag);
         
         @include Morpher(Tablet) {
             

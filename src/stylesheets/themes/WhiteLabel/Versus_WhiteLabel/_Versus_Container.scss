@@ -1,0 +1,13 @@
+// Versus Container
+
+@include ThemerUI(Versus) {
+
+    @include Element(Container) {
+
+        @extend %Versus__Container;
+        
+        @include Themer(background, Color-6);
+        
+	}
+}
+

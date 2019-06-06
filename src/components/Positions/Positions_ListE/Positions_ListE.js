@@ -14,49 +14,49 @@ const Positions_ListE = () => (
                     </picture>
                 </div>
                 <div className="Positions__ListTitleContainer WhiteLabel" ds-title="Divi Soup">
-                    <div className="Positions__ListTitle WhiteLabel">
+                    <h3 className="Positions__ListTitle WhiteLabel">
                         Paris Saint Germain
-                    </div>
+                    </h3>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         16
-                    </div>
+                    </span>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         10
-                    </div>
+                    </span>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         2
-                    </div>
+                    </span>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         4
-                    </div>
+                    </span>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         1
-                    </div>
+                    </span>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         1
-                    </div>
+                    </span>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         10
-                    </div>
+                    </span>
                 </div>
-                <div className="Positions__ListInfoContainer-Pts WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         13
-                    </div>
+                    </span>
                 </div>
             </div>
 );

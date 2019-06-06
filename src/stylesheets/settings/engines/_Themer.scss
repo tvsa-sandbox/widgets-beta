@@ -1,6 +1,6 @@
-// Themer Engine | WhiteLabel MarkUp v2.2.0 Atomic Ghost | 26/5/19
+// Themer Engine | WhiteLabel MarkUp v2.3.0 Atomic Ghost | 28/5/19
 
-@mixin Themer($Property, $ColorCat , $ExtraValues:"") {
+@mixin Themer($Property, $ColorCat, $ExtraValues:"") {
 
     $Properties: (
     background,
@@ -13,6 +13,8 @@
     box-shadow,
     text-shadow,
     linear-gradient,
+    alpha-color,
+    alpha-background,
     );
 
     @if list-has-key($Properties, $Property) {
@@ -20,12 +22,11 @@
         $Colorquery: map-deep-get($Palettes, $UINameSpace, $ColorCat);
 
         & {
-
             @if $ExtraValues == before {
 
                 &::before {
                     content: '';
-                    #{$Property}: unquote($Colorquery);
+                    #{$Property}: ($Colorquery);
                     @content;
                 }
 
@@ -33,7 +34,7 @@
 
                 &::after {
                     content: '';
-                    #{$Property}: unquote($Colorquery);
+                    #{$Property}: ($Colorquery);
                     @content;
                 }
 
@@ -45,20 +46,41 @@
 
                     $color: map-deep-get($Palettes, $UINameSpace, nth($ColorCat, $i));
 
-                    $Colors: append($Colors, unquote($color), comma);
+                    $Colors: append($Colors, $color, comma);
 
                 }
 
-            @if $ExtraValues == "" {
-                $ExtraValues: "180deg";
-              }
+                @if $ExtraValues == "" {
 
+                    $ExtraValues: "180deg";
 
-            background:  linear-gradient( unquote($ExtraValues), $Colors );
+                }
 
-        } @else {
+                background: linear-gradient( unquote($ExtraValues), $Colors );
 
-                #{$Property}: unquote($Colorquery) unquote($ExtraValues);
+            } @else if $Property == alpha-color {
+
+                @if $ExtraValues == "" {
+
+                    $ExtraValues: 1;
+
+                }
+
+                color: rgba($Colorquery, $ExtraValues);
+
+            } @else if $Property == alpha-background {
+
+                @if $ExtraValues == "" {
+
+                    $ExtraValues: 1;
+
+                }
+
+                background: rgba($Colorquery, $ExtraValues);
+
+            } @else {
+
+                #{$Property}: ($Colorquery) unquote($ExtraValues);
 
             }
         }
@@ -68,4 +90,5 @@
         @error "'#{$Property}' no es una propiedad permitida. (Solo background, color, border, text-shadow, box-shadow y linear-gradient).";
 
     }
+
 } // Themer Engine

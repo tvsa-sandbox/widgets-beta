@@ -1,32 +1,62 @@
 // Positions Info Hash
 
 %Positions {
-    
+
     &__InfoHash {
 
+        align-items: center;
         border-radius: 5px;
         display: none;
         height: 30px;
         justify-content: center;
-        right: 0;
+        right: 0px;
         width: 100%;
-        
+
         @include Spacer(margin,right, sm);
 
-		@include HoverButton;
-        
+        @include Hover(.3s, .5);
+
         @include Morpher(Tablet) {
-            
+
             display: flex;
-            
+
             @include Spacer(margin,right, xs);
-            
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: flex;
+
         }
         
-        @include Morpher(All-Desktop) {
-            
+        &-First {
+
+            align-items: center;
+            border-radius: 5px;
             display: flex;
-            
+            height: 30px;
+            justify-content: center;
+            right: 0px;
+            width: 100%;
+
+            @include Spacer(margin,right, sm);
+
+            @include Hover(.3s, .5);
+
+            @include Morpher(Tablet) {
+
+                display: flex;
+
+                @include Spacer(margin,right, xs);
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                display: flex;
+
+            }
         }
     }
 }

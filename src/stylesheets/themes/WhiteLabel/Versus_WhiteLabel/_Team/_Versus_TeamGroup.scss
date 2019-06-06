@@ -1,0 +1,13 @@
+// Versus Team Group
+
+@include ThemerUI(Versus) {
+
+    @include Element(GroupContainer) {
+        
+        @extend %Versus__GroupContainer;
+        
+        @include Themer(background, Color-2);
+        @include Spacer(margin,bottom, md);
+        
+    }
+}
