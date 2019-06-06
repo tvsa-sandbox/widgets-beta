@@ -14,9 +14,6 @@
 
         @include ButtonBorder;
 		@include HoverCard;
-
-        //importar mixin SpecialHover
-
 		@include Themer(background, Color-1);
 		@include Themer(color, Text-Light-Headlines);
 		@include Typer(SubTextButton);
