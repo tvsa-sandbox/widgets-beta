@@ -20,9 +20,9 @@ const Versus = () => (
                 </div>
             </div>
             <div className="Versus__TextContainer WhiteLabel">
-                <div className="Versus__Text WhiteLabel">
+                <h3 className="Versus__Text WhiteLabel">
                     Final
-                </div>
+                </h3>
             </div>
             <div className="Versus__GroupContainer WhiteLabel">
                 <Team />

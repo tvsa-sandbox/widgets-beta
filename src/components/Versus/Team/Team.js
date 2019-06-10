@@ -10,14 +10,14 @@ const Team = () => (
                 </picture>
             </div>
             <div className="Versus__TeamNameContainer WhiteLabel">
-                <div className="Versus__TeamName WhiteLabel">
+                <span className="Versus__TeamName WhiteLabel">
                     Liverpool
-                </div>
+                </span>
             </div>
             <div className="Versus__TeamScoreContainer WhiteLabel">
-                <div className="Versus__TeamScore WhiteLabel">
+                <span className="Versus__TeamScore WhiteLabel">
                     4
-                </div>
+                </span>
             </div>
         </div>
     </div>
