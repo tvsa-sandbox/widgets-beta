@@ -1,0 +1,23 @@
+// Versus Live Core
+
+%Versus {
+    
+    &__TeamsLiveContainer {
+        
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+        
+        @include Morpher(All-Desktop) {
+            
+            margin-bottom: 0px;
+            
+        }
+    }
+}
+

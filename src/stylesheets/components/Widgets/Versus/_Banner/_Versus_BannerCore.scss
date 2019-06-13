@@ -1,0 +1,53 @@
+// Versus Banner Core
+
+%Versus {
+    
+    &__TeamsBannerContainer {
+        
+        cursor: pointer;
+        position: absolute;
+        right: 4%;
+        top: 20%;
+        width: 30%;
+        overflow: hidden;
+        
+        @include Morpher(All-Desktop) {
+            
+            right: 2%;
+            top: 12%;
+            width: 20%;
+            
+        }
+    }
+    
+    &__TeamsBanner {
+        
+        display: block;
+        width: 100px;
+        height: 20px;
+        background: #8ed30c;
+        text-align: center;
+        
+        @include Themer(color, Text-Dark-Body);
+        @include Typer(SubTextCredit);
+        
+        @include Morpher(Tablet) {
+            
+            width: 240px;
+            height: 40px;
+            
+            @include Typer(ItemTitleExtra);
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            width: 240px;
+            height: 40px;
+            
+            @include Typer(ItemTitleExtra);
+            
+        }
+    }
+}
+

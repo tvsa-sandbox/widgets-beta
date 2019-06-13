@@ -11,17 +11,12 @@ const Team = () => (
             </div>
             <div className="Versus__TeamHomeNameContainer WhiteLabel">
                 <div className="Versus__TeamHomeName WhiteLabel">
-                    México
+                    Cuba
                 </div>
             </div>
             <div className="Versus__TeamHomeScoreContainer WhiteLabel">
                 <div className="Versus__TeamHomeScore WhiteLabel">
-                    4
-                </div>
-            </div>
-            <div className="Versus__TeamHomePenaltyContainer WhiteLabel">
-                <div className="Versus__TeamHomePenalty WhiteLabel">
-                    ( 1 )
+                    0
                 </div>
             </div>
         </div>
