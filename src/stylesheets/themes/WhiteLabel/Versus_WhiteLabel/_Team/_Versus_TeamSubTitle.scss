@@ -1,0 +1,22 @@
+// Versus Team Logo
+
+@include ThemerUI(Versus) {
+    
+    @include Element(TeamsSubTitleContainer) {
+        
+        @extend %Versus__TeamsSubTitleContainer;
+        
+        @include Themer(border-bottom, Color-3, '1px solid');
+        
+    }
+    
+    @include Element(TeamsSubTitle) {
+        
+        @extend %Versus__TeamsSubTitle;
+        
+        @include Themer(color, Mini-Text-Light);
+        @include Typer(SubTextCredit);
+        
+    }
+}
+

@@ -2,39 +2,54 @@
 
 %Versus {
     
-    &__TeamContainer {
+    &__TeamHomeContainer {
         
         align-items: center;
         display: flex;
+        height: 130px;
         justify-content: center;
         width: 40%;
         
     }
     
-    &__Team {
+    &__TeamHome {
 
+        align-items: center;
         display: inline-block;
         height: 100%;
         width: 100%;
+        margin-top: 15px;
         
         @include Morpher(All-Desktop) {
             
             display: flex;
             
         }
+    }
+    
+    &__TeamAwayContainer {
         
-        &-Visit {
+        align-items: center;
+        display: flex;
+        height: 130px;
+        justify-content: center;
+        width: 40%;
+        
+    }
+    
+    &__TeamAway {
 
-            display: inline-block;
-            flex-direction: row-reverse;
-            height: 100%;
-            width: 100%;
+        align-items: center;
+        display: inline-block;
+        flex-direction: row-reverse;
+        height: 100%;
+        width: 100%;
+        margin-top: 15px;
+        
+        @include Morpher(All-Desktop) {
             
-            @include Morpher(All-Desktop) {
-                
-                display: flex;
-                
-            }
+            display: flex;
+            
         }
     }
 }

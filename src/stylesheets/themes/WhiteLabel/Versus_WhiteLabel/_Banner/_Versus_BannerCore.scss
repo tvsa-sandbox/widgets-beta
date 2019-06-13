@@ -1,0 +1,17 @@
+// Versus Live Core
+
+@include ThemerUI(Versus) {
+    
+    @include Element(TeamsBannerContainer) {
+        
+        @extend %Versus__TeamsBannerContainer;
+        
+    }
+    
+    @include Element(TeamsBanner) {
+        
+        @extend %Versus__TeamsBanner;
+        
+    }
+}
+

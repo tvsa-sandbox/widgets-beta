@@ -1,10 +1,10 @@
-// Versus Container
+// Versus Wrapper
 
 @include ThemerUI(Versus) {
 
-    @include Element(Container) {
+    @include Element(Wrapper) {
 
-        @extend %Versus__Container;
+        @extend %Versus__Wrapper;
         
         @include Themer(background, Color-6);
         
