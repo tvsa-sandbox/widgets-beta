@@ -5,17 +5,18 @@
     &__TeamsLiveContainer {
         
         align-items: center;
-        cursor: pointer;
         display: flex;
+        height: auto;
         justify-content: center;
         text-align: left;
+        text-decoration: none;
         width: 100%;
-        height: auto;
-        margin-bottom: 5px;
+        
+        @include Spacer(margin,bottom, sm);
         
         @include Morpher(All-Desktop) {
             
-            margin-bottom: 0px;
+            @include Spacer(margin,bottom, zero);
             
         }
     }

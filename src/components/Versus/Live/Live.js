@@ -1,8 +1,9 @@
 import React from "react";
+import Link from "gatsby-link";
 
 const Info = () => (    
     
-    <div className="Versus__TeamsLiveContainer WhiteLabel">
+    <Link to="/" className="Versus__TeamsLiveContainer WhiteLabel">
         <div className="Versus__TeamsLiveIconContainer WhiteLabel">
             <div className="Versus__TeamsLiveIcon Icn_Video WhiteLabel">
                 <span className="Display">
@@ -15,7 +16,7 @@ const Info = () => (
                 EN VIVO
             </div>
         </div>
-    </div>
+    </Link>
     
 );
 

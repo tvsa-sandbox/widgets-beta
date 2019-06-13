@@ -1,12 +1,13 @@
 import React from "react";
+import Link from "gatsby-link";
 
 const Info = () => (    
     
-    <a className="Versus__TeamsBannerContainer WhiteLabel">
+    <Link to="/" className="Versus__TeamsBannerContainer WhiteLabel">
         <div className="Versus__TeamsBanner WhiteLabel">
             ¡Apuesta Ahora!
         </div>
-    </a>
+    </Link>
     
 );
 
