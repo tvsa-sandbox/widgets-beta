@@ -24,23 +24,23 @@ const Positions = () => (
 	            </h2>
 	        </div>
         </div>
-	        <div className="Positions__TableContainer WhiteLabel">
-                <div className="Positions__TextContainer WhiteLabel">
-                    <h2 className="Positions__Text WhiteLabel">
-                        Posiciones
-                    </h2>
-    	        </div>
-                <div className="Positions__InfoContainer WhiteLabel">
-                    <PositionsInfo />
-                </div>
-                <div className="Positions__ListContainer WhiteLabel">
-                    <PositionsList />
-                    <PositionsListB />
-                    <PositionsListC />
-                    <PositionsListD />
-                    <PositionsListE />
-                </div>
+	    <div className="Positions__TableContainer WhiteLabel">
+            <div className="Positions__TextContainer WhiteLabel">
+                <h2 className="Positions__Text WhiteLabel">
+                    Posiciones
+                </h2>
+    	    </div>
+            <div className="Positions__InfoContainer WhiteLabel">
+                <PositionsInfo />
             </div>
+            <div className="Positions__ListContainer WhiteLabel">
+                <PositionsList />
+                <PositionsListB />
+                <PositionsListC />
+                <PositionsListD />
+                <PositionsListE />
+            </div>
+        </div>
     </section>
 );
 

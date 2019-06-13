@@ -2,11 +2,14 @@
 
 %Versus {
 
-    &__GroupContainer {
+    &__TeamsWrapper {
         
         align-items: center;
         display: flex;
-        height: 120px;
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 150px;
+        position: relative;
         width: 100%;
         
     }

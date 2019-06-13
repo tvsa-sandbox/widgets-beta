@@ -1,0 +1,20 @@
+// Versus Team Penalty
+
+@include ThemerUI(Versus) {
+    
+    @include Element(TeamHomePenaltyContainer) {
+        
+        @extend %Versus__TeamHomePenaltyContainer;
+
+    }
+    
+    @include Element(TeamHomePenalty) {
+        
+        @extend %Versus__TeamHomePenalty;
+        
+        @include Themer(color, Mini-Text-Light);
+        @include Typer(SubTextTag);
+
+    }
+}
+
