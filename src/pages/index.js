@@ -4,17 +4,15 @@ import Layout from "../layouts";
 
 // Components
 
-import Calendar from "../components/Calendar/Calendar";
-import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
 import Positions from "../components/Positions/Positions";
+import Versus from "../components/Versus/Versus";
 
 
 const IndexPage = () => (
     <Layout>
 
-        <NotesCarousel />
-        <Calendar />
         <Positions />
+        <Versus />
 
     </Layout>
 );

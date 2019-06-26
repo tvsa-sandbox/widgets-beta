@@ -27,25 +27,28 @@
             
         }
         
-        &-Pts {
+        &-First {
             
             align-items: center;
             display: flex;
-            justify-content: flex-end;
-            @include Spacer(margin,all, xl);
+            justify-content: center;
             width: 20%;
             
+            @include Spacer(margin,all, xs);
+            
             @include Morpher(Tablet) {
-                
-                justify-content: center;
+
                 width: 9%;
+                
+                @include Spacer(margin,all, xl);
 
             }
             
             @include Morpher(All-Desktop) {
-                
-                justify-content: center;
+
                 width: 9%;
+                
+                @include Spacer(margin,all, xl);
 
             }
         }

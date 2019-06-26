@@ -1,0 +1,13 @@
+// Versus Wrapper
+
+@include ThemerUI(Versus) {
+
+    @include Element(Wrapper) {
+
+        @extend %Versus__Wrapper;
+        
+        @include Themer(background, Color-6);
+        
+	}
+}
+

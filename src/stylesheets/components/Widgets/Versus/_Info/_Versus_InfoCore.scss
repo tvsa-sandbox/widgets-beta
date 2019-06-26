@@ -1,0 +1,47 @@
+// Versus Info Core
+
+%Versus {
+    
+    &__InfoContainer {
+        
+        align-items: center;
+        display: flex;
+        height: auto;
+        justify-content: center;
+        width: 20%;
+        
+    }
+    
+    &__Info {
+        
+        display: inline-grid;
+        text-align: center;
+        
+        &-Typer {
+            
+            
+        }
+        
+        &-Minute {
+            
+            
+        }
+        
+        &-Date {
+            
+            
+        }
+        
+        &-Time {
+            
+            
+        }
+        
+        &-Stadium {
+            
+            @include Spacer(margin,top, xl);
+            
+        }
+    }
+}
+

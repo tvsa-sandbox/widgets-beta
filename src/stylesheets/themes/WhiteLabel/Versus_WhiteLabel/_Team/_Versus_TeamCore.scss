@@ -1,0 +1,29 @@
+// Versus Team Core
+
+@include ThemerUI(Versus) {
+    
+    @include Element(TeamHomeContainer) {
+        
+        @extend %Versus__TeamHomeContainer;
+        
+    }
+    
+    @include Element(TeamHome) {
+        
+        @extend %Versus__TeamHome;
+        
+    }
+    
+    @include Element(TeamAwayContainer) {
+        
+        @extend %Versus__TeamAwayContainer;
+        
+    }
+    
+    @include Element(TeamAway) {
+        
+        @extend %Versus__TeamAway;
+        
+    }
+}
+

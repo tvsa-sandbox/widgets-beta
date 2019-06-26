@@ -3,9 +3,9 @@ import React from "react";
 const Positions_List = () => (    
             <div className="Positions__ListElement WhiteLabel">
                 <div className="Positions__ListNumberContainer WhiteLabel">
-                    <div className="Positions__ListNumber WhiteLabel">
+                    <span className="Positions__ListNumber WhiteLabel">
                         # 1
-                    </div>
+                    </span>
                 </div>
                 <div className="Positions__ListImageContainer WhiteLabel">
                     <picture>
@@ -14,49 +14,49 @@ const Positions_List = () => (
                     </picture>
                 </div>
                 <div className="Positions__ListTitleContainer WhiteLabel" ds-title="Divi Soup">
-                    <div className="Positions__ListTitle WhiteLabel">
+                    <h3 className="Positions__ListTitle WhiteLabel">
                         Pumas
-                    </div>
+                    </h3>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         16
-                    </div>
+                    </span>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         12
-                    </div>
+                    </span>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         2
-                    </div>
+                    </span>
                 </div>
-                <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         2
-                    </div>
+                    </span>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         39
-                    </div>
+                    </span>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         13
-                    </div>
+                    </span>
                 </div>
                 <div className="Positions__ListInfoContainer WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         26
-                    </div>
+                    </span>
                 </div>
-                <div className="Positions__ListInfoContainer-Pts WhiteLabel">
-                    <div className="Positions__ListInfo WhiteLabel">
+                <div className="Positions__ListInfoContainer-First WhiteLabel">
+                    <span className="Positions__ListInfo WhiteLabel">
                         38
-                    </div>
+                    </span>
                 </div>
             </div>
 );

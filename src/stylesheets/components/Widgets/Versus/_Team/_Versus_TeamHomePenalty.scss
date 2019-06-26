@@ -1,0 +1,23 @@
+// Versus Team Penalty
+
+%Versus {
+    
+    &__TeamHomePenaltyContainer {
+        
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+        
+        @include Spacer(margin,all, zero auto);
+
+    }
+    
+    &__TeamHomePenalty {
+        
+        text-align: center;
+        width: 100%;
+        
+    }
+}
+
