@@ -6,5 +6,26 @@
 
         @extend %NotesCarousel__CarouselArrowsContainer;
 
+        @include Themer(background, Color-3);
+
+    }
+
+    @include Element(CarouselArrow) {
+
+        @include Modify(Previous) {
+
+            @extend %NotesCarousel__CarouselArrow-Previous;
+
+            @include Themer(background, Color-2);
+
+        }
+
+        @include Modify(Next) {
+
+            @extend %NotesCarousel__CarouselArrow-Next;
+
+            @include Themer(background, Color-2);
+
+        }
     }
 };

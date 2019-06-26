@@ -14,8 +14,6 @@
             right: 0px;
             width: 50px;
 
-            @include Themer(background, Color-3);
-
         }
 
     }
@@ -37,7 +35,6 @@
                 z-index: 5;
 
                 @include Hover(.3s, .5);
-                @include Themer(background, Color-2);
 
             }
         }
@@ -59,7 +56,6 @@
                 z-index: 5;
 
                 @include Hover(.3s, .5);
-                @include Themer(background, Color-2);
 
             }
         }
