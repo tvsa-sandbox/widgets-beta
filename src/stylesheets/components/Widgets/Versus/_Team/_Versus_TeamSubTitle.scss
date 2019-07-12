@@ -1,0 +1,20 @@
+// Versus Team Logo
+
+%Versus {
+    
+    &__TeamsSubTitleContainer {
+        
+        text-align: left;
+        width: 100%;
+        
+        @include Spacer(margin,all, zero sm);
+        
+    }
+    
+    &__TeamsSubTitle {
+        
+        text-transform: uppercase;
+        
+    }
+}
+

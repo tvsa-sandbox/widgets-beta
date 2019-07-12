@@ -2,21 +2,28 @@
 
 @include ThemerUI(Versus) {
     
-    @include Element(TeamContainer) {
+    @include Element(TeamHomeContainer) {
         
-        @extend %Versus__TeamContainer;
+        @extend %Versus__TeamHomeContainer;
         
     }
     
-    @include Element(Team) {
+    @include Element(TeamHome) {
         
-        @extend %Versus__Team;
+        @extend %Versus__TeamHome;
         
-        @include Modify(Visit) {
-            
-            @extend %Versus__Team-Visit;
-            
-        }
+    }
+    
+    @include Element(TeamAwayContainer) {
+        
+        @extend %Versus__TeamAwayContainer;
+        
+    }
+    
+    @include Element(TeamAway) {
+        
+        @extend %Versus__TeamAway;
+        
     }
 }
 

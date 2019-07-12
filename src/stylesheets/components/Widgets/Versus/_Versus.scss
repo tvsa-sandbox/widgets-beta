@@ -2,7 +2,6 @@
 
 @import './Versus_Container';
 @import './Versus_Core';
-@import './Versus_League';
 @import './Versus_Logo';
 @import './Versus_Text';
 @import './Versus_Text';
@@ -15,5 +14,13 @@
 // Versus Team
 
 @import './_Team/Versus_Team';
+
+// Versus Live
+
+@import './_Live/Versus_Live';
+
+// Versus Banner
+
+@import './_Banner/Versus_Banner';
 
 

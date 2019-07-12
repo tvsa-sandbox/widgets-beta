@@ -1,0 +1,20 @@
+// Versus Live Core
+
+@include ThemerUI(Versus) {
+    
+    @include Element(TeamsLiveTextContainer) {
+        
+        @extend %Versus__TeamsLiveTextContainer;
+        
+    }
+    
+    @include Element(TeamsLiveText) {
+        
+        @extend %Versus__TeamsLiveText;
+        
+        @include Themer(color, White);
+        @include Typer(SubTextTag);
+        
+    }
+}
+

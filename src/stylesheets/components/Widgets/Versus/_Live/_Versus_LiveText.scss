@@ -1,0 +1,21 @@
+// Versus Live Core
+
+%Versus {
+    
+    &__TeamsLiveTextContainer {
+        
+        display: flex;
+        height: auto;
+        width: auto;
+        
+        @include Spacer(margin,all, sm);
+        
+    }
+    
+    &__TeamsLiveText {
+        
+        text-transform: uppercase;
+        
+    }
+}
+

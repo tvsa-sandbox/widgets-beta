@@ -3,9 +3,9 @@ import React from "react";
 const Positions_ListE = () => (    
             <div className="Positions__ListElement WhiteLabel">
                 <div className="Positions__ListNumberContainer WhiteLabel">
-                    <div className="Positions__ListNumber WhiteLabel">
+                    <span className="Positions__ListNumber WhiteLabel">
                         # 5
-                    </div>
+                    </span>
                 </div>
                 <div className="Positions__ListImageContainer WhiteLabel">
                     <picture>
