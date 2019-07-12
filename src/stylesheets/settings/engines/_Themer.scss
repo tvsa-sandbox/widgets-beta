@@ -1,5 +1,6 @@
 // Themer Engine | WhiteLabel MarkUp v2.3.0 Atomic Ghost | 28/5/19
 
+
 @mixin Themer($Property, $ColorCat, $ExtraValues:"") {
 
     $Properties: (
@@ -19,7 +20,7 @@
 
     @if list-has-key($Properties, $Property) {
 
-        $Colorquery: map-deep-get($Palettes, $UINameSpace, $ColorCat);
+        $Colorquery: map-deep-get($Palettes, $skin, $ColorCat);
 
         & {
             @if $ExtraValues == before {
@@ -44,7 +45,7 @@
 
                 @for $i from 1 through length($ColorCat) {
 
-                    $color: map-deep-get($Palettes, $UINameSpace, nth($ColorCat, $i));
+                    $color: map-deep-get($Palettes, $skin, nth($ColorCat, $i));
 
                     $Colors: append($Colors, $color, comma);
 
