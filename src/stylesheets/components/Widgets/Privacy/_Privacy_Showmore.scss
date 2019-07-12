@@ -14,13 +14,13 @@
 
         @include Hover;
 
-        @include Morpher(Tablet) {
+        @include Morpher(All-Tablet) {
 
             bottom: 10px;
 
         }
 
-        @include Morpher(Laptop) {
+        @include Morpher(All-Desktop) {
 
 			bottom: 0px;
             justify-content: flex-end;
@@ -28,18 +28,14 @@
 
         }
 
-        @include Morpher(Desktop) {
+        @include Morpher(All-DesktopHD) {
 
-			bottom: 0px;
-            justify-content: flex-end;
             right: 24%;
 
         }
 
-        @include Morpher(Desktop-HD) {
-
-			bottom: 0px;
-            justify-content: flex-end;
+        @include Morpher(Full-HD) {
+            
             right: 13%;
 
         }
