@@ -16,18 +16,36 @@
             
             @extend %Versus__Info-Typer;
             
-            @include Themer(color, Mini-Text-Light);
-            @include Typer(FooterTextCopyright);
+            text-transform: uppercase;
             
+            @include Themer(color, Mini-Text-Light);
+            @include Typer(SubTextCredit);
+            
+        }
+        
+        @include Modify(Minute) {
+            
+            @extend %Versus__Info-Minute;
+            
+            @include Spacer(margin,all, xs zero);
+            @include Themer(color, Text-Light-Body);
+            @include Typer(SubTextButton);
+            
+            @include Morpher(All-Desktop) {
+                
+                @include Spacer(margin,all, sm zero);
+                
+            }
         }
         
         @include Modify(Date) {
             
             @extend %Versus__Info-Date;
             
+            text-transform: uppercase;
+            
             @include Spacer(margin,all, xs zero);
             @include Themer(color, Text-Light-Body);
-            @include Typer(SubTextCredit);
             
             @include Morpher(All-Desktop) {
                 
@@ -55,6 +73,8 @@
         @include Modify(Stadium) {
             
             @extend %Versus__Info-Stadium;
+            
+            text-transform: uppercase;
             
             @include Themer(color, Mini-Text-Light);
             @include Typer(FooterTextCopyright);

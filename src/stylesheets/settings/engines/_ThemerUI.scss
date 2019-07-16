@@ -1,6 +1,23 @@
-// ThemerUI Engine | WhiteLabel MarkUp v2.2.0 Atomic Ghost | 14/5/19
+// ThemerUI Engine | WhiteLabel MarkUp v2.3.0 Atomic Ghost | 15/6/19
 
-@mixin ThemerUI($selector, $skin: '.WhiteLabel') {
+$skin: $UINameSpace !default;
+
+@mixin ThemerUI($selector, $skin: 'WhiteLabel') {
+
+
+	@if list-has-key($ThemesUI, $skin) {
+		
+		$skin: $skin !global;
+
+	}  
+
+	@if not index($ThemesUI, $skin) { 
+
+        @warn "#{$skin} no existe esa paleta";
+
+        $skin: $UINameSpace !global;
+
+     }
 
   .#{$selector}  {
 

@@ -5,7 +5,7 @@ const Info = () => (
     <div className="Versus__InfoContainer WhiteLabel">
         <div className="Versus__Info WhiteLabel">
             <span className="Versus__Info-Typer WhiteLabel">
-                CL 2019
+                Previo
             </span>
             <time className="Versus__Info-Date WhiteLabel" dateTime="2019-06-01T00:13:30.346Z">
                 SAB 01 JUN

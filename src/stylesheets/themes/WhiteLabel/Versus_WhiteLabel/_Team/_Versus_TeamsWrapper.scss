@@ -2,9 +2,9 @@
 
 @include ThemerUI(Versus) {
 
-    @include Element(GroupContainer) {
+    @include Element(TeamsWrapper) {
         
-        @extend %Versus__GroupContainer;
+        @extend %Versus__TeamsWrapper;
         
         @include Themer(background, Color-2);
         @include Spacer(margin,bottom, md);

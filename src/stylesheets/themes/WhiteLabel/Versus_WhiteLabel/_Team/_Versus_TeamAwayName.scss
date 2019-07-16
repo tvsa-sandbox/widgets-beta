@@ -1,0 +1,19 @@
+// Versus Team Name
+
+@include ThemerUI(Versus) {
+
+    @include Element(TeamAwayNameContainer) {
+        
+        @extend %Versus__TeamAwayNameContainer;
+        
+    }
+    
+    @include Element(TeamAwayName) {
+        
+        @extend %Versus__TeamAwayName;
+        
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitle);
+        
+    }
+}
