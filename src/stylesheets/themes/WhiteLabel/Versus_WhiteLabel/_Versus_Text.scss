@@ -6,6 +6,8 @@
         
         @extend %Versus__TextContainer;
         
+        @include Themer(background, Color-4);
+        
     }
     
     @include Element(Text) {

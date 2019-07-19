@@ -1,0 +1,25 @@
+// Versus Team Away Score
+
+@include ThemerUI(Versus) {
+    
+    @include Element(TeamAwayScoreContainer) {
+        
+        @extend %Versus__TeamAwayScoreContainer;
+
+    }
+    
+    @include Element(TeamAwayScore) {
+        
+        @extend %Versus__TeamAwayScore;
+        
+        @include Themer(color, Text-Light-Body);
+        @include Typer(SubTextTag);
+        
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitle);
+            
+        }
+    }
+}
+

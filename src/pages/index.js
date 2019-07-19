@@ -13,11 +13,10 @@ import Positions from "../components/Positions/Positions";
 import Versus from "../components/Versus/Versus";
 
 
+
 const IndexPage = () => (
     <Layout>
 
-        <NotesCarousel />
-        <Calendar />
         <Positions />
         <Versus />
         <Privacy />
