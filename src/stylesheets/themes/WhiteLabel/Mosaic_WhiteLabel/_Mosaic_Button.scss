@@ -13,7 +13,7 @@
         @extend %Mosaic__Button;
 
         @include ButtonBorder;
-		@include HoverCard;
+		@include Hover;
 		@include Themer(background, Color-1);
 		@include Themer(color, Text-Light-Headlines);
 		@include Typer(SubTextButton);

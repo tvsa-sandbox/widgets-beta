@@ -22,6 +22,8 @@ const IndexPage = () => (
         <Privacy />
         <Mosaic />
         <Share />
+		<Calendar />
+		<NotesCarousel />
 
 
     </Layout>

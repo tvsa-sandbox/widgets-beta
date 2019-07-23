@@ -28,7 +28,7 @@
 ///   }
 
 
-@mixin SpecialHover ($HTDuration:.5s, $HOpacity: .7, $HShadow:null, $HDecoration:none, $HColor:null){
+@mixin Hover ($HTDuration:.5s, $HOpacity: .7, $HShadow:null, $HDecoration:none, $HColor:null){
 
     @include Transition($TDuration:$HTDuration);
 
@@ -44,33 +44,11 @@
 
         text-decoration: $HDecoration;
 
-        @if $HColor null {
-
-            color: rgba(0,0,0,0);
-
-        } @else {
+        @if not $HColor == null {
 
             @include Themer(color, $HColor);
 
         }
-
-    }
-}
-
-@mixin Transition ($TProperty:opacity, $TDuration:0.5s, $TTiming:ease, $TDelay:0s, $Extras:null) {
-
-    transition: $TProperty $TDuration $TTiming $TDelay, $Extras;
-
-}
-
-@mixin Hover {
-
-    transition: opacity .5s;
-
-    &:hover {
-
-        opacity: .7;
-
     }
 }
 
