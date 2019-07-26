@@ -8,10 +8,9 @@
         display: flex;
         height: 50px;
         justify-content: center;
-        margin: 10px auto;
         width: 100%;
 
-        //importar mixin margen
+        @include Spacer(margin, all, md auto);
 
     }
 
@@ -27,7 +26,7 @@
         text-align: center;
         width: auto;
 
-        //importar mixin margen
+        @include Spacer(padding, all, zero auto);
 
     }
 }

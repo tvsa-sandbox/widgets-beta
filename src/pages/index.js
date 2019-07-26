@@ -4,13 +4,14 @@ import Layout from "../layouts";
 
 // Components
 
-import Privacy from "../components/Privacy/Privacy";
+// import Privacy from "../components/Privacy/Privacy";
 import Share from "../components/Share/Share";
 import Mosaic from "../components/Mosaic";
 import Calendar from "../components/Calendar/Calendar";
 import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
 import Positions from "../components/Positions/Positions";
 import Versus from "../components/Versus/Versus";
+import SocialNetworks from "../components/SocialNetworks/SocialNetworks";
 
 
 
@@ -19,12 +20,12 @@ const IndexPage = () => (
 
         <Positions />
         <Versus />
-        <Privacy />
+
         <Mosaic />
         <Share />
 		<Calendar />
 		<NotesCarousel />
-
+		<SocialNetworks />
 
     </Layout>
 );

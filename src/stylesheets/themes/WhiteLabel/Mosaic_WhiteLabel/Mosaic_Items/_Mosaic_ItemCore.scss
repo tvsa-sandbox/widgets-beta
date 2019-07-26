@@ -6,20 +6,23 @@
 
         @extend %Mosaic__ItemsContainer;
 
-        &:hover {
+		@include Hover;
 
-			.Mosaic__ItemImageContainer{
+		@include Morpher (All-Desktop){
 
-				&:not(:hover) {
+	        &:hover {
 
-					.Mosaic__ItemImage {
+				.Mosaic__ItemImageContainer{
 
-						filter: brightness(0.8) saturate(0) contrast(1.2) blur(3px);
+					&:not(:hover) {
 
+						.Mosaic__ItemImage {
+
+							filter: brightness(0.8) saturate(0) contrast(1.2) blur(3px);
+
+						}
 					}
-
 				}
-
 			}
 		}
     }

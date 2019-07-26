@@ -2,36 +2,33 @@
 
 @include ThemerUI(Mosaic){
 
-        @include Element(ItemImageContainer) {
+    @include Element(ItemImageContainer) {
 
-            @extend %Mosaic__ItemImageContainer;
+        @extend %Mosaic__ItemImageContainer;
 
-            &::before {
+        &::before {
 
-    		content: '';
-    		display: block;
-    		border-radius: 20px;
-    		height: 156px;
-    		width: 100%;
-    		background: rgba(230,230,230,0);
+    	content: '';
+    	display: block;
+    	border-radius: 20px;
+    	height: 156px;
+    	width: 100%;
+    	background: rgba(230,230,230,0);
 
-    	        &:hover {
+    	    &:hover {
 
-    				.Mosaic__ItemImage {
+    			.Mosaic__ItemImage {
 
-    					transform: scale(1.05) translateZ(2);
-
-    				}
+    				transform: scale(1.05) translateZ(2);
 
     			}
-
     		}
+    	}
+    }
 
-        }
+    @include Element(ItemImage) {
 
-        @include Element(ItemImage) {
+        @extend %Mosaic__ItemImage;
 
-            @extend %Mosaic__ItemImage;
-
-        }
+    }
 };

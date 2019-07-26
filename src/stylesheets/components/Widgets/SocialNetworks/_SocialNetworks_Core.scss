@@ -1,0 +1,62 @@
+
+
+
+.SocialNetworks {
+
+	position:absolute;
+ 	left:50%;
+ 	width:650px;
+ 	height:150px;
+ 	box-sizing:border-box;
+ 	font-size:20px;
+ 	text-align:left;
+
+
+	&-Open{
+
+	  display:none;
+
+	}
+
+	&__Open-button{
+
+		background:white;
+		border-radius:80%;
+		color:white;
+		cursor:pointer;
+		height:60px;
+		margin: 0px auto;
+		position:absolute;
+		text-align:center;
+		transform:scale(1.1,1.1) translate3d(0,0,0);
+		transform:translate3d(0,0,0);
+		transition-duration:400ms;
+		transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
+		transition:transform ease-out 200ms;
+		width:60px;
+		z-index:2;
+	 	top:50px;
+	}
+
+	.SocialNetworks-Open:checked+.SocialNetworks-Open-button{
+
+		transition-timing-function:linear;
+		transition-duration:200ms;
+		transform:scale(0.8,0.8) translate3d(0,0,0);
+
+	}
+
+	.SocialNetworks-Open:checked~.SocialNetworks__LinkSocial{
+
+		transition-timing-function:cubic-bezier(0.165, 0.840, 0.440, 1.000);
+
+		@for $one from 1 through 3{
+
+			&:nth-child(#{$one+2}){
+
+				transition-duration:90ms+(80ms*$one);
+				transform:translate3d((65px*$one),0,0);
+	    	}
+		}
+  	}
+}

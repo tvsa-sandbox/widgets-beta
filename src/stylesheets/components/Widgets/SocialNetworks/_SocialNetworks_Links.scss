@@ -1,0 +1,50 @@
+
+
+.SocialNetworks {
+
+	&__LinkSocial{
+
+		border-radius:50%;
+		color:white;
+		height:40px;
+		line-height:80px;
+		position:absolute;
+		right:92%;
+		text-align:center;
+		top:40%;
+		transform:translate3d(0,0,0);
+		transition:transform ease-out 200ms;
+		width:40px;
+ 		background:white;
+
+	}
+
+	.Icn_Twitter {
+
+		color: #00aced;
+
+		&:hover {
+			color: rgba(0,172,237, 0.5);
+		}
+	}
+	.Icn_Facebook {
+
+		color: #3b5998;
+
+		&:hover {
+			color: rgba(59,89,152, 0.5);
+		}
+
+	}
+
+	.Icn_Instagram {
+
+		color: #F24664;
+
+		&:hover {
+			color: rgba(59,89,152, 0.5);
+		}
+
+	}
+
+}

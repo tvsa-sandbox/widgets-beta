@@ -1,6 +1,6 @@
 // Mosaic Item Title
 
-@include ThemerUI(Mosaic){
+	@include ThemerUI(Mosaic){
 
         @include Element(TitleContainer) {
 
@@ -21,6 +21,5 @@
                 @include Typer(HeadlineSub);
 
             }
-
         }
-};
+	};
