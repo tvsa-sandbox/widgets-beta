@@ -12,6 +12,7 @@ import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
 import Positions from "../components/Positions/Positions";
 import Versus from "../components/Versus/Versus";
 import SocialNetworks from "../components/SocialNetworks/SocialNetworks";
+import MenuHamburger from "../components/MenuHamburger/MenuHamburger";
 
 
 
@@ -20,12 +21,12 @@ const IndexPage = () => (
 
         <Positions />
         <Versus />
-
         <Mosaic />
         <Share />
 		<Calendar />
 		<NotesCarousel />
 		<SocialNetworks />
+		<MenuHamburger />
 
     </Layout>
 );
