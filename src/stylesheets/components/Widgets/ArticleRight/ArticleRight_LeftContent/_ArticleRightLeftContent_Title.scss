@@ -1,0 +1,41 @@
+// ArticleRight Left Content Title
+
+%ArticleRight {
+
+    &__TitleContainer {
+
+        @include Spacer(margin, all, sm zero 4xl zero);
+
+        @include Themer(background,Color-2,after) {
+
+            content: "";
+            height: 1px;
+            left: 50%;
+            max-width: 300px;
+            margin-top: 24px;
+            position: absolute;
+            transform: translate(-150px);
+            width: 100%;
+
+            @include Spacer(margin, top, xl);
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(margin, all, sm base 4xl base);
+
+        }
+
+    }
+
+    &__Title {
+
+        text-align: center;
+        text-transform: uppercase;
+
+        @include Typer(ItemTitle);
+        @include Themer(color, Color-1);
+
+    }
+}
