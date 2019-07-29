@@ -6,6 +6,7 @@ import Layout from "../layouts";
 
 import Positions from "../components/Positions/Positions";
 import Versus from "../components/Versus/Versus";
+import GridGallery from "../components/GridGallery/GridGallery";
 
 
 const IndexPage = () => (
@@ -13,6 +14,7 @@ const IndexPage = () => (
 
         <Positions />
         <Versus />
+        <GridGallery />
 
     </Layout>
 );

@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import { withPrefix } from "gatsby-link";
 
 const GridGallery_Item = (props) => (
-    <Link className="GridGallery__Item WhiteLabel" to="/GridGallery_ItemLine">
+    <Link className="GridGallery__Item WhiteLabel" to="/" id={props.id}>
         <div className="GridGallery__Thumbnail WhiteLabel">
             <div className="GridGallery__ItemImageContainer WhiteLabel">
                 <picture>

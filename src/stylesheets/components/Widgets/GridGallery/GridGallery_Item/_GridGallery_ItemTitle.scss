@@ -1,0 +1,17 @@
+// Grid Multi Content Item Title
+
+.GridGallery {
+
+		&__ItemTitleContainer {
+
+				padding: 10px 15px;
+
+		}
+
+		&__ItemTitle {
+
+				@include Themer(color, Text-Dark-Body);
+				@include Typer(SubTextInfoDesktop);
+
+		}
+}

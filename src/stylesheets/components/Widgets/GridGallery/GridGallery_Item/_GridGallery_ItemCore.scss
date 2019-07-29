@@ -1,0 +1,32 @@
+// Grid Multi Content Item Core
+
+.GridGallery {
+	
+	&__ItemsContainer {
+		
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(1, 1fr);
+		
+		@include Hover(.3s, .5);  
+		
+		@include Morpher(Tablet) {
+			
+			grid-template-columns: repeat(2, 1fr);
+			
+		}
+		
+		@include Morpher(All-Desktop) {
+			
+			grid-template-columns: repeat(3, 1fr);
+			
+		}
+	}
+	
+	&__Item {
+		
+		border-radius: 10px;
+		text-decoration: none;
+		
+	}
+}
