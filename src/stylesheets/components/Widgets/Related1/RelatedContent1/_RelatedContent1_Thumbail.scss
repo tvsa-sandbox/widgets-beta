@@ -1,15 +1,16 @@
 // RelatedContent1 Botton
 
-%RelatedContent1{
+%RelatedContent1 {
 
     &__Thumbnail {
 
-        position: relative;
-        max-width: 163px;
-        width: 100%;
-        max-height: 163px;
-        height: 100%;
         display: none;
+        height: 100%;
+        max-width: 163px;
+        max-height: 163px;
+        position: relative;
+        width: 100%;
+        
         
         @include Morpher(All-Desktop) {
 

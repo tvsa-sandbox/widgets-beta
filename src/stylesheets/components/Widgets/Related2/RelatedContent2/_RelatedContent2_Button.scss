@@ -1,12 +1,17 @@
 // RelatedContent2 Botton
 
 %RelatedContent2 {
+
   &__ButtonContainer {
+    
     display: inline-block;
+    
     @include Spacer(margin, all, base zero base zero);
+    
     @include Morpher (All-Desktop) {
       display: flex;
     }
+
   }
 
   &__Button {

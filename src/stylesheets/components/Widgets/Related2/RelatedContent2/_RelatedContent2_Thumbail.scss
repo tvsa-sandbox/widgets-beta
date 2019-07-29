@@ -1,12 +1,13 @@
 // RelatedContent2 Thumbnail
 
-%RelatedContent2{
+%RelatedContent2 {
 
     &__Thumbnail {
 
+        display: block;
         position: relative;
         width: 100%;
-        display: block;
+       
 
         @include Morpher (All-Desktop) {
 

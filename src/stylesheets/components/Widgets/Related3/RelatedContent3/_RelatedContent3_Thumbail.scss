@@ -1,12 +1,13 @@
 // RelatedContent3 Thumbnail
 
-%RelatedContent3{
+%RelatedContent3 {
 
     &__Thumbnail {
 
+        display: block;
         position: relative;
         width: 100%;
-        display: block;
+        
     }
     
     &__ImageContainer {

@@ -1,13 +1,14 @@
 // RelatedContent2 Share
 
-%RelatedContent2{
+%RelatedContent2 {
 
     &__Share {
 
+        bottom: 9px;
         display:flex;
         position: absolute;
         right: 7px;
-        bottom: 9px;
+        
 
         @include Spacer(margin, all, md auto);
 
