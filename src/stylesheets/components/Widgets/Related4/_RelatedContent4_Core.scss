@@ -2,20 +2,19 @@
 
 %RelatedContent4{
 
-	display: block;
+		display: block;
+		height: auto;
     max-width: 525px;
-    width: 100%;
-    height: auto;
+		padding:30px 0px;
     position:relative;
-    padding:30px 0;
+		width: 100%;
 
-    
+
     @include Spacer(margin, all, 4xl auto);
     @include Spacer(padding, all, 2xl auto);
 
     @include Morpher (All-Desktop) {
 
         display: flex;
-      
-    } 
+    }
 }

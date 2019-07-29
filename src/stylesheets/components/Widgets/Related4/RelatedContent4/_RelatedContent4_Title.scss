@@ -3,9 +3,10 @@
 %RelatedContent4{
 
     &__TitleContainer {
-        
+
         display:block;
         width: 100%;
+
 
     }
 
@@ -13,5 +14,5 @@
 
         @include Spacer(margin, all, xs zero xs zero);
 
-    }    
+    }
 }

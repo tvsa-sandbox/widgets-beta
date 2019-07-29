@@ -2,62 +2,67 @@
 
 %RelatedContent3{
 
-	display: block;
+		display: block;
+		height: auto;
     max-width: 728px;
-    width: 100%;
-    height: auto;
+		padding:30px 0px;
     position:relative;
-    padding:30px 0;
+		width: 100%;
 
-    &::before {
-        content: '';  
-        position: absolute;
-        z-index: 999;
-        height: 4px; 
-        width: 96px;  
-        top: 0;
-        right: 35%; 
+			&::after {
 
-    }
-    &::after {
-        content: '';  
-        position: absolute;
-        z-index: 999;
-        height: 4px; 
-        width: 96px;  
-        bottom: 0;
-        right: 35%; 
+					bottom: 0px;
+	        content: '';
+					height: 4px;
+	        position: absolute;
+	        width: 96px;
+	        right: 35%;
+					z-index: 1;
 
-    }
+	    }
 
-    
+	    &::before {
+	        content: '';
+	        position: absolute;
+	        height: 4px;
+	        top: 0px;
+	        right: 35%;
+					width: 96px;
+					z-index: 1;
+
+	    }
+
     @include Spacer(margin, all, 4xl auto);
     @include Spacer(padding, all, 2xl auto);
 
     @include Morpher (All-Desktop) {
 
         @include Spacer(padding, all, 2xl auto);
-        display: flex;
+
+				display: flex;
+
+				&::after {
+
+						bottom: 0px;
+						content: '';
+            height: 4px;
+						position: absolute;
+            right: 45%;
+						width: 96px;
+						z-index: 1;
+
+        }
 
         &::before {
-            content: '';  
-            position: absolute;
-            z-index: 999;
-            height: 4px; 
-            width: 96px;  
-            top: 0;
-            right: 45%; 
+
+						content: '';
+            height: 4px;
+						position: absolute;
+          	right: 45%;
+            top: 0px;
+						width: 96px;
+						z-index: 1;
 
         }
-        &::after {
-            content: '';  
-            position: absolute;
-            z-index: 999;
-            height: 4px; 
-            width: 96px;  
-            bottom: 0;
-            right: 45%; 
-
-        }
-    } 
+    }
 }

@@ -6,8 +6,6 @@
 
         @extend %RelatedContent4__Text;
 
-        @include Themer(background, White);
-       
-        @include Themer(background, Color-1, before);   
+        @include Themer(background, Color-9, before);
     }
 };

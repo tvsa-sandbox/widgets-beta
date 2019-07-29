@@ -1,31 +1,21 @@
 // RelatedContent2 Botton
 
-%RelatedContent2{
-  
-    &__ButtonContainer {
-
-        display: inline-block;
-        
-        @include Spacer(margin, all, base zero base zero);
-
-        @include Morpher (All-Desktop) {
-
-            display: flex;
-    
-        }
+%RelatedContent2 {
+  &__ButtonContainer {
+    display: inline-block;
+    @include Spacer(margin, all, base zero base zero);
+    @include Morpher (All-Desktop) {
+      display: flex;
     }
+  }
 
-    &__Button {
-
-        cursor: pointer;
-        border-radius:50px;
-        text-align: center;
-        position:relative;
-        text-align: center;
-        text-decoration:none;
-
-        
-        @include Spacer(padding, all, md xl md xl);
-
-    }
+  &__Button {
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    @include Spacer(padding, all, md xl md xl);
+  }
 }
