@@ -1,0 +1,19 @@
+// RelatedContent1 TitleContainer
+
+@include ThemerUI(RelatedContent1){
+
+    @include Element(TitleContainer) {
+
+        @extend %RelatedContent1__TitleContainer;
+        
+    }
+
+    @include Element(Title) {
+
+        @extend %RelatedContent1__Title;
+
+        @include Themer(color, Black);
+        @include Typer(ItemTitle, $FSMIN:$f-l, $FSMAX:$f-xl);
+        
+    }
+};

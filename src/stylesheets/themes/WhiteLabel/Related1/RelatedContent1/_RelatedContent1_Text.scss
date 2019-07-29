@@ -1,0 +1,10 @@
+// RelatedContent1 Text
+
+@include ThemerUI(RelatedContent1){
+
+    @include Element(Text) {
+
+        @extend %RelatedContent1__Text;
+        
+    }
+};

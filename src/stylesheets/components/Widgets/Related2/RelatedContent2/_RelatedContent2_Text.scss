@@ -1,0 +1,18 @@
+// RelatedContent2 Text
+
+%RelatedContent2{
+
+    &__Text {
+
+        position:relative;
+        width: 100%;
+
+        @include Spacer(padding, all, lg);
+       
+        @include Morpher (All-Desktop) {
+
+            display: block;
+   
+        }
+    }    
+}

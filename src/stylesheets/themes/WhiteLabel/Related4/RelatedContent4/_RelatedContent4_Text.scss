@@ -1,0 +1,13 @@
+// RelatedContent4 Text
+
+@include ThemerUI(RelatedContent4){
+
+    @include Element(Text) {
+
+        @extend %RelatedContent4__Text;
+
+        @include Themer(background, White);
+       
+        @include Themer(background, Color-1, before);   
+    }
+};

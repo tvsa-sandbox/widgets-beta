@@ -1,0 +1,21 @@
+// RelatedContent4 Core
+
+%RelatedContent4{
+
+	display: block;
+    max-width: 525px;
+    width: 100%;
+    height: auto;
+    position:relative;
+    padding:30px 0;
+
+    
+    @include Spacer(margin, all, 4xl auto);
+    @include Spacer(padding, all, 2xl auto);
+
+    @include Morpher (All-Desktop) {
+
+        display: flex;
+      
+    } 
+}

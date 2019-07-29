@@ -1,0 +1,33 @@
+// RelatedContent1 Botton
+
+%RelatedContent1{
+
+    &__Thumbnail {
+
+        position: relative;
+        max-width: 163px;
+        width: 100%;
+        max-height: 163px;
+        height: 100%;
+        display: none;
+        
+        @include Morpher(All-Desktop) {
+
+            display: block;
+
+        }
+
+    }
+    
+    &__ImageContainer {
+
+        @include Spekter(1_1, relative);
+
+    }
+
+    &__Image {               
+
+        width: 100%;
+
+    }
+}

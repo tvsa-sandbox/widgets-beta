@@ -1,0 +1,19 @@
+// RelatedContent2 Core
+
+%RelatedContent2{
+
+	display: block;
+    max-width: 728px;
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    overflow: hidden;
+    
+    @include Spacer(margin, all, 4xl auto);
+
+    @include Morpher (All-Desktop) {
+
+        display: flex;
+
+    }
+}

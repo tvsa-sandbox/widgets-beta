@@ -1,0 +1,16 @@
+// RelatedContent1 TitleContainer
+
+%RelatedContent1{
+
+    &__TitleContainer {
+
+        width: 100%;
+
+    }
+
+    &__Title {
+
+        @include Spacer(margin, all, zero);
+
+    }    
+}

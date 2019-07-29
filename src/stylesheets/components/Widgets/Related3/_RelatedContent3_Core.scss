@@ -1,0 +1,63 @@
+// RelatedContent3 Core
+
+%RelatedContent3{
+
+	display: block;
+    max-width: 728px;
+    width: 100%;
+    height: auto;
+    position:relative;
+    padding:30px 0;
+
+    &::before {
+        content: '';  
+        position: absolute;
+        z-index: 999;
+        height: 4px; 
+        width: 96px;  
+        top: 0;
+        right: 35%; 
+
+    }
+    &::after {
+        content: '';  
+        position: absolute;
+        z-index: 999;
+        height: 4px; 
+        width: 96px;  
+        bottom: 0;
+        right: 35%; 
+
+    }
+
+    
+    @include Spacer(margin, all, 4xl auto);
+    @include Spacer(padding, all, 2xl auto);
+
+    @include Morpher (All-Desktop) {
+
+        @include Spacer(padding, all, 2xl auto);
+        display: flex;
+
+        &::before {
+            content: '';  
+            position: absolute;
+            z-index: 999;
+            height: 4px; 
+            width: 96px;  
+            top: 0;
+            right: 45%; 
+
+        }
+        &::after {
+            content: '';  
+            position: absolute;
+            z-index: 999;
+            height: 4px; 
+            width: 96px;  
+            bottom: 0;
+            right: 45%; 
+
+        }
+    } 
+}

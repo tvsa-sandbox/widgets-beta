@@ -1,0 +1,29 @@
+// RelatedContent4 Text
+
+%RelatedContent4{
+
+    &__Text {
+
+        position:relative;
+        width: 100%;
+
+        @include Spacer(padding, all, md md md xxl);
+        
+        &::before {
+
+            content: "";
+            height: 100%;
+            left:0;
+            position: absolute;
+            top:0;
+            width: 9px;
+
+        }
+
+        @include Morpher (All-Desktop) {
+
+            display: block;
+   
+        }
+    }    
+}

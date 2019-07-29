@@ -1,0 +1,19 @@
+// RelatedContent2 TitleContainer
+
+@include ThemerUI(RelatedContent2){
+
+    @include Element(TitleContainer) {
+
+        @extend %RelatedContent2__TitleContainer;
+        
+    }
+
+    @include Element(Title) {
+
+        @extend %RelatedContent2__Title;
+
+        @include Themer(color, black);
+        @include Typer(SubTextButton);
+        
+    }
+};

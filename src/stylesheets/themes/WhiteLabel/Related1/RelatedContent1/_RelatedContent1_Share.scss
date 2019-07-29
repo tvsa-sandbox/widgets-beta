@@ -1,0 +1,31 @@
+// RelatedContent1 Share
+
+@include ThemerUI(RelatedContent1){
+
+    @include Element(Share) {
+
+        @extend %RelatedContent1__Share;
+        
+    }
+
+    @include Element(ShareList) {
+
+        @extend %RelatedContent1__ShareList;
+        
+    }
+
+    @include Element(ShareItem) {
+
+        @extend %RelatedContent1__ShareItem;
+        
+    }
+
+    @include Element(ShareLink) {
+
+        @extend %RelatedContent1__ShareLink;
+
+        @include Hover(.3s, .5);        
+        @include Themer(color, Gradient-1A);
+        
+    }
+};

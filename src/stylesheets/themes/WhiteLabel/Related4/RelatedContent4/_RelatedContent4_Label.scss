@@ -1,0 +1,12 @@
+// RelatedContent4 Labelcontainer
+
+@include ThemerUI(RelatedContent4){
+
+    @include Element(LabelContainer) {
+
+        @extend %RelatedContent4__LabelContainer;
+
+        @include Themer(color, Color-11);
+        @include Typer(ItemTitleVariant, $FSMIN:$f-base, $FSMAX:$f-m);
+    }
+};

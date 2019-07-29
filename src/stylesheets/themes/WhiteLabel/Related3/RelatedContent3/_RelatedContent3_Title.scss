@@ -1,0 +1,19 @@
+// RelatedContent3 TitleContainer
+
+@include ThemerUI(RelatedContent3){
+
+    @include Element(TitleContainer) {
+
+        @extend %RelatedContent3__TitleContainer;
+        
+    }
+
+    @include Element(Title) {
+
+        @extend %RelatedContent3__Title;
+
+        @include Themer(color, Color-1);
+        @include Typer(SubTextButton, $FSMIN:$f-base, $FSMAX:$f-m);
+        
+    }
+};

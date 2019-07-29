@@ -1,0 +1,11 @@
+// RelatedContent2 Text
+
+@include ThemerUI(RelatedContent2){
+
+    @include Element(Text) {
+
+        @extend %RelatedContent2__Text;
+        @include Themer(background, White);
+        
+    }
+};

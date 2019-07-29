@@ -1,0 +1,10 @@
+// RelatedContent1 Core
+
+@include ThemerUI(RelatedContent1){
+
+    @extend %RelatedContent1;
+
+    @include Themer(background, Text-Light-Body);
+    @include Themer(box-shadow, Gradient-1A, "2px 4px 19px -8px");
+
+};

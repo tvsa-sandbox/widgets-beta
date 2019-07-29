@@ -1,0 +1,15 @@
+// RelatedContent1 Core
+
+%RelatedContent1{
+
+	display: flex;
+    max-width: 728px;
+    width: 100%;
+    border-radius: 5px;
+    max-height: 163px;
+    height: 100%;
+    overflow: hidden;
+
+    @include Spacer(margin, all, 4xl auto);
+
+}
