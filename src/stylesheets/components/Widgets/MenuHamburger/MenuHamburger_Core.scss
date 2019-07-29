@@ -16,7 +16,7 @@
 
 	  display:block;
 	  height:3px;
-	  left:35%;
+	  left:30%;
 	  position:absolute;
 	  top:50%;
 	  transition:transform 200ms;
@@ -67,17 +67,16 @@
 
 	.MenuHamburger-Close-button{
 
-	  border-radius:80px;
+	  border-radius:20px;
 	  cursor:pointer;
-	  height:80px;
+	  height:60px;
 	  position:absolute;
 	  text-align:center;
 	  transform:scale(1.1,1.1) translate3d(0,0,0);
-	  transform:translate3d(0,0,0);
 	  transition-duration:400ms;
 	  transition-timing-function:cubic-bezier(0.175, 0.885, 0.320, 1.275);
 	  transition:transform ease-out 200ms;
-	  width:80px;
+	  width:60px;
 	  z-index:2;
 
 	  @include Themer(background, White);
