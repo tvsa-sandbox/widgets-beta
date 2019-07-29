@@ -1,8 +1,9 @@
 // Grid Multi Content Core
 
-.GridGallery {
-    
-    margin: 30px auto;
+%GridGallery {
+
     max-width: 1440px;
+    
+    @include Spacer(margin,all, 2xl auto);
     
 }

@@ -1,6 +1,6 @@
 // Grid Multi Content Title
 
-.GridGallery {
+%GridGallery {
 	
 	&__TitleContainer {
 		
@@ -8,8 +8,9 @@
 		display: flex;
 		height: 50px;
 		justify-content: left;
-		margin: 10px auto 0px;;
 		width: 100%;
+		
+		@include Spacer(margin,all, md auto zero);
 		
 	}
 	
@@ -18,15 +19,12 @@
 		align-items: center;
 		box-sizing: border-box;
 		display: flex;
-		height: 45px;
+		height: auto;
 		justify-content: left;
-		padding: 0px 15px;
 		position: relative;
-		text-align: left;
 		width: auto;
-		
-		@include Themer(color, Text-Light-Headlines);
-		@include Typer(HeadlineSub);
+
+		@include Spacer(padding,all, zero lg);
 
 	}
 }

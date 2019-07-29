@@ -1,22 +1,24 @@
 import React from "react";
-import Link from "gatsby-link";
 import GridGallery_Item from "./Items/GridGallery_Item";
 
 const GridGallery = () => (
     <section className="GridGallery WhiteLabel">
         <div className="GridGallery__TitleContainer WhiteLabel">
             <h2 className="GridGallery__Title WhiteLabel">
-                GP Alemania
+                Messi y la Crisis en al Albiceleste
             </h2>
         </div>
         <div className="GridGallery__DescriptionContainer WhiteLabel">
             <h4 className="GridGallery__Description WhiteLabel">
-                En accidentada carrera Max Verstappen se adjudica el GP de Alemania
+                La Selección de Argentina y Leo Messi siguen atravesando 
+                un mal momento futbolístico, que se confirma en la Copa América.
+                La Copa América de Brasil 2019 puede ser la última oportunidad para 
+                que los mejores jugadores de Conmebol consigan coronarse.
             </h4>
         </div>
         <div className="GridGallery__SourceContainer WhiteLabel">
             <span className="GridGallery__Source WhiteLabel">
-                AP
+                Redacción
             </span>
         </div>
         <div className="GridGallery__ItemsContainer WhiteLabel">

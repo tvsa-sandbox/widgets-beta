@@ -1,15 +1,16 @@
-// Grid Multi Content Title
+// Grid Multi Content Source
 
-.GridGallery {
+%GridGallery {
 	
 	&__SourceContainer {
 		
 		align-items: center;
 		display: flex;
-		height: 20px;
+		height: 100%;
 		justify-content: left;
-		margin: 0px auto 10px;
 		width: 100%;
+		
+		@include Spacer(margin,all, zero);
 		
 	}
 	
@@ -18,15 +19,13 @@
 		align-items: center;
 		box-sizing: border-box;
 		display: flex;
-		height: 45px;
+		height: auto;
 		justify-content: left;
-		padding: 0px 15px;
 		position: relative;
-		text-align: left;
+		text-transform: uppercase;
 		width: auto;
-		
-		@include Themer(color, Mini-Text-Light);
-		@include Typer(SubTextCredit);
+
+		@include Spacer(padding,all, zero lg);
 		
 	}
 }

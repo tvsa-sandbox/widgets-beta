@@ -1,6 +1,6 @@
 // Grid Multi Content Item Core
 
-.GridGallery {
+%GridGallery {
 	
 	&__ItemsContainer {
 		
@@ -8,7 +8,7 @@
 		grid-gap: 10px;
 		grid-template-columns: repeat(1, 1fr);
 		
-		@include Hover(.3s, .5);  
+		@include Spacer(margin,top, 2xl);
 		
 		@include Morpher(Tablet) {
 			
@@ -27,6 +27,8 @@
 		
 		border-radius: 10px;
 		text-decoration: none;
+		
+		@include Hover(.3s, .5);  
 		
 	}
 }
