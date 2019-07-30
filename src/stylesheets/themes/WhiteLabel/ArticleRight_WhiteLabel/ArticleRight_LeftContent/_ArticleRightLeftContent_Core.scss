@@ -1,0 +1,11 @@
+// ArticleRight Left Content Core
+
+@include ThemerUI(ArticleRight) {
+
+    @include Element(LeftContent) {
+
+        @extend %ArticleRight__LeftContent;
+
+    }
+
+}

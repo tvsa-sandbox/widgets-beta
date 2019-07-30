@@ -1,0 +1,17 @@
+// ArticleRight Left Content __Description
+
+@include ThemerUI(ArticleRight) {
+
+    @include Element(DescriptionContainer) {
+
+        @extend %ArticleRight__DescriptionContainer;
+
+    }
+
+    @include Element(Description) {
+
+        @extend %ArticleRight__Description;
+
+    }
+
+}

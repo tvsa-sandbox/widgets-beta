@@ -1,0 +1,15 @@
+// ShareBar Desktop
+@include ThemerUI(Share) {
+
+    @include Element(ShareDesktopContainer) {
+
+        @extend %Share__DesktopContainer;
+    }
+
+
+    @include Element(ShareDesktop) {
+
+        @extend %Share__Desktop;
+
+    }
+}

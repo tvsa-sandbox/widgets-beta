@@ -27,7 +27,7 @@ class NotesCarousel extends Component {
                         </div>
                     </div>
 
-                    <div className="NotesCarousel__CarouselArrowsContainer">
+                    <div className="NotesCarousel__CarouselArrowsContainer WhiteLabel">
                         <div className="NotesCarousel__CarouselArrow-Previous WhiteLabel" id="Previous-ucy0snoq1tocn">
                             <button id="ArrowPrevious-ucy0snoq1tocn" className="NotesCarousel__CarouselButton Icn_ArrowLeft WhiteLabel" type="button">
                                 <span className="Display">

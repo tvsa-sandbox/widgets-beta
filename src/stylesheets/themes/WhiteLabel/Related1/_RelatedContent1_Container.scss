@@ -1,0 +1,11 @@
+// RelatedContent1 Container
+
+@include ThemerUI(RelatedContent1) {
+
+    @include Element(Container) {
+
+        @extend %RelatedContent1__Container;
+        
+    }
+
+};

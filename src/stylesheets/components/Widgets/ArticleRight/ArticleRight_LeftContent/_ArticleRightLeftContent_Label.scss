@@ -1,0 +1,21 @@
+// ArticleRight Left Content Label
+
+%ArticleRight {
+
+    &__LabelContainer {
+
+       display: flex;
+       justify-content: center;
+
+    }
+
+    &__Label {
+
+        text-align: center;
+
+        @include Spacer(margin, all, base zero zero);
+        @include Typer(SubTextInfo);
+        @include Themer(color, Color-2);
+
+    }
+}

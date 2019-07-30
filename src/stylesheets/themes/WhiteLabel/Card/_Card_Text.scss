@@ -1,0 +1,52 @@
+// Card Container
+
+@include ThemerUI(Card) {
+
+    @include Element(TextContainer) {
+
+        @extend %Card__TextContainer;
+
+        @include Themer(background, Color-11);
+
+    }
+
+    @include Element(TextContainerTitle) {
+
+        @extend %Card__TextContainerTitle;
+
+        @include Themer(color, White);
+        @include Typer(xl-b, $FSMAX:$f-2xxl , $FSMIN:$f-xxl);
+
+    }
+
+    @include Element(TextContainerDescription) {
+
+        @extend %Card__TextContainerDescription;
+
+        @include Themer(color, White);
+        @include Typer(xl-b, $FSMAX:$f-base , $FSMIN:$f-s);
+
+    }
+
+    @include Element(TextContainerLinkButton) {
+
+        @extend %Card__TextContainerLinkButton;
+
+        @include Themer(color, White);
+        @include Typer(xl-b, $FSMAX:$f-base , $FSMIN:$f-s);
+
+    }
+
+    @include Element(TextContainerButton) {
+
+        @extend %Card__TextContainerButton;
+
+        cursor: pointer;
+
+        @include Themer(background, Color-1);
+        @include Themer(color, White);
+
+        @include Hover;
+
+    }
+};

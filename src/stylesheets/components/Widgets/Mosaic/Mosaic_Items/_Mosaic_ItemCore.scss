@@ -1,0 +1,27 @@
+// Mosaic Item Core
+
+%Mosaic {
+
+    &__ItemsContainer {
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+		width: 100%;
+
+
+        @include Morpher(All-Desktop) {
+
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+    }
+
+    &__Item {
+
+        position: relative;
+
+
+
+	}
+}

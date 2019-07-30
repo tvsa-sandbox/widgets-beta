@@ -1,0 +1,10 @@
+// Grid Multi Content Thumbnail
+
+@include ThemerUI(GridGallery) {
+	
+	@include Element(Thumbnail) {
+		
+		@extend %GridGallery__Thumbnail;
+		
+	}
+}

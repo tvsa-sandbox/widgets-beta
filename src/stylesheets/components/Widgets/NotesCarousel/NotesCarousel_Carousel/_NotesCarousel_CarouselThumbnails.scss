@@ -10,11 +10,10 @@
         overflow-y: hidden;
         width: 100%;
 
-    }
+        @include Morpher (All-Desktop) {
 
-    @include Morpher (All-Desktop) {
+            overflow: hidden;
 
-        overflow: hidden;
-
+        }
     }
 }

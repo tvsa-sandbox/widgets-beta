@@ -1,0 +1,11 @@
+// ArticleRight Left Content Info
+
+@include ThemerUI(ArticleRight) {
+
+    @include Element(InfoContainer) {
+
+        @extend %ArticleRight__InfoContainer;
+
+    }
+
+}

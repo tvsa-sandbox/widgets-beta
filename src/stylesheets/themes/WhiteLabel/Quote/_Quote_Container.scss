@@ -1,0 +1,10 @@
+// Quote Container
+
+@include ThemerUI(Quote) {
+
+    @include Element(Container) {
+
+        @extend %Quote__Container;
+
+    }
+};

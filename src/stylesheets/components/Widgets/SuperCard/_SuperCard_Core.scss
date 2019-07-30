@@ -1,0 +1,20 @@
+// SuperCard Core
+
+%SuperCard {
+
+    @include WidgetBottomSpace;
+
+    &__Container {
+        max-width: 1180px;
+        width: 100%;
+        position: relative;
+
+        @include Spacer(margin, all, xl auto);
+
+        @include Morpher(All-Desktop) {
+
+    		display: flex;
+
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// SuperCard Core
+
+%SuperCard {
+
+    &__ButtonContainer {
+
+        @include Spacer(margin, all, xl zero);
+
+    }
+
+    &__Button {
+
+        text-align: center;
+        border-radius: 50px;
+        cursor: pointer;
+
+        @include Spacer(padding, all, lg);
+
+        @include Hover;
+
+    }
+}
