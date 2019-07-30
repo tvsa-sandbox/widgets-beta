@@ -42,7 +42,17 @@
             max-width: 80%;
             width: 80%;
 
+            @include Spacer(margin, all, zero auto);
+
         }
+    }
+
+    iframe {
+
+        display: block;
+
+        @include Spacer(margin, all, base auto);
+
     }
 
 }

@@ -34,11 +34,11 @@
         text-align: justify;
 
         @include Spacer(margin, all, base zero);
-        @include Typer(BodyText);
+        @include Typer(ItemTitle);
 
         @include Morpher(All-Desktop) {
 
-            @include Typer(BodyTextDesktop);
+            @include Typer(ItemTitle);
 
         }
 
@@ -106,6 +106,16 @@
             max-width: 80%;
             width: 80%;
 
+            @include Spacer(margin, all, zero auto);
+
         }
+    }
+
+    iframe {
+
+        display: block;
+
+        @include Spacer(margin, all, base auto);
+
     }
 }
