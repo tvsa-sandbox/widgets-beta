@@ -15,6 +15,7 @@ import Related3 from "../components/Related3/";
 import Related4 from "../components/Related4/";
 import Calendar from "../components/Calendar/";
 import NotesCarousel from "../components/NotesCarousel/";
+import GridGallery from "../components/GridGallery/GridGallery";
 
 
 const IndexPage = () => (
@@ -31,6 +32,7 @@ const IndexPage = () => (
         <Related2 />
         <Related3 />
         <Related4 />
+        <GridGallery />
 
     </Layout>
 );

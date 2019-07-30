@@ -1,0 +1,16 @@
+// Grid Multi Content Item Core
+
+@include ThemerUI(GridGallery) {
+	
+	@include Element(ItemsContainer) {
+		
+		@extend %GridGallery__ItemsContainer;
+		
+	}
+	
+	@include Element(Item) {
+		
+		@extend %GridGallery__Item; 
+		
+	}
+}

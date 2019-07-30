@@ -1,0 +1,16 @@
+// Grid Multi Content Item Title
+
+@include ThemerUI(GridGallery) {
+	
+	@include Element(ItemCloseContainer) {
+		
+		@extend %GridGallery__ItemCloseContainer;
+		
+	}
+	
+	@include Element(ItemClose) {
+		
+		@extend %GridGallery__ItemClose;
+		
+	}
+}
