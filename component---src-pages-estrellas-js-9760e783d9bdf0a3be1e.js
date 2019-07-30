@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{143:function(e,n,a){"use strict";a.r(n);var t=a(0),l=a.n(t),u=a(148),c=a(154),r=a(160);n.default=function(){return l.a.createElement(u.a,null,l.a.createElement(r.a,null),l.a.createElement(c.a,null))}}}]);
+//# sourceMappingURL=component---src-pages-estrellas-js-9760e783d9bdf0a3be1e.js.map
