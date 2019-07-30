@@ -1,0 +1,22 @@
+// RelatedContent1 Botton
+
+@include ThemerUI(RelatedContent1) {
+
+    @include Element(Thumbnail) {
+
+        @extend %RelatedContent1__Thumbnail;
+        
+    }
+
+    @include Element(ImageContainer) {
+
+        @extend %RelatedContent1__ImageContainer;
+        
+    }
+
+    @include Element(Image) {
+
+        @extend %RelatedContent1__Image;
+        
+    }
+};
