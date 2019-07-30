@@ -1,0 +1,16 @@
+// SuperCard Core
+
+%SuperCard {
+
+    &__DescriptionContainer {
+
+        width: 100%;
+
+        @include Spacer(margin, bottom, xl);
+    }
+
+    &__Description {
+
+        text-align: left;
+    }
+}
