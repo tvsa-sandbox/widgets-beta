@@ -4,17 +4,22 @@
 
 	&__LinkSocial{
 
-		border-radius:50%;
-		color:white;
-		height:40px;
+		border-radius: 50%;
+		height: 35px;
 		left: 2%;
-		position:absolute;
-		text-align:center;
-		top:40%;
+		position: absolute;
+		text-align: center;
+		top: 24%;
 		transition:transform ease-out 200ms;
-		width:40px;
- 		background:white;
+		width: 35px;
 
+ 		@include Themer (color, Color-3);
+
+		@include Morpher (All-Desktop) {
+
+			top: 41%;
+
+		}
 	}
 
 	.Icn_Twitter {
@@ -22,6 +27,7 @@
 		color: #00aced;
 
 		&:hover {
+
 			color: rgba(0,172,237, 0.5);
 		}
 	}
@@ -30,6 +36,7 @@
 		color: #3b5998;
 
 		&:hover {
+
 			color: rgba(59,89,152, 0.5);
 		}
 
@@ -40,9 +47,8 @@
 		color: #F24664;
 
 		&:hover {
+
 			color: rgba(59,89,152, 0.5);
 		}
-
 	}
-
 }
