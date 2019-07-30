@@ -1,0 +1,16 @@
+// SuperCard Core
+
+%SuperCard {
+
+    &__TitleContainer {
+
+        width: 100%;
+
+        @include Spacer(margin, bottom, xxl);
+    }
+
+    &__Title {
+
+        text-align: left;
+    }
+}

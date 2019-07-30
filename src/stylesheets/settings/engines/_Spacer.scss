@@ -29,11 +29,27 @@
         @if $type == padding {
             @if $direction == all {
                 padding: $values;
+            } @else if $direction == top {
+            padding-top: $val;
+            } @else if $direction == left {
+                padding-left: $val;
+            } @else if $direction == right {
+                padding-right: $val;
+            } @else {
+                padding-bottom: $val;
             }
         } @else {
 
             @if $direction == all {
                 margin: $values;
+            } @else if $direction == top {
+                margin-top: $sval;
+            } @else if $direction == left {
+                margin-left: $sval;
+            } @else if $direction == right {
+                margin-right: $sval;
+            } @else {
+                margin-bottom: $sval;
             }
 
         }
