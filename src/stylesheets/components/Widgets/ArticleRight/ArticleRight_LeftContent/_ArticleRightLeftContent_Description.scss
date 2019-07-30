@@ -1,0 +1,24 @@
+// ArticleRight Left Content __Description
+
+%ArticleRight {
+
+    &__DescriptionContainer {
+
+        text-align: center;
+
+        @include Spacer(margin, all, base zero);
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(margin, all, base);
+
+        }
+    }
+
+    &__Description {
+
+        @include Typer(ItemTitleDescription);
+        @include Themer(color, Color-1);
+
+    }
+}

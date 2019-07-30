@@ -1,0 +1,71 @@
+
+
+
+.SocialNetworks {
+
+	position: absolute;
+ 	left: 31%;
+ 	width: 650px;
+ 	height: 150px;
+
+	@include Morpher (All-Desktop) {
+
+		left: 50%;
+
+	}
+
+	&-Open{
+
+	  display:none;
+
+	}
+
+	&__Open-button{
+
+
+		border-radius: 30%;
+		cursor: pointer;
+		height: 47px;
+		margin: 0px auto;
+		position: absolute;
+		text-align: center;
+		transform: scale(1.1,1.1);
+		transition-duration: 400ms;
+		transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+		transition:transform ease-out 200ms;
+		width: 47px;
+		z-index: 2;
+	 	top: 28px;
+
+		@include Themer (background, Color-3);
+
+		@include Morpher (All-Desktop) {
+
+			height: 60px;
+			top: 50px;
+			width: 60px;
+
+		}
+	}
+	.SocialNetworks-Open:checked+.SocialNetworks-Open-button{
+
+		transition-timing-function: linear;
+		transition-duration: 200ms;
+		transform: scale(0.8,0.8);
+
+	}
+
+	.SocialNetworks-Open:checked~.SocialNetworks__LinkSocial{
+
+		transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+
+		@for $one from 1 through 3{
+
+			&:nth-child(#{$one+2}){
+
+				transition-duration: 90ms+(80ms*$one);
+				transform: translate3d((65px*$one),0,0);
+	    	}
+		}
+  	}
+}

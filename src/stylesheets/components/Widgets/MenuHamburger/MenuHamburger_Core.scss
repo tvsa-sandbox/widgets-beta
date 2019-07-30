@@ -1,0 +1,120 @@
+// Button | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+
+.MenuHamburger {
+
+	height: 80px;
+	margin: 0px auto;
+	position: relative;
+	right: 105px;
+	top: 28px;
+	width: 80px;
+
+	@include Morpher (All-Desktop) {
+
+		right: 80px;
+		top: 50px;
+
+
+	}
+
+	&-Close{
+
+	  display:none;
+
+	}
+
+	&__Line {
+
+	 	display: block;
+	  	height: 3px;
+	  	left: 25%;
+	  	position: absolute;
+	  	top: 50%;
+	  	transition:transform 200ms;
+	  	width: 25px;
+
+		@include Themer(background, Color-9);
+
+		@include Morpher (All-Desktop) {
+
+			left: 30%;
+
+		}
+	}
+}
+
+	.MenuHamburger-1 {
+
+	  transform: translate3d(0,-8px,0);
+
+	}
+	.MenuHamburger-2 {
+
+	  transform: translate3d(0,0,0);
+	}
+
+	.MenuHamburger-3 {
+
+	  transform: translate3d(0,8px,0);
+
+	}
+
+	.MenuHamburger-Close:checked+.MenuHamburger-Close-button {
+
+	  .MenuHamburger-1{
+
+	    transform: translate3d(0,0,0) rotate(45deg);
+
+	  }
+
+	  .MenuHamburger-2{
+
+	    transform: translate3d(0,0,0) scale(0.1,1);
+
+	  }
+
+	  .MenuHamburger-3{
+
+	    transform:translate3d(0,0,0) rotate(-45deg);
+
+	  }
+	}
+
+
+	.MenuHamburger-Close-button{
+
+	  border-radius: 10px;
+	  cursor: pointer;
+	  height: 45px;
+	  position: absolute;
+	  text-align: center;
+	  transform: scale(1.1,1.1);
+	  transition-duration: 400ms;
+	  transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	  transition:transform ease-out 200ms;
+	  width: 45px;
+	  z-index: 2;
+
+	  @include Themer(background, White);
+
+		&:hover{
+
+		  transform: scale(1.2,1.2) translate3d(0,0,0);
+	  	}
+
+		@include Morpher (All-Desktop) {
+
+			border-radius: 20px;
+			height: 60px;
+			width: 60px;
+
+		}
+	}
+
+	.MenuHamburger-Close-:checked+.MenuHamburger-Close-button {
+
+	  transition-timing-function: linear;
+	  transition-duration: 200ms;
+	  transform:s cale(0.8,0.8) translate3d(0,0,0);
+
+	}

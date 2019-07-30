@@ -1,0 +1,35 @@
+// Mosaic Item Core
+
+@include ThemerUI(Mosaic){
+
+    @include Element(ItemsContainer) {
+
+        @extend %Mosaic__ItemsContainer;
+
+		@include Hover;
+
+		@include Morpher (All-Desktop){
+
+	        &:hover {
+
+				.Mosaic__ItemImageContainer{
+
+					&:not(:hover) {
+
+						.Mosaic__ItemImage {
+
+							filter: brightness(0.8) saturate(0) contrast(1.2) blur(3px);
+
+						}
+					}
+				}
+			}
+		}
+    }
+
+    @include Element(Item) {
+
+        @extend %Mosaic__Item;
+
+    }
+};

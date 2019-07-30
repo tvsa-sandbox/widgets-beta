@@ -1,0 +1,12 @@
+// Grid Multi Content Thumbnail
+
+@include ThemerUI(GridGallery) {
+	
+	@include Element(ItemFullThumbnail) {
+		
+		@extend %GridGallery__ItemFullThumbnail;
+		
+		background: rgba(0,0,0,0.9);
+		
+	}
+}

@@ -1,0 +1,29 @@
+
+
+
+.SocialNetworks {
+
+	&__Share {
+
+		margin: 0px auto;
+		width:30px;
+	 	height:30px;
+	  	display:block;
+	  	position:absolute;
+	  	transition:transform 200ms;
+	    left: 9px;
+	    top: 10px;
+
+		.Icn_Share {
+
+			font-size: 29px;
+		}
+
+		@include Morpher (All-Desktop) {
+
+			left: 14px;
+			top: 16px;
+
+		}
+	}
+}

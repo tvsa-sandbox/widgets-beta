@@ -1,0 +1,13 @@
+// ArticleRight Core
+
+@include ThemerUI(ArticleRight) {
+
+    @extend %ArticleRight;
+
+    @include Element(Container) {
+
+        @extend %ArticleRight__Container;
+
+    }
+
+}

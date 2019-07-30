@@ -1,0 +1,36 @@
+// Grid Multi Content Description
+
+%GridGallery {
+	
+	&__DescriptionContainer {
+		
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: left;
+		width: 100%;
+		
+		@include Spacer(margin,bottom, md);
+		
+		@include Morpher(All-Desktop) {
+			
+			width: 60%;
+			
+		}
+		
+	}
+	
+	&__Description {
+		
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		height: auto;
+		justify-content: left;
+		position: relative;
+		width: auto;
+		
+		@include Spacer(padding,all, zero lg);
+
+	}
+}

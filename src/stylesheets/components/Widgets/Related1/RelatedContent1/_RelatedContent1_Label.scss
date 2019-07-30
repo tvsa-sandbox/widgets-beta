@@ -1,0 +1,15 @@
+// RelatedContent1 Labelcontainer
+
+%RelatedContent1 {
+
+    &__LabelContainer {
+
+        width: 100%;
+
+        @include Morpher (All-Desktop) {
+
+            @include Spacer(margin, all, sm zero sm zero);
+
+	    }
+    }    
+}
