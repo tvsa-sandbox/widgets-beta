@@ -4,29 +4,22 @@ import Layout from "../layouts";
 
 // Components
 
-// import Privacy from "../components/Privacy/Privacy";
-import Share from "../components/Share/Share";
-import Mosaic from "../components/Mosaic";
 import Calendar from "../components/Calendar/Calendar";
 import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
-import Positions from "../components/Positions/Positions";
-import Versus from "../components/Versus/Versus";
-import SocialNetworks from "../components/SocialNetworks/SocialNetworks";
+import Mosaic from "../components/Mosaic";
 import MenuHamburger from "../components/MenuHamburger/MenuHamburger";
-
-
+import SocialNetworks from "../components/SocialNetworks/SocialNetworks";
+import TestMenu from "../components/TestMenu/TestMenu";
 
 const IndexPage = () => (
     <Layout>
 
-        <Positions />
-        <Versus />
-        <Mosaic />
-        <Share />
 		<Calendar />
 		<NotesCarousel />
+		<Mosaic />
 		<SocialNetworks />
 		<MenuHamburger />
+		<TestMenu />
 
     </Layout>
 );
