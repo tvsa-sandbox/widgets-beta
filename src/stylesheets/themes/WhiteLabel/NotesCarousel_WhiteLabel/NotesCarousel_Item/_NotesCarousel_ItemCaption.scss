@@ -6,6 +6,9 @@
 
         @extend %NotesCarousel__ItemCaption;
 
+        @include Themer(background, Color-1);
+        @include Themer(color, White);
+
         &:hover {
 
             @include Morpher(All-Desktop) {

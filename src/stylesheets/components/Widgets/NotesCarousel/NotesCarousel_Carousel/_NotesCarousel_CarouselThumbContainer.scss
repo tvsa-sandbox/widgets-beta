@@ -6,7 +6,8 @@
 
         cursor: pointer;
         display: inline-block;
-        margin: 10px;
+
+        @include Spacer(margin,all, md);
 
     }
 }

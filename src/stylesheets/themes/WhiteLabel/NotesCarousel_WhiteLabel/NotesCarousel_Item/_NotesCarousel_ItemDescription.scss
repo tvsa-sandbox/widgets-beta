@@ -12,5 +12,7 @@
 
         @extend %NotesCarousel__ItemDescription;
 
+        @include Typer(FooterTextContact);
+
     }
 };
