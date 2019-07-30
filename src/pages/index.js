@@ -21,6 +21,7 @@ import GridGallery from "../components/GridGallery/GridGallery";
 const IndexPage = () => (
     <Layout>
 
+        <GridGallery />
 		<Calendar />
 		<NotesCarousel />
 		<Mosaic />
@@ -32,7 +33,6 @@ const IndexPage = () => (
         <Related2 />
         <Related3 />
         <Related4 />
-        <GridGallery />
 
     </Layout>
 );
