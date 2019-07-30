@@ -1,0 +1,20 @@
+// SuperCard Core
+
+@include ThemerUI(SuperCard) {
+
+    @include Element(ButtonContainer) {
+        @extend %SuperCard__ButtonContainer;
+
+        @include Themer(color, Color-3);
+
+    }
+
+    @include Element(Button) {
+
+        @extend %SuperCard__Button;
+
+        @include Themer(color, Text-Dark-Headlines);
+        @include Typer(ItemTitleDescription);
+    }
+
+};

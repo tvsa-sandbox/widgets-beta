@@ -1,0 +1,116 @@
+// ArticleRight Right Content Text
+
+%ArticleRight {
+
+    &__Text {
+
+        @include Spacer(padding, all, zero);
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(padding, all, xl);
+
+        }
+
+        p {
+
+            color: #5e6276; //   Develop
+            text-align: justify;
+
+            @include Spacer(margin, all, base zero);
+            @include Typer(ItemTitleDescription);
+
+            @include Morpher(All-Desktop) {
+
+                @include Typer(BodyTextSubtitle);
+
+            }
+        }
+    }
+
+    &__Subtitle {
+
+        text-align: justify;
+
+        @include Spacer(margin, all, base zero);
+        @include Typer(ItemTitle);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitle);
+
+        }
+    }
+
+    .SlideShow {
+
+        max-width: 100%;
+        width: 100%;
+
+        @include Spacer(margin, all, lg zero);
+
+        @include Morpher(All-Desktop) {
+
+            max-width: 80%;
+            width: 80%;
+
+        }
+    }
+
+    .Video {
+
+        max-width: 100%;
+        width: 100%;
+
+        @include Spacer(margin, all, lg zero);
+
+        @include Morpher(All-Desktop) {
+
+            max-width: 80%;
+            width: 80%;
+
+        }
+    }
+
+    .Quote {
+
+        max-width: 100%;
+        width: 100%;
+
+        @include Spacer(margin, all, lg zero);
+        @include Themer(background,Color-9);
+
+        @include Morpher(All-Desktop) {
+
+            max-width: 80%;
+            width: 80%;
+
+        }
+    }
+
+    p img {
+
+        display: block;
+        max-width: 100%;
+        width: 100%;
+
+        @include Spacer(margin, all, lg zero);
+
+        @include Morpher(All-Desktop) {
+
+            max-width: 80%;
+            width: 80%;
+
+            @include Spacer(margin, all, zero auto);
+
+        }
+    }
+
+    iframe {
+
+        display: block;
+
+        @include Spacer(margin, all, base auto);
+
+    }
+}

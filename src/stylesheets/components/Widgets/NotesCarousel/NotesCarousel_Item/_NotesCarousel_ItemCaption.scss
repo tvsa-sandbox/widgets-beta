@@ -12,10 +12,6 @@
         height: 100px;
         width: 200px;
 
-        @include Themer(background, Color-1);
-
-        @include Themer(color, White);
-
         @include Morpher (All-Desktop) {
 
             height: 150px;

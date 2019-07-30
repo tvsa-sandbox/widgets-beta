@@ -4,13 +4,14 @@
 
     &__Carousel {
 
-        height: 120px;
-        margin: 0px auto;
+        height: 118px;
         position: relative;
+
+        @include Spacer(margin,all, zero auto);
 
         @include Morpher (All-Desktop) {
 
-            height: 170px;
+            height: 168px;
 
         }
     }

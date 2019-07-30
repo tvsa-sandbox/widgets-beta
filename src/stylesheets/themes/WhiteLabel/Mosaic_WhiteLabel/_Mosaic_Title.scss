@@ -1,0 +1,25 @@
+// Mosaic Item Title
+
+	@include ThemerUI(Mosaic){
+
+        @include Element(TitleContainer) {
+
+            @extend %Mosaic__TitleContainer;
+
+        }
+
+        @include Element(Title) {
+
+            @extend %Mosaic__Title;
+
+            @include Themer(background, Color-1);
+            @include Themer(color, Text-Light-Headlines);
+    		@include Typer(ItemTitle);
+
+            @include Morpher(All-Desktop) {
+
+                @include Typer(HeadlineSub);
+
+            }
+        }
+	};

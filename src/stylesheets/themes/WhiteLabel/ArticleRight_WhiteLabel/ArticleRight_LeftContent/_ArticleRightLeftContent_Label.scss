@@ -1,0 +1,17 @@
+// ArticleRight Left Content Label
+
+@include ThemerUI(ArticleRight) {
+
+    @include Element(LabelContainer) {
+
+        @extend %ArticleRight__LabelContainer;
+
+    }
+
+    @include Element(Label) {
+
+        @extend %ArticleRight__Label;
+
+    }
+
+}

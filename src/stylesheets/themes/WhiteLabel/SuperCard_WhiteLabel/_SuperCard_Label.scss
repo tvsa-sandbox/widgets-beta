@@ -1,0 +1,20 @@
+// SuperCard Core
+
+@include ThemerUI(SuperCard) {
+
+    @include Element(LabelContainer) {
+        @extend %SuperCard__LabelContainer;
+
+        @include Themer(background, Color-3);
+    }
+
+    @include Element(Label) {
+
+        @extend %SuperCard__Label;
+
+        @include Typer(SubTextCredit);
+
+        @include Themer(color, Text-Dark-Headlines);
+    }
+
+};
