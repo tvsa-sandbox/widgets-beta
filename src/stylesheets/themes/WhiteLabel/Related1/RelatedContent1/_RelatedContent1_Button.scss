@@ -1,0 +1,20 @@
+// RelatedContent1 Botton
+
+@include ThemerUI(RelatedContent1) {
+
+    @include Element(ButtonContainer) {
+
+        @extend %RelatedContent1__ButtonContainer;
+        
+    }
+
+    @include Element(Button) {
+
+        @extend %RelatedContent1__Button;
+        
+        @include Hover(.3s, .5);        
+        @include Themer(background, Color-1);
+        @include Themer(color, White);
+        
+    }
+};
