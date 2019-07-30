@@ -1,0 +1,26 @@
+// Quote Container
+
+%Quote {
+
+    &__Description {
+
+        width: 100%;
+
+        @include Spacer(padding, all, xl zero);
+
+	}
+
+    &__Title {
+
+        width: 100%;
+
+        @include Spacer(padding, all, md zero);
+
+    }
+
+    &__Label {
+
+        width: 100%;
+
+    }
+}
