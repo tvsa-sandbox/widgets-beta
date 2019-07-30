@@ -1,0 +1,10 @@
+// Card Container
+
+@include ThemerUI(Card) {
+
+    @include Element(Container) {
+
+        @extend %Card__Container;
+
+    }
+};

@@ -6,7 +6,10 @@ $Breakpoints: (
     Laptop: (769px,1024px),
     Desktop: (1025px,1280px),
     Desktop-HD: (1281px, 1440px),
-    All-Desktop: (769px)
+    All-Desktop: (769px),
+    All-DesktopHD: (1024px),
+    All-Laptop: (768px),
+    All-Tablet: (415px)
 );
 
 @import "./engines/Morpher";

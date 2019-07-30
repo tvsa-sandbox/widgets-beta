@@ -1,0 +1,21 @@
+// Card Container
+
+%Card {
+
+    &__Container {
+
+        display:block;
+        max-width:768px;
+
+        @include Spacer(margin, all, lg zero);
+
+        @include Morpher(All-DesktopHD) {
+
+            display: flex;
+            max-width: 1440px;
+
+            @include Spacer(margin, all, zero auto);
+
+        }
+	}
+}

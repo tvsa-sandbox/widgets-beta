@@ -1,0 +1,70 @@
+// Card Container
+
+%Card {
+
+    &__TextContainer {
+
+        display:block;
+        overflow:hidden;
+        width:100%;
+
+        @include Spacer(padding, all, zero);
+
+        @include Morpher(All-DesktopHD) {
+
+            align-items: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+
+            @include Spacer(padding, all, zero 2xl);
+
+        }
+
+	}
+
+    &__TextContainerTitle {
+
+        @include Spacer(margin, all, sm);
+
+        @include Morpher(All-DesktopHD) {
+
+            @include Spacer(margin, all, zero);
+
+        }
+
+        @include Spacer(margin, all, md);
+
+    }
+
+    &__TextContainerDescription {
+
+        @include Spacer(margin, all, sm);
+
+        @include Morpher(All-DesktopHD) {
+
+            @include Spacer(margin, all, md);
+
+        }
+
+    }
+
+    &__TextContainerLinkButton {
+
+        @include Hover;
+
+    }
+
+    &__TextContainerButton {
+
+        align-items:center;
+        display:flex;
+        height:40px;
+        justify-content:center;
+        width:100px;
+
+        @include Spacer(margin, all, md zero);
+
+    }
+}

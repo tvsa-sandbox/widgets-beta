@@ -1,0 +1,28 @@
+// Quote Description
+
+@include ThemerUI(Quote) {
+
+    @include Element(Description) {
+
+        @extend %Quote__Description;
+
+    }
+
+    @include Element(Title) {
+
+        @extend %Quote__Title;
+
+        @include Themer(color, White);
+        @include Typer(md, $FSMAX:$f-xl, $FSMIN:$f-l);
+
+    }
+
+    @include Element(Label) {
+
+        @extend %Quote__Label;
+
+        @include Themer(color, Mini-Text-Light);
+        @include Typer(md-m, $FSMAX:$f-base, $FSMIN:$f-s);
+
+    }
+};
