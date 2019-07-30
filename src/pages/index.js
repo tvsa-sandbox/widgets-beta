@@ -31,8 +31,6 @@ const IndexPage = () => (
         <Related2 />
         <Related3 />
         <Related4 />
-        <Calendar />
-        <NotesCarousel />
 
     </Layout>
 );
