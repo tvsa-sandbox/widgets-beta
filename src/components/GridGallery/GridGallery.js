@@ -1,8 +1,17 @@
 import React from "react";
-import GridGallery_Item from "./Items/GridGallery_Item";
+import GridGalleryItem from "./Items/GridGallery_Item";
+import GridGalleryItemFull from "./ItemsFull/GridGallery_ItemFull";
+
+const toggleModal = () => {
+        const SELECTOR = "#Modal";
+        const CARD = document.querySelector(SELECTOR);
+        CARD.classList.toggle("Modal");
+        CARD.classList.toggle("ModalDisplay");
+    };
 
 const GridGallery = () => (
     <section className="GridGallery WhiteLabel">
+        <GridGalleryItemFull toggleModal={toggleModal}/>
         <div className="GridGallery__TitleContainer WhiteLabel">
             <h2 className="GridGallery__Title WhiteLabel">
                 Messi y la Crisis en al Albiceleste
@@ -22,12 +31,12 @@ const GridGallery = () => (
             </span>
         </div>
         <div className="GridGallery__ItemsContainer WhiteLabel">
-            <GridGallery_Item />
-            <GridGallery_Item />
-            <GridGallery_Item />
-            <GridGallery_Item />
-            <GridGallery_Item />
-            <GridGallery_Item />
+            <GridGalleryItem toggleModal={toggleModal}/> 
+            <GridGalleryItem toggleModal={toggleModal}/>
+            <GridGalleryItem toggleModal={toggleModal}/>
+            <GridGalleryItem toggleModal={toggleModal}/>
+            <GridGalleryItem toggleModal={toggleModal}/>
+            <GridGalleryItem toggleModal={toggleModal}/>
         </div>
     </section>
 );

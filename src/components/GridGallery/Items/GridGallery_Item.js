@@ -1,9 +1,14 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Link from "gatsby-link";
 import { withPrefix } from "gatsby-link";
 
-const GridGallery_Item = (props) => (
-    <Link className="GridGallery__Item WhiteLabel" to="/">
+const GridGalleryItem = (props) => { 
+    const {
+        toggleModal,
+    } = props;
+    return (
+    <Link className="GridGallery__Item WhiteLabel" onClick={() => toggleModal()} id="ModalButton">
         <div className="GridGallery__Thumbnail WhiteLabel">
             <div className="GridGallery__ItemImageContainer WhiteLabel">
                 <picture>
@@ -16,5 +21,10 @@ const GridGallery_Item = (props) => (
         </div>
     </Link>
 );
+};
 
-export default GridGallery_Item;
+GridGalleryItem.propTypes = {
+    toggleModal: PropTypes.func.isRequired,
+};
+
+export default GridGalleryItem;
