@@ -2,17 +2,16 @@
 
 %ArticleRight {
 
-
     &__ShareContainer {
 
-        display:block;
+        display: block;
 
     }
 
     &__Share {
 
-        display:flex;
-        justify-content:center;
+        display: flex;
+        justify-content: center;
 
         @include Spacer(margin, all, zero);
 
@@ -20,10 +19,10 @@
 
     &__ShareIcon {
 
-        border:none;
-        border-radius:5px;
-        height:40px;
-        width:40px;
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        width: 40px;
 
         @include Spacer(margin, all, zero sm);
         @include Themer(background, Color-1);
@@ -37,7 +36,6 @@
                 opacity: .7;
 
             }
-
         }
 
         &.Icn_Twitter {
@@ -49,7 +47,6 @@
                 opacity: .7;
 
             }
-
         }
 
         &.Icn_Instagram {

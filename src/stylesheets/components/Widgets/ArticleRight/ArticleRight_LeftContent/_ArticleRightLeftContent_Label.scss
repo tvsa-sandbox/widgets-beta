@@ -4,14 +4,14 @@
 
     &__LabelContainer {
 
-       display:flex;
-       justify-content:center;
+       display: flex;
+       justify-content: center;
 
     }
 
     &__Label {
 
-        text-align:center;
+        text-align: center;
 
         @include Spacer(margin, all, base zero zero);
         @include Typer(SubTextInfo);
