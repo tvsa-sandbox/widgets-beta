@@ -4,8 +4,6 @@ import Layout from "../layouts";
 
 // Components
 
-import Calendar from "../components/Calendar/Calendar";
-import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
 import Mosaic from "../components/Mosaic";
 import MenuHamburger from "../components/MenuHamburger/MenuHamburger";
 import SocialNetworks from "../components/SocialNetworks/SocialNetworks";
