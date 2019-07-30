@@ -4,7 +4,7 @@ const Quote = () => (
     <section className="Quote WhiteLabel">
         <div className="Quote__Container WhiteLabel">
             <div className="Quote__Thumbnail WhiteLabel">
-                <img className="Quote__Image WhiteLabel" alt="ImageEvent" />
+                <img className="Quote__Image WhiteLabel" src="./static/aspect-ratio-images/1x1-220x220.jpg" alt="ImageEvent" />
             </div>
             <div className="Quote__Description WhiteLabel">
                 <h2 className="Quote__Title WhiteLabel">"Siempre hay que pensar los widgets en mobile first."</h2>
