@@ -1,0 +1,18 @@
+// ArticleRight Left Content Info
+
+%ArticleRight {
+
+    &__InfoContainer {
+
+        margin-top: -20px; //develop
+
+        @include Spacer(padding, all, zero lg lg lg);
+        @include Themer(background, White);
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(padding, all, zero);
+
+        }
+    }
+}

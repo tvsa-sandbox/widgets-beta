@@ -1,0 +1,17 @@
+// SuperCard Core
+
+@include ThemerUI(SuperCard) {
+
+    @include Element(IconContainer) {
+        @extend %SuperCard__IconContainer;
+
+        @include Themer(background, Color-1);
+    }
+
+    @include Element(Icon) {
+        @extend %SuperCard__Icon;
+
+        @include Themer(color, Mini-Text-Light);
+    }
+
+}

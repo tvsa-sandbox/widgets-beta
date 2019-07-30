@@ -1,0 +1,35 @@
+// RelatedContent2 Thumbnail
+
+%RelatedContent2 {
+
+    &__Thumbnail {
+
+        display: block;
+        position: relative;
+        width: 100%;
+       
+
+        @include Morpher (All-Desktop) {
+
+         display: block;
+
+	    }
+    }
+    
+    &__ImageContainer {
+
+        @include Spekter(1_1, relative);
+       
+        @include Morpher (All-Desktop) {
+
+            @include Spekter(16_9, relative);
+
+        }
+    }
+
+    &__Image {               
+
+        width: 100%;
+
+    }
+}
