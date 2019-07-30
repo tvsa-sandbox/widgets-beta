@@ -1,15 +1,21 @@
 // Grid Multi Content Item Title
 
-.GridGallery {
+%GridGallery {
 	
 	&__ItemCloseContainer {
 		
 		display: flex;
 		justify-content: flex-end;
-		padding-right: 20px;
 		position: absolute;
 		width: 100%;
 		
+		@include Spacer(padding,right, zero);
+		
+		@include Morpher(All-Desktop) {
+			
+			@include Spacer(padding,right, xl);
+			
+		}
 	}
 	
 	&__ItemClose {
