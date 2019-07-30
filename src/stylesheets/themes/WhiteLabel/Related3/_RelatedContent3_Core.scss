@@ -1,0 +1,9 @@
+// RelatedContent3 Core
+
+@include ThemerUI(RelatedContent3) {
+
+    @extend %RelatedContent3;
+
+    @include Themer(background, Color-12, before);
+    @include Themer(background, Color-12, after);   
+};
