@@ -1,0 +1,14 @@
+// Mosaic Core
+
+%Mosaic {
+
+    @include Layout(Wrapper);
+
+    @include Morpher(Tablet) {
+
+		@include Layout(Wrapper-Tablet);
+
+
+	}
+
+}

@@ -1,0 +1,24 @@
+// Stack Thumbnail
+
+%Stack {
+
+    &__ItemThumbnail {
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        @include HoverCard;
+
+        @include Themer(background, Color-2, after) {
+
+            display: block;
+            content: '';
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            opacity: .7;
+        }
+
+    }
+}

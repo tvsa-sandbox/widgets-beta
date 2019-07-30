@@ -1,0 +1,13 @@
+// ShareBar Trigger
+@include ThemerUI(Share) {
+
+    @include Element(ShareTrigger) {
+
+        @extend %Share__Trigger;
+    }
+
+    @include Element(ShareTriggerText) {
+
+        @extend %Share__TriggerText;
+    }
+}
