@@ -13,6 +13,42 @@ $f-4xxl: 42px;
 
 $TypographyStyles: (
 
+xs-b: (whitelabel-bold, 700, $f-xxs, $f-xxs, 1px),
+sm-b: (whitelabel-bold, 700, $f-xs, $f-s, 1px),
+md-b: (whitelabel-bold, 700, $f-s, $f-base, 1px),
+lg-b: (whitelabel-bold, 700, $f-xl, $f-xxl, 1px),
+xl-b: (whitelabel-bold, 700, $f-2xxl, $f-4xxl, 1px),
+
+xs-m: (whitelabel-medium, 500, $f-xxs, $f-xxs, 1px),
+sm-m: (whitelabel-medium, 500, $f-xs, $f-s, 1px),
+md-m: (whitelabel-medium, 500, $f-s, $f-base, 1px),
+lg-m: (whitelabel-medium, 500, $f-xl, $f-xxl, 1px),
+xl-m: (whitelabel-medium, 500, $f-2xxl, $f-4xxl, 1px),
+
+xs: (whitelabel-regular, 400, $f-xxs, $f-xxs, 1px),
+sm: (whitelabel-regular, 400, $f-xs, $f-s, 1px),
+md: (whitelabel-regular, 400, $f-s, $f-base, 1px),
+lg: (whitelabel-regular, 400, $f-xl, $f-xxl, 1px),
+xl: (whitelabel-regular, 400, $f-2xxl, $f-4xxl, 1px),
+
+xs-b2: (whitelabel-bold, 700, $f-xxs, $f-xxs, 1px),
+sm-b2: (whitelabel-bold, 700, $f-xs, $f-s, 1px),
+md-b2: (whitelabel-bold, 700, $f-s, $f-base, 1px),
+lg-b2: (whitelabel-bold, 700, $f-xl, $f-xxl, 1px),
+xl-b2: (whitelabel-bold, 700, $f-2xxl, $f-4xxl, 1px),
+
+xs-m2: (whitelabel-medium, 500, $f-xxs, $f-xxs, 1px),
+sm-m2: (whitelabel-medium, 500, $f-xs, $f-s, 1px),
+md-m2: (whitelabel-medium, 500, $f-s, $f-base, 1px),
+lg-m2: (whitelabel-medium, 500, $f-xl, $f-xxl, 1px),
+xl-m2: (whitelabel-medium, 500, $f-2xxl, $f-4xxl, 1px),
+
+xs2: (whitelabel-regular, 400, $f-xxs, $f-xxs, 1px),
+sm2: (whitelabel-regular, 400, $f-xs, $f-s, 1px),
+md2: (whitelabel-regular, 400, $f-s, $f-base, 1px),
+lg2: (whitelabel-regular, 400, $f-xl, $f-xxl, 1px),
+xl2: (whitelabel-regular, 400, $f-2xxl, $f-4xxl, 1px),
+
 // WhiteLabel | Weight | MAXSize | MINSize | Letter Spacing | Line Height
 
 // Headlines

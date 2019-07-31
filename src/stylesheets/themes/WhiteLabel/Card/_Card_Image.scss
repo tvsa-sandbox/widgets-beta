@@ -1,0 +1,16 @@
+// Card Image
+
+@include ThemerUI(Card) {
+
+    @include Element(Image) {
+
+        @extend %Card__Image;
+
+    }
+
+    @include Element(Poster) {
+
+        @extend %Card__Poster;
+
+    }
+};

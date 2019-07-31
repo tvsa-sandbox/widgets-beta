@@ -1,4 +1,4 @@
-// Morpher Mix Engine | WhiteLabel MarkUp v2.1.1 Atomic Ghost | 29/5/19
+// Morpher Mix Engine | WhiteLabel MarkUp v2.2.0 Atomic Ghost | 12/7/19
 
 @mixin Morpher($Device) {
 
@@ -14,14 +14,47 @@
 
         	}
 
-		} @else if $Device == Desktop-HD {
+			} @else if $Device == Full-HD {
 
-			$Val1: nth($DeviceQuery, 1);
+				@media (min-width: $DeviceQuery) {
 
-	        @media (min-width: $Val1) {
-	            @content;
-	        }
-	    } @else {
+	            	@content;
+
+	        	}
+
+			} @else if $Device == All-DesktopHD {
+
+				@media (min-width: $DeviceQuery) {
+
+	            	@content;
+
+	        	}
+
+			} @else if $Device == All-Laptop {
+
+				@media (min-width: $DeviceQuery) {
+
+	            	@content;
+
+	        	}
+
+			} @else if $Device == All-Tablet {
+
+				@media (min-width: $DeviceQuery) {
+
+	            	@content;
+
+	        	}
+			}  @else if $Device == Desktop-HD {
+
+				$Val1: nth($DeviceQuery, 1);
+
+		        @media (min-width: $Val1) {
+		            @content;
+		        }
+		    }
+
+	    @else {
 
 			$Val1: nth($DeviceQuery, 1);
 			$Val2: nth($DeviceQuery, 2);

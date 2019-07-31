@@ -1,0 +1,9 @@
+// Card Core
+
+%Card {
+
+    @include Spacer(padding, all, md);
+
+	@include WidgetBottomSpace;
+
+}

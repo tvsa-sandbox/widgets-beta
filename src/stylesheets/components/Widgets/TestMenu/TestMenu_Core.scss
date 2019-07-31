@@ -13,10 +13,9 @@
 		border-radius:5%;
 		transition: transform 250ms ease;
 		cursor: pointer;
-		z-index: 2;
+		z-index: 22;
 
 		@include Themer(background, White);
-		@include Typer(ItemTitleDescription);
 
 		.TestMenu__Line {
 			position: relative;
@@ -26,7 +25,7 @@
 			background-color: black;
 			transform-origin: center center;
 			transition: transform 250ms ease;
-			z-index: 2;
+			z-index: 20;
 
 			&:nth-of-type(1) {
 				transform: translateY(-5px);
@@ -77,11 +76,12 @@
 	.TestMenu__Navegation {
 
 		position: fixed;
-		top: 0;
+		top: 0px;
 		left: -300px;
 		width: 250px;
 		height: 600px;
 		transition: left 500ms ease;
+		z-index: 20;
 
 		@include Themer(background, Black);
 
@@ -117,6 +117,9 @@
 
 						position: absolute;
 						content: '';
+						top: 0px;
+						left: 0px;
+						width: 0px;
 						height: 100%;
 						transition: width 250ms ease;
 						z-index: -1;
@@ -124,7 +127,7 @@
 
 					&:hover {
 
-						@include Themer(color, Color-5);
+						@include Themer(color, Color-6);
 
 						&:before {
 
@@ -132,7 +135,7 @@
 							height: 100%;
 							transition: width 250ms ease;
 
-							@include Themer(background, White);
+							@include Themer(background, Color-7);
 						}
 					}
 				}
