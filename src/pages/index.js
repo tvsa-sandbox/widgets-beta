@@ -23,11 +23,11 @@ import Card from "../components/Card/";
 const IndexPage = () => (
     <Layout>
 
+        <TestMenu />
         <GridGallery />
 		<Mosaic />
 		<SocialNetworks />
 		<MenuHamburger />
-		<TestMenu />
 		<SuperCard />
         <Related1 />
         <Related2 />
