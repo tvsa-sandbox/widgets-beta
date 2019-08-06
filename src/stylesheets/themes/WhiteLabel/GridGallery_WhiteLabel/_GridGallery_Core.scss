@@ -1,7 +1,31 @@
 // Grid Multi Content Core
 
 @include ThemerUI(GridGallery) {
-    
+
     @extend %GridGallery;
-    
+
+    position: relative;
+    margin: 5rem auto;
+
+    @include Morpher(All-Desktop) {
+
+        margin: 4rem auto;
+
+    }
+
+    &::before {
+
+        content: 'Widget 2 - Grid Gallery';
+        width: 100%;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include Spacer(margin, all, lg);
+        @include Themer(color, White);
+        @include Typer(sm-b, $FSMAX:$f-l, $FSMIN:$f-l);
+
+    }
+
 }

@@ -4,4 +4,19 @@
 
     @extend %Card;
 
+    &::before {
+
+        content: 'Widget 6 - Card';
+        width: 100%;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include Spacer(margin, all, lg);
+        @include Themer(color, White);
+        @include Typer(sm-b, $FSMAX:$f-l, $FSMIN:$f-l);
+
+    }
+
 };
