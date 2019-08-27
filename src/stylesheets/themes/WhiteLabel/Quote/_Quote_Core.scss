@@ -7,4 +7,23 @@
     @include Themer (border-bottom, Color-2, "1px solid");
     @include Themer (border-top, Color-2, "1px solid");
 
+    position: relative;
+
+    &::before {
+
+        content: 'Widget 5 - Quote';
+        width: 100%;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translateY(-80px);
+
+        @include Spacer(margin, all, lg);
+        @include Themer(color, White);
+        @include Typer(sm-b, $FSMAX:$f-l, $FSMIN:$f-l);
+
+    }
+
 };
