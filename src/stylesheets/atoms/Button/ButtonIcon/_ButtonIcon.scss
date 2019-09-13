@@ -21,4 +21,23 @@
     display: inline-block;
 
   }
+
+  &__IconContainer{
+    display: inline-block;
+    margin: 3px;
+
+
+  }
+
+  &__Icon.WhiteLabel{
+
+    width: 10px;
+    height: 10px;
+    color: red;
+
+
+  }
+
+    @include Hover(.3s, .5);
+
 }

@@ -4,11 +4,13 @@ import Layout from "../layouts";
 
 // Atoms
 
-import Button from '../components/atoms/button';
+import Button from '../components/atoms/Button';
+import ButtonIcon from '../components/atoms/ButtonIcon';
 
 const IndexPage = () => (
     <Layout>
         <Button />
+        <ButtonIcon />
     </Layout>
 );
 

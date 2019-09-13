@@ -1,11 +1,15 @@
 import React from "react";
 
 const Button = () => (
-    <div className="BtnContainer WhiteLabel">
-        <button className="Btn WhiteLabel">
-            texto x
+    <div className="Button__Container">
+        <button className="Button" type="button">
+            <span className="Button__Text">
+                Click Me!
+            </span>
         </button>
     </div>
+
 );
+
 
 export default Button;
