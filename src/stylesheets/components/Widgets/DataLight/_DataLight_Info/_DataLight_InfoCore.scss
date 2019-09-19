@@ -1,0 +1,23 @@
+// DataLight Info Core
+
+%DataLight {
+    
+    &__InfoContainer {
+        
+        right: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        @include Spacer(margin,right, zero);
+
+    }
+    
+    &__Info {
+        
+        display: flex;
+        height: 30px;
+        width: 44%;
+
+    }
+}

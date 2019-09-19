@@ -1,0 +1,39 @@
+// SlideshowCard Share Bar Icons Desktop
+
+@include ThemerUI(SlideshowCard) {
+
+		@include Element(ShareBarDesktop) {
+
+				.Icn_Twitter {
+
+						color: #00aced;
+
+						@include Hover;
+
+				}
+
+				.Icn_Facebook {
+
+						color: #3b5998;
+
+						@include Hover;
+
+				}
+
+				.Icn_Instagram {
+
+						color: #F24664;
+
+						@include Hover;
+
+				}
+
+				.Icn_Email {
+
+						color: #ffffff;
+
+						@include Hover;
+
+				}
+		}
+};

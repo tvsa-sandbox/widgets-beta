@@ -1,0 +1,19 @@
+// VideoContainer Label
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(EndCardIconContainer) {
+
+        @extend %VideoContainer__EndCardIconContainer;
+
+    }
+
+    @include Element(EndCardIcon) {
+
+        @extend %VideoContainer__EndCardIcon;
+
+        @include Themer(background, Color-9);
+        @include Themer(border, Color-1, 'solid 2px');
+
+    }
+};

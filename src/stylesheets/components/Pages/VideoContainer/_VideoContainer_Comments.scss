@@ -1,0 +1,22 @@
+// VideoContainer
+
+%VideoContainer {
+
+    &__Comments {
+
+        grid-area: Comments;
+
+    }
+
+    &__CommentsTitle {
+
+        @include Spacer(margin, bottom, base);
+
+    }
+
+    &__Disclaimer {
+
+        display: block;
+
+    }
+}

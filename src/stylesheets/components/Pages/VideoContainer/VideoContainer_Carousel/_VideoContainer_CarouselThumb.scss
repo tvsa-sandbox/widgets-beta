@@ -1,0 +1,32 @@
+// VideoContainer Carousel Thumb
+
+%VideoContainer {
+
+    &__CarouselThumbContainer {
+
+        min-width: 190px;
+
+        @include Spacer(margin, bottom, xs);
+        @include OrcaMarginReset;
+
+        @include Morpher(Laptop) {
+
+            min-width: 355px;
+
+            @include Spacer(margin, left, xs);
+
+        }
+    }
+
+    &__CarouselThumbnails {
+
+        width: 100%;
+
+        @include Morpher(Laptop) {
+
+            display: flex;
+            height: 170px;
+
+        }
+    }
+}

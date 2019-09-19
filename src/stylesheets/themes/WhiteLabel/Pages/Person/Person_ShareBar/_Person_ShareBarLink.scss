@@ -1,0 +1,11 @@
+// Card Person Share Bar Link
+
+@include ThemerUI(Person){
+
+    @include Element(ShareBarLink) {
+
+        @extend %Person__ShareBarLink;
+
+    }
+
+};

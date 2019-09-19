@@ -1,0 +1,19 @@
+// Article Trigger
+
+%Article {
+
+    &__ShareBarTrigger {
+
+        cursor: pointer;
+        display: none !important;
+        font-size: 10px !important;
+        height: 40px !important;
+        width: 40px !important;
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+}

@@ -1,0 +1,46 @@
+// VideoContainer ndCardItemThumbnail
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(EndCardItemThumbnail) {
+
+        @extend %VideoContainer__EndCardItemThumbnail;
+
+    }
+
+    @include Element(EndCardItemImageContainer) {
+
+        @extend %VideoContainer__EndCardItemImageContainer;
+
+    }
+
+    @include Element(EndCardItemIconContainer) {
+
+        @extend %VideoContainer__EndCardItemIconContainer;
+
+    }
+
+    @include Element(EndCardItemIcon) {
+
+        @extend %VideoContainer__EndCardItemIcon;
+
+        @include Themer(background, Color-9);
+        @include Themer(border, Color-1, 'solid 2px');
+
+    }
+
+    @include Element(EndCardItemTimeContainer) {
+
+        @extend %VideoContainer__EndCardItemTimeContainer;
+
+    }
+
+    @include Element(EndCardItemTime) {
+
+        @extend %VideoContainer__EndCardItemTime;
+
+        @include Themer(color, Text-Light-Body);
+        @include Typer(xs);
+
+    }
+};

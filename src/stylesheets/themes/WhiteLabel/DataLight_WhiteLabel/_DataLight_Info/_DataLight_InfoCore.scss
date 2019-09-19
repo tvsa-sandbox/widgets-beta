@@ -1,0 +1,16 @@
+// DataLight Info Core
+
+@include ThemerUI(DataLight) {
+    
+    @include Element(InfoContainer) {
+
+        @extend %DataLight__InfoContainer;
+
+    }
+    
+    @include Element(Info) {
+        
+        @extend %DataLight__Info;
+
+    }
+};

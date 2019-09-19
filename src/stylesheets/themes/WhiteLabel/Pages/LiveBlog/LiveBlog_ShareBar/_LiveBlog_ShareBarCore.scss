@@ -1,0 +1,17 @@
+// LiveBlog Share Bar Core
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(ShareBar) {
+
+        @extend %LiveBlog__ShareBar;
+
+    }
+
+    @include Element(ShareContainer) {
+
+        @extend %LiveBlog__ShareContainer;
+
+    }
+
+};

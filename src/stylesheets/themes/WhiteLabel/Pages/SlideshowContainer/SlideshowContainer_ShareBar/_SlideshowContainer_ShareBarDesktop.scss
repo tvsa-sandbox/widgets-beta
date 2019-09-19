@@ -1,0 +1,16 @@
+// SlideshowContainer Share Bar Desktop
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(ShareBarDesktop) {
+
+        @extend %SlideshowContainer__ShareBarDesktop;
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(padding, all, zero sm);
+            @include Themer(border, Color-7, "solid 1px");
+
+        }
+    }
+};

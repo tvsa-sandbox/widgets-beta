@@ -1,0 +1,27 @@
+// VideoContainer
+
+%VideoContainer {
+
+    max-width: 1332px;
+    width: 100%;
+
+    @include Spacer(margin, all, zero auto);
+
+    @include Morpher(Desktop) {
+
+        display: grid;
+        grid-template-areas: "Title" "Container" "Comments";
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+
+    }
+
+    @include Morpher(Desktop-HD) {
+
+        display: grid;
+        grid-template-areas: "Title" "Container" "Comments";
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
+
+    }
+}

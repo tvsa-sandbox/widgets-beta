@@ -1,0 +1,16 @@
+// DataLight List Image
+
+@include ThemerUI(DataLight) {
+    
+    @include Element(ListImageContainer) {
+        
+        @extend %DataLight__ListImageContainer;
+
+    }
+    
+    @include Element(ListImage) {
+        
+        @extend %DataLight__ListImage;
+        
+    }
+};

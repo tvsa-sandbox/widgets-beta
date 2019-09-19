@@ -1,0 +1,13 @@
+// SlideshowContainer End Card
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(EndCardDescription) {
+
+        @extend %SlideshowContainer__EndCardDescription;
+
+        @include Themer(color, White);
+        @include Typer(md);
+
+    }
+};

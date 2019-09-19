@@ -1,0 +1,28 @@
+// Errors Container
+
+@include ThemerUI(Errors){
+
+    @include Element(SearchContainer) {
+
+        @extend %Errors__SearchContainer;
+
+        @include Themer(border, Color-2, "solid 1px");
+
+    }
+
+    @include Element(Search) {
+
+        @extend %Errors__Search;
+
+    }
+
+    @include Element(Input) {
+
+        @extend %Errors__Input;
+
+        @include Themer(border-left, Color-2, "solid 1px");
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(md);
+
+    }
+};

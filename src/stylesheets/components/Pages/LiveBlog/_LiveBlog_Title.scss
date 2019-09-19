@@ -1,0 +1,16 @@
+// LiveBlog
+
+%LiveBlog {
+
+    &__TitleContainer {
+
+        @include Spacer(margin, all, base zero);
+
+    }
+
+    &__Title {
+
+        display: block;
+
+    }
+}

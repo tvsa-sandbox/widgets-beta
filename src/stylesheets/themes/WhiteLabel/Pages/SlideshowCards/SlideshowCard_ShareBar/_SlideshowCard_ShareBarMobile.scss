@@ -1,0 +1,10 @@
+// SlideshowCard Share Bar Mobile
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(ShareBarMobile) {
+
+        @extend %SlideshowCard__ShareBarMobile;
+
+    }
+}

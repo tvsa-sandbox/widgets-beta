@@ -1,0 +1,11 @@
+// SlideshowContainer End Card
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(EndCardThumbsContainer) {
+
+        @extend %SlideshowContainer__EndCardThumbsContainer;
+
+    }
+
+};

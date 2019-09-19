@@ -1,0 +1,11 @@
+// VideoContainer Right Items Image
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(RightItemImageContainer) {
+
+        @extend %VideoContainer__RightItemImageContainer;
+
+    }
+
+};

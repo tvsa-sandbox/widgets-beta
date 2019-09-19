@@ -1,0 +1,11 @@
+// Card Person Share Bar Mobile
+
+@include ThemerUI(Person){
+
+    @include Element(ShareBarMobile) {
+
+        @extend %Person__ShareBarMobile;
+
+    }
+
+};

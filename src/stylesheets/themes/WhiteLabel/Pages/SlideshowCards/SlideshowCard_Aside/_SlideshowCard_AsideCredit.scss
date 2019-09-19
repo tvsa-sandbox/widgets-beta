@@ -1,0 +1,18 @@
+// SlideshowCard Aside Info
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(AsideCreditContainer) {
+
+        @extend %SlideshowCard__AsideCreditContainer;
+    }
+
+    @include Element(AsideCredit) {
+
+        @extend %SlideshowCard__AsideCredit;
+
+        @include Themer (color, Mini-Text-Light);
+        @include Typer (sm);
+
+    }
+}

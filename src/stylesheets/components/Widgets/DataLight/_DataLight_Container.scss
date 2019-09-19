@@ -1,0 +1,14 @@
+// DataLight Container
+
+%DataLight {
+
+    &__Container {
+
+		display: flex;
+        width: 100%;
+
+        @include Spacer(padding,all, base);
+
+	}
+}
+

@@ -1,0 +1,9 @@
+// Errors
+
+@include ThemerUI(Errors){
+
+    @extend %Errors;
+
+    @include Themer(border-bottom, White, "solid 1px");
+
+};

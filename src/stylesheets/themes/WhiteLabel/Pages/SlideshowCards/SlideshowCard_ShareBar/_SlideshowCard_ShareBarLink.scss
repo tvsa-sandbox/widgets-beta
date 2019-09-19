@@ -1,0 +1,10 @@
+// SlideshowCard Share Bar Link
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(ShareBarLink) {
+
+        @extend %SlideshowCard__ShareBarLink;
+
+    }
+}

@@ -1,0 +1,11 @@
+// Card Person Share Bar Tap
+
+@include ThemerUI(Person){
+
+    @include Element(ShareBarTap) {
+
+        @extend %Person__ShareBarTap;
+
+    }
+
+};

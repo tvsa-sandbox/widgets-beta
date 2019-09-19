@@ -1,0 +1,14 @@
+// DataLight Table
+
+%DataLight {
+
+    &__TableContainer {
+        
+        display: block;
+        position: relative;
+        width: 100%;
+        
+        @include Spacer(padding,all, xs);
+
+    }
+}

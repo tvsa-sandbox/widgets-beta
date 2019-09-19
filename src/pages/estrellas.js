@@ -4,15 +4,18 @@ import Layout from "../layouts";
 
 // Components
 
-import Calendar from "../components/Calendar/Calendar";
-import NotesCarousel from "../components/NotesCarousel/NotesCarousel";
+import DataLight from "../components/DataLight/DataLight";
+import SuperCard from "../components/SuperCard/SuperCard";
 
 const IndexPage = () => (
     <Layout>
-
-        <NotesCarousel />
-        <Calendar />
-
+        <section className="PageContent__Container WhiteLabel">
+            <h1>Page</h1>
+            <SuperCard />
+            <section className="PageContent__Aside WhiteLabel">
+                <DataLight />
+            </section>
+        </section>
     </Layout>
 );
 

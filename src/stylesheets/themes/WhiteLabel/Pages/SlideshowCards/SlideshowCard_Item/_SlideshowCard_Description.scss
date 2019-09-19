@@ -1,0 +1,12 @@
+// SlideshowCard Silder Track
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(DescriptionContainer) {
+
+        @extend %SlideshowCard__DescriptionContainer;
+
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+}

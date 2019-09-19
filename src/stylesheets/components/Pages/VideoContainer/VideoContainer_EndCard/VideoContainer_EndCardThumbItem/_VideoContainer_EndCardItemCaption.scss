@@ -1,0 +1,22 @@
+// VideoContainer EndCardItemCaption
+
+%VideoContainer {
+
+    &__EndCardItemCaption {
+
+        @include Spacer(padding, all, zero sm);
+
+    }
+
+    &__EndCardItemTitle {
+
+        display: block;
+
+    }
+
+    &__EndCardDescription {
+
+        display: block;
+
+    }
+}

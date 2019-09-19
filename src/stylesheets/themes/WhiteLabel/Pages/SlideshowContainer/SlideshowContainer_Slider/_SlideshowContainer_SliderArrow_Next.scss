@@ -1,0 +1,12 @@
+// SlideshowContainer Slider Arrow Next
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(SliderArrow-Next) {
+
+        @extend %SlideshowContainer__SliderArrow-Next;
+
+        @include Themer(background, Color-2);
+
+    }
+};

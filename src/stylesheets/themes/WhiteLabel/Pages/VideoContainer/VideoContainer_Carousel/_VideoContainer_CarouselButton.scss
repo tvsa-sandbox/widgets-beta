@@ -1,0 +1,12 @@
+// VideoContainer Carousel Button
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(CarouselButton) {
+
+        @extend %VideoContainer__CarouselButton;
+
+        @include Themer(color, Color-7);
+
+    }
+};

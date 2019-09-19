@@ -1,0 +1,19 @@
+// SlideshowContainer Aside Description
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(AsideDescriptionContainer) {
+
+        @extend %SlideshowContainer__AsideDescriptionContainer;
+
+    }
+
+    @include Element(AsideDescription) {
+
+        @extend %SlideshowContainer__AsideDescription;
+
+        @include Themer (color, Text-Light-Headlines);
+        @include Typer (md);
+
+    }
+};

@@ -1,0 +1,23 @@
+// DataLight List Core
+
+%DataLight {
+    
+    &__ListContainer {
+
+        width: 100%;
+        
+        @include Spacer(margin,top, md);
+        
+    }
+    
+    &__ListElement {
+
+        display: flex;
+        margin-bottom: 10px;
+		text-decoration: none;
+        border-radius: 5px;
+        
+        @include Spacer(margin,bottom, md);
+
+    }
+}

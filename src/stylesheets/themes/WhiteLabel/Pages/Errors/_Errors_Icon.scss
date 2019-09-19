@@ -1,0 +1,12 @@
+// Errors Container
+
+@include ThemerUI(Errors){
+
+    @include Element(Icon) {
+
+        @extend %Errors__Icon;
+
+        @include Themer(color, White);
+
+    }
+};

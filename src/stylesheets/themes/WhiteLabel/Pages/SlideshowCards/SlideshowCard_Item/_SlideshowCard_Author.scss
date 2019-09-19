@@ -1,0 +1,32 @@
+// SlideshowCard SliderContainer Core
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(AuthorContainer) {
+
+        @extend %SlideshowCard__AuthorContainer;
+
+        @include Morpher(All-Desktop) {
+
+            @include Themer(border-right, Text-Light-Headlines, "1px solid");
+
+        }
+
+    }
+
+    @include Element(Author) {
+
+        @extend %SlideshowCard__Author;
+
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+
+    @include Element(Date) {
+
+        @extend %SlideshowCard__Date;
+
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+}

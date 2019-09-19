@@ -1,0 +1,28 @@
+// EndCard ElementsRelatedItem
+
+%EndCard {
+
+    &__ElementsRelatedItemContainer {
+
+        box-shadow: 0px 9px 12px rgba(0,0,0,0.5);
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        height: 36px;
+        position: relative;
+        width: 100%;
+
+        @include Spacer(margin, all, zero zero sm zero);
+        @include Hover;
+
+        @include Morpher(All-Desktop) {
+
+            flex-direction: column;
+            height: auto;
+
+            @include Spacer(margin, all, zero md);
+            @include Spacer(padding, all, md zero);
+
+        }
+    }
+}

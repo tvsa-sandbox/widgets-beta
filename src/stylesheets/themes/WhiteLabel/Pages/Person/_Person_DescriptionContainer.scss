@@ -1,0 +1,19 @@
+// Person
+
+@include ThemerUI(Person){
+
+    @include Element(DescriptionContainer) {
+
+        @extend %Person__DescriptionContainer;
+
+    }
+
+    @include Element(Description) {
+
+        @extend %Person__Description;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(sm);
+
+    }
+};

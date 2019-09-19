@@ -1,0 +1,39 @@
+// Search Container
+
+%Search {
+
+    &__BoxContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        max-width: 300px;
+
+        @include Spacer(margin, all, xl auto);
+        @include Spacer(padding, all, md);
+
+        @include Morpher(All-Desktop) {
+
+            max-width: 400px;
+
+        }
+    }
+
+    &__Box {
+
+        flex-grow: 1;
+        width: 90%;
+
+    }
+
+    &__Input {
+
+        background: transparent;
+        border: none;
+        height: 35px;
+        width: 100%;
+
+        @include Spacer(padding, left, md);
+
+    }
+}

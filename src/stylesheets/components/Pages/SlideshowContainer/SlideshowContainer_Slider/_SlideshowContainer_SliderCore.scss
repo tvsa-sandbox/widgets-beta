@@ -1,0 +1,25 @@
+// SlideshowContainer SliderContainer Core
+
+%SlideshowContainer {
+
+    &__Slider {
+
+        position: relative;
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(padding, all, sm);
+
+        }
+    }
+
+    &__SliderContainer {
+
+        max-width: 818px;
+        position: relative;
+        width: 100%;
+
+        @include Spacer(margin, top, zero);
+
+    }
+}

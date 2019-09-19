@@ -1,0 +1,11 @@
+// SlideshowContainer Share Bar Tap
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(ShareBarTap) {
+
+        @extend %SlideshowContainer__ShareBarTap;
+
+    }
+
+};

@@ -1,0 +1,11 @@
+// SlideshowContainer Share Bar Link
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(ShareBarLink) {
+
+        @extend %SlideshowContainer__ShareBarLink;
+
+    }
+
+};

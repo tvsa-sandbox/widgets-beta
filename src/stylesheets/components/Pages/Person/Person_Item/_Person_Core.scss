@@ -1,0 +1,15 @@
+// Card Person Core
+
+%Person {
+
+    &__Card {
+
+        position: relative;
+        width: 225px;
+
+        @include Spacer(margin, bottom, xl);
+        @include Spacer(margin, left, md);
+        @include OrcaMarginReset;
+
+    }
+}

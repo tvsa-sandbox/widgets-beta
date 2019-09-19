@@ -1,0 +1,27 @@
+//VideoContainer Item Icon
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(ItemPlayerIconContainer) {
+
+        @extend %VideoContainer__ItemPlayerIconContainer;
+
+    }
+
+    @include Element(ItemPlayerIcon) {
+
+        @extend %VideoContainer__ItemPlayerIcon;
+
+        @include Themer(background, Color-10);
+        @include Themer(border, Color-1, 'solid 2px');
+
+        .Icn_Video {
+
+            &::before {
+
+                @include Spacer(margin, left, sm);
+
+            }
+        }
+    }
+};

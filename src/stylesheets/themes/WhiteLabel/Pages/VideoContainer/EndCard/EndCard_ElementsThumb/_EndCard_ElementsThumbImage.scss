@@ -1,0 +1,17 @@
+// EndCard ElementsThumbImage
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsThumbOverlayImageContainer) {
+
+        @extend %EndCard__ElementsThumbOverlayImageContainer;
+
+    }
+
+    @include Element(ThumbImage) {
+
+        @extend %EndCard__ThumbImage;
+
+    }
+
+};

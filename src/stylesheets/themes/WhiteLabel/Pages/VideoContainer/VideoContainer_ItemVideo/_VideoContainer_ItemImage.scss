@@ -1,0 +1,11 @@
+//VideoContainer Item Image
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(ItemPlayerImageContainer) {
+
+        @extend %VideoContainer__ItemPlayerImageContainer;
+
+    }
+
+};

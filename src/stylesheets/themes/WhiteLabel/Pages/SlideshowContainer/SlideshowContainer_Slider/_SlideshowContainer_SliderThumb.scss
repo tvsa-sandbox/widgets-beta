@@ -1,0 +1,17 @@
+// SlideshowContainer Silder Thumb
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(SliderThumbnails) {
+
+        @extend %SlideshowContainer__SliderThumbnails;
+
+    }
+
+    @include Element(SliderThumbContainer) {
+
+        @extend %SlideshowContainer__SliderThumbContainer;
+
+    }
+
+};

@@ -1,0 +1,29 @@
+// LiveBlog Chat Container
+
+%LiveBlog {
+
+    &__ChatContainer {
+
+        border-radius: 7px;
+        position: relative;
+        width: 100%;
+
+        @include Spacer(margin, bottom, md);
+        @include Spacer(margin, left, xl);
+        @include Spacer(padding, all, xl lg);
+
+        &::before {
+
+            border-left: 20px solid transparent;
+            border-top: 20px solid #E3E3E3;
+            content: "";
+            display: block;
+            height: 0px;
+            left: -15px;
+            position: absolute;
+            top: 0px;
+            width: 0px;
+
+        }
+    }
+}

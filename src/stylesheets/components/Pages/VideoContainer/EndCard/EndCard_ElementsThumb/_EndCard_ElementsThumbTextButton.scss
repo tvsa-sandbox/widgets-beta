@@ -1,0 +1,16 @@
+// EndCard ElementshumbTextButton
+%EndCard {
+
+    &__ElementsThumbTextButton {
+
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+
+        @include Spacer(padding, all, zero sm);
+        @include Hover;
+
+    }
+}

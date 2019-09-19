@@ -1,0 +1,11 @@
+// SlideshowContainer Share Bar Mobile
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(ShareBarMobile) {
+
+        @extend %SlideshowContainer__ShareBarMobile;
+
+    }
+
+};

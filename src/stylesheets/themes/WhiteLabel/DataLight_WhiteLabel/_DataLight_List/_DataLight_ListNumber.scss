@@ -1,0 +1,18 @@
+// DataLight List Number
+
+@include ThemerUI(DataLight) {
+    
+    @include Element(ListNumberContainer) {
+
+        @extend %DataLight__ListNumberContainer;
+
+    }
+    
+    @include Element(ListNumber) {
+        
+        @extend %DataLight__ListNumber;
+        
+        @include Typer(SubTextInfo);
+
+    }
+}

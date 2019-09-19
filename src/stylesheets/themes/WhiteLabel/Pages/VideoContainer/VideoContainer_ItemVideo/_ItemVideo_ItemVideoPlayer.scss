@@ -1,0 +1,16 @@
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(ItemPlayerVideoContainer) {
+
+        @extend %VideoContainer__ItemPlayerVideoContainer;
+
+    }
+
+    @include Element(ItemPlayerVideo) {
+
+        @extend %VideoContainer__ItemPlayerVideo;
+
+    }
+
+};

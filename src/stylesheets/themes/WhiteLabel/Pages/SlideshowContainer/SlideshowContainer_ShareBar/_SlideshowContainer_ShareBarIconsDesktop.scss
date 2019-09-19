@@ -1,0 +1,43 @@
+// SlideshowContainer Share Bar Icons Desktop
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(ShareBarDesktop) {
+
+        @extend %SlideshowContainer__ShareBarDesktop;
+
+				.Icn_Twitter {
+
+						color: #00aced;
+
+						@include Hover;
+						@include Themer(border-left, Color-7, '1px solid');
+
+				}
+
+				.Icn_Facebook {
+
+						color: #3b5998;
+
+						@include Hover;
+
+				}
+
+				.Icn_Instagram {
+
+						color: #F24664;
+
+						@include Hover;
+						@include Themer(border-left, Color-7, '1px solid');
+
+				}
+
+				.Icn_Email {
+
+						color: #ffffff;
+
+						@include Hover;
+
+				}
+    }
+};

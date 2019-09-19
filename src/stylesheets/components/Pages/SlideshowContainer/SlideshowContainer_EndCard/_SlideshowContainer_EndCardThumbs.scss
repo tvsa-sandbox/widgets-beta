@@ -1,0 +1,14 @@
+// SlideshowContainer End Card
+
+%SlideshowContainer {
+
+    &__EndCardThumbsContainer {
+
+        display: flex;
+        justify-content: space-between;
+        min-width: 700px;
+        position: relative;
+        width: 100%;
+
+    }
+}

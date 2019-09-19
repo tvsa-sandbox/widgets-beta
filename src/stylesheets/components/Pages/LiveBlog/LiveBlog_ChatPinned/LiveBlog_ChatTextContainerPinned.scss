@@ -1,0 +1,10 @@
+// LiveBlog Chat Container
+
+%LiveBlog {
+
+    &__ChatTextContainerPinned {
+
+        @include Spacer(margin, all, sm zero);
+
+    }
+}

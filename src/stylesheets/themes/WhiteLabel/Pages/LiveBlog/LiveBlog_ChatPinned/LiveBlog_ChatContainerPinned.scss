@@ -1,0 +1,12 @@
+// LiveBlog Chat Container
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(ChatContainerPinned) {
+
+        @extend %LiveBlog__ChatContainerPinned;
+
+        @include Themer(background, Color-5);
+
+    }
+};

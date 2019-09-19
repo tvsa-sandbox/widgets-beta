@@ -1,0 +1,27 @@
+// SlideshowCard Silder Thumb
+
+%SlideshowCard {
+
+    &__SliderThumbnails {
+
+        align-items: center;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        @include Spacer(margin, all, zero auto);
+
+    }
+
+    &__SliderThumbContainer {
+
+        min-width: 100%;
+        position: relative;
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(padding, all, sm);
+
+        }
+    }
+}

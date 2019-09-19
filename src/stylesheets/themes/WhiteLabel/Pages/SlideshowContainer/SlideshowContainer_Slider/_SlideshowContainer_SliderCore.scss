@@ -1,0 +1,17 @@
+// SlideshowContainer SliderContainer Core
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(SliderContainer) {
+
+        @extend %SlideshowContainer__SliderContainer;
+
+    }
+
+    @include Element(Slider) {
+
+        @extend %SlideshowContainer__Slider;
+
+    }
+
+};

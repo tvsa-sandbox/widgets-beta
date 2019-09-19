@@ -1,0 +1,16 @@
+// Article Title
+
+@include ThemerUI(Article){
+
+    @extend %Article;
+
+    @include Themer(color, Text-Light-Headlines);
+    @include Typer(md);
+
+    p {
+
+        @include Spacer(padding,all, zero base);
+        @include Spacer(margin,all, base zero);
+
+    }
+};

@@ -1,0 +1,19 @@
+// VideoContainer Label
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(LabelContainer) {
+
+        @extend %VideoContainer__LabelContainer;
+
+    }
+
+    @include Element(Label) {
+
+        @extend %VideoContainer__Label;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(md);
+
+    }
+};

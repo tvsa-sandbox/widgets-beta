@@ -1,0 +1,11 @@
+// EndCard ElementsThumb
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsThumbContainer) {
+
+        @extend %EndCard__ElementsThumbContainer;
+
+    }
+
+};

@@ -1,0 +1,11 @@
+// LiveBlog Chat Core
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(ChatPinned) {
+
+        @extend %LiveBlog__ChatPinned;
+
+    }
+
+};

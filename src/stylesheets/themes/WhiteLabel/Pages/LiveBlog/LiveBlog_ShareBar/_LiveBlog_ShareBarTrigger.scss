@@ -1,0 +1,19 @@
+// LiveBlog Share Bar Trigger
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(ShareBarTrigger) {
+
+        @extend %LiveBlog__ShareBarTrigger;
+
+        @include Themer(background, Color-7);
+        @include Themer(color, Text-Dark-Body);
+
+    }
+
+    @include Element(ShareBarTriggerText) {
+
+        @extend %LiveBlog__ShareBarTriggerText;
+
+    }
+};

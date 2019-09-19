@@ -1,0 +1,10 @@
+// DataLight Table
+
+@include ThemerUI(DataLight) {
+
+    @include Element(TableContainer) {
+        
+        @extend %DataLight__TableContainer;
+        
+    }
+};

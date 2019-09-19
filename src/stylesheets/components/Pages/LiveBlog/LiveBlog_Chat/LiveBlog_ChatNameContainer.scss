@@ -1,0 +1,18 @@
+// LiveBlog Chat Container
+
+%LiveBlog {
+
+    &__ChatNameContainer {
+
+        display: inline-flex;
+
+        @include Spacer(margin, right, sm);
+
+    }
+
+    &__ChatName {
+
+        text-transform: uppercase;
+
+    }
+}

@@ -1,0 +1,28 @@
+// Search Container
+
+@include ThemerUI(Search){
+
+    @include Element(BoxContainer) {
+
+        @extend %Search__BoxContainer;
+
+        @include Themer(border, Color-2, "solid 1px");
+
+    }
+
+    @include Element(Box) {
+
+        @extend %Search__Box;
+
+    }
+
+    @include Element(Input) {
+
+        @extend %Search__Input;
+
+        @include Themer(border-left, Color-2, "solid 1px");
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(md);
+
+    }
+};

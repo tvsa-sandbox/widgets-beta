@@ -1,0 +1,11 @@
+// VideoContainer Description
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(CaptionContainer) {
+
+        @extend %VideoContainer__CaptionContainer;
+
+    }
+
+};

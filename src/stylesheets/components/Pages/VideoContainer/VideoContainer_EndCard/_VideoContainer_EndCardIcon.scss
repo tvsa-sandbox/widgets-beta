@@ -1,0 +1,33 @@
+// VideoContainer Label
+
+%VideoContainer {
+
+    &__EndCardIconContainer {
+
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        z-index: 1;
+
+        .Icn_Video {
+
+            &::before {
+
+                @include Spacer(margin, left, sm);
+
+            }
+        }
+    }
+
+    &__EndCardIcon {
+
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+
+        @include Spacer(margin, all, zero auto);
+
+    }
+}
