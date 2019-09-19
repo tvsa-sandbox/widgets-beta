@@ -1,0 +1,76 @@
+// Mosaic Core
+
+.MatchLive {
+    
+    &__Wrapper {
+        
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 85px;
+        position: absolute;
+        max-width: 1440px;
+        align-items: center;
+        top: 10%;
+        overflow: hidden;
+        
+        @include Morpher(All-Desktop) {
+            
+            top: 7%;
+            height: 125px;
+            
+        }
+    }
+    
+    &__WrapperTeams {
+        
+        background: #e6e6e6;
+        border-radius: 7px;
+        box-sizing: border-box;
+        display: inline-flex;
+        height: 72px;
+        margin: 5px auto;
+        max-width: 300px;
+        padding: 1rem;
+        vertical-align: top;
+        width: 80%;
+        
+        animation: pulsar 2s .7s ease-in-out infinite;
+        animation-play-state: running;
+
+        @include Morpher(Tablet) {
+            
+            margin: 5px 1%;
+            width: 23%;
+            
+        }
+        
+        @include Morpher(All-Desktop) {
+            
+            margin: 5px 1%;
+            width: 18%;
+            
+        }
+    }
+}
+
+@keyframes pulsar {
+
+	0% {
+
+		opacity: 0.3;
+
+	}
+
+	50% {
+
+		opacity: 1;
+
+	}
+
+	100% {
+
+		opacity: 0.3;
+
+	}
+}
