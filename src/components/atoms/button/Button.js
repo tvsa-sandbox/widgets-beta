@@ -1,8 +1,8 @@
 import React from "react";
 
 const Button = () => (
-    <div className="Button__Container">
-        <button className="Button" type="button">
+    <div className="Button">
+        <button className="Button__Container" type="button">
             <span className="Button__Text">
                 Click Me!
             </span>

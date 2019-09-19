@@ -1,16 +1,16 @@
 import React from "react";
 
 const ButtonIcon = () => (
-    <div className="Button__Container">
-        <button className="Button" type="button">
-            <div className="Button__IconContainer" >
-                <div className="Button__Icon Icn_Icono WhiteLabel">
+    <div className="ButtonIcon">
+        <button className="ButtonIcon__Container" type="button">
+            <div className="ButtonIcon__IconContainer" >
+                <div className="ButtonIcon__Icon Icn_Video WhiteLabel">
                     <span className="Display">
                         Icono
                     </span>
                 </div>
             </div>
-            <span className="Button__Text">
+            <span className="ButtonIcon__Text">
                 Click Me!
             </span>
         </button>
