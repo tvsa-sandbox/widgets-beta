@@ -27,6 +27,7 @@
             width: 100%;
 
             @include Spacer(margin,right, sm);
+            @include Spacer(padding,all, xs);
             @include Hover(.3s, .5);
 
         }
