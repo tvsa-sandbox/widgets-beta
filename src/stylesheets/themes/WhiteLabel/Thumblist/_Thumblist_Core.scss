@@ -1,0 +1,9 @@
+// Thumblist Core
+
+@include ThemerUI(Thumblist){
+
+    @extend %Thumblist;
+    
+    @include Themer(background, Color-1);
+
+};

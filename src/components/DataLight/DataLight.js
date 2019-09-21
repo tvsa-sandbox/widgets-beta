@@ -41,6 +41,8 @@ const DataLight = () => (
                 <DataLightListE />
                 <DataLightList />
                 <DataLightListB />
+                <DataLightListC />
+                <DataLightListD />
             </div>
         </div>
     </section>

@@ -4,8 +4,11 @@
     
     &__ListContainer {
 
+        max-height: 496px;
+        overflow-x: hidden;
+        overflow-y: scroll;
         width: 100%;
-        
+
         @include Spacer(margin,top, md);
         
     }
