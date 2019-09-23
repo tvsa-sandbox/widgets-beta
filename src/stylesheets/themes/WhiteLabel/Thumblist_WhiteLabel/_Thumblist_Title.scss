@@ -6,10 +6,10 @@
         
         @extend %Thumblist__TitleContainer;
         
-        @include Themer(background,Color-4,after) {
+        @include Themer(background,Color-8,after) {
             
             display: block;
-            height: 1px;
+            height: 4px;
             position: absolute;
             top: 10%;
             width: 100%;

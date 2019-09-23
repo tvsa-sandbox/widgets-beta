@@ -4,6 +4,8 @@
 
     @extend %Thumblist;
     
+    border-radius: 5px;
+    
     @include Themer(background, Color-1);
 
 };

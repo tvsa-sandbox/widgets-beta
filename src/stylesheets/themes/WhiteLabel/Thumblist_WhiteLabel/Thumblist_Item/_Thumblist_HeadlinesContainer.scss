@@ -12,10 +12,10 @@
         
         @extend %Thumblist__Headlines;
         
-        @include Themer(background,Color-4,before) {
+        @include Themer(background,Color-8,before) {
             
             display: block;
-            height: 1px;
+            height: 4px;
             position: absolute;
             top: 0px;
             width: 100%;
