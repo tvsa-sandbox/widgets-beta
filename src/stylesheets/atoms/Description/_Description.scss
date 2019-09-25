@@ -1,0 +1,30 @@
+// Description | WhiteLabel MarkUp v2.0.0 Atomic Ghost | 1/5/19
+.Description {
+
+    margin:5px;
+
+    color: #FFF;
+    // margin-top: 15px;
+    // margin-bottom: 15px;
+    // margin-left: 6px;
+    // margin-right: 6px;
+
+    // margin: 15px 6px;
+
+    @include Spacer(margin, all, lg sm);
+
+    &__Container {
+
+        color: #FFF;
+        // margin-top: 15px;
+        // margin-bottom: 15px;
+        // margin-left: 6px;
+        // margin-right: 6px;
+
+        // margin: 15px 6px;
+
+        @include Spacer(margin, all, lg sm);
+
+    }
+
+}
