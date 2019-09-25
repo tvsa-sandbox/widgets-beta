@@ -1,0 +1,22 @@
+// GalleryMosaic MiniCounter
+
+@include ThemerUI(GalleryMosaic) {
+    
+    @include Element(MiniCounterContainer) {
+		
+		@extend %GalleryMosaic__MiniCounterContainer;
+        
+        @include Themer(background,Color-2,before) {
+            
+        }
+	}
+    
+    @include Element(MiniCounter) {
+        
+        @extend %GalleryMosaic__MiniCounter;
+        
+        @include Themer(color, White);
+        @include Typer(lg-b);
+
+    }
+}

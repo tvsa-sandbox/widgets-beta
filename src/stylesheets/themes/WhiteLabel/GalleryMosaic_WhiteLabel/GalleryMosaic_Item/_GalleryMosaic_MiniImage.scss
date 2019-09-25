@@ -1,0 +1,22 @@
+// GalleryMosaic MiniImage
+
+@include ThemerUI(GalleryMosaic){
+    
+    @include Element(ListMiniContainer) {
+		
+		@extend %GalleryMosaic__ListMiniContainer;
+		
+	}
+    
+    @include Element(Mini) {
+        
+        @extend %GalleryMosaic__Mini;
+        
+    }
+    
+    @include Element(MiniImageContainer) {
+        
+        @extend %GalleryMosaic__MiniImageContainer;
+        
+    }
+}

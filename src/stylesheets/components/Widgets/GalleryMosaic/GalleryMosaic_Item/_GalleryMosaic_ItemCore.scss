@@ -6,8 +6,8 @@
 		
 		display: block;
 		
-		@include Spacer(margin, top, zero);
 		@include Hover;
+		@include Spacer(margin, top, zero);
 		
 		@include Morpher(All-Desktop) {
 			

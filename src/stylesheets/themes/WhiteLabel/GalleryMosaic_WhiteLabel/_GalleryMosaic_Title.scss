@@ -1,0 +1,19 @@
+// GalleryMosaic Title
+
+@include ThemerUI(GalleryMosaic){
+    
+    @include Element(TitleContainer) {
+        
+        @extend %GalleryMosaic__TitleContainer;
+
+    }
+    
+    @include Element(Title) {
+        
+        @extend %GalleryMosaic__Title;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(lg-b);
+        
+    }
+};

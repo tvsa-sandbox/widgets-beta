@@ -1,0 +1,37 @@
+// GalleryMosaic MiniImage
+
+%GalleryMosaic {
+	
+	&__MiniCounterContainer {
+		
+		cursor: pointer;
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		width: 46%;
+	    align-items: flex-end;
+	    height: 86px;
+		
+		@include Spacer(padding, all, zero auto);
+		@include Hover;
+		
+		&:before {
+			
+			display: block;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			
+			@include Spacer(margin, all, zero auto);
+			
+		}
+	}
+	
+	&__MiniCounter {
+		
+		z-index: 3;
+		
+		@include Spacer(padding, right, sm);
+
+	}
+}

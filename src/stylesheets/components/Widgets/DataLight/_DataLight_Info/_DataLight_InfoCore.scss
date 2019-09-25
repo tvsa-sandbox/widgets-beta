@@ -17,13 +17,7 @@
         
         display: flex;
         height: 30px;
-        width: 55%;
-        margin-right: 0px;
-        
-        @include Morpher(All-Desktop) {
-            
-            margin-right: 6px;
-            
-        }
+        width: 42%;
+
     }
 }
