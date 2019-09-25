@@ -24,13 +24,6 @@ const IndexPage = () => (
                 <Thumblist />
             </section>
         </section>
-        <section className="PageContent__Container WhiteLabel">
-            <h1>Page</h1>
-            <SuperCard />
-            <section className="PageContent__Aside WhiteLabel">
-                <GalleryMosaic />
-            </section>
-        </section>
     </Layout>
 );
 
