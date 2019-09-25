@@ -1,0 +1,16 @@
+// VideoContainer Label
+
+%VideoContainer {
+
+    &__LabelContainer {
+
+        @include Spacer(margin, bottom, base);
+
+    }
+
+    &__Label {
+
+        display: block;
+
+    }
+}

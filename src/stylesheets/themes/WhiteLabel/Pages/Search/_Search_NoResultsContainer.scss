@@ -1,0 +1,19 @@
+// Search Container
+
+@include ThemerUI(Search){
+
+    @include Element(NoResultsContainer) {
+
+        @extend %Search__NoResultsContainer;
+
+    }
+
+    @include Element(NoResults) {
+
+        @extend %Search__NoResults;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(sm);
+
+    }
+};

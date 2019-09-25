@@ -1,0 +1,11 @@
+// LiveBlog Share Bar Link
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(ShareBarLink) {
+
+        @extend %LiveBlog__ShareBarLink;
+
+    }
+
+};

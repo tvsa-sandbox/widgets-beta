@@ -1,0 +1,16 @@
+// VideoContainer Date
+
+%VideoContainer {
+
+    &__DateContainer {
+
+        @include Spacer(margin, bottom, base);
+
+    }
+
+    &__Date {
+
+        display: block;
+
+    }
+}

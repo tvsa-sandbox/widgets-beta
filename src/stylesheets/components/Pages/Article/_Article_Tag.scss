@@ -1,0 +1,20 @@
+// Article Tag
+
+%Article {
+
+    &__TagContainer {
+
+        @include Spacer(margin,all, base zero);
+        @include Spacer(padding,all, zero base);
+
+    }
+
+    &__Tag {
+
+        display: inline-flex;
+        width: auto;
+
+        @include Spacer(padding, all, base);
+        
+    }
+}

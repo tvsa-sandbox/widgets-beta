@@ -1,0 +1,13 @@
+// Article Trigger
+
+@include ThemerUI(Article){
+
+    @include Element(ShareBarTrigger) {
+
+        @extend %Article__ShareBarTrigger;
+
+        @include Themer(background, Color-1);
+        @include Themer(color, Text-Dark);
+
+    }
+};

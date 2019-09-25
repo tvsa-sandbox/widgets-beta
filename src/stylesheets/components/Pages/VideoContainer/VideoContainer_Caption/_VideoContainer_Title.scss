@@ -1,0 +1,16 @@
+// VideoContainer Title
+
+%VideoContainer {
+
+    &__TitleContainer {
+
+        @include Spacer(margin, bottom, base);
+
+    }
+
+    &__Title {
+
+        display: block;
+
+    }
+}

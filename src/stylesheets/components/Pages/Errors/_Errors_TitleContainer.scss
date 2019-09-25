@@ -1,0 +1,21 @@
+// Errors Container
+
+%Errors {
+
+    &__TitleContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        @include Spacer(margin, all, base zero);
+
+    }
+
+    &__Title {
+
+        display: block;
+
+    }
+}

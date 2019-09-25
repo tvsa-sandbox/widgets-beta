@@ -1,0 +1,127 @@
+// Article Title
+
+%Article {
+
+    &__Paragraph {
+
+        @include Spacer(margin, bottom, base);
+
+    		&-Bold {
+
+            font-weight: bold;
+
+            @include Spacer(margin, bottom, base);
+
+    		}
+
+    		&-Italic {
+
+            font-style: italic;
+
+            @include Spacer(margin, bottom, base);
+
+    		}
+
+    		&-Cursive {
+
+    			  font-style: oblique;
+
+            @include Spacer(margin, bottom, base);
+        		@include Typer(BodyText);
+
+    		}
+
+    		&-Underline {
+
+    			  text-decoration: underline;
+
+        		@include Spacer(margin, bottom, base);
+
+    		}
+
+    		&-Stroke {
+
+    			  text-decoration: line-through;
+
+            @include Spacer(margin, bottom, base);
+
+    		}
+
+    		&-Link {
+
+    			  text-decoration: none;
+
+            @include Spacer(margin, bottom, base);
+
+    		}
+
+    		&-List {
+
+    			  list-style: none;
+
+        		@include Spacer(margin, bottom, base);
+
+    		}
+
+    		&-ListElement {
+
+    			  list-style: none;
+
+        		@include Spacer(margin, bottom, base);
+
+    		}
+    }
+
+  	&__Text {
+
+  		  display: block;
+
+    		&-Bold {
+
+    			  font-weight: bold;
+
+    		}
+
+    		&-Italic {
+
+    			  font-style: italic;
+
+    		}
+
+    		&-Cursive {
+
+    			  font-style: oblique;
+
+    		}
+
+    		&-Underline {
+
+    			  text-decoration: underline;
+
+    		}
+
+    		&-Stroke {
+
+    			  text-decoration: line-through;
+
+    		}
+
+    		&-Link {
+
+    			  text-decoration: none;
+
+    		}
+
+    		&-List {
+
+    			  list-style: none;
+
+    		}
+
+    		&-ListElement {
+
+    			  list-style: none;
+
+    		}
+	  }
+}

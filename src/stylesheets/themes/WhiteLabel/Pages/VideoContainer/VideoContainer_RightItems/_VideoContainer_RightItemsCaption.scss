@@ -1,0 +1,11 @@
+// VideoContainer Right Items Caption
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(RightItemCaption) {
+
+        @extend %VideoContainer__RightItemCaption;
+
+    }
+
+};

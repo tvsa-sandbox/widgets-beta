@@ -1,0 +1,17 @@
+
+%VideoContainer {
+
+    &__ItemPlayerVideoContainer {
+
+        @include Spekter(16_9);
+
+    }
+
+    &__ItemPlayerVideo {
+
+        position: absolute;
+        top: 0%;
+        width: 100%;
+
+    }
+}

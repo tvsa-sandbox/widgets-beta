@@ -1,0 +1,28 @@
+// VideoContainer
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(Comments) {
+
+        @extend %VideoContainer__Comments;
+
+    }
+
+    @include Element(CommentsTitle) {
+
+        @extend %VideoContainer__CommentsTitle;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(sm);
+
+    }
+
+    @include Element(Disclaimer) {
+
+        @extend %VideoContainer__Disclaimer;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(sm);
+
+    }
+};

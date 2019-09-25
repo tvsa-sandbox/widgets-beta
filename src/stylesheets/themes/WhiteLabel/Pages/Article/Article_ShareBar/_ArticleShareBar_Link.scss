@@ -1,0 +1,35 @@
+// ShareBar Link
+
+@include ThemerUI(Article){
+
+    @include Element(ShareBarLink) {
+
+        @extend %Article__ShareBarLink;
+
+        @include Themer(background,Color-1,after) {
+
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            right: 0px;
+            top: 4px;
+            width: 1px;
+
+            &:hover {
+
+                opacity: 0px;
+
+            }
+        }
+
+        &:last-child {
+
+            @include Themer(background,Color-1,after) {
+
+                display: none;
+
+            }
+        }
+    }
+};

@@ -1,0 +1,17 @@
+// SlideshowContainer Aside Container
+
+%SlideshowContainer {
+
+    &__AsideContainer {
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        position: relative;
+        width: 100%;
+
+        @include Spacer(padding, all, xl base);
+
+    }
+}

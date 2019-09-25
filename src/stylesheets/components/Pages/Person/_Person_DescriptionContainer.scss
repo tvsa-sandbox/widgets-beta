@@ -1,0 +1,16 @@
+// Person
+
+%Person {
+
+    &__DescriptionContainer {
+
+        @include Spacer(margin, all, sm zero);
+
+    }
+
+    &__Description {
+
+        display: block;
+
+    }
+}

@@ -1,0 +1,11 @@
+// LiveBlog Chat Core
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(Chat) {
+
+        @extend %LiveBlog__Chat;
+
+    }
+
+};

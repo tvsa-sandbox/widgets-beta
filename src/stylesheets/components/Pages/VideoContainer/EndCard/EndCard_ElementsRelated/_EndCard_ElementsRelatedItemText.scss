@@ -1,0 +1,27 @@
+// EndCard ElementsRelatedItemText
+
+%EndCard {
+
+    &__ElementsRelatedItemTextContainer {
+
+        box-shadow: none;
+        overflow: hidden;
+        width: 100%;
+
+        @include Spacer(padding, all, sm md);
+
+        @include Morpher(All-Desktop) {
+
+            box-shadow: 0px 9px 12px rgba(0,0,0,0.5);
+            height: 85px;
+            overflow: hidden;
+
+        }
+    }
+
+    &__ElementsRelatedItemText {
+
+        @include Spacer(margin, all, zero);
+      
+    }
+}

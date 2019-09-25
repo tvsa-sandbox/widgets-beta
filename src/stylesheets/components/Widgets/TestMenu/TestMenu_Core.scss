@@ -1,31 +1,8 @@
 .TestMenu{
 
-    width: 100%;
-    display: block;
-    top: 0px;
-    position: relative;
-    height: 40px;
-
-    &::before {
-
-        content: 'Widget 1 - Hamburger';
-        position: absolute;
-        top: 0px;
-        text-transform: uppercase;
-        width: 278px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-
-        @include Spacer(margin, all, base zero zero base);
-        @include Themer(color, White);
-        @include Typer(sm-b, $FSMAX:$f-l, $FSMIN:$f-l);
-
-    }
-
 	&__Container{
 		position: fixed;
-		top: 60px;
+		top: 20px;
 	    left: 30px;
 		display: flex;
 		align-items: center;
@@ -37,12 +14,6 @@
 		transition: transform 250ms ease;
 		cursor: pointer;
 		z-index: 22;
-
-        @include Morpher(All-Desktop) {
-
-    		top: 40px;
-
-        }
 
 		@include Themer(background, White);
 

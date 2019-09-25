@@ -1,0 +1,15 @@
+// SlideshowCard Silder Track
+
+%SlideshowCard {
+
+    &__DescriptionContainer {
+
+        width: 100%;
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(padding,all, base);
+
+        }
+    }
+}

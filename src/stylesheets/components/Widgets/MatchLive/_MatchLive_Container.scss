@@ -1,0 +1,14 @@
+// Mosaic Core
+
+.MatchLive {
+    
+    &__Container {
+        
+        max-width: 1440px;
+        text-align: center;
+        height: 186px;
+
+        @include Spacer(margin,all, zero auto);
+
+    }
+}

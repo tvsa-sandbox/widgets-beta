@@ -1,0 +1,10 @@
+// VideoContainer  VideoContainer EndCardThumbnail
+
+%VideoContainer {
+
+    &__EndCardImageContainer {
+
+		    @include Spekter(16_9);
+
+    }
+}

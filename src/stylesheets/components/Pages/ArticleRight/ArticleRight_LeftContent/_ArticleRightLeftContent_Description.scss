@@ -1,0 +1,30 @@
+// ArticleRight Left Content __Description
+
+%ArticleRight {
+
+    &__DescriptionContainer {
+
+        text-align: center;
+
+        @include Spacer(margin, all, base zero);
+
+        @include Morpher(Desktop) {
+
+            @include Spacer(margin, all, base);
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            @include Spacer(margin, all, base);
+
+        }
+
+    }
+
+    &__Description {
+
+        display: block;
+
+    }
+}

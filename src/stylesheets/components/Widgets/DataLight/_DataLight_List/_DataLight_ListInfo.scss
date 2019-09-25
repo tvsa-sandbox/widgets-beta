@@ -1,0 +1,30 @@
+// DataLight List Info
+
+%DataLight {
+    
+    &__ListInfoContainer {
+
+        align-items: center;
+        display: none;
+        justify-content: center;
+        width: 9%;
+        
+        @include Spacer(margin,all, md);
+
+        
+        &-First {
+            
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            
+            @include Spacer(margin,all, xs);
+
+        }
+    }
+    
+    &__ListInfo {
+
+    }
+}

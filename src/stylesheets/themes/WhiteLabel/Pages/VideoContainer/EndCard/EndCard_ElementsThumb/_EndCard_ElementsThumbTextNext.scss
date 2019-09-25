@@ -1,0 +1,12 @@
+// EndCard ElementsThumbTextNext
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsThumbTextNext) {
+
+        @extend %EndCard__ElementsThumbTextNext;
+
+        @include Typer(sm);
+
+    }
+};

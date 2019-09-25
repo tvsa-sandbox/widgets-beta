@@ -1,0 +1,29 @@
+// SlideshowCard Silder Item Image
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(SliderItem) {
+
+        @extend %SlideshowCard__SliderItem;
+
+    }
+
+    @include Element(SliderItemThumbnail) {
+
+        @extend %SlideshowCard__SliderItemThumbnail;
+
+    }
+
+    @include Element(SliderItemImageContainer) {
+
+        @extend %SlideshowCard__SliderItemImageContainer;
+
+    }
+
+
+    @include Element(SliderItemImage) {
+
+        @extend %SlideshowCard__SliderItemImage;
+
+    }
+}

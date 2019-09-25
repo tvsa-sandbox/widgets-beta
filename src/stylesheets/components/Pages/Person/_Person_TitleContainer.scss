@@ -1,0 +1,16 @@
+// Person
+
+%Person {
+
+    &__TitleContainer {
+
+        @include Spacer(margin, bottom, sm);
+
+    }
+
+    &__Title {
+
+        display: block;
+
+    }
+}

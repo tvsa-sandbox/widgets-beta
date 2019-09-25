@@ -1,0 +1,11 @@
+// VideoContainer  VideoContainer EndCardThumbnail
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(EndCardImageContainer) {
+
+        @extend %VideoContainer__EndCardImageContainer;
+
+    }
+
+};

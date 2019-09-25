@@ -1,0 +1,13 @@
+// Article Title
+
+%Article {
+
+    @include WidgetBottomSpace;
+
+    p {
+
+        @include Spacer(padding,all, zero base);
+        @include Spacer(margin,all, base zero);
+
+    }
+}

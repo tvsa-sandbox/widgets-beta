@@ -1,0 +1,12 @@
+// Card Person Name
+
+%Person {
+
+    &__Name {
+
+        text-align: center;
+
+        @include Spacer(padding, all, md);
+
+    }
+}

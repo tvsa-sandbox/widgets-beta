@@ -1,0 +1,13 @@
+// VideoContainer Description
+
+%VideoContainer {
+
+    &__CaptionContainer {
+
+        align-items: flex-start;
+        display: flex;
+
+        @include Spacer(padding, all, md zero);
+
+    }
+}

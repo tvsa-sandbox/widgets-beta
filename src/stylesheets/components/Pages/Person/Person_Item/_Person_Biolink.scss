@@ -1,0 +1,16 @@
+// Card Person BioLink
+
+%Person {
+
+    &__BioLink {
+
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @include Hover;
+
+    }
+}

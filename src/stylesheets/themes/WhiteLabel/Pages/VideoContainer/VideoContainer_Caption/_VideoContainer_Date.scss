@@ -1,0 +1,19 @@
+// VideoContainer Date
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(DateContainer) {
+
+        @extend %VideoContainer__DateContainer;
+
+    }
+
+    @include Element(Date) {
+
+        @extend %VideoContainer__Date;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(sm);
+
+    }
+};

@@ -1,0 +1,19 @@
+// Search Container
+
+%Search {
+
+    &__NoResultsContainer {
+
+        max-width: 500px;
+        text-align: center;
+
+        @include Spacer(margin, all, zero auto);
+
+    }
+
+    &__NoResults {
+
+        display: block;
+
+    }
+}

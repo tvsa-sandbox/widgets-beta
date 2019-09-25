@@ -1,0 +1,35 @@
+// GalleryMosaic Headline
+
+%GalleryMosaic {
+	
+	&__HeadlinesText {
+		
+		text-align: left;
+		
+		@include Spacer(padding, all, zero xl);
+		
+	}
+	
+	&__HeadlinesImageContainer {
+		
+		height: 56px;
+		max-width: 100px;
+		width: 100%;
+		
+		@include Spacer(margin, all, zero zero zero xl);
+		@include Spekter(16_9);
+		@include Spacer(padding, top, zero);
+		
+		&:before {
+			
+			font-size: 60px!important; //Unique case for the font-size of the placeholder
+			
+		}
+	}
+	
+	&__Box {
+		
+		position: relative;
+		
+	}
+}

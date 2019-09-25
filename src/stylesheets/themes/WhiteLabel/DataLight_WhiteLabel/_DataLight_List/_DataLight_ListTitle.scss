@@ -1,0 +1,18 @@
+// DataLight List Title
+
+@include ThemerUI(DataLight) {
+    
+    @include Element(ListTitleContainer) {
+
+        @extend %DataLight__ListTitleContainer;
+
+    }
+    
+    @include Element(ListTitle) {
+        
+        @extend %DataLight__ListTitle;
+        
+        @include Typer(SubTextCredit);
+
+    }
+}

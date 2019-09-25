@@ -1,0 +1,24 @@
+// EndCard ElementsThumb
+
+%EndCard {
+
+    &__ElementsThumbContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        max-width: 414px;
+        position: absolute;
+        top: 9px;
+        width: 100%;
+
+        @include Spacer(padding, all, zero xl);
+
+        @include Morpher(All-Desktop) {
+
+            max-width: 620px;
+            top: 6%;
+
+        }
+    }
+}

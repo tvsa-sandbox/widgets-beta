@@ -1,0 +1,16 @@
+// LiveBlog
+
+%LiveBlog {
+
+    &__DateContainer {
+
+        @include Spacer(padding, all, sm zero);
+
+    }
+
+    &__Date {
+
+        text-transform: uppercase;
+
+    }
+}

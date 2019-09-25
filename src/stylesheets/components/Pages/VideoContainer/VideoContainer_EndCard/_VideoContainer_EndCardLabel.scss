@@ -1,0 +1,21 @@
+// VideoContainer Label
+
+%VideoContainer {
+
+    &__EndCardLabelContainer {
+
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    &__EndCardLabel {
+
+        @include Spacer(padding, all, md xl);
+
+    }
+}

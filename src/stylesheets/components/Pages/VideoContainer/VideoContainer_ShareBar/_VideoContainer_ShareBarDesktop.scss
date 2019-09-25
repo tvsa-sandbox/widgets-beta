@@ -1,0 +1,26 @@
+// VideoContainer Share Bar Desktop
+
+%VideoContainer {
+
+    &__ShareBarDesktop {
+
+        bottom: 65px;
+        display: none;
+        position: absolute;
+
+        @include Morpher(Tablet) {
+
+            bottom: 65px;
+            display: none;
+            position: absolute;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: flex;
+            position: inherit;
+
+        }
+    }
+}

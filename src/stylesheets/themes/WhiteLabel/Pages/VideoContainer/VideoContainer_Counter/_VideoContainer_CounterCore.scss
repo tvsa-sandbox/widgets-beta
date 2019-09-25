@@ -1,0 +1,12 @@
+// VideoContainer Counter Link Tilte
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(Counter) {
+
+        @extend %VideoContainer__Counter;
+
+        @include Themer(border-bottom, White,"solid 1px");
+
+    }
+};

@@ -1,0 +1,25 @@
+// LiveBlog
+
+%LiveBlog {
+
+    &__HeadContainer {
+
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        @include Spacer(padding, top, xxl);
+
+        &::after {
+
+            background: white;
+            bottom: 0px;
+            content: "";
+            display: block;
+            height: 1px;
+            position: absolute;
+            width: 100%;
+
+        }
+    }
+}

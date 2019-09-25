@@ -1,0 +1,13 @@
+// VideoContainer Description
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(Description) {
+
+        @extend %VideoContainer__Description;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(sm);
+
+    }
+};

@@ -1,0 +1,23 @@
+// SlideshowCard
+
+%SlideshowCard {
+
+    &__TitleContainer {
+
+        position: relative;
+
+        @include Spacer(padding,all, xl);
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(padding, all, xl zero);
+
+        }
+    }
+
+    &__Title {
+
+        display: block;
+
+    }
+}

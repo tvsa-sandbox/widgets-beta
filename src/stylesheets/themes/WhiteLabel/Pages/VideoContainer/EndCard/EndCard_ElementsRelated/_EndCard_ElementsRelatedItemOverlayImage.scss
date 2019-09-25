@@ -1,0 +1,17 @@
+// EndCard ElementsRelatedItemImage
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsRelatedItemOverlayImageContainer) {
+
+        @extend %EndCard__ElementsRelatedItemOverlayImageContainer;
+
+    }
+
+    @include Element(ElementsRelatedItemOverlayImage) {
+
+        @extend %EndCard__ElementsRelatedItemOverlayImage;
+
+    }
+
+};

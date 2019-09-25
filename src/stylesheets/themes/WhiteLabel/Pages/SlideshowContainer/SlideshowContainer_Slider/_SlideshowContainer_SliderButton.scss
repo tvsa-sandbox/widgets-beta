@@ -1,0 +1,12 @@
+// SlideshowContainer Slider Button
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(SliderButton) {
+
+        @extend %SlideshowContainer__SliderButton;
+
+        @include Themer(color, Color-7);
+
+    }
+};

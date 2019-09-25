@@ -1,0 +1,11 @@
+// VideoContainer Share Bar Link
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(ShareBarLink) {
+
+        @extend %VideoContainer__ShareBarLink;
+
+    }
+
+};

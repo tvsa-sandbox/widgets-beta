@@ -1,0 +1,11 @@
+// VideoContainer Share Bar Desktop
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(ShareBarDesktop) {
+
+        @extend %VideoContainer__ShareBarDesktop;
+
+    }
+
+};

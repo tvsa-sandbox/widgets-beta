@@ -1,0 +1,10 @@
+// SlideshowCard
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(Body) {
+
+        @extend %SlideshowCard__Body;
+
+    }
+}

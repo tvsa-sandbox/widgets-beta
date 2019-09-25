@@ -1,0 +1,9 @@
+// Search
+
+@include ThemerUI(Search){
+
+    @extend %Search;
+
+    @include Themer(border-bottom, White, "solid 1px");
+
+};

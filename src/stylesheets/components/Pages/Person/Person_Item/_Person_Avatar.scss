@@ -1,0 +1,12 @@
+// Card Person Avatar
+
+%Person {
+
+    &__Avatar {
+
+        position: relative;
+
+        @include Spekter(3_4);
+
+    }
+}

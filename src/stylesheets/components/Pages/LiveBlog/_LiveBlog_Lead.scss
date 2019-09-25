@@ -1,0 +1,14 @@
+// LiveBlog
+
+%LiveBlog {
+
+    &__LeadContainer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include Spacer(padding, all, xl zero);
+
+    }
+}

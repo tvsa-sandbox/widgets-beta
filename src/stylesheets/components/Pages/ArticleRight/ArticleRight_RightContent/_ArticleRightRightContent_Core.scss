@@ -1,0 +1,27 @@
+// ArticleRight Right Content Core
+
+%ArticleRight {
+
+    &__RightContent {
+
+        @include Spacer(padding, all, lg);
+
+        @include Morpher(Desktop) {
+
+            right: 0px;
+            width: 70%;
+
+            @include Spacer(padding, all, zero);
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            right: 0px;
+            width: 70%;
+
+            @include Spacer(margin, all, zero);
+
+        }
+    }
+}

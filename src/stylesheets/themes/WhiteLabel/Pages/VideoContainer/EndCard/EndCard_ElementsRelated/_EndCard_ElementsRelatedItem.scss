@@ -1,0 +1,11 @@
+// EndCard ElementsRelatedItem
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsRelatedItemContainer) {
+
+        @extend %EndCard__ElementsRelatedItemContainer;
+
+    }
+
+};

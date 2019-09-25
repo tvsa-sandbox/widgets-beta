@@ -1,0 +1,16 @@
+// Thumblist Box Container
+
+@include ThemerUI(Thumblist){
+    
+    @include Element(BoxContainer) {
+        
+        @extend %Thumblist__BoxContainer;
+        
+    }
+    
+    @include Element(Box) {
+        
+        @extend %Thumblist__Box;
+        
+    }
+};

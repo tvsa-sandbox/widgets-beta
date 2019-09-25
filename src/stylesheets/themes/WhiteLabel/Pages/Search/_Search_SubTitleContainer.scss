@@ -1,0 +1,19 @@
+// Search Container
+
+@include ThemerUI(Search){
+
+    @include Element(SubTitleContainer) {
+
+        @extend %Search__SubTitleContainer;
+
+    }
+
+    @include Element(SubTitle) {
+
+        @extend %Search__SubTitle;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(lg);
+
+    }
+};

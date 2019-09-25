@@ -1,0 +1,19 @@
+//VideoContainer Carousel Item Duration
+
+%VideoContainer {
+
+    &__RightItemTimeContainer {
+
+        position: absolute;
+        text-align: center;
+        top: 60%;
+        width: 100%;
+
+    }
+
+    &__RightItemTime {
+
+        display: block;
+
+    }
+}

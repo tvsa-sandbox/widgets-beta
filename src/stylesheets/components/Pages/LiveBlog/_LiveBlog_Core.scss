@@ -1,0 +1,13 @@
+// LiveBlog
+
+%LiveBlog {
+
+    max-width: 100%;
+
+    @include Morpher(All-Desktop) {
+
+        margin-left: 8%;
+        max-width: 90%;
+
+    }
+}

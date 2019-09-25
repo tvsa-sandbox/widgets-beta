@@ -1,0 +1,21 @@
+// EndCard ElementsRelatedItemText
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsRelatedItemTextContainer) {
+
+        @extend %EndCard__ElementsRelatedItemTextContainer;
+
+        @include Themer(background, Color-1);
+
+    }
+
+    @include Element(ElementsRelatedItemText) {
+
+        @extend %EndCard__ElementsRelatedItemText;
+
+        @include Themer(color, White);
+        @include Typer(sm);
+
+    }
+};

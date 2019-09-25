@@ -1,0 +1,19 @@
+// DataLight Text
+
+@include ThemerUI(DataLight) {
+
+    @include Element(TextContainer) {
+
+        @extend %DataLight__TextContainer;
+        
+    }
+
+    @include Element(Text) {
+    
+        @extend %DataLight__Text;
+        
+        @include Typer(ItemTitle);
+        @include Themer(Color, White);
+    
+    }
+};

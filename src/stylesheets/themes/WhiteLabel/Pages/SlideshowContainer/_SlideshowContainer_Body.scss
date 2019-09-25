@@ -1,0 +1,11 @@
+// SlideshowContainer
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(Body) {
+
+        @extend %SlideshowContainer__Body;
+
+    }
+
+};

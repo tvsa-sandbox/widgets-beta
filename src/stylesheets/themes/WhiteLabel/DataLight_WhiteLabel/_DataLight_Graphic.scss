@@ -1,0 +1,10 @@
+// DataLight Graphic
+
+@include ThemerUI(DataLight) {
+
+    @include Element(GraphicContainer) {
+        
+        @extend %DataLight__GraphicContainer;
+        
+    }
+};

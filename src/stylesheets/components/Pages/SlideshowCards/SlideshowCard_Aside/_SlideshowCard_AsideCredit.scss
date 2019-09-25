@@ -1,0 +1,23 @@
+// SlideshowCard Aside Info
+
+%SlideshowCard {
+
+    &__AsideCreditContainer {
+
+        width: 70%;
+
+        @include Spacer(margin,all, xl zero);
+
+        @include Morpher(All-Desktop) {
+
+            width: 100%;
+
+        }
+    }
+
+    &__AsideCredit {
+
+        text-transform: uppercase;
+        
+    }
+}

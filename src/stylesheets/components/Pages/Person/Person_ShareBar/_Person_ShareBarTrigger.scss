@@ -1,0 +1,42 @@
+// Card Person Share Bar Trigger
+
+%Person {
+
+    &__ShareBarTrigger {
+
+        align-items: center;
+        cursor: pointer;
+        display: block;
+        display: none !important;
+        height: 55px;
+        justify-content: center;
+        order: 2;
+        position: relative;
+        width: 55px;
+
+        @include Morpher(Tablet) {
+
+            display: none !important;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: none !important;
+
+        }
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+
+    &__ShareBarTriggerText {
+
+        position: relative;
+        top: 20%;
+
+    }
+}

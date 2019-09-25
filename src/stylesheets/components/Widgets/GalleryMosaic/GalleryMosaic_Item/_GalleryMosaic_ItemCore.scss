@@ -1,0 +1,18 @@
+// GalleryMosaic Item Core
+
+%GalleryMosaic {
+	
+	&__Item {
+		
+		display: block;
+		
+		@include Hover;
+		@include Spacer(margin, top, zero);
+		
+		@include Morpher(All-Desktop) {
+			
+			display: flex;
+			
+		}
+	}
+}

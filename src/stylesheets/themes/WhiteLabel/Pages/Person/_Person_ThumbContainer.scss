@@ -1,0 +1,11 @@
+// Person
+
+@include ThemerUI(Person){
+
+    @include Element(ThumbContainer) {
+
+        @extend %Person__ThumbContainer;
+
+    }
+
+};

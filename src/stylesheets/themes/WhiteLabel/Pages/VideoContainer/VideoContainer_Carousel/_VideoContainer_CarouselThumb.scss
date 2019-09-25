@@ -1,0 +1,17 @@
+// VideoContainer Carousel Thumb
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(CarouselThumbContainer) {
+
+        @extend %VideoContainer__CarouselThumbContainer;
+
+    }
+
+    @include Element(CarouselThumbnails) {
+
+        @extend %VideoContainer__CarouselThumbnails;
+
+    }
+
+};
