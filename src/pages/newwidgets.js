@@ -6,7 +6,6 @@ import Layout from "../layouts";
 import DataLight from "../components/DataLight/DataLight";
 import SuperCard from "../components/SuperCard/SuperCard";
 import Thumblist from "../components/Thumblist/Thumblist";
-import GalleryMosaic from "../components/GalleryMosaic/GalleryMosaic";
 
 const IndexPage = () => (
     <Layout>
