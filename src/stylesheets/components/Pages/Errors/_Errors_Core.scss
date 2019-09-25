@@ -1,0 +1,9 @@
+// Errors
+
+%Errors {
+
+    @include Spacer(padding, all, xxl zero);
+    @include Layout(Wrapper);
+    @include WidgetBottomSpace;
+
+}

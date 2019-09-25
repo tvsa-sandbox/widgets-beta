@@ -1,0 +1,16 @@
+// SlideshowContainer End Card
+
+%SlideshowContainer {
+
+    &__EndCardTitleContainer {
+
+        @include Spacer(margin, all, md zero);
+
+    }
+
+    &__EndCardTitle {
+
+        display: block;
+
+    }
+}

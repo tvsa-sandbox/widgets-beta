@@ -1,0 +1,19 @@
+// VideoContainer Carousel Button
+
+%VideoContainer {
+
+    &__CarouselButton {
+
+        background: none;
+        border: 0px;
+        cursor: pointer;
+        height: 60px;
+        width: 40px;
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+}

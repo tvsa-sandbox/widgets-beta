@@ -1,0 +1,11 @@
+// SlideshowContainer Share
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(ShareCopy) {
+
+        @extend %SlideshowContainer__ShareCopy;
+
+    }
+
+};

@@ -1,0 +1,58 @@
+// ArticleRight Left Content Share
+
+@include ThemerUI(ArticleRight){
+
+    @include Element(ShareContainer) {
+
+        @extend %ArticleRight__ShareContainer;
+
+    }
+
+    @include Element(Share) {
+
+        @extend %ArticleRight__Share;
+
+    }
+
+    @include Element(ShareIcon) {
+
+        @extend %ArticleRight__ShareIcon;
+
+        @include Themer(background, Color-1);
+
+        &.Icn_Facebook {
+
+            color: #3b5998;
+
+            &:hover {
+
+                opacity: .7;
+
+            }
+
+        }
+
+        &.Icn_Twitter {
+
+            color: #00aced;
+
+            &:hover {
+
+                opacity: .7;
+
+            }
+
+        }
+
+        &.Icn_Instagram {
+
+            color: #f24664;
+
+            &:hover {
+
+                opacity: .7;
+
+            }
+        }
+    }
+};

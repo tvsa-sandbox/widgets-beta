@@ -1,0 +1,24 @@
+// DataLight Title
+
+%DataLight {
+
+    &__TitleContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: left;
+        position: relative;
+        width: 100%;
+        
+        @include Spacer(padding,all, md zero sm md);
+
+    }
+
+    &__Title {
+
+        text-transform: uppercase;
+        
+        @include Spacer(margin,all, md md xl);
+
+    }
+}

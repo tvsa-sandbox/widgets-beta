@@ -1,0 +1,16 @@
+// SlideshowCard Share Bar Core
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(ShareBar) {
+
+        @extend %SlideshowCard__ShareBar;
+
+    }
+
+    @include Element(ShareContainer) {
+
+        @extend %SlideshowCard__ShareBarContainer;
+        
+    }
+}

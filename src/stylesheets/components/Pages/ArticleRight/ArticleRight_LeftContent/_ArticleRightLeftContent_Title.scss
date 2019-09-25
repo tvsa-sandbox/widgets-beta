@@ -1,0 +1,28 @@
+// ArticleRight Left Content Title
+
+%ArticleRight {
+
+    &__TitleContainer {
+
+        @include Spacer(margin, all, sm zero 4xl zero);
+
+        @include Morpher(Desktop) {
+
+            @include Spacer(margin, all, xs base 4xl base);
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            @include Spacer(margin, all, xs base 4xl base);
+
+        }
+    }
+
+    &__Title {
+
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+}

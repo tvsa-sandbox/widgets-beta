@@ -1,0 +1,17 @@
+// EndCard ElementsRelatedButton
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsRelatedButtonContainer) {
+
+        @extend %EndCard__ElementsRelatedButtonContainer;
+
+    }
+
+    @include Element(ElementsRelatedButton) {
+
+        @extend %EndCard__ElementsRelatedButton;
+
+    }
+
+};

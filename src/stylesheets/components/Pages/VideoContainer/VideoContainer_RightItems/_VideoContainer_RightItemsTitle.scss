@@ -1,0 +1,19 @@
+// VideoContainer Right Items Title
+
+%VideoContainer {
+
+    &__RightItemTitleContainer {
+
+        display: block;
+        width: 100%;
+
+        @include Spacer(padding, all, zero sm);
+
+    }
+
+    &__RightItemTitle {
+
+        text-align: left;
+
+    }
+}

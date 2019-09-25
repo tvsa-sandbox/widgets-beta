@@ -1,0 +1,19 @@
+// SlideshowContainer Slider Button
+
+%SlideshowContainer {
+
+    &__SliderButton {
+
+        background: transparent;
+        border: 0px;
+        cursor: pointer;
+
+        @include Hover($HTDuration:.3s, $HOpacity: .5);
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+}

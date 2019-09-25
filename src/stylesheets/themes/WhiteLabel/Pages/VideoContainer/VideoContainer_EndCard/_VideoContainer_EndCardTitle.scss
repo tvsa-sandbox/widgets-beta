@@ -1,0 +1,25 @@
+// VideoContainer Title
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(EndCardTitleContainer) {
+
+        @extend %VideoContainer__EndCardTitleContainer;
+
+    }
+
+    @include Element(EndCardTitle) {
+
+        @extend %VideoContainer__EndCardTitle;
+
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitleDesktop);
+
+        &::before {
+
+            @include Themer(color, Text-Light-Body);
+            @include Typer(SubTextCredit);
+
+        }
+    }
+};

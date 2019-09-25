@@ -1,0 +1,14 @@
+// EndCard ElementshumbTextButton
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsThumbTextButton) {
+
+        @extend %EndCard__ElementsThumbTextButton;
+
+        @include Themer(background, Color-1);
+        @include Themer(color, White);
+        @include Typer(md);
+
+    }
+};

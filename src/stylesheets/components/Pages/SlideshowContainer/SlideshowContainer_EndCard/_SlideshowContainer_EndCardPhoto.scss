@@ -1,0 +1,24 @@
+// SlideshowContainer End Card
+
+%SlideshowContainer {
+
+    &__EndCardItemPhotoContainer {
+
+        align-items: center;
+        display: flex;
+        height: 30px;
+        justify-content: center;
+        position: absolute;
+        right: 30px;
+        top: 0px;
+        width: 60px;
+        z-index: 2;
+
+    }
+
+    &__EndCardItemPhoto {
+
+        display: block;
+
+    }
+}

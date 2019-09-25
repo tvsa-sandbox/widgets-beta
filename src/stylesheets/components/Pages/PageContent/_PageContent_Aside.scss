@@ -1,0 +1,20 @@
+// Content Aside
+
+%PageContent {
+
+    &__Aside {
+
+        grid-area: Aside;
+        min-width: 320px;
+
+        @include Morpher(All-Desktop) {
+
+            justify-self: center;
+            max-width: 355px;
+
+            @include Spacer(margin, all, zero auto);
+            @include Spacer(padding, all, sm);
+
+        }
+    }
+}

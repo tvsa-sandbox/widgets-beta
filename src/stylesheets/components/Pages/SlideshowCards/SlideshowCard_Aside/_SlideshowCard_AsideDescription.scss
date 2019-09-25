@@ -1,0 +1,23 @@
+// SlideshowCard Aside Description
+
+%SlideshowCard {
+
+    &__AsideDescriptionContainer {
+
+        width: 70%;
+
+        @include Spacer(margin, bottom, xl);
+
+        @include Morpher(All-Desktop) {
+
+            width: 100%;
+
+        }
+    }
+
+    &__AsideDescription {
+
+        display: block;
+
+    }
+}

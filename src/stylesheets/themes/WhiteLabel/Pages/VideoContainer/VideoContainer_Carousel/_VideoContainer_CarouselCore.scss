@@ -1,0 +1,17 @@
+// VideoContainer Carousel Core
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(CarouselContainer) {
+
+        @extend %VideoContainer__CarouselContainer;
+
+    }
+
+    @include Element(Carousel) {
+
+        @extend %VideoContainer__Carousel;
+
+    }
+
+};

@@ -1,0 +1,10 @@
+// Content Body
+
+@include ThemerUI(PageContent) {
+
+    @include Element(Body) {
+
+        @extend %PageContent__Body;
+
+    }
+}

@@ -1,0 +1,23 @@
+// SlideshowContainer Aside Info
+
+%SlideshowContainer {
+
+    &__AsideInfoContainer {
+
+        width: 70%;
+
+        @include Spacer(margin, all, sm zero xl zero);
+
+        @include Morpher(All-Desktop) {
+
+            width: 100%;
+
+        }
+    }
+
+    &__AsideInfo {
+
+        display: block;
+
+    }
+}

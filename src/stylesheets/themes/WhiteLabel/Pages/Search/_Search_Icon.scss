@@ -1,0 +1,12 @@
+// Search Container
+
+@include ThemerUI(Search){
+
+    @include Element(Icon) {
+
+        @extend %Search__Icon;
+
+        @include Themer(color, White);
+
+    }
+};

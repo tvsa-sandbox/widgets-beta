@@ -8,9 +8,3 @@
     @include Themer(box-shadow, Gradient-1A, "2px 4px 19px -8px");
 
 };
-
-@include ThemerUI(RelatedContentContainer) {
-
-    @extend %RelatedContentContainer;
-
-};

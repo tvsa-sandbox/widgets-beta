@@ -1,0 +1,11 @@
+// LiveBlog
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(Aside) {
+
+        @extend %LiveBlog__Aside;
+
+    }
+
+};

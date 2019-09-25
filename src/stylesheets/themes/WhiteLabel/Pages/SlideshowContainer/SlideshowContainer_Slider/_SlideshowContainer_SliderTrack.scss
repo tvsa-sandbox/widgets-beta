@@ -1,0 +1,11 @@
+// SlideshowContainer Silder Track
+
+@include ThemerUI(SlideshowContainer){
+
+    @include Element(SliderTrack) {
+
+        @extend %SlideshowContainer__SliderTrack;
+
+    }
+
+};

@@ -1,0 +1,16 @@
+// SlideshowCard Share Bar Desktop
+
+%SlideshowCard {
+
+    &__ShareBarDesktop {
+
+        align-items: center;
+        display: flex;
+        height: 45px;
+        justify-content: center;
+        width: auto;
+
+        @include Spacer(padding, all, zero base);
+
+    }
+}

@@ -1,0 +1,15 @@
+// LiveBlog Share Bar Desktop
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(ShareBarDesktop) {
+
+        @extend %LiveBlog__ShareBarDesktop;
+
+        @include Morpher(All-Desktop) {
+
+            @include Themer(border, Color-7, "solid 1px");
+
+        }
+    }
+};

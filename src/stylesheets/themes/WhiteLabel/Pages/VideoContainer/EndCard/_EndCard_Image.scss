@@ -1,0 +1,17 @@
+// EndCard Image
+
+@include ThemerUI(EndCard){
+
+    @include Element(ImageContainer) {
+
+        @extend %EndCard__ImageContainer;
+
+    }
+
+    @include Element(Image) {
+
+        @extend %EndCard__Image;
+
+    }
+
+};

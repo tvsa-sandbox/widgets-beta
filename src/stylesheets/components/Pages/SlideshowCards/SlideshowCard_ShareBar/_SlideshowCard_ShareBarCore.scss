@@ -1,0 +1,38 @@
+// SlideshowCard Share Bar Core
+
+%SlideshowCard {
+
+    &__ShareBar {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        width: auto;
+
+        @include Spacer(margin, all, zero auto);
+
+    }
+
+    &__ShareContainer {
+
+        @include Morpher(Smartphone) {
+
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            width: auto;
+
+        }
+
+        @include Morpher(Tablet) {
+
+            position: absolute;
+            right: 18px;
+            top: 18px;
+            width: auto;
+
+        }
+    }
+}

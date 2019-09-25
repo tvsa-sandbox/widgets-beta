@@ -1,0 +1,10 @@
+// Person
+
+%Person {
+
+    &__CaptionContainer {
+
+        @include Spacer(padding, all, sm);
+
+    }
+}

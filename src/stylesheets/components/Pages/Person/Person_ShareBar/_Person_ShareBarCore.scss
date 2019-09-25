@@ -1,0 +1,15 @@
+// Card Person Share Bar Core
+
+%Person {
+
+    &__ShareBar {
+
+        bottom: 0px;
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+
+    }
+}

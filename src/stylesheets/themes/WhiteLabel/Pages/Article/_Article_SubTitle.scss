@@ -1,0 +1,19 @@
+// Article SubTitle
+
+@include ThemerUI(Article){
+
+    @include Element(SubTitleContainer) {
+
+        @extend %Article__SubTitleContainer;
+
+    }
+
+    @include Element(SubTitle) {
+
+        @extend %Article__SubTitle;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(lg);
+
+    }
+};

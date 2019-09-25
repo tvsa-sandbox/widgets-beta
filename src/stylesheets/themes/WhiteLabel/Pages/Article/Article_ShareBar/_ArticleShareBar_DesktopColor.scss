@@ -1,0 +1,57 @@
+// Article Desktop
+
+@include ThemerUI(Article){
+
+    @include Element(ShareBarDesktop) {
+
+        @extend %Article__ShareBarDesktop;
+
+        .Icn_Twitter {
+
+            color: #00aced;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(0,172,237, 0.5);
+
+            }
+        }
+
+        .Icn_Facebook {
+
+            color: #3b5998;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(59,89,152, 0.5);
+
+            }
+        }
+
+        .Icn_Instagram {
+
+            color: #F24664;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(59,89,152, 0.5);
+
+            }
+        }
+
+        .Icn_Email {
+
+            color: #ffffff;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(255,255,255, 0.5);
+
+            }
+        }
+    }
+};

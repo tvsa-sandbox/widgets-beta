@@ -1,0 +1,23 @@
+// SlideshowCard Aside Title
+
+%SlideshowCard {
+
+    &__AsideTitleContainer {
+
+        width: 70%;
+
+        @include Spacer(margin, bottom, xl);
+
+        @include Morpher(All-Desktop) {
+
+            width: 100%;
+
+        }
+    }
+
+    &__AsideTitle {
+
+        display: block;
+
+    }
+}

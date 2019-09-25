@@ -1,0 +1,19 @@
+// Article Credits
+
+@include ThemerUI(Article){
+
+    @include Element(CreditsContainer) {
+
+        @extend %Article__CreditsContainer;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(xs);
+
+    }
+
+    @include Element(Author) {
+
+        @extend %Article__Author;
+
+    }
+};

@@ -1,0 +1,19 @@
+// LiveBlog
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(DateContainer) {
+
+        @extend %LiveBlog__DateContainer;
+
+    }
+
+    @include Element(Date) {
+
+        @extend %LiveBlog__Date;
+
+        @include Typer(sm);
+        @include Themer(color, Text-Light-Headlines);
+
+    }
+};

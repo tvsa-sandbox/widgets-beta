@@ -1,0 +1,26 @@
+// VideoContainer Counter Link Tilte
+
+%VideoContainer {
+
+    &__CounterLink {
+
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+
+        @include Spacer(padding, all, md zero);
+
+        @include Morpher(All-Desktop) {
+
+            text-align: left;
+
+        }
+    }
+
+    &__CounterLinkTitle {
+
+        display: block;
+
+    }
+}

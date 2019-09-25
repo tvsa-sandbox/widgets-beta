@@ -4,22 +4,6 @@
 
     @extend %SuperCard;
 
-    &::before {
-
-        content: 'Widget 3 - High impact card';
-        width: 100%;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: transparent;
-
-        @include Spacer(margin, all, lg);
-        @include Themer(color, White);
-        @include Typer(sm-b, $FSMAX:$f-l, $FSMIN:$f-l);
-
-    }
-
     @include Themer(background, Black);
 
     @include Morpher(All-Desktop){

@@ -1,0 +1,22 @@
+// VideoContainer Carousel Core
+
+%VideoContainer {
+
+    &__CarouselContainer {
+
+        width: 100%;
+
+    }
+
+    &__Carousel {
+
+        position: relative;
+        overflow: hidden;
+
+        @include Morpher(Laptop) {
+
+            height: 170px;
+
+        }
+    }
+}

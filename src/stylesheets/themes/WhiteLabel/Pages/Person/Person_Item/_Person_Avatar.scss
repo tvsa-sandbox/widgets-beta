@@ -1,0 +1,11 @@
+// Card Person Avatar
+
+@include ThemerUI(Person){
+
+    @include Element(Avatar) {
+
+        @extend %Person__Avatar;
+
+    }
+
+};

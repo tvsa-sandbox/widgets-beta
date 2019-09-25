@@ -1,0 +1,11 @@
+// Article ShareBar Container
+
+@include ThemerUI(Article){
+
+    @include Element(ShareBar) {
+
+        @extend %Article__ShareBar;
+
+    }
+
+};

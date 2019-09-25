@@ -1,0 +1,11 @@
+// Article Aside
+
+@include ThemerUI(Article){
+
+    @include Element(Aside) {
+
+        @extend %Article__Aside;
+
+    }
+
+};

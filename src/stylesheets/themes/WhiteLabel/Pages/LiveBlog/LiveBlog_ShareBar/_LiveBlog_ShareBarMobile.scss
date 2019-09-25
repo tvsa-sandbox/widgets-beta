@@ -1,0 +1,11 @@
+// LiveBlog Share Bar Mobile
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(ShareBarMobile) {
+
+        @extend %LiveBlog__ShareBarMobile;
+
+    }
+
+};

@@ -1,0 +1,32 @@
+// SlideshowCard Silder Item Image
+
+%SlideshowCard {
+
+    &__SliderItem {
+
+        min-width: 100%;
+
+    }
+
+    &__SliderItemThumbnail {
+
+        display: block;
+        position: relative;
+
+    }
+
+    &__SliderItemImageContainer {
+
+        @include Spekter(4_3);
+
+    }
+
+
+    &__SliderItemImage {
+
+        height: 100%;
+        object-fit: scale-down;
+        object-position: 50% 50%;
+
+    }
+}

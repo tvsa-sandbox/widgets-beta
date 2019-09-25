@@ -1,0 +1,30 @@
+// LiveBlog Chat Container
+
+%LiveBlog {
+
+    &__ChatNameContainerPinned {
+
+        align-items: flex-end;
+        display: inline-flex;
+
+        @include Spacer(margin, right, sm);
+
+        &::before {
+
+            content: "\f001";
+            display: inline-block;
+            font-family: "Iconography";
+            font-size: 47px;
+            height: 47px;
+            line-height: 1;
+            width: 47px;
+
+        }
+    }
+
+    &__ChatNamePinned {
+
+        text-transform: uppercase;
+
+    }
+}

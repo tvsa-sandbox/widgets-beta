@@ -1,0 +1,30 @@
+// ArticleRight Core
+
+%ArticleRight {
+
+    width: 100%;
+
+    &__Container {
+
+        height: 100%;
+        max-width: 1440px;
+        width: 100%;
+        z-index: 1;
+
+        @include Spacer(margin, all, zero auto);
+
+        @include Morpher(Desktop) {
+
+            display: flex;
+            max-width: 1440px;
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            display: flex;
+            max-width: 1440px;
+
+        }
+    }
+}

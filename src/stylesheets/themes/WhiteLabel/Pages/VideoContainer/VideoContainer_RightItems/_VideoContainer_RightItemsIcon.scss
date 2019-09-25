@@ -1,0 +1,29 @@
+//VideoContainer Carousel Item Icon
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(RightItemIconContainer) {
+
+        @extend %VideoContainer__RightItemIconContainer;
+
+    }
+
+    @include Element(RightItemIcon) {
+
+        @extend %VideoContainer__RightItemIcon;
+
+        @include Themer(background, Color-9);
+        @include Themer(border, Color-1, 'solid 2px');
+
+        .Icn_Video {
+
+            &::before {
+
+                font-size: 30px;
+
+                @include Spacer(margin, left, sm);
+
+            }
+        }
+    }
+};

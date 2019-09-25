@@ -1,0 +1,12 @@
+// SlideshowCard Aside Container
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(AsideContainer) {
+
+        @extend %SlideshowCard__AsideContainer;
+
+        @include Themer (background, Color-9);
+
+    }
+}

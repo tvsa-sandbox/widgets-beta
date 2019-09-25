@@ -1,0 +1,11 @@
+// VideoContainer Carousel Track
+
+@include ThemerUI(VideoContainer){
+
+    @include Element(CarouselTrack) {
+
+        @extend %VideoContainer__CarouselTrack;
+
+    }
+
+};

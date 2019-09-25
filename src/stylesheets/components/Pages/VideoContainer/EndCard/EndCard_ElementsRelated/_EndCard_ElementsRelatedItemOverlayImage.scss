@@ -1,0 +1,33 @@
+// EndCard ElementsRelatedItemImage
+
+%EndCard {
+
+    &__ElementsRelatedItemOverlayImageContainer {
+
+        @include Spekter(16_9);
+
+        &::before {
+
+            font-size: 40px!important; //Unique case for the placeholder font
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            &::before {
+
+                font-size: 60px!important; //Unique case for the placeholder font
+
+            }
+
+        }
+
+    }
+
+    &__ElementsRelatedItemOverlayImage {
+
+        height: 100%;
+        width: 100%;
+
+    }
+}

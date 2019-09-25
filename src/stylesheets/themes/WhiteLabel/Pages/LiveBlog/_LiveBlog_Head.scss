@@ -1,0 +1,11 @@
+// LiveBlog
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(HeadContainer) {
+
+        @extend %LiveBlog__HeadContainer;
+
+    }
+
+};

@@ -1,0 +1,22 @@
+// DataLight Text
+
+%DataLight {
+
+    &__TextContainer {
+
+        display: flex;
+        justify-content: center;
+        left: 0%;
+        position: relative;
+        width: 100%;
+        
+        @include Spacer(margin,all, lg zero);
+
+    }
+
+    &__Text {
+        
+        text-transform: uppercase;
+
+    }
+}

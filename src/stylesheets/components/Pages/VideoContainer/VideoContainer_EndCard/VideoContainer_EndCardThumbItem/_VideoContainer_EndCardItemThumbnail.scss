@@ -1,0 +1,53 @@
+// VideoContainer ndCardItemThumbnail
+
+%VideoContainer {
+
+    &__EndCardItemThumbnail {
+
+        min-width: 165px;
+        position: relative;
+
+    }
+
+    &__EndCardItemImageContainer {
+
+        @include Spekter(16_9);
+
+    }
+
+    &__EndCardItemIconContainer {
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    &__EndCardItemIcon {
+
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+
+        @include Spacer(margin, all, zero auto);
+
+    }
+
+    &__EndCardItemTimeContainer {
+
+        position: absolute;
+        text-align: center;
+        top: 70%;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    &__EndCardItemTime {
+
+        display: block;
+
+    }
+}

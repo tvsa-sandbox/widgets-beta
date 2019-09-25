@@ -1,0 +1,23 @@
+// EndCard ElementsThumbOverlay
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsThumbOverlayContainer) {
+
+        @extend %EndCard__ElementsThumbOverlayContainer;
+
+    }
+
+    @include Element(ElementsThumbOverlay) {
+
+        @extend %EndCard__ElementsThumbOverlay;
+
+    }
+
+    @include Element(ElementsThumbOverlayButton) {
+
+        @extend %EndCard__ElementsThumbOverlayButton;
+
+    }
+
+};

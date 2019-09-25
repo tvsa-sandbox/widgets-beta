@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "gatsby-link";
+// import Link from "gatsby-link";
 import { withPrefix } from "gatsby-link";
 
 const GridGalleryItemFull = (props) => { 
@@ -8,7 +8,7 @@ const GridGalleryItemFull = (props) => {
         toggleModal,
     } = props;
     return (
-    <Link className="GridGallery__ItemFull WhiteLabel Modal" id="Modal">
+    <section className="GridGallery__ItemFull WhiteLabel Modal" id="Modal">
         <div className="GridGallery__ItemFullThumbnail WhiteLabel">
             <div className="GridGallery__ItemCloseContainer WhiteLabel">
                 <button className="GridGallery__ItemClose WhiteLabel" onClick={() => toggleModal()}>
@@ -72,7 +72,7 @@ const GridGalleryItemFull = (props) => {
                 </picture>
             </div>
         </div>
-    </Link>
+    </section>
 );
 };
 

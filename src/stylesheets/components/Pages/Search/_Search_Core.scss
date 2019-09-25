@@ -1,0 +1,9 @@
+// Search
+
+%Search {
+
+    @include Spacer(padding, all, xl zero);
+    @include Layout(Wrapper);
+    @include WidgetBottomSpace;
+
+}

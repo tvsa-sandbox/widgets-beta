@@ -1,0 +1,14 @@
+// Content Lead
+
+%PageContent {
+
+    .Lead {
+
+        grid-area: Lead;
+        max-width: 823;
+        width: 100%;
+
+        @include Spacer(margin, all, zero auto);
+
+    }
+}

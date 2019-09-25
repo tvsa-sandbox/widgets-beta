@@ -1,0 +1,11 @@
+// Card Person Share Bar Desktop
+
+@include ThemerUI(Person){
+
+    @include Element(ShareBarDesktop) {
+
+        @extend %Person__ShareBarDesktop;
+
+    }
+
+};

@@ -1,0 +1,10 @@
+// SlideshowCard Share Bar Desktop
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(ShareBarDesktop) {
+
+        @extend %SlideshowCard__ShareBarDesktop;
+
+    }
+}

@@ -1,0 +1,18 @@
+// LiveBlog Chat Container
+
+@include ThemerUI(LiveBlog){
+
+    @include Element(ChatNameContainer) {
+
+        @extend %LiveBlog__ChatNameContainer;
+
+    }
+
+    @include Element(ChatName) {
+
+        @extend %LiveBlog__ChatName;
+
+        @include Typer(xs);
+
+    }
+};

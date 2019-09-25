@@ -1,0 +1,16 @@
+// SlideshowCard Aside Container
+
+%SlideshowCard {
+
+    &__AsideContainer {
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: relative;
+        width: 100%;
+
+        @include Spacer(padding, all, xl base);
+
+    }
+}

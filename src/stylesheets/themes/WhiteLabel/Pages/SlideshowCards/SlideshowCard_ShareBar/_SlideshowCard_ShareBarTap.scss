@@ -1,0 +1,10 @@
+// SlideshowCard Share Bar Tap
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(ShareBarTap) {
+
+        @extend %SlideshowCard__ShareBarTap;
+
+    }
+}

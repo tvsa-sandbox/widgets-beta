@@ -1,0 +1,30 @@
+// Card Person Share Bar Trigger
+
+@include ThemerUI(Person){
+
+    @include Element(ShareBarTrigger) {
+
+        @extend %Person__ShareBarTrigger;
+
+        @include Themer(background, Color-7);
+        @include Themer(color, Text-Dark-Body);
+
+        @include Themer(color, Black, after) {
+
+            content: "Comparte";
+            position: absolute;
+            text-transform: uppercase;
+            top: 110%;
+            width: 90px;
+
+            @include Typer(sm);
+
+        }
+    }
+
+    @include Element(ShareBarTriggerText) {
+
+        @extend %Person__ShareBarTriggerText;
+
+    }
+};

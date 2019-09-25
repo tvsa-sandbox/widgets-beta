@@ -1,0 +1,12 @@
+// Card Person Share Bar Core
+
+@include ThemerUI(Person){
+
+    @include Element(ShareBar) {
+
+        @extend %Person__ShareBar;
+
+        @include Themer(background, Color-2);
+
+    }
+};

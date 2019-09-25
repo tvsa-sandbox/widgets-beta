@@ -1,0 +1,18 @@
+// EndCard ElementsThumbTextTitle
+
+@include ThemerUI(EndCard){
+
+    @include Element(ElementsThumbTextTitleContainer) {
+
+        @extend %EndCard__ElementsThumbTextTitleContainer;
+
+    }
+
+    @include Element(ElementsThumbTextTitle) {
+
+        @extend %EndCard__ElementsThumbTextTitle;
+
+        @include Typer(md-b);
+
+    }
+};

@@ -1,0 +1,18 @@
+// VideoContainer
+
+%VideoContainer {
+
+    &__Aside {
+
+        grid-area: Aside;
+        min-width: 320px;
+
+        @include Morpher(All-Desktop) {
+
+            min-width: 419px;
+
+            @include Spacer(padding, all, sm);
+
+        }
+    }
+}
