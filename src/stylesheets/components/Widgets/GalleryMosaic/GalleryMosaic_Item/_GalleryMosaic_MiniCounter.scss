@@ -10,10 +10,23 @@
 		position: absolute;
 		width: 46%;
 	    align-items: flex-end;
-	    height: 86px;
+	    height: 80px;
 		
 		@include Spacer(padding, all, zero auto);
 		@include Hover;
+		
+		@include Morpher(Tablet) {
+			
+			width: 28%;
+			height: 119px;
+			
+		}
+		
+		@include Morpher(All-Desktop) {
+			
+			height: 86px;
+			
+		}
 		
 		&:before {
 			
