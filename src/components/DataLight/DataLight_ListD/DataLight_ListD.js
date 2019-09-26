@@ -1,4 +1,5 @@
 import React from "react";
+import { withPrefix } from "gatsby";
 
 const DataLight_ListD = () => (    
             <div className="DataLight__ListElement WhiteLabel">
@@ -9,8 +10,8 @@ const DataLight_ListD = () => (
                 </div>
                 <div className="DataLight__ListImageContainer WhiteLabel">
                     <picture>
-                        <source media="(min-width: 0px)" srcSet="./static/aspect-ratio-images/1x1-220x220.jpg" />
-                        <img className="DataLight__ListImage WhiteLabel" src="./static/aspect-ratio-images/1x1-220x220.jpg" alt="Test" />
+                    <source media="(min-width: 0px)" srcSet={withPrefix("/static/aspect-ratio-images/1x1-220x220.jpg")} />
+                        <img className="DataLight__ListImage WhiteLabel" src={withPrefix("/static/aspect-ratio-images/1x1-220x220.jpg")} alt="Test" />
                     </picture>
                 </div>
                 <div className="DataLight__ListTitleContainer WhiteLabel" ds-title="Divi Soup">
