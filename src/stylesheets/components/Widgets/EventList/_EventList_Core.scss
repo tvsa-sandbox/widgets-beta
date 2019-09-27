@@ -1,6 +1,6 @@
-// GalleryMosaic Core
+// EventList Core
 
-%GalleryMosaic {
+%EventList {
 	
 	max-width: 1180px;
     height: 100%;
@@ -11,5 +11,3 @@
 	@include Spacer(margin, top, xl);
 	
 }
-
-
