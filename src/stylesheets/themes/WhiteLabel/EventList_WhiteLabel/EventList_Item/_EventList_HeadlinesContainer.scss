@@ -1,0 +1,31 @@
+// EventList Headlines Container
+
+@include ThemerUI(EventList){
+    
+    @include Element(HeadlinesContainer) {
+        
+        @extend %EventList__HeadlinesContainer;
+        
+        text-decoration: none;
+        
+        @include Themer(background, Color-1);
+        
+    }
+    
+    @include Element(Headlines) {
+        
+        @extend %EventList__Headlines;
+        
+        @include Themer(background,Color-8,before) {
+            
+            display: block;
+            height: 4px;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+            
+            @include Spacer(margin, all, zero auto);
+            
+        }
+    }
+};

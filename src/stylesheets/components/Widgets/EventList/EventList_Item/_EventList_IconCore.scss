@@ -1,0 +1,14 @@
+// EventList Item Core
+
+%EventList {
+	
+	&__MoreIconContainer {
+		
+		@include Spacer(margin, right, md);
+		
+	}
+	
+	&__MoreIcon {
+		
+	}
+}
