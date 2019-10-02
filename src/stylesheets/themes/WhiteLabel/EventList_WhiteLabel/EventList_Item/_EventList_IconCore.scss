@@ -1,0 +1,18 @@
+// EventList Item Core
+
+@include ThemerUI(EventList){
+
+    @include Element(MoreIconContainer) {
+
+        @extend %EventList__MoreIconContainer;
+
+    }
+    
+    @include Element(MoreIcon) {
+
+        @extend %EventList__MoreIcon;
+        
+        @include Themer(color, White);
+
+    }
+};

@@ -1,0 +1,30 @@
+// EventList Title
+
+%EventList {
+	
+	&__TitleContainer {
+		
+		align-items: center;
+		display: flex;
+		height: 75px;
+		justify-content: center;
+		
+		@include Spacer(margin, all, md auto zero);
+		
+	}
+	
+	&__Title {
+		
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		height: 45px;
+		justify-content: center;
+		position: relative;
+		text-align: center;
+		width: auto;
+		
+		@include Spacer(padding, all, zero lg);
+		
+	}
+}

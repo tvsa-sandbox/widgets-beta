@@ -1,0 +1,18 @@
+// EventList Item Core
+
+%EventList {
+	
+	&__Item {
+		
+		display: block;
+		
+		@include Spacer(margin, top, zero);
+		@include Hover;
+		
+		@include Morpher(All-Desktop) {
+			
+			display: flex;
+			
+		}
+	}
+}
