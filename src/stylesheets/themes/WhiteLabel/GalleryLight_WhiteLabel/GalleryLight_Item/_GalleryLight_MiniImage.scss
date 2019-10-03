@@ -1,0 +1,22 @@
+// GalleryLight MiniImage
+
+@include ThemerUI(GalleryLight){
+    
+    @include Element(ListMiniContainer) {
+		
+		@extend %GalleryLight__ListMiniContainer;
+		
+	}
+    
+    @include Element(Mini) {
+        
+        @extend %GalleryLight__Mini;
+        
+    }
+    
+    @include Element(MiniImageContainer) {
+        
+        @extend %GalleryLight__MiniImageContainer;
+        
+    }
+}

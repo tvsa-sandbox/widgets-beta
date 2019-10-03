@@ -1,0 +1,10 @@
+// GalleryLight Item Core
+
+@include ThemerUI(GalleryLight){
+
+    @include Element(Item) {
+
+        @extend %GalleryLight__Item;
+
+    }
+};

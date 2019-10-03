@@ -1,0 +1,23 @@
+// EventList Title
+
+@include ThemerUI(EventList){
+    
+    @include Element(TitleContainer) {
+        
+        @extend %EventList__TitleContainer;
+        
+        border-radius: 8px;
+        
+        @include Themer(background, Color-1);
+        
+    }
+    
+    @include Element(Title) {
+        
+        @extend %EventList__Title;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(lg-b);
+        
+    }
+};

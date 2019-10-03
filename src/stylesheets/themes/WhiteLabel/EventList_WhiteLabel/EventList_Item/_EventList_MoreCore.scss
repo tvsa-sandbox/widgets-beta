@@ -1,0 +1,23 @@
+// EventList Item Core
+
+@include ThemerUI(EventList){
+
+    @include Element(MoreContainer) {
+
+        @extend %EventList__MoreContainer;
+        
+        border-radius: 5px;
+        
+        @include Themer(background, Color-1);
+
+    }
+    
+    @include Element(More) {
+
+        @extend %EventList__More;
+        
+        @include Themer(color, White);
+        @include Typer(sm);
+
+    }
+};

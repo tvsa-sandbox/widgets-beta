@@ -1,0 +1,16 @@
+// GalleryLight Box Container
+
+@include ThemerUI(GalleryLight){
+    
+    @include Element(BoxContainer) {
+        
+        @extend %GalleryLight__BoxContainer;
+        
+    }
+    
+    @include Element(Box) {
+        
+        @extend %GalleryLight__Box;
+        
+    }
+};

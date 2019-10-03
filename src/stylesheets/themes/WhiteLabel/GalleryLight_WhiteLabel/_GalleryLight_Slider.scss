@@ -1,0 +1,12 @@
+// GalleryLight Slider
+
+@include ThemerUI(GalleryLight){
+    
+    @include Element(SliderContainer) {
+		
+		@extend %GalleryLight__SliderContainer;
+		
+	}
+}
+
+
