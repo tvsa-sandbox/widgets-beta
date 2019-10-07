@@ -1,0 +1,10 @@
+// MiniCard Headline
+
+@include ThemerUI(MiniCard){
+    
+    @include Element(ItemImageContainer) {
+        
+        @extend %MiniCard__ItemImageContainer;
+        
+    }
+};

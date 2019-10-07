@@ -1,0 +1,18 @@
+// MiniCard Item Core
+
+%MiniCard {
+	
+	&__Item {
+		
+		align-items: center;
+		display: block;
+		height: 290px;
+		justify-content: center;
+		text-decoration: none;
+		width: 100%;
+		
+		@include Spacer(margin, bottom, md);
+		@include Hover;
+
+	}
+}

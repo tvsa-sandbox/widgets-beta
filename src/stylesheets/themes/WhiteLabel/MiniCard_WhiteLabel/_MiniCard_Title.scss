@@ -1,0 +1,31 @@
+// MiniCard Title
+
+@include ThemerUI(MiniCard) {
+    
+    @include Element(TitleContainer) {
+        
+        @extend %MiniCard__TitleContainer;
+        
+        @include Themer(background,Color-8,after) {
+            
+            display: block;
+            height: 4px;
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            z-index: 1;
+            
+            @include Spacer(margin, all, zero auto);
+            
+        }
+    }
+    
+    @include Element(Title) {
+        
+        @extend %MiniCard__Title;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(lg-b);
+        
+    }
+};
