@@ -1,0 +1,25 @@
+// MiniCard Headline
+
+%MiniCard {
+	
+	&__ItemImageContainer {
+		
+		display: block;
+		justify-content: center;
+		width: 100%;
+		
+		@include Spekter(16_9);
+		
+		&:before {
+			
+			font-size: 60px!important; //Unique case for the font-size of the placeholder
+			
+		}
+	}
+	
+	&__ItemImage {
+		
+		height: 100%;
+		
+	}
+}

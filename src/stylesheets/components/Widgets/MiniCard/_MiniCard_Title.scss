@@ -1,13 +1,14 @@
-// EventList Title
+// MiniCard Title
 
-%EventList {
+%MiniCard {
 	
 	&__TitleContainer {
 		
 		align-items: center;
 		display: flex;
-		height: auto;
+		height: 50px;
 		justify-content: center;
+		min-width: 180px;
 		
 		@include Spacer(margin, all, md auto zero);
 		
