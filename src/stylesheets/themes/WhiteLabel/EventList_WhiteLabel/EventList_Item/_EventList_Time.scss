@@ -23,7 +23,7 @@
         
         @extend %EventList__Time;
         
-        @include Typer(md);
+        @include Typer(md-b);
         @include Themer(color, Color-2);
         
     }

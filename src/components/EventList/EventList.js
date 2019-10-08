@@ -5,7 +5,7 @@ const EventList = () => (
     <section className="EventList WhiteLabel">
         <div className="EventList__TitleContainer WhiteLabel">
             <h2 className="EventList__Title WhiteLabel">
-                Las Recientes
+                Las Más Recientes
             </h2>
         </div>
         <div className="EventList__BoxContainer WhiteLabel">
