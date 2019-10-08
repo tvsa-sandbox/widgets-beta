@@ -39,6 +39,18 @@ const IndexPage = () => (
                 <MiniCard />
             </section>
         </section>
+        <section className="PageColumn WhiteLabel">
+            <h1>Page</h1>
+            <section className="PageContent__Aside WhiteLabel">
+                <EventList />
+            </section>
+            <section className="PageContent__Aside WhiteLabel">
+                <MiniCard />
+            </section>
+            <section className="PageContent__Aside WhiteLabel">
+                <Thumblist />
+            </section>
+        </section>
     </Layout>
 );
 
