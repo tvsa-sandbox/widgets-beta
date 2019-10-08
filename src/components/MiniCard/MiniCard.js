@@ -13,9 +13,11 @@ const MiniCard = () => (
                         <img className="MiniCard__ItemImage WhiteLabel" src="./static/aspect-ratio-images/16x9-Graphic1-209x114.jpg" alt="Test" />
                     </picture>
                 </div>
-                <div className="MiniCard__ItemTitleContainer WhiteLabel">
-                    <div className="MiniCard__ItemTitle WhiteLabel">
-                        Italia lanza playera verde por segunda vez en su historia
+                <div className="MiniCard__ItemCaption WhiteLabel">
+                    <div className="MiniCard__ItemTitleContainer WhiteLabel">
+                        <div className="MiniCard__ItemTitle WhiteLabel">
+                            Italia lanza playera verde por segunda vez en su historia
+                        </div>
                     </div>
                 </div>
             </Link>
@@ -28,9 +30,11 @@ const MiniCard = () => (
                         <img className="MiniCard__ItemImage WhiteLabel" src="./static/aspect-ratio-images/16x9-Graphic1-209x114.jpg" alt="Test" />
                     </picture>
                 </div>
-                <div className="MiniCard__ItemTitleContainer WhiteLabel">
-                    <div className="MiniCard__ItemTitle WhiteLabel">
-                        Carlos Vela: "Es mi carrera y no estoy para darle gusto a nadie"
+                <div className="MiniCard__ItemCaption WhiteLabel">
+                    <div className="MiniCard__ItemTitleContainer WhiteLabel">
+                        <div className="MiniCard__ItemTitle WhiteLabel">
+                            Carlos Vela: "Es mi carrera y no estoy para darle gusto a nadie"
+                        </div>
                     </div>
                 </div>
             </Link>

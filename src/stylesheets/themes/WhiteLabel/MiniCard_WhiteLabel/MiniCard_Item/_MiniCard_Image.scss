@@ -7,4 +7,10 @@
         @extend %MiniCard__ItemImageContainer;
         
     }
+    
+    @include Element(ItemImage) {
+        
+        @extend %MiniCard__ItemImage;
+        
+    }
 };

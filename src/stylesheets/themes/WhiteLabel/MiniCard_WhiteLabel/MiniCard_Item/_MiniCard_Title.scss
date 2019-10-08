@@ -13,7 +13,7 @@
         @extend %MiniCard__ItemTitle;
         
         @include Themer(color, Text-Light-Headlines);
-        @include Typer(md-b2);
+        @include Typer(SubTextButton, $FSMIN:$f-l, $FSMAX:$f-xl);
 
     }
 };

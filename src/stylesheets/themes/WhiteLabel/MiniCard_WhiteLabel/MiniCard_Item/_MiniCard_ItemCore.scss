@@ -5,8 +5,6 @@
     @include Element(Item) {
 
         @extend %MiniCard__Item;
-        
-        @include Themer(background, Color-1);
 
     }
 };
