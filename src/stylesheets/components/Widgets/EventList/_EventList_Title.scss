@@ -6,7 +6,7 @@
 		
 		align-items: center;
 		display: flex;
-		height: 75px;
+		height: auto;
 		justify-content: center;
 		
 		@include Spacer(margin, all, md auto zero);
