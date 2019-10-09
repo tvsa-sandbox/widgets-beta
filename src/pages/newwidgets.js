@@ -42,10 +42,10 @@ const IndexPage = () => (
         <section className="PageColumn WhiteLabel">
             <h1>Page</h1>
             <section className="PageContent__Aside WhiteLabel">
-                <EventList />
+                <MiniCard />
             </section>
             <section className="PageContent__Aside WhiteLabel">
-                <MiniCard />
+                <EventList />
             </section>
             <section className="PageContent__Aside WhiteLabel">
                 <Thumblist />
