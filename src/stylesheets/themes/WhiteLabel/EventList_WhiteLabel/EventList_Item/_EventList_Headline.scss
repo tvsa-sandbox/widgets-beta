@@ -7,7 +7,7 @@
         @extend %EventList__HeadlinesText;
         
         @include Themer(color, Text-Light-Headlines);
-        @include Typer(sm);
+        @include Typer(xs);
         
     }
     

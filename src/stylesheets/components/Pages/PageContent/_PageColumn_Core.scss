@@ -1,0 +1,18 @@
+// Content Core
+
+%PageColumn {
+        
+    display: block;
+    justify-content: center;
+    max-width: 1180px;
+    width: 100%;
+    
+    @include Spacer(margin, all, zero auto);
+    
+    @include Morpher(All-Desktop) {
+        
+        display: flex;
+        
+    }
+        
+}

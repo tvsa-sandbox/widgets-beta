@@ -1,0 +1,19 @@
+// MiniCard Headlines Container
+
+@include ThemerUI(MiniCard){
+    
+    @include Element(ItemTitleContainer) {
+        
+        @extend %MiniCard__ItemTitleContainer;
+        
+    }
+    
+    @include Element(ItemTitle) {
+        
+        @extend %MiniCard__ItemTitle;
+        
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextButton, $FSMIN:$f-l, $FSMAX:$f-xl);
+
+    }
+};
