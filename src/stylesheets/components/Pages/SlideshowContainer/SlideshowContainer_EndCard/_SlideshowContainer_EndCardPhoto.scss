@@ -1,6 +1,6 @@
 // SlideshowContainer End Card
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__EndCardItemPhotoContainer {
 
@@ -14,11 +14,14 @@
         width: 60px;
         z-index: 2;
 
+        @include Themer(background, Black);
+
     }
 
     &__EndCardItemPhoto {
 
-        display: block;
+        @include Themer(color, White);
+        @include Typer(SubTextInfo);
 
     }
 }

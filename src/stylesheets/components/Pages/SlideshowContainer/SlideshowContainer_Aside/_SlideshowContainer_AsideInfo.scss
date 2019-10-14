@@ -1,12 +1,11 @@
 // SlideshowContainer Aside Info
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__AsideInfoContainer {
 
+        margin: 5px 0px 18px 0px;
         width: 70%;
-
-        @include Spacer(margin, all, sm zero xl zero);
 
         @include Morpher(All-Desktop) {
 
@@ -17,7 +16,13 @@
 
     &__AsideInfo {
 
-        display: block;
+        @include Themer (color, Mini-Text-Light);
+        @include Typer (SubTextCredit);
 
+        @include Morpher(All-Desktop) {
+
+            @include Typer (SubTextCreditDesktop);
+
+        }
     }
 }

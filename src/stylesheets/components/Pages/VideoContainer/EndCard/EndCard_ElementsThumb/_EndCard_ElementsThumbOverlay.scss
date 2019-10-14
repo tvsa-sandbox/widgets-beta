@@ -1,20 +1,18 @@
 // EndCard ElementsThumbOverlay
 
-%EndCard {
+.EndCard {
 
     &__ElementsThumbOverlayContainer {
 
         box-shadow: 0px 9px 12px rgba(0,0,0,0.5);
+        margin: 0px 5px 0px 0px;
         position: relative;
         width: 100%;
 
-        @include Spacer(margin, all, zero sm zero zero);
-
         @include Morpher(All-Desktop) {
 
+            margin: 0px 20px 0px 0px;
             width: 100%;
-
-            @include Spacer(margin, all, zero xl zero zero);
 
         }
 

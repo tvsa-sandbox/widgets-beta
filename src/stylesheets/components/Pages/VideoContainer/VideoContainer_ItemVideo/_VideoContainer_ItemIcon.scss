@@ -1,6 +1,6 @@
 //VideoContainer Item Icon
 
-%VideoContainer {
+.VideoContainer {
 
     &__ItemPlayerIconContainer {
 
@@ -26,9 +26,11 @@
 
         border-radius: 50%;
         height: 60px;
+        margin: auto;
         width: 60px;
 
-        @include Spacer(margin, all, zero auto);
+        @include Themer(background, Color-10);
+        @include Themer(border, Color-1, 'solid 2px');
 
     }
 
@@ -36,7 +38,7 @@
 
         &::before {
 
-            @include Spacer(margin, left, sm);
+            margin-left: 5px;
 
         }
     }

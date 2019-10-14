@@ -10,7 +10,7 @@
         @include Morpher(All-Desktop) {
 
             display: flex;
-            @include Spacer(padding, all, zero);
+            @include Spacer(padding, all, zero md);
 
         }
 

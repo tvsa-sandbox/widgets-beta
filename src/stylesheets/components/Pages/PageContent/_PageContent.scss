@@ -1,11 +1,12 @@
 // PageContent
 
 @import './PageContent_Core';
-@import './PageColumn_Core';
 
 // PageContent Container
 
+/* critical:start */
 @import './PageContent_Container';
+/* critical:end */
 
 // PageContent Body
 
@@ -18,12 +19,9 @@
 // PageContent Lead
 
 @import './PageContent_Lead';
-@import './PageContent_LeadFull';
-
-// PageContent LeadFull
-
-@import './PageContent_LeadFull';
 
 // PageContent Aside
 
+/* critical:start */
 @import './PageContent_Aside';
+/* critical:end */

@@ -1,6 +1,6 @@
 // EndCard ElementsThumb
 
-%EndCard {
+.EndCard {
 
     &__ElementsThumbContainer {
 
@@ -8,11 +8,10 @@
         display: flex;
         justify-content: center;
         max-width: 414px;
+        padding: 0px 20px;
         position: absolute;
         top: 9px;
         width: 100%;
-
-        @include Spacer(padding, all, zero xl);
 
         @include Morpher(All-Desktop) {
 

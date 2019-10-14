@@ -1,34 +1,34 @@
 // SlideshowContainer
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__TitleContainer {
 
+        padding: 1em 5px;
         position: relative;
-
-        @include Spacer(padding, all, sm);
-        @include Spacer(margin, bottom, md);
+        margin-bottom: 10px;
 
         &::after {
 
             background: gray;
             bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
             content: '';
             display: block;
             height: 2px;
-            left: 0px;
             position: absolute;
-            right: 0px;
             width: 100%;
-
-            @include Spacer(margin, all, zero auto);
-
         }
     }
 
     &__Title {
 
-        display: block;
+        color: white; //Develop no agarra el de abajo sin albur again
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(HeadlineMainDescription);
 
     }
 }

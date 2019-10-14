@@ -1,6 +1,6 @@
 // SlideshowContainer Share Bar Desktop
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__ShareBarDesktop {
 
@@ -18,7 +18,10 @@
             display: flex;
             height: 45px;
             justify-content: center;
+            padding: 0px 1em;
             width: auto;
+
+            @include Themer(border, Color-7, "solid 1px");
 
         }
     }

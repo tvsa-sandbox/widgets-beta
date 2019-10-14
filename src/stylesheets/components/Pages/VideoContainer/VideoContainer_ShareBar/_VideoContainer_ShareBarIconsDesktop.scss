@@ -1,9 +1,62 @@
 // VideoContainer Share Bar Icons Desktop
 
-%VideoContainer {
+.VideoContainer {
 
-		&__ShareBarDesktop {
+	&__ShareBarDesktop {
 
-				
+		.Icn_Facebook {
+
+			background: #3b5998;
+
+			@include Themer(color, Color-7);
+
 		}
+
+		.Icn_Facebook:Hover {
+
+			opacity: .7;
+
+		}
+
+		.Icn_Twitter {
+
+			background: #00aced;
+
+			@include Themer(color, Color-7);
+
+		}
+
+		.Icn_Twitter:Hover {
+
+			opacity: .7;
+
+		}
+
+		.Icn_Instagram {
+
+			background: #F24664;
+
+			@include Themer(color, Color-7);
+
+		}
+
+		.Icn_Instagram:Hover {
+
+			opacity: .7;
+
+		}
+
+		.Icn_Email {
+
+			@include Themer(background, Color-3);
+			@include Themer(color, Color-7);
+
+		}
+
+		.Icn_Email:Hover {
+
+			opacity: .7;
+
+		}
+	}
 }

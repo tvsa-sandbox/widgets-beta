@@ -1,16 +1,16 @@
 // SlideshowContainer End Card
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__EndCardTitleContainer {
 
-        @include Spacer(margin, all, md zero);
+        margin: 10px 0px;
 
     }
 
     &__EndCardTitle {
 
-        display: block;
+        @include Themer(color, White);
 
     }
 }

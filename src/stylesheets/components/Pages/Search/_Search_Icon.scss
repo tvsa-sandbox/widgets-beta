@@ -1,10 +1,10 @@
 // Search Container
 
-%Search {
+.Search {
 
     &__Icon {
 
-        display: block;
+        @include Themer(color, White);
 
     }
 }

@@ -1,6 +1,6 @@
 // Card Person BioLink
 
-%Person {
+.Person {
 
     &__BioLink {
 
@@ -11,6 +11,8 @@
         text-transform: uppercase;
 
         @include Hover;
+        @include Themer(color, Mini-Text-Light);
+        @include Typer(SubTextInfo);
 
     }
 }

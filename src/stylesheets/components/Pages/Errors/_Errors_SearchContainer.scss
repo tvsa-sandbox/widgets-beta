@@ -1,16 +1,17 @@
 // Errors Container
 
-%Errors {
+.Errors {
 
     &__SearchContainer {
 
         align-items: center;
         display: flex;
         justify-content: center;
+        margin: 2em auto;
         max-width: 300px;
+        padding: 10px;
 
-        @include Spacer(margin, all, xl auto);
-        @include Spacer(padding, all, md);
+        @include Themer(border, Color-2, "solid 1px");
 
         @include Morpher(All-Desktop) {
 
@@ -23,7 +24,7 @@
 
         flex-grow: 1;
         width: 90%;
-
+        
     }
 
     &__Input {
@@ -31,9 +32,12 @@
         background: transparent;
         border: none;
         height: 35px;
+        padding-left: 10px;
         width: 100%;
 
-        @include Spacer(padding, left, md);
+        @include Themer(border-left, Color-2, "solid 1px");
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyTextSubtitle);
 
     }
 }

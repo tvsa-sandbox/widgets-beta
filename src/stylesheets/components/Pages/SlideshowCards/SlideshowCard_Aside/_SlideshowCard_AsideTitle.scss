@@ -4,9 +4,8 @@
 
     &__AsideTitleContainer {
 
+        margin-bottom: 18px;
         width: 70%;
-
-        @include Spacer(margin, bottom, xl);
 
         @include Morpher(All-Desktop) {
 
@@ -17,7 +16,6 @@
 
     &__AsideTitle {
 
-        display: block;
-
+        
     }
 }

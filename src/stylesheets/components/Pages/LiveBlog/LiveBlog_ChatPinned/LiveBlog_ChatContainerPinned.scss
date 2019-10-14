@@ -1,15 +1,14 @@
 // LiveBlog Chat Container
 
-%LiveBlog {
+.LiveBlog {
 
     &__ChatContainerPinned {
 
         border-radius: 7px;
+        margin-left: 20px;
+        padding: 20px 15px;
         position: relative;
         width: 100%;
-
-        @include Spacer(margin, left, xl);
-        @include Spacer(padding, all, xl lg);
 
         &::before {
 
@@ -23,6 +22,10 @@
             top: 0px;
             width: 0px;
 
+
         }
+
+        @include Themer(background, Color-5);
+
     }
 }

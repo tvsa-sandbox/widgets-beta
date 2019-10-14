@@ -2,16 +2,16 @@
 
 %Article {
 
-    &__SubTitleContainer {
+  &__SubTitleContainer {
 
-        @include Spacer(margin,all, base zero);
-        @include Spacer(padding,all, zero base);
+    @include Spacer(margin, all, lg zero);
+    @include Spacer(padding, all, zero base);
 
-    }
+  }
 
-    &__SubTitle {
+  &__SubTitle {
 
-        display: block;
+    @include Spacer(padding, all, zero);
 
-    }
+  }
 }

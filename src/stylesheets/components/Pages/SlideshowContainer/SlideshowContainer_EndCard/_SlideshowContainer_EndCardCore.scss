@@ -1,13 +1,6 @@
 // SlideshowContainer End Card
 
-%SlideshowContainer {
-
-    &__EndCardContainer {
-
-        overflow-x: auto;
-        width: 90%;
-
-    }
+.SlideshowContainer {
 
     &__EndCard {
 
@@ -19,6 +12,15 @@
         position: absolute;
         width: 100%;
         z-index: 4;
+
+        @include Themer(background, Color-1);
+
+    }
+
+    &__EndCardContainer {
+
+        overflow-x: auto;
+        width: 90%;
 
     }
 }

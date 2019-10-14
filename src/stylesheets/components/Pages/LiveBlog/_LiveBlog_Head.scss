@@ -1,14 +1,13 @@
 // LiveBlog
 
-%LiveBlog {
+.LiveBlog {
 
     &__HeadContainer {
 
         display: flex;
+        padding-top: 30px;
         justify-content: space-between;
         position: relative;
-
-        @include Spacer(padding, top, xxl);
 
         &::after {
 

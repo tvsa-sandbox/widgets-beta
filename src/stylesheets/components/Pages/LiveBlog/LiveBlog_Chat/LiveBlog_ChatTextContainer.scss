@@ -1,10 +1,12 @@
 // LiveBlog Chat Container
 
-%LiveBlog {
+.LiveBlog {
 
     &__ChatTextContainer {
 
-        @include Spacer(margin, all, sm zero);
+        margin: 1em 0px;
+
+        @include Typer(BodyTextSubtitleDesktop);
         
     }
 }

@@ -1,21 +1,21 @@
 // Search Container
 
-%Search {
+.Search {
 
     &__TitleContainer {
 
         align-items: center;
         display: flex;
         justify-content: center;
+        margin: 1em 0px;
         text-align: center;
-
-        @include Spacer(margin, all, base auto);
 
     }
 
     &__Title {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(HeadlineMainDescription);
 
     }
 }

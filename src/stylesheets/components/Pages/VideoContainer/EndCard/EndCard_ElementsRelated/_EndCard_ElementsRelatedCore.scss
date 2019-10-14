@@ -1,6 +1,6 @@
 // EndCard ElementsRelatedCore
 
-%EndCard {
+.EndCard {
 
     &__ElementsRelatedContainer {
 
@@ -10,10 +10,9 @@
         height: 97px;
         max-width: 580px;
         overflow: hidden;
+        padding: 20px 20px 0px;
         position: absolute;
         width: 100%;
-
-        @include Spacer(padding, all, xl xl zero);
 
         @include Morpher(All-Desktop) {
 
@@ -23,8 +22,7 @@
             height: auto;
             justify-content: space-evenly;
             max-width: 700px;
-
-            @include Spacer(padding, all, zero xl);
+            padding: 0px 20px;
 
         }
     }

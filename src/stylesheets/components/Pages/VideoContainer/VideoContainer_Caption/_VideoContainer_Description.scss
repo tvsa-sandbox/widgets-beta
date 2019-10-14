@@ -1,10 +1,11 @@
 // VideoContainer Description
 
-%VideoContainer {
+.VideoContainer {
 
     &__Description {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyText);
 
     }
 }

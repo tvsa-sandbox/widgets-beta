@@ -6,16 +6,16 @@
 
         align-items: center;
         display: flex;
+        margin: 0px auto;
         overflow-x: scroll;
         overflow-y: hidden;
-
-        @include Spacer(margin, all, zero auto);
 
     }
 
     &__SliderThumbContainer {
 
         min-width: 100%;
+        min-height: 240px;
         position: relative;
 
         @include Morpher(All-Desktop) {
@@ -23,5 +23,6 @@
             @include Spacer(padding, all, sm);
 
         }
+
     }
 }

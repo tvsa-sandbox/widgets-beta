@@ -1,10 +1,10 @@
 // Errors Container
 
-%Errors {
+.Errors {
 
     &__Icon {
 
-        display: block;
+        @include Themer(color, White);
 
     }
 }

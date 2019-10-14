@@ -5,6 +5,7 @@
     &__AsideAdsContainer {
 
         display: none;
+        background: none;
 
         @include Morpher(All-Desktop) {
 
@@ -12,9 +13,8 @@
             display: flex;
             flex-grow: 1;
             justify-content: center;
+            margin-top: 18px;
             text-align: center;
-
-            @include Spacer(margin, top, xl);
 
         }
     }

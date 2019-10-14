@@ -1,6 +1,6 @@
 // SlideshowContainer Share Bar Core
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__ShareBar {
 
@@ -9,9 +9,8 @@
         flex-direction: column;
         height: 100%;
         justify-content: center;
+        margin: 0px auto;
         width: auto;
-
-        @include Spacer(margin, all, zero auto);
 
     }
 

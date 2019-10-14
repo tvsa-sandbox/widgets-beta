@@ -10,14 +10,14 @@
 
         @include Morpher(All-Desktop) {
 
-            @include Spacer(padding, all, xl zero);
+            @include Spacer(padding, all, xl md);
 
         }
     }
 
     &__Title {
 
-        display: block;
+
 
     }
 }

@@ -2,12 +2,38 @@
 
 %Article {
 
-    @include WidgetBottomSpace;
+  @include WidgetBottomSpace;
 
-    p {
+  a {
 
-        @include Spacer(padding,all, zero base);
-        @include Spacer(margin,all, base zero);
+      text-decoration: none;
 
-    }
+  }
+
+  p {
+
+    @include Spacer(padding,all, zero base);
+    @include Spacer(margin,all, base zero);
+
+  }
+
+  h2 {
+
+    @include Spacer(padding,all, zero base);
+    @include Spacer(margin,all, base zero);
+
+  }
+
+  ol, ul {
+
+      @include Spacer(padding, all, zero zero zero 2xl);
+      @include Spacer(margin, all, zero zero base zero);
+
+  }
+
+  ul {
+
+      list-style-type: disc;
+
+  }
 }

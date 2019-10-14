@@ -9,14 +9,22 @@
 
         @include Morpher(All-Desktop) {
 
-            min-width: 235px;
+            min-width: 200px;
 
         }
+
     }
 
     &__Author {
 
         @include Spacer(margin,all, xs zero);
+
+        &:before {
+
+            content: "Por: ";
+            display: inline-block;
+            margin-right: 5px;
+        }
 
     }
 

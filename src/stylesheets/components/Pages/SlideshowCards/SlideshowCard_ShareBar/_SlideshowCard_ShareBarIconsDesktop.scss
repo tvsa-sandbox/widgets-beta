@@ -2,8 +2,43 @@
 
 %SlideshowCard {
 
-		&__ShareBarDesktop {
+	&__ShareBarDesktop {
 
+		.Icn_Twitter {
+
+			color: #00aced;
+
+			@include Hover;
+		}
+
+		.Icn_Facebook {
+
+			color: #3b5998;
+
+			@include Hover;
 
 		}
+
+		.Icn_WhatsApp {
+
+			color: #25D366;
+
+			@include Hover;
+
+
+			@include Morpher(All-Desktop){
+
+				display: none;
+
+			}
+		}
+
+		.Icn_Email {
+
+			color: #c6c6c6;
+
+			@include Hover;
+
+		}
+	}
 }

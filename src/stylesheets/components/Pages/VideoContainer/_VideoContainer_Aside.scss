@@ -1,6 +1,6 @@
 // VideoContainer
 
-%VideoContainer {
+.VideoContainer {
 
     &__Aside {
 
@@ -10,8 +10,7 @@
         @include Morpher(All-Desktop) {
 
             min-width: 419px;
-
-            @include Spacer(padding, all, sm);
+            padding: 5px;
 
         }
     }

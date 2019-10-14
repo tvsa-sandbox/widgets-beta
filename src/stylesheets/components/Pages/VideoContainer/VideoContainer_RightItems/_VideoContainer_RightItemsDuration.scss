@@ -1,6 +1,6 @@
 //VideoContainer Carousel Item Duration
 
-%VideoContainer {
+.VideoContainer {
 
     &__RightItemTimeContainer {
 
@@ -13,7 +13,8 @@
 
     &__RightItemTime {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
 
     }
 }

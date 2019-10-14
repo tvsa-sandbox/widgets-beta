@@ -1,6 +1,6 @@
 // SlideshowContainer Share Bar Trigger
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__ShareBarTrigger {
 
@@ -13,6 +13,22 @@
         order: 2;
         position: relative;
         width: 55px;
+
+        @include Themer(background, Color-7);
+        @include Themer(color, Text-Dark-Body);
+
+        @include Themer(color, White, after) {
+
+            content: "Comparte";
+            height: 1px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 110%;
+            width: 90px;
+
+            @include Typer(SubTextInfo);
+
+        }
 
         @include Morpher(All-Desktop) {
 

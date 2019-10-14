@@ -1,6 +1,6 @@
 // VideoContainer ndCardItemThumbnail
 
-%VideoContainer {
+.VideoContainer {
 
     &__EndCardItemThumbnail {
 
@@ -14,6 +14,7 @@
         @include Spekter(16_9);
 
     }
+
 
     &__EndCardItemIconContainer {
 
@@ -29,11 +30,14 @@
 
         border-radius: 50%;
         height: 40px;
+        margin: auto;
         width: 40px;
 
-        @include Spacer(margin, all, zero auto);
+        @include Themer(background, Color-9);
+        @include Themer(border, Color-1, 'solid 2px');
 
     }
+
 
     &__EndCardItemTimeContainer {
 
@@ -47,7 +51,8 @@
 
     &__EndCardItemTime {
 
-        display: block;
+        @include Themer(color, Text-Light-Body);
+        @include Typer(FooterTextCopyright);
 
     }
 }

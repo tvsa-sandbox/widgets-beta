@@ -1,26 +1,26 @@
 // VideoContainer EndCardThumbItem
 
-%VideoContainer {
+.VideoContainer {
 
     &__EndCardThumbsContainer {
 
-      	display: none;
+    	display: none;
 
-      	@include Morpher(All-Desktop) {
+    	@include Morpher(All-Desktop) {
 
-          	display: flex;
+        	display: flex;
             bottom: 5%;
             justify-content: space-between;
             position: absolute;
             width: 100%;
             z-index: 1;
 
-      	}
+    	}
 
-      	@include Morpher(Laptop) {
+    	@include Morpher(Laptop) {
 
-  			    display: none;
+			display: none;
 
-      	}
+    	}
     }
 }

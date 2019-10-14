@@ -1,9 +1,11 @@
 // Errors
 
-%Errors {
+.Errors {
 
-    @include Spacer(padding, all, xxl zero);
+    padding: 4em 0px;
+
     @include Layout(Wrapper);
+    @include Themer(border-bottom, White, "solid 1px");
     @include WidgetBottomSpace;
 
 }
