@@ -1,0 +1,28 @@
+// SlideshowCard Share Bar
+
+@include ThemerUI(SlideshowCard) {
+
+     @include Element(PinterestContainer){
+
+         @extend %PinterestButtonContainer;
+
+     }
+
+     @include Element(Pinterest){
+
+         @extend %PinterestButton;
+
+         background: #E60023;
+
+         @include Themer(color, White);
+
+         @include Typer (xs3);
+
+          @include Themer(color, White, before) {
+              content: '\f035';
+              font-family: 'Iconography';
+
+
+          }
+     }
+}

@@ -6,11 +6,10 @@
 
         @extend %PageContent__Container;
 
-        @include Modify(Left){
+
+        @include Modify(Left) {
 
             @extend %PageContent__Container-Left;
-
         }
     }
-
 }

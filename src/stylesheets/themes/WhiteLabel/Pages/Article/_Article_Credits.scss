@@ -1,19 +1,55 @@
 // Article Credits
 
-@include ThemerUI(Article){
+@include ThemerUI(Article) {
 
-    @include Element(CreditsContainer) {
+  @include Element(CreditsContainer) {
 
-        @extend %Article__CreditsContainer;
+    @extend %Article__CreditsContainer;
 
-        @include Themer(color, Text-Light-Headlines);
-        @include Typer(xs);
+    display: block;
+
+    @include Themer(color, Text-Dark-Headlines);
+    @include Typer(md2, $FSMIN:$f-xs, $FSMAX:$f-s, $LS: 0.2px);
+
+    @include Morpher (All-Desktop){
+
+        display: flex;
+
+        @include Typer(md-b2, $FSMIN:$f-xs, $FSMAX:$f-s, $LS: 0.2px);
 
     }
+  }
 
-    @include Element(Author) {
+  @include Element(Author) {
 
-        @extend %Article__Author;
+    @extend %Article__Author;
 
+    text-transform: none;
+
+    @include Spacer(margin, all, zero base zero zero);
+
+    @include Themer(color, Text-Dark-Headlines, before) {
+
+      content: "Por: ";
+
+      @include Spacer(margin, rigth, xs);
+      @include Typer(md2, $FSMIN:$f-xs, $FSMAX:$f-s, $LS: 0.2px);
+
+      @include Morpher (All-Desktop){
+
+          @include Typer(md-b2, $FSMIN:$f-xs, $FSMAX:$f-s, $LS: 0.2px);
+
+      }
     }
-};
+  }
+
+  @include Element(Date) {
+
+    @extend %Article__Date;
+
+    text-transform: none;
+
+    @include Themer(color, Color-10);
+
+  }
+}

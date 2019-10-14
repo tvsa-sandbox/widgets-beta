@@ -1,150 +1,154 @@
 // Article Title
 
-@include ThemerUI(Article){
+%Article {
 
-    @include Element(Paragraph) {
+  &__Paragraph {
 
-        @extend %Article__Paragraph;
+    margin-bottom: 1em;
 
-        @include Typer(sm);
+    @include Typer(md2, $FSMIN:$f-base);
 
-    }
+    &-Bold {
 
-    @include Element(Paragraph-Bold) {
+      margin-bottom: 1em;
+      font-weight: bold;
 
-        @extend %Article__Paragraph-Bold;
-
-        @include Typer(sm);
-
-    }
-
-    @include Element(Paragraph-Italic) {
-
-        @extend %Article__Paragraph-Italic;
-
-        @include Typer(sm);
+      @include Typer(md2, $FSMIN:$f-base);
 
     }
 
-    @include Element(Paragraph-Cursive) {
+    &-Italic {
 
-        @extend %Article__Paragraph-Cursive;
+      margin-bottom: 1em;
+      font-style: italic;
 
-        @include Typer(sm);
-
-    }
-
-    @include Element(Paragraph-Underline) {
-
-        @extend %Article__Paragraph-Underline;
-
-        @include Typer(sm);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
 
     }
 
-    @include Element(Paragraph-Stroke) {
+    &-Cursive {
 
-        @extend %Article__Paragraph-Stroke;
+      font-style: oblique;
+      margin-bottom: 1em;
 
-        @include Typer(sm);
-
-    }
-
-    @include Element(Paragraph-Link) {
-
-        @extend %Article__Paragraph-Link;
-
-        @include Typer(sm);
-        @include Themer(color, Color-1);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
 
     }
 
-    @include Element(Paragraph-List) {
+    &-Underline {
 
-        @extend %Article__Paragraph-List;
+      text-decoration: underline;
+      margin-bottom: 1em;
 
-        @include Typer(sm);
-
-    }
-
-    @include Element(Paragraph-ListElement) {
-
-        @extend %Article__Paragraph-ListElement;
-
-        @include Typer(sm);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
 
     }
 
-    @include Element(Text) {
+    &-Stroke {
 
-        @extend %Article__Text;
+      text-decoration: line-through;
+      margin-bottom: 1em;
 
-        @include Typer(sm);
-
-    }
-
-    @include Element(Text-Bold) {
-
-        @extend %Article__Text-Bold;
-
-        @include Typer(sm);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
 
     }
 
-    @include Element(Text-Italic) {
+    &-Link {
 
-        @extend %Article__Text-Italic;
+      text-decoration: none;
+      margin-bottom: 1em;
 
-        @include Typer(sm);
-
-    }
-
-    @include Element(Text-Cursive) {
-
-        @extend %Article__Text-Cursive;
-
-        @include Typer(sm);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+      @include Themer(color, Color-3);
 
     }
 
-    @include Element(Text-Underline) {
+    &-List {
 
-        @extend %Article__Text-Underline;
+      list-style: none;
+      margin-bottom: 1em;
 
-        @include Typer(sm);
-
-    }
-
-    @include Element(Text-Stroke) {
-
-        @extend %Article__Text-Stroke;
-
-        @include Typer(sm);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
 
     }
 
-    @include Element(Text-Link) {
+    &-ListElement {
 
-        @extend %Article__Text-Link;
+      list-style: none;
+      margin-bottom: 1em;
 
-        @include Typer(sm);
-        @include Themer(color, Color-1);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+  }
+
+  &__Text {
+
+    @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    &-Bold {
+
+      font-weight: bold;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
 
     }
 
-    @include Element(Text-List) {
+    &-Italic {
 
-        @extend %Article__Text-List;
+      font-style: italic;
 
-        @include Typer(sm);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Cursive {
+
+      font-style: oblique;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
 
     }
 
-    @include Element(Text-ListElement) {
+    &-Underline {
 
-        @extend %Article__Text-ListElement;
+      text-decoration: underline;
 
-        @include Typer(sm);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
 
     }
-};
+
+    &-Stroke {
+
+      text-decoration: line-through;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Link {
+
+      text-decoration: none;
+
+      @include Themer(color, Color-1);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-List {
+
+      list-style: none;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-ListElement {
+
+      list-style: none;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+  }
+}

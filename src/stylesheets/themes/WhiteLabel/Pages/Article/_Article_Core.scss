@@ -1,16 +1,45 @@
 // Article Title
 
-@include ThemerUI(Article){
+@include ThemerUI(Article) {
 
     @extend %Article;
 
-    @include Themer(color, Text-Light-Headlines);
-    @include Typer(md);
+    @include Themer(color, Text-Dark-Body);
+    @include Themer(background, Color-4);
+    @include Typer(md2, $FSMIN:$f-base);
+
+    a {
+
+        @include Themer(color, Color-3);
+
+    }
+
+    h2 {
+
+        @include Themer(color, Text-Dark-Body);
+        @include Typer(lg-b2, $LS: 0.2px);
+
+    }
 
     p {
 
-        @include Spacer(padding,all, zero base);
-        @include Spacer(margin,all, base zero);
+        @include Typer(md2, $FSMIN:$f-base, $FSMAX:$f-m, $LS: 0.2px);
 
     }
-};
+}
+
+.Infinite__Scroll-Container {
+
+    &::before {
+
+        content: '';
+        display: block;
+        height: 15px;
+        position: relative;
+        width: 100%;
+
+        @include Themer(background, Color-3);
+        @include Spacer(margin, all, zero auto);
+
+    }
+}

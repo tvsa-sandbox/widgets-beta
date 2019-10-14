@@ -12,5 +12,7 @@
 
         @extend %SlideshowCard__SliderCounter !optional;
 
+        @include Typer(xs3);
+
     }
 }

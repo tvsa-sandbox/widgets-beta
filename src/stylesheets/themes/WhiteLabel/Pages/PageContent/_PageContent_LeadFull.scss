@@ -4,7 +4,7 @@
 
     @include Element(Lead) {
 
-        @extend %PageContent__Lead;
+        @include %PageContent__Lead;
 
     }
 }

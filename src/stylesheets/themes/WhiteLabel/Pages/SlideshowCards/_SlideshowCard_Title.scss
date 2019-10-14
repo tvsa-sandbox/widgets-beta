@@ -9,10 +9,10 @@
 
     @include Element(Title) {
 
-        @extend %SlideshowCard__Title;
+        @extend %SlideshowCard__Title !optional;
 
-        @include Themer(color, Text-Light-Headlines);
-        @include Typer(HeadlineMainDescription);
+        @include Themer(color, Color-16);
+        @include Typer(lg);
 
     }
 }

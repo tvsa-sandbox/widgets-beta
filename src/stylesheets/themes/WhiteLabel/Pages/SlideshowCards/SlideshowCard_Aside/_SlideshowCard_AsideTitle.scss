@@ -9,10 +9,10 @@
 
     @include Element(AsideTitle) {
 
-        @extend %SlideshowCard__AsideTitle;
+        @extend %SlideshowCard__AsideTitle !optional;
 
         @include Themer (color, Text-Light-Headlines);
-        @include Typer (lg-b);
+        @include Typer (ItemTitle);
 
     }
 }

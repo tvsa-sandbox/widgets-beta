@@ -1,39 +1,55 @@
 // SlideshowCard Share Bar Icons Desktop
 
-@include ThemerUI(SlideshowCard) {
+@include ThemerUI(ShareBar) {
 
-		@include Element(ShareBarDesktop) {
+	@include Element(ShareBarDesktop) {
 
-				.Icn_Twitter {
+		.Icn_Twitter {
 
-						color: #00aced;
+			color: #1DA1F2;
 
-						@include Hover;
+			@include Hover;
 
-				}
+            @include Morpher(All-Desktop) {
+                font-size: 30px;
+            }
 
-				.Icn_Facebook {
-
-						color: #3b5998;
-
-						@include Hover;
-
-				}
-
-				.Icn_Instagram {
-
-						color: #F24664;
-
-						@include Hover;
-
-				}
-
-				.Icn_Email {
-
-						color: #ffffff;
-
-						@include Hover;
-
-				}
 		}
-};
+
+		.Icn_Facebook {
+
+			color: #1877F2;
+
+			@include Hover;
+
+            @include Morpher(All-Desktop) {
+                font-size: 30px;
+            }
+
+		}
+
+		.Icn_Instagram {
+
+			color: #F00175;
+
+			@include Hover;
+
+            @include Morpher(All-Desktop) {
+                font-size: 30px;
+            }
+
+		}
+
+		.Icn_Email {
+
+			color: #4D442A;
+
+			@include Hover;
+
+            @include Morpher(All-Desktop) {
+                font-size: 30px;
+            }
+
+		}
+	}
+}

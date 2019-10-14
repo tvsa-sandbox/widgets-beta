@@ -12,6 +12,17 @@
 
         @extend %SlideshowCard__SliderItemThumbnail;
 
+        .SlideshowCard__Pinterest {
+            display: none;
+        }
+
+        &:hover {
+
+            .SlideshowCard__Pinterest {
+                display: flex;
+            }
+        }
+
     }
 
     @include Element(SliderItemImageContainer) {

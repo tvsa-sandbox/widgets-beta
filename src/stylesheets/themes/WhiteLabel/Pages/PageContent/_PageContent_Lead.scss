@@ -2,6 +2,12 @@
 
 @include ThemerUI(PageContent) {
 
-        @extend .Lead;
+    .Lead {
 
+        grid-area: Lead;
+        margin: 0px auto;
+        max-width: 823;
+        width: 100%;
+
+    }
 }

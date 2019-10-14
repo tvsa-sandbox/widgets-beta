@@ -6,7 +6,16 @@
 
         @extend %SlideshowCard__DescriptionContainer;
 
-        @include Themer(color, Text-Light-Headlines);
+        @include Spacer(margin, all, xxl  4xl  xxl  4xl);
+
+    }
+
+    @include Element(Description) {
+
+        @extend %SlideshowCard__Description;
+
+        @include Themer(color, Color-16);
+        @include Typer(md3);
 
     }
 }
