@@ -8,7 +8,7 @@
         border: 0px;
         cursor: pointer;
 
-        @include HoverButton;
+        @include Hover;
         @include Themer(color, Color-7);
 
         &:focus {

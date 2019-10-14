@@ -8,7 +8,7 @@
         justify-content: center;
         position: relative;
 
-        @include HoverCard;
+        @include Hover;
 
         @include Themer(background, Color-2, after) {
 

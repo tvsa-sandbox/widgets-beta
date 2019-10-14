@@ -11,7 +11,7 @@
         text-decoration: none;
         width: 100%;
 
-        @include HoverCard;
+        @include Hover;
         @include Themer(background, Color-1);
 
     }
