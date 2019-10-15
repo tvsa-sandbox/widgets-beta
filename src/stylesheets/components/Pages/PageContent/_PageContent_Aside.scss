@@ -6,14 +6,15 @@
 
         grid-area: Aside;
         min-width: 320px;
+        width: 100%;
+
+        @include Spacer(margin, all, zero auto base);
 
         @include Morpher(All-Desktop) {
 
             justify-self: center;
             max-width: 355px;
-
-            @include Spacer(margin, all, zero auto);
-            @include Spacer(padding, all, sm);
+            padding: 5px;
 
         }
     }

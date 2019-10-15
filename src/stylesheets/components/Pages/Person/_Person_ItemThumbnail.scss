@@ -1,6 +1,6 @@
 // Person
 
-%Person {
+.Person {
 
     &__ItemThumbnail {
 
@@ -11,8 +11,7 @@
 
             grid-area: Aside;
             min-width: 236px;
-
-            @include Spacer(padding, all, sm);
+            padding: 5px;
 
         }
     }

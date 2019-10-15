@@ -1,32 +1,37 @@
 // VideoContainer Counter Link Tilte
 
-%VideoContainer {
+.VideoContainer {
 
     &__CounterTextContainer {
 
         align-items: center;
         display: flex;
         justify-content: center;
+        padding: 5px;
         width: 100%;
 
-        @include Spacer(padding, all, sm);
+        @include Themer(border-top, White,"solid 1px");
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextTag);
 
         @include Morpher(All-Desktop) {
 
+            padding: 1em;
             width: auto;
 
-            @include Spacer(padding, all, base);
+            @include Themer(border-top, White,"solid 0px");
+            @include Typer(ItemTitle);
 
         }
     }
 
     &__CounterLeftContainer {
 
-        @include Spacer(padding, all, zero md);
+        padding: 0px 10px;
 
         @include Morpher(All-Desktop) {
 
-            @include Spacer(padding, all, zero base);
+            padding: 0px 1em;
 
         }
     }
@@ -36,30 +41,32 @@
         align-items: center;
         display: flex;
         flex-direction: column;
+        padding: 10px;
 
-        @include Spacer(padding, all, md);
+        @include Themer(background, Color-1);
 
     }
 
     &__CounterDays {
 
-        display: block;
-
+        @include Typer(ItemTitleDesktop);
+        @include Themer(color, Text-Light-Headlines);
     }
 
     &__CounterDaysText {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
 
     }
 
     &__CounterChapterContainer {
 
-        @include Spacer(padding, all, zero md);
+        padding: 0px 10px;
 
         @include Morpher(All-Desktop) {
 
-            @include Spacer(padding, all, zero base);
+            padding: 0px 1em;
 
         }
     }

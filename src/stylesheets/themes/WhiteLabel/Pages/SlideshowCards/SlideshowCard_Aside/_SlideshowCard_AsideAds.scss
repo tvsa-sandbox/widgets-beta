@@ -9,7 +9,7 @@
         @include Morpher(All-Desktop) {
 
             @include Themer(color, Mini-Text-Light);
-            @include Typer(sm);
+            @include Typer(SubTextInfo);
 
         }
     }

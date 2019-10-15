@@ -1,16 +1,17 @@
 // Person
 
-%Person {
+.Person {
 
     &__TitleContainer {
 
-        @include Spacer(margin, bottom, sm);
-
+        margin-bottom: 1em;
+        
     }
 
     &__Title {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyTextDesktop);
 
     }
 }

@@ -1,6 +1,6 @@
 // VideoContainer Label
 
-%VideoContainer {
+.VideoContainer {
 
     &__EndCardStopContainer {
 
@@ -15,7 +15,7 @@
 
     &__EndCardStop {
 
-        display: block;
+        @include Themer(color, Text-Light-Body);
 
     }
 }

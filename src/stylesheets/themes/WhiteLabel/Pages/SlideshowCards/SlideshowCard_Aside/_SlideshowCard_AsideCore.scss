@@ -6,6 +6,7 @@
 
         @extend %SlideshowCard__AsideContainer;
 
+        @include Spacer(padding, all, xl);
         @include Themer (background, Color-9);
 
     }

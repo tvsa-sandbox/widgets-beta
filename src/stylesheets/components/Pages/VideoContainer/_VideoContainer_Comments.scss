@@ -1,6 +1,6 @@
 // VideoContainer
 
-%VideoContainer {
+.VideoContainer {
 
     &__Comments {
 
@@ -10,13 +10,17 @@
 
     &__CommentsTitle {
 
-        @include Spacer(margin, bottom, base);
+        margin-bottom: 1em;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyTextDesktop);
 
     }
 
     &__Disclaimer {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescriptionDesktop);
 
     }
 }

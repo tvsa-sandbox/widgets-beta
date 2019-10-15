@@ -6,9 +6,16 @@
 
         display: flex;
         flex-grow: 1;
-        justify-content: flex-end;
+        justify-content: flex-start;
 
-        @include Spacer(padding, all, md);
+        @include Spacer(padding, all, zero);
 
+        @include Morpher(All-Desktop) {
+
+            justify-content: flex-end;
+
+            @include Spacer(padding, all, md);
+
+        }
     }
 }

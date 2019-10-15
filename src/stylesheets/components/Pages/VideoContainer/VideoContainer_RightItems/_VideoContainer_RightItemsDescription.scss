@@ -1,13 +1,12 @@
 // VideoContainer Right Items Container
 
-%VideoContainer {
+.VideoContainer {
 
     &__RightItemDescriptionContainer {
 
         display: block;
+        padding: 5px;
         width: 100%;
-
-        @include Spacer(padding, all, sm);
 
     }
 
@@ -16,5 +15,13 @@
         line-height: 15px;
         text-align: left;
 
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitleDescriptionDesktop);
+
+        }
     }
 }

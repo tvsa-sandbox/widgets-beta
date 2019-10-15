@@ -1,6 +1,6 @@
 // SlideshowContainer SliderContainer Core
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__Slider {
 
@@ -8,18 +8,17 @@
 
         @include Morpher(All-Desktop) {
 
-            @include Spacer(padding, all, sm);
+            padding: 5px;
 
         }
     }
 
     &__SliderContainer {
 
+        margin-top: 0px;
         max-width: 818px;
         position: relative;
         width: 100%;
-
-        @include Spacer(margin, top, zero);
 
     }
 }

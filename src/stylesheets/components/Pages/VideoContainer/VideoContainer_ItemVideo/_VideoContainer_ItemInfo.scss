@@ -1,6 +1,6 @@
 //VideoContainer Item Info
 
-%VideoContainer {
+.VideoContainer {
 
     &__ItemPlayerInfoContainer {
 
@@ -26,6 +26,9 @@
     &__ItemPlayerInfo {
 
         text-transform: uppercase;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
 
     }
 }

@@ -1,14 +1,15 @@
 // EndCard ElementsRelatedItemText
 
-%EndCard {
+.EndCard {
 
     &__ElementsRelatedItemTextContainer {
 
         box-shadow: none;
         overflow: hidden;
+        padding: 5px 10px;
         width: 100%;
 
-        @include Spacer(padding, all, sm md);
+        @include Themer(background, Color-1);
 
         @include Morpher(All-Desktop) {
 
@@ -17,11 +18,21 @@
             overflow: hidden;
 
         }
+
     }
 
     &__ElementsRelatedItemText {
 
-        @include Spacer(margin, all, zero);
-      
+        margin: 0px;
+
+        @include Themer(color, White);
+        @include Typer(SubTextCredit);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitleDescriptionDesktop);
+
+        }
+
     }
 }

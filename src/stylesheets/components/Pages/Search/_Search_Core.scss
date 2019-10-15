@@ -1,9 +1,11 @@
 // Search
 
-%Search {
+.Search {
 
-    @include Spacer(padding, all, xl zero);
+    padding: 4em 0px;
+
     @include Layout(Wrapper);
+    @include Themer(border-bottom, White, "solid 1px");
     @include WidgetBottomSpace;
 
 }

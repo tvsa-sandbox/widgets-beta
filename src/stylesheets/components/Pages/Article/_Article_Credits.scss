@@ -4,20 +4,39 @@
 
     &__CreditsContainer {
 
-        @include Spacer(padding, all, zero base);
-        @include Spacer(margin, all, base zero);
+        display: flex;
+        flex-direction: column;
+
+        @include Spacer(padding,all, zero base);
+        @include Spacer(margin,all, base zero);
 
         @include Morpher(All-Desktop) {
 
             align-items: center;
-            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
 
         }
     }
 
     &__Author {
 
-        @include Spacer(margin, all, zero sm);
+        text-transform: uppercase;
 
+        @include Spacer(margin,all,zero sm);
+
+    }
+
+    &__Date {
+
+        text-transform: uppercase;
+
+        @include Spacer(margin,all,sm);
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(margin,all,zero sm);
+
+        }
     }
 }

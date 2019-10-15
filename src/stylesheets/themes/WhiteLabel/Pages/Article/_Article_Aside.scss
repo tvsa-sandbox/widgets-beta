@@ -1,11 +1,15 @@
 // Article Aside
 
-@include ThemerUI(Article){
+@include ThemerUI(Article) {
 
-    @include Element(Aside) {
+  @include Element(Aside) {
 
-        @extend %Article__Aside;
+    @extend %Article__Aside;
+
+    .AdsBox {
+
+      @include Themer(background, White);
 
     }
-
-};
+  }
+}

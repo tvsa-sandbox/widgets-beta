@@ -1,16 +1,17 @@
 // LiveBlog
 
-%LiveBlog {
+.LiveBlog {
 
     &__TitleContainer {
 
-        @include Spacer(margin, all, base zero);
+        margin: 1em 0px;
 
     }
 
     &__Title {
 
-        display: block;
+        @include Typer(HeadlineMainDescription);
+        @include Themer(color, Text-Light-Headlines);
 
     }
 }

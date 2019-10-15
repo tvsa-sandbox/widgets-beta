@@ -1,6 +1,6 @@
 // SlideshowContainer Slider Button
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__SliderButton {
 
@@ -8,7 +8,8 @@
         border: 0px;
         cursor: pointer;
 
-        @include Hover($HTDuration:.3s, $HOpacity: .5);
+        @include Hover;
+        @include Themer(color, Color-7);
 
         &:focus {
 

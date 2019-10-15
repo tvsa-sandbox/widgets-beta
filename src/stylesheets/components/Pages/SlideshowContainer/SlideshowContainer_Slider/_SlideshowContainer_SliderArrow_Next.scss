@@ -1,6 +1,6 @@
 // SlideshowContainer Slider Arrow Next
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__SliderArrow {
 
@@ -15,13 +15,13 @@
             width: 40px;
             z-index: 2;
 
-            @include Hover($HTDuration:.3s, $HOpacity: .5);
+            @include Hover;
+            @include Themer(background, Color-2);
 
             .Icn_ArrowRight {
 
+                padding: 0px;
                 width: 40px;
-
-                @include Spacer(padding, all, zero);
 
             }
         }

@@ -1,6 +1,6 @@
 // EndCard ElementsThumbTextTitle
 
-%EndCard {
+.EndCard {
 
     &__ElementsThumbTextTitleContainer {
 
@@ -12,17 +12,22 @@
 
         @include Morpher(All-Desktop) {
 
-            height: 100%;
-            max-height: 66px;
+          height: 100%;
+          margin: 10px 0px;
+          max-height: 66px;
 
-            @include Spacer(margin, all, md zeroo);
+      }
 
-        }
     }
 
     &__ElementsThumbTextTitle {
 
-        display: block;
+        @include Typer(ItemTitleDescription);
 
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitleDesktop);
+
+        }
     }
 }

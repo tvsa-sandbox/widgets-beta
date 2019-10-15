@@ -1,15 +1,17 @@
 // Card Person Share Bar Core
 
-%Person {
+.Person {
 
     &__ShareBar {
 
-        bottom: 0px;
         display: flex;
         height: 60px;
         justify-content: center;
         position: absolute;
+        bottom: 0px;
         width: 100%;
+
+        @include Themer(background, Color-2);
 
     }
 }

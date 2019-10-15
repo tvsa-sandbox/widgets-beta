@@ -1,6 +1,6 @@
 // SlideshowCard Share Bar Icons Mobile
 
-@include ThemerUI(SlideshowCard) {
+@include ThemerUI(ShareBar) {
 
     @include Element(ShareBarMobile) {
 
@@ -38,4 +38,4 @@
 
         }
     }
-};
+}

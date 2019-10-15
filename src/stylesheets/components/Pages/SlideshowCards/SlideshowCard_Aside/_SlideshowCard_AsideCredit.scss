@@ -4,20 +4,17 @@
 
     &__AsideCreditContainer {
 
-        width: 70%;
+        width: 100%;
 
         @include Spacer(margin,all, xl zero);
 
-        @include Morpher(All-Desktop) {
-
-            width: 100%;
-
-        }
     }
 
     &__AsideCredit {
 
         text-transform: uppercase;
-        
+
+
+
     }
 }

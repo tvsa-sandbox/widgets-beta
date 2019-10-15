@@ -1,16 +1,17 @@
 // VideoContainer Title
 
-%VideoContainer {
+.VideoContainer {
 
     &__TitleContainer {
 
-        @include Spacer(margin, bottom, base);
+        margin-bottom: 1em;
 
     }
 
     &__Title {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyTextDesktop);
 
     }
 }

@@ -1,6 +1,6 @@
 // VideoContainer Label
 
-%VideoContainer {
+.VideoContainer {
 
     &__EndCardLabelContainer {
 
@@ -15,7 +15,11 @@
 
     &__EndCardLabel {
 
-        @include Spacer(padding, all, md xl);
+        padding: 10px 20px;
+
+        @include Themer(background, Color-1);
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitle);
 
     }
 }

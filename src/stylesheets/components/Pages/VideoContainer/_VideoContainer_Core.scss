@@ -1,11 +1,10 @@
 // VideoContainer
 
-%VideoContainer {
+.VideoContainer {
 
+    margin: 0px auto;
     max-width: 1332px;
     width: 100%;
-
-    @include Spacer(margin, all, zero auto);
 
     @include Morpher(Desktop) {
 

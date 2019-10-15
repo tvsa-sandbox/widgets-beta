@@ -5,10 +5,9 @@
     &__Lead {
 
         grid-area: Lead;
+        margin: 0px auto;
         max-width: 1440px;
         width: 100%;
-
-        @include Spacer(margin, all, zero auto);
 
     }
 }

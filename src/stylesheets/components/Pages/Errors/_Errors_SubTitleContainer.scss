@@ -1,18 +1,18 @@
 // Errors Container
 
-%Errors {
+.Errors {
 
     &__SubTitleContainer {
 
+        margin: 1em 0px;
         text-align: center;
-
-        @include Spacer(margin, all, base auto);
 
     }
 
     &__SubTitle {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyTextDesktop);
 
     }
 }

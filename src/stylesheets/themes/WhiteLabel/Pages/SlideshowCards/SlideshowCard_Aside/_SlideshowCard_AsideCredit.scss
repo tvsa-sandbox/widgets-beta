@@ -11,8 +11,14 @@
 
         @extend %SlideshowCard__AsideCredit;
 
-        @include Themer (color, Mini-Text-Light);
-        @include Typer (sm);
+        @include Themer (color, Mini-Text-Dark);
+        @include Typer(xs3);
 
+        @include Themer(color, Mini-Text-Dark, before) {
+
+            content:"Fuente: ";
+            @include Typer(xs3);
+            
+        }
     }
 }

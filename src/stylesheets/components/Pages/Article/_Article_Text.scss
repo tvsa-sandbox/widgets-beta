@@ -2,126 +2,150 @@
 
 %Article {
 
-    &__Paragraph {
+  &__Paragraph {
 
-        @include Spacer(margin, bottom, base);
+    margin-bottom: 1em;
 
-    		&-Bold {
+    @include Typer(BodyText);
 
-            font-weight: bold;
+    @include Spekter(All-Desktop) {
 
-            @include Spacer(margin, bottom, base);
+      @include Typer(BodyTextDesktop);
 
-    		}
-
-    		&-Italic {
-
-            font-style: italic;
-
-            @include Spacer(margin, bottom, base);
-
-    		}
-
-    		&-Cursive {
-
-    			  font-style: oblique;
-
-            @include Spacer(margin, bottom, base);
-        		@include Typer(BodyText);
-
-    		}
-
-    		&-Underline {
-
-    			  text-decoration: underline;
-
-        		@include Spacer(margin, bottom, base);
-
-    		}
-
-    		&-Stroke {
-
-    			  text-decoration: line-through;
-
-            @include Spacer(margin, bottom, base);
-
-    		}
-
-    		&-Link {
-
-    			  text-decoration: none;
-
-            @include Spacer(margin, bottom, base);
-
-    		}
-
-    		&-List {
-
-    			  list-style: none;
-
-        		@include Spacer(margin, bottom, base);
-
-    		}
-
-    		&-ListElement {
-
-    			  list-style: none;
-
-        		@include Spacer(margin, bottom, base);
-
-    		}
     }
 
-  	&__Text {
+    &-Bold {
 
-  		  display: block;
+      margin-bottom: 1em;
+      font-weight: bold;
 
-    		&-Bold {
+      @include Typer(BodyText);
+    }
 
-    			  font-weight: bold;
+    &-Italic {
 
-    		}
+      margin-bottom: 1em;
+      font-style: italic;
 
-    		&-Italic {
+      @include Typer(BodyText);
+    }
 
-    			  font-style: italic;
+    &-Cursive {
 
-    		}
+      font-style: oblique;
+      margin-bottom: 1em;
 
-    		&-Cursive {
+      @include Typer(BodyText);
 
-    			  font-style: oblique;
+    }
 
-    		}
+    &-Underline {
 
-    		&-Underline {
+      text-decoration: underline;
+      margin-bottom: 1em;
 
-    			  text-decoration: underline;
+      @include Typer(BodyText);
+    }
 
-    		}
+    &-Stroke {
 
-    		&-Stroke {
+      text-decoration: line-through;
+      margin-bottom: 1em;
 
-    			  text-decoration: line-through;
+      @include Typer(BodyText);
+    }
 
-    		}
+    &-Link {
 
-    		&-Link {
+      text-decoration: none;
+      margin-bottom: 1em;
 
-    			  text-decoration: none;
+      @include Typer(BodyText);
 
-    		}
+      @include Themer(color, Color-1);
 
-    		&-List {
+    }
 
-    			  list-style: none;
+    &-List {
 
-    		}
+      list-style: none;
+      margin-bottom: 1em;
 
-    		&-ListElement {
+      @include Typer(BodyText);
 
-    			  list-style: none;
+    }
 
-    		}
-	  }
+    &-ListElement {
+
+      list-style: none;
+      margin-bottom: 1em;
+
+      @include Typer(BodyText);
+
+    }
+  }
+
+  &__Text {
+
+    @include Typer(BodyText);
+
+    @include Spekter(All-Desktop) {
+
+      @include Typer(BodyTextDesktop);
+
+    }
+
+    &-Bold {
+
+      font-weight: bold;
+      @include Typer(BodyText);
+    }
+
+    &-Italic {
+
+      font-style: italic;
+      @include Typer(BodyText);
+
+    }
+
+    &-Cursive {
+
+      font-style: oblique;
+      @include Typer(BodyText);
+    }
+
+    &-Underline {
+
+      text-decoration: underline;
+      @include Typer(BodyText);
+    }
+
+    &-Stroke {
+
+      text-decoration: line-through;
+      @include Typer(BodyText);
+    }
+
+    &-Link {
+
+      text-decoration: none;
+
+      @include Themer(color, Color-1);
+      @include Typer(BodyText);
+    }
+
+    &-List {
+
+      list-style: none;
+
+      @include Typer(BodyText);
+    }
+
+    &-ListElement {
+
+      list-style: none;
+
+      @include Typer(BodyText);
+    }
+  }
 }

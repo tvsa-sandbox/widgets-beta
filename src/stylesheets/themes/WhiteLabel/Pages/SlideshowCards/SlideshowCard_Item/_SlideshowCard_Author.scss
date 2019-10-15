@@ -8,7 +8,7 @@
 
         @include Morpher(All-Desktop) {
 
-            @include Themer(border-right, Text-Light-Headlines, "1px solid");
+            @include Themer(border-right, Color-16, "1px solid");
 
         }
 
@@ -18,7 +18,8 @@
 
         @extend %SlideshowCard__Author;
 
-        @include Themer(color, Text-Light-Headlines);
+        @include Themer(color,Color-16);
+        @include Typer(sm3);
 
     }
 
@@ -26,7 +27,8 @@
 
         @extend %SlideshowCard__Date;
 
-        @include Themer(color, Text-Light-Headlines);
+        @include Themer(color,Color-16);
+        @include Typer(sm3);
 
     }
 }

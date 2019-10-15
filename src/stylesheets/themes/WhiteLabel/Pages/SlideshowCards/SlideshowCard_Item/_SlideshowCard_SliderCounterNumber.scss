@@ -4,10 +4,10 @@
 
     @include Element(SliderCounterNumber) {
 
-        @extend %SlideshowCard__SliderCounterNumber;
+        @extend %SlideshowCard__SliderCounterNumber !optional;
 
-        @include Themer(color, Text-Light-Headlines);
-        @include Typer(sm);
+        @include Themer(color, Color-16);
+        @include Typer(sm3);
 
     }
 }

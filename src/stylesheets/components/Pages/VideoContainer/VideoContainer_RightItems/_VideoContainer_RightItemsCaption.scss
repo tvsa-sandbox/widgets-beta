@@ -1,12 +1,11 @@
 // VideoContainer Right Items Caption
 
-%VideoContainer {
+.VideoContainer {
 
     &__RightItemCaption {
 
+        padding: 10px;
         width: 100%;
-
-        @include Spacer(padding, all, md);
 
     }
 }

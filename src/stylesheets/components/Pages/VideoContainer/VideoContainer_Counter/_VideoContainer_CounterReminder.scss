@@ -1,25 +1,30 @@
 // VideoContainer Counter Remandier
 
-%VideoContainer {
+.VideoContainer {
 
     &__CounterReminderContainer {
 
         max-width: 100%;
+        padding: 1em;
         width: 100%;
 
-        @include Spacer(padding, all, base);
+        @include Themer(border-top, White,"solid 1px");
 
         @include Morpher(All-Desktop) {
 
             max-width: 320px;
             width: auto;
 
+            @include Themer(border-left, White,"solid 1px");
+            @include Themer(border-top, White,"solid 0px");
+
         }
     }
 
     &__CounterReminder {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
 
     }
 }

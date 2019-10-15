@@ -1,16 +1,15 @@
 // Card Person Names
 
-%Person {
+.Person {
 
     &__Names {
 
         height: 0px;
-
-        @include Spacer(margin, top, md);
+        margin-top: 8px;
 
         @include Morpher(All-Desktop) {
 
-            @include Spacer(margin, top, zero);
+            margin-top: 0px;
 
         }
     }

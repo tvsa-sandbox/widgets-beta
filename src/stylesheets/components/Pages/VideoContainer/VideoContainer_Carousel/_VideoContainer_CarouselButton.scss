@@ -1,6 +1,6 @@
 // VideoContainer Carousel Button
 
-%VideoContainer {
+.VideoContainer {
 
     &__CarouselButton {
 
@@ -9,6 +9,8 @@
         cursor: pointer;
         height: 60px;
         width: 40px;
+
+        @include Themer(color, Color-7);
 
         &:focus {
 

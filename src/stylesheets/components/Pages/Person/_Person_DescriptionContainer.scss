@@ -1,16 +1,16 @@
 // Person
 
-%Person {
+.Person {
 
     &__DescriptionContainer {
 
-        @include Spacer(margin, all, sm zero);
-
+        margin: 1em 0px;
     }
 
     &__Description {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(BodyText);
 
     }
 }

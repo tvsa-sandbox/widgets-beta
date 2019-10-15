@@ -1,10 +1,11 @@
 // SlideshowContainer End Card
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__EndCardDescription {
 
-        display: block;
+        @include Themer(color, White);
+        @include Typer(SubTextInfo);
 
     }
 }

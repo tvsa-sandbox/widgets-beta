@@ -1,13 +1,12 @@
 // VideoContainer Description
 
-%VideoContainer {
+.VideoContainer {
 
     &__CaptionContainer {
 
         align-items: flex-start;
         display: flex;
-
-        @include Spacer(padding, all, md zero);
+        padding: 10px 0px;
 
     }
 }

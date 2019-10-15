@@ -4,13 +4,11 @@
 
     &__ShareBarDesktop {
 
-        align-items: center;
+        align-items: left;
         display: flex;
-        height: 45px;
-        justify-content: center;
+        height: 62px;
+        justify-content: left;
+        padding: 16px 0px;
         width: auto;
-
-        @include Spacer(padding, all, zero base);
-
     }
 }

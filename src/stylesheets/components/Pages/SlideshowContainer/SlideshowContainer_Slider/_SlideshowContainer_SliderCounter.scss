@@ -1,6 +1,6 @@
 // SlideshowContainer Silder Counter
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__SliderCounterContainer {
 
@@ -18,11 +18,13 @@
 
     &__SliderCounter {
 
-        @include Spacer(padding, all, xs md);
+        padding: 3px 8px;
+
+        @include Themer(background, Color-2);
 
         @include Morpher(All-Desktop) {
 
-            @include Spacer(padding, all, sm md);
+            padding: 5px 10px;
 
         }
     }

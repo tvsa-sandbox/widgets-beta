@@ -1,6 +1,6 @@
 //VideoContainer Item Time
 
-%VideoContainer {
+.VideoContainer {
 
     &__ItemPlayerTimeContainer {
 
@@ -26,7 +26,8 @@
 
     &__ItemPlayerTime {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
 
     }
 }

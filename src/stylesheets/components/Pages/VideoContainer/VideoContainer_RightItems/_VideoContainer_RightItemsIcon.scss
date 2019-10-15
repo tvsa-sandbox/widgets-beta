@@ -1,6 +1,6 @@
 //VideoContainer Carousel Item Icon
 
-%VideoContainer {
+.VideoContainer {
 
     &__RightItemIconContainer {
 
@@ -15,9 +15,11 @@
 
         border-radius: 50%;
         height: 40px;
+        margin: auto;
         width: 40px;
 
-        @include Spacer(margin, all, zero auto);
+        @include Themer(background, Color-9);
+        @include Themer(border, Color-1, 'solid 2px');
 
     }
 
@@ -25,9 +27,8 @@
 
         &::before {
 
+            margin-left: 5px;
             font-size: 30px;
-
-            @include Spacer(margin, left, sm);
 
         }
     }

@@ -1,5 +1,11 @@
 // Content Core
 
+%Page  {
+
+    // @include Themer (background, Color-4);
+    height: 100vh;
+}
+
 %PageContent {
 
     @include Morpher(Desktop) {

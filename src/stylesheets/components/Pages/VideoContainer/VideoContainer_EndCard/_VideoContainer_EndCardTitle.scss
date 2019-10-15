@@ -1,6 +1,6 @@
 // VideoContainer Title
 
-%VideoContainer {
+.VideoContainer {
 
     &__EndCardTitleContainer {
 
@@ -15,16 +15,21 @@
 
     &__EndCardTitle {
 
-        text-align: center;        
+        text-align: center;
+
+        @include Themer(color, Text-Light-Body);
+        @include Typer(ItemTitleDesktop);
 
         &::before {
 
             content: 'A continuación';
             display: block;
+            margin: 1em;
             position: relative;
             text-transform: uppercase;
 
-            @include Spacer(margin, all, base);
+            @include Themer(color, Text-Light-Body);
+            @include Typer(SubTextCredit);
 
         }
     }

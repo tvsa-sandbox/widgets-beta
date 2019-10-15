@@ -1,15 +1,14 @@
 // VideoContainer Counter Link Tilte
 
-%VideoContainer {
+.VideoContainer {
 
     &__CounterLink {
 
         display: block;
+        padding: 10px 0px;
         text-align: center;
         text-decoration: none;
         width: 100%;
-
-        @include Spacer(padding, all, md zero);
 
         @include Morpher(All-Desktop) {
 
@@ -20,7 +19,8 @@
 
     &__CounterLinkTitle {
 
-        display: block;
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDesktop);
 
     }
 }

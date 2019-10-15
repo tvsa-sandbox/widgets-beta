@@ -1,13 +1,12 @@
 // VideoContainer Right Items Title
 
-%VideoContainer {
+.VideoContainer {
 
     &__RightItemTitleContainer {
 
         display: block;
+        padding: 0px 5px;
         width: 100%;
-
-        @include Spacer(padding, all, zero sm);
 
     }
 
@@ -15,5 +14,13 @@
 
         text-align: left;
 
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitle);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitleDesktop);
+
+        }
     }
 }

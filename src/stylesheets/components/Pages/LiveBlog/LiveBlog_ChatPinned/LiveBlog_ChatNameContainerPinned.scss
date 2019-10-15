@@ -1,13 +1,12 @@
 // LiveBlog Chat Container
 
-%LiveBlog {
+.LiveBlog {
 
     &__ChatNameContainerPinned {
 
         align-items: flex-end;
         display: inline-flex;
-
-        @include Spacer(margin, right, sm);
+        margin-right: 1em;
 
         &::before {
 
@@ -25,6 +24,8 @@
     &__ChatNamePinned {
 
         text-transform: uppercase;
+
+        @include Typer(SubTextCredit);
 
     }
 }

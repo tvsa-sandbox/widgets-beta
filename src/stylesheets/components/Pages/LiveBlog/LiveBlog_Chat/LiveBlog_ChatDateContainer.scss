@@ -1,12 +1,11 @@
 // LiveBlog Chat Container
 
-%LiveBlog {
+.LiveBlog {
 
     &__ChatDateContainer {
 
         display: inline-flex;
-
-        @include Spacer(margin, all, zero sm);
+        margin: 0px 0.5em;
 
     }
 
@@ -14,5 +13,7 @@
 
         text-transform: uppercase;
 
+        @include Typer(SubTextCredit);
+        
     }
 }

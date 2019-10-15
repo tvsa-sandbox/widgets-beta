@@ -1,14 +1,13 @@
 // LiveBlog Chat Core
 
-%LiveBlog {
+.LiveBlog {
 
     &__ChatPinned {
 
         display: flex;
+        margin: 1em 0px;
         position: relative;
-
-        @include Spacer(margin, all, sm zero);
-        @include Spacer(padding, bottom, sm);
+        padding-bottom: 1em;
 
         &::before {
 

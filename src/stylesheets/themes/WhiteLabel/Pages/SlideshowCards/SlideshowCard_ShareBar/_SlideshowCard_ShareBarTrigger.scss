@@ -1,10 +1,18 @@
 // SlideshowCard Share Bar Trigger
 
-@include ThemerUI(SlideshowCard) {
+@include ThemerUI(ShareBar) {
 
     @include Element(ShareBarTrigger) {
 
-        @extend %SlideshowCard__ShareBarTrigger;
+        align-items: center;
+        cursor: pointer;
+        display: block;
+        font-size: 10px;
+        height: 55px;
+        justify-content: center;
+        order: 2;
+        position: relative;
+        width: 55px;
 
         @include Themer(background, Color-7);
         @include Themer(color, Text-Dark-Body);
@@ -18,7 +26,13 @@
             top: 110%;
             width: 90px;
 
-            @include Typer(sm);
+            @include Typer(SubTextInfo);
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            display: none !important;
 
         }
 
@@ -29,9 +43,11 @@
         }
     }
 
-    @include Element(ShareBarTriggerText) {
+    &__ShareBarTriggerText {
 
-        @extend %SlideshowCard__ShareBarTriggerText;
+        display: none;
+        position: relative;
+        top: 20%;
 
     }
-};
+}

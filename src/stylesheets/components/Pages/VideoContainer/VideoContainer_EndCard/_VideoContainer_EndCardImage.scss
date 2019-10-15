@@ -1,10 +1,10 @@
 // VideoContainer  VideoContainer EndCardThumbnail
 
-%VideoContainer {
+.VideoContainer {
 
     &__EndCardImageContainer {
 
-		    @include Spekter(16_9);
+		@include Spekter(16_9);
 
     }
 }

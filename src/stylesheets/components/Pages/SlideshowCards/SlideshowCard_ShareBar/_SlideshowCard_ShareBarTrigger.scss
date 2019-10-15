@@ -19,6 +19,12 @@
             display: none !important;
 
         }
+
+        &:focus {
+
+            outline: none;
+
+        }
     }
 
     &__ShareBarTriggerText {

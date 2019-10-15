@@ -1,12 +1,11 @@
-// SlideshowContainer Aside Title
+// SlideshowContainer Aside Title 
 
-%SlideshowContainer {
+.SlideshowContainer {
 
     &__AsideTitleContainer {
 
+        margin-bottom: 18px;
         width: 70%;
-
-        @include Spacer(margin, bottom, xl);
 
         @include Morpher(All-Desktop) {
 
@@ -17,7 +16,13 @@
 
     &__AsideTitle {
 
-        display: block;
+        @include Themer (color, Text-Light-Headlines);
+        @include Typer (ItemTitle);
 
+        @include Morpher(All-Desktop) {
+
+            @include Typer (ItemTitleDesktop);
+
+        }
     }
 }

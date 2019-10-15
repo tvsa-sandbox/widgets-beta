@@ -2,19 +2,18 @@
 
 %Article {
 
-    &__TagContainer {
+  &__TagContainer {
 
-        @include Spacer(margin,all, base zero);
-        @include Spacer(padding,all, zero base);
+    @include Spacer(margin,all, base zero);
+    @include Spacer(padding,all, zero base);
 
-    }
+  }
 
-    &__Tag {
+  &__Tag {
 
-        display: inline-flex;
-        width: auto;
+    display: inline-flex;
+    @include Spacer(padding,all, base);
+    width: auto;
 
-        @include Spacer(padding, all, base);
-        
-    }
+  }
 }

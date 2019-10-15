@@ -1,6 +1,6 @@
 // EndCard ElementsRelatedButton
 
-%EndCard {
+.EndCard {
 
     &__ElementsRelatedButtonContainer {
 
@@ -14,8 +14,8 @@
     &__ElementsRelatedButton {
 
         cursor: pointer;
+        padding: 0px;
 
-        @include Spacer(padding, all, zero);
         @include Hover;
 
     }
