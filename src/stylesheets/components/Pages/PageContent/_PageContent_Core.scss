@@ -2,7 +2,8 @@
 
 %Page  {
 
-    @include Themer (background, Color-4);
+    // @include Themer (background, Color-4);
+    height: 100vh;
 }
 
 %PageContent {

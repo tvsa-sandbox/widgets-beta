@@ -5,7 +5,7 @@
     @extend %Article;
 
     @include Themer(color, Text-Dark-Body);
-    @include Themer(background, Color-4);
+    // @include Themer(background, Color-4);
     @include Typer(md2, $FSMIN:$f-base);
 
     a {

@@ -1,0 +1,20 @@
+
+.Placeholder {
+    &__LoadContainer {
+
+        height: 5px;
+        width: 100vw;
+        position: absolute;
+        top: 0px;
+        z-index: 10;
+
+    }
+
+    &__Load {
+
+        background: red;
+        width: 50vw;
+        height: 100%;
+
+     }
+}
