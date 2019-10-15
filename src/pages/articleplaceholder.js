@@ -1,11 +1,13 @@
 import React from "react";
 import PlaceholderLay from "../layouts/placeholderlay";
 
-const ArticlePlaceholder = () => (
+const ArticlePlaceholder = () => {
+    let bar = 20;
+    return (
     <PlaceholderLay>
         <section className="Page">
             <div className="Placeholder__LoadContainer">
-                <div className="Placeholder__Load"></div>
+                <div className="Placeholder__Load" style={{ width: `${bar}vw` }}></div>
             </div>
             <section className="PageContent__Container WhiteLabel">
                 <section className="PageContent__Body WhiteLabel">
@@ -55,6 +57,7 @@ const ArticlePlaceholder = () => (
             </section>
         </section>
     </PlaceholderLay>
-);
+    );
+};
 
 export default ArticlePlaceholder;
