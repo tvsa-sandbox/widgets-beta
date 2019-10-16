@@ -1,0 +1,24 @@
+// SlideshowContainer SliderContainer Core
+
+.SlideshowContainer {
+
+    &__Slider {
+
+        position: relative;
+
+        @include Morpher(All-Desktop) {
+
+            padding: 5px;
+
+        }
+    }
+
+    &__SliderContainer {
+
+        margin-top: 0px;
+        max-width: 818px;
+        position: relative;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,73 @@
+// VideoContainer Counter Link Tilte
+
+.VideoContainer {
+
+    &__CounterTextContainer {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        width: 100%;
+
+        @include Themer(border-top, White,"solid 1px");
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextTag);
+
+        @include Morpher(All-Desktop) {
+
+            padding: 1em;
+            width: auto;
+
+            @include Themer(border-top, White,"solid 0px");
+            @include Typer(ItemTitle);
+
+        }
+    }
+
+    &__CounterLeftContainer {
+
+        padding: 0px 10px;
+
+        @include Morpher(All-Desktop) {
+
+            padding: 0px 1em;
+
+        }
+    }
+
+    &__CounterDaysContainer {
+
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        @include Themer(background, Color-1);
+
+    }
+
+    &__CounterDays {
+
+        @include Typer(ItemTitleDesktop);
+        @include Themer(color, Text-Light-Headlines);
+    }
+
+    &__CounterDaysText {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+    }
+
+    &__CounterChapterContainer {
+
+        padding: 0px 10px;
+
+        @include Morpher(All-Desktop) {
+
+            padding: 0px 1em;
+
+        }
+    }
+}

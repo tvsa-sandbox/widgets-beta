@@ -1,0 +1,18 @@
+// VideoContainer Right Items Item
+
+.VideoContainer {
+
+    &__RightItem {
+
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        text-decoration: none;
+        width: 100%;
+
+        @include Hover;
+        @include Themer(background, Color-1);
+
+    }
+}

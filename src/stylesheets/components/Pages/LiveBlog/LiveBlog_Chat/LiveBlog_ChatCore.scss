@@ -1,0 +1,27 @@
+// LiveBlog Chat Core
+
+.LiveBlog {
+
+    &__Chat {
+
+        display: flex;
+
+        &::before {
+
+            color: white;
+            content: "\f001";
+            display: none;
+            font-family: "Iconography";
+            font-size: 47px;
+            height: 47px;
+            line-height: 1;
+            width: 47px;
+
+            @include Morpher(All-Desktop) {
+
+                display: inline-block;
+
+            }
+        }
+    }
+}

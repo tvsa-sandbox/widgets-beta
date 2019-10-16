@@ -6,20 +6,4 @@
 
     @include Themer (background, Color-11);
 
-    &::before {
-
-        content: 'Widget 7 - Calendar';
-        width: 100%;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @include Spacer(padding, all, lg);
-        @include Themer(color, White);
-        @include Themer(background, Color-8);
-        @include Typer(sm-b, $FSMAX:$f-l, $FSMIN:$f-l);
-
-    }
-
 };

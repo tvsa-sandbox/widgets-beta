@@ -1,0 +1,13 @@
+// DataLight Container
+
+@include ThemerUI(DataLight) {
+
+    @include Element(Container) {
+        
+        @extend %DataLight__Container;
+        
+        @include Themer(border-bottom, Color-13 ,"2px solid");
+
+	}
+};
+

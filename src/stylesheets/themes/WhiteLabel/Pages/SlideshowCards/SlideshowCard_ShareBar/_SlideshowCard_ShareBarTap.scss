@@ -1,0 +1,12 @@
+// SlideshowCard Share Bar Tap
+
+@include ThemerUI(ShareBar) {
+
+    @include Element(ShareBarTap) {
+
+        display: block;
+        height: 45px;
+        width: 45px;
+
+    }
+}

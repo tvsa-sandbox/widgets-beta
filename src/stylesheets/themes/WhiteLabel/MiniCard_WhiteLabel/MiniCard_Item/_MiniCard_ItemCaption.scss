@@ -1,0 +1,12 @@
+// MiniCard Item Core
+
+@include ThemerUI(MiniCard){
+
+    @include Element(ItemCaption) {
+
+        @extend %MiniCard__ItemCaption;
+        
+        @include Themer(background, Color-1);
+
+    }
+};

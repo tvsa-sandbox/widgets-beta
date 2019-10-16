@@ -1,0 +1,20 @@
+// ArticlePage ShareBar Container
+
+@include ThemerUI(Article) {
+
+    @include Element(ShareBar) {
+
+        @extend %Article__ShareBar;
+
+        flex-grow: 1;
+
+        @include Spacer(padding, all, zero);
+        @include Spacer(margin, top, base);
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(margin, top, zero);
+
+        }
+    }
+}

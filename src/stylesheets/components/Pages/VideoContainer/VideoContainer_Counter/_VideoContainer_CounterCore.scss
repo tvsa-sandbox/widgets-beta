@@ -1,0 +1,15 @@
+// VideoContainer Counter Link Tilte
+
+.VideoContainer {
+
+    &__Counter {
+
+        border-bottom: solid white 1px; //Develop no agarra el abajo sin albur
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+
+        @include Themer(border-bottom, White,"solid 1px");
+
+    }
+}

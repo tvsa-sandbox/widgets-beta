@@ -1,0 +1,19 @@
+// SlideshowCard Aside Description
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(AsideDescriptionContainer) {
+
+        @extend %SlideshowCard__AsideDescriptionContainer;
+
+    }
+
+    @include Element(AsideDescription) {
+
+        @extend %SlideshowCard__AsideDescription !optional;
+
+        @include Themer (color, Color-16);
+        @include Typer (md3);
+
+    }
+}

@@ -1,0 +1,37 @@
+// SlideshowCard Share Bar Trigger
+
+%SlideshowCard {
+
+    &__ShareBarTrigger {
+
+        align-items: center;
+        cursor: pointer;
+        display: block;
+        font-size: 10px;
+        height: 55px;
+        justify-content: center;
+        order: 2;
+        position: relative;
+        width: 55px;
+
+        @include Morpher(All-Desktop) {
+
+            display: none !important;
+
+        }
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+
+    &__ShareBarTriggerText {
+
+        display: none;
+        position: relative;
+        top: 20%;
+
+    }
+}

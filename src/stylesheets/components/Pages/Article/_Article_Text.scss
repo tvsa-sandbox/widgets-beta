@@ -1,0 +1,151 @@
+// Article Title
+
+%Article {
+
+  &__Paragraph {
+
+    margin-bottom: 1em;
+
+    @include Typer(BodyText);
+
+    @include Spekter(All-Desktop) {
+
+      @include Typer(BodyTextDesktop);
+
+    }
+
+    &-Bold {
+
+      margin-bottom: 1em;
+      font-weight: bold;
+
+      @include Typer(BodyText);
+    }
+
+    &-Italic {
+
+      margin-bottom: 1em;
+      font-style: italic;
+
+      @include Typer(BodyText);
+    }
+
+    &-Cursive {
+
+      font-style: oblique;
+      margin-bottom: 1em;
+
+      @include Typer(BodyText);
+
+    }
+
+    &-Underline {
+
+      text-decoration: underline;
+      margin-bottom: 1em;
+
+      @include Typer(BodyText);
+    }
+
+    &-Stroke {
+
+      text-decoration: line-through;
+      margin-bottom: 1em;
+
+      @include Typer(BodyText);
+    }
+
+    &-Link {
+
+      text-decoration: none;
+      margin-bottom: 1em;
+
+      @include Typer(BodyText);
+
+      @include Themer(color, Color-1);
+
+    }
+
+    &-List {
+
+      list-style: none;
+      margin-bottom: 1em;
+
+      @include Typer(BodyText);
+
+    }
+
+    &-ListElement {
+
+      list-style: none;
+      margin-bottom: 1em;
+
+      @include Typer(BodyText);
+
+    }
+  }
+
+  &__Text {
+
+    @include Typer(BodyText);
+
+    @include Spekter(All-Desktop) {
+
+      @include Typer(BodyTextDesktop);
+
+    }
+
+    &-Bold {
+
+      font-weight: bold;
+      @include Typer(BodyText);
+    }
+
+    &-Italic {
+
+      font-style: italic;
+      @include Typer(BodyText);
+
+    }
+
+    &-Cursive {
+
+      font-style: oblique;
+      @include Typer(BodyText);
+    }
+
+    &-Underline {
+
+      text-decoration: underline;
+      @include Typer(BodyText);
+    }
+
+    &-Stroke {
+
+      text-decoration: line-through;
+      @include Typer(BodyText);
+    }
+
+    &-Link {
+
+      text-decoration: none;
+
+      @include Themer(color, Color-1);
+      @include Typer(BodyText);
+    }
+
+    &-List {
+
+      list-style: none;
+
+      @include Typer(BodyText);
+    }
+
+    &-ListElement {
+
+      list-style: none;
+
+      @include Typer(BodyText);
+    }
+  }
+}

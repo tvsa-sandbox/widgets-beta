@@ -1,0 +1,9 @@
+// GalleryLight Core
+
+@include ThemerUI(GalleryLight){
+
+    @extend %GalleryLight;
+
+    @include Themer(background, Color-1);
+
+};

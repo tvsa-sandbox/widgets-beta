@@ -1,0 +1,16 @@
+// SlideshowCard Aside Ads
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(AsideAdsContainer) {
+
+        @extend %SlideshowCard__AsideAdsContainer;
+
+        @include Morpher(All-Desktop) {
+
+            @include Themer(color, Mini-Text-Light);
+            @include Typer(SubTextInfo);
+
+        }
+    }
+}

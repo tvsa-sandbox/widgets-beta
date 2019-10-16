@@ -1,0 +1,12 @@
+// LiveBlog Chat Container
+
+.LiveBlog {
+
+    &__ChatTextContainerPinned {
+
+        margin: 1em 0px;
+
+        @include Typer(BodyTextSubtitleDesktop);
+        
+    }
+}

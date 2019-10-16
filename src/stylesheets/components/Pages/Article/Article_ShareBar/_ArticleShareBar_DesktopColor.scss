@@ -1,0 +1,73 @@
+// Article Desktop
+
+%Article {
+
+    &__ShareBarDesktop {
+
+        .Icn_Twitter {
+
+            color: #00aced;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(0,172,237, 0.5);
+
+            }
+        }
+
+        .Icn_Facebook {
+
+            color: #1877F2;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(24,119,242, 0.5);
+
+            }
+        }
+
+        .Icn_Instagram {
+
+            color: #F24664;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(242,70,100, 0.5);
+
+            }
+        }
+
+        .Icn_Email {
+
+            color: #000000;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(0,0,0, 0.5);
+
+            }
+        }
+
+        .Icn_WhatsApp {
+
+            color: #25D366;
+            height: 30px;
+
+            &:hover {
+
+                color: rgba(37,211,102, 0.5);
+
+            }
+
+            @include Morpher(All-Desktop) {
+
+                display: none;
+
+            }
+        }
+    }
+}

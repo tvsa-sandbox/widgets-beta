@@ -1,0 +1,42 @@
+// LiveBlog Chat Core
+
+.LiveBlog {
+
+    &__ChatPinned {
+
+        display: flex;
+        margin: 1em 0px;
+        position: relative;
+        padding-bottom: 1em;
+
+        &::before {
+
+            color: white;
+            content: "\f001";
+            display: none;
+            font-family: "Iconography";
+            font-size: 47px;
+            height: 47px;
+            line-height: 1;
+            width: 47px;
+
+            @include Morpher(All-Desktop) {
+
+                display: inline-block;
+
+            }
+        }
+
+        &::after {
+
+            background: white;
+            bottom: 0px;
+            content: "";
+            display: block;
+            height: 1px;
+            position: absolute;
+            width: 100%;
+
+        }
+    }
+}

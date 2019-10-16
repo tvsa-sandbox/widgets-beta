@@ -1,0 +1,25 @@
+// SlideshowCard Silder Track
+
+%SlideshowCard {
+
+    &__DescriptionContainer {
+
+        width: 100%;
+
+        @include Themer(color, Text-Light-Headlines);
+
+        line-height: 22px;
+
+        @include Morpher(All-Desktop) {
+
+            @include Spacer(padding, all, base);
+
+        }
+    }
+
+    &__Description {
+
+        display: block;
+        
+    }
+}

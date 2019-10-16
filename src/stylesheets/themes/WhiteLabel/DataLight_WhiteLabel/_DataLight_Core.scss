@@ -1,0 +1,12 @@
+// DataLight Core
+
+@include ThemerUI(DataLight) {
+
+    @include Element(DataLight);
+	
+	@include Layout(Wrapper);
+    @include Themer(background, Color-1);
+    
+    margin: 7% 0% 2%;
+
+};

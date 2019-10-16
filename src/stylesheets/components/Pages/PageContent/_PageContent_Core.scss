@@ -1,0 +1,26 @@
+// Content Core
+
+%Page  {
+
+    // @include Themer (background, Color-4);
+    height: 100vh;
+}
+
+%PageContent {
+
+    @include Morpher(Desktop) {
+
+        display: grid;
+        grid-template-areas: "Lead" "Container";
+        grid-template-columns: 1fr;
+
+    }
+
+    @include Morpher(Desktop-HD) {
+
+        display: grid;
+        grid-template-areas: "Lead" "Container";
+        grid-template-columns: 1fr;
+
+    }
+}

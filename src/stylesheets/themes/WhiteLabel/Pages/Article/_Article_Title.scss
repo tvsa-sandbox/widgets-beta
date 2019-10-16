@@ -1,0 +1,19 @@
+// Article Title
+
+@include ThemerUI(Article) {
+
+  @include Element(TitleContainer) {
+
+    @extend %Article__TitleContainer;
+
+  }
+
+  @include Element(Title) {
+
+    @extend %Article__Title;
+
+    @include Themer(color, Black);
+    @include Typer(xl, $FSMIN:$f-xl, $FSMAX:$f-xxl, $LS:-0.35px);
+
+  }
+}

@@ -1,0 +1,18 @@
+// SlideshowCard Aside Title
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(AsideTitleContainer) {
+
+        @extend %SlideshowCard__AsideTitleContainer;
+    }
+
+    @include Element(AsideTitle) {
+
+        @extend %SlideshowCard__AsideTitle !optional;
+
+        @include Themer (color, Text-Light-Headlines);
+        @include Typer (ItemTitle);
+
+    }
+}

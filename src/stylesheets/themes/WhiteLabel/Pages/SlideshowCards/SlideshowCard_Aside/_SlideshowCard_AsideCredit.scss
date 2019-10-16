@@ -1,0 +1,24 @@
+// SlideshowCard Aside Info
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(AsideCreditContainer) {
+
+        @extend %SlideshowCard__AsideCreditContainer;
+    }
+
+    @include Element(AsideCredit) {
+
+        @extend %SlideshowCard__AsideCredit;
+
+        @include Themer (color, Mini-Text-Dark);
+        @include Typer(xs3);
+
+        @include Themer(color, Mini-Text-Dark, before) {
+
+            content:"Fuente: ";
+            @include Typer(xs3);
+            
+        }
+    }
+}

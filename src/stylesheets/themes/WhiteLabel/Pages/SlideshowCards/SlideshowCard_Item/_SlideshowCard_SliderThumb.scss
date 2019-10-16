@@ -1,0 +1,16 @@
+// SlideshowCard Silder Thumb
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(SliderThumbnails) {
+
+        @extend %SlideshowCard__SliderThumbnails;
+
+    }
+
+    @include Element(SliderThumbContainer) {
+
+        @extend %SlideshowCard__SliderThumbContainer;
+
+    }
+}

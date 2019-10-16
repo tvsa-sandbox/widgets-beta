@@ -1,0 +1,17 @@
+// Article Title
+
+%Article {
+
+  &__TitleContainer {
+
+    @include Spacer(margin,all, base zero);
+    @include Spacer(padding,all, zero base);
+
+  }
+
+  &__Title {
+
+    display: block;
+
+  }
+}

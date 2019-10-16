@@ -1,0 +1,10 @@
+// Content Lead
+
+@include ThemerUI(PageContent) {
+
+    @include Element(Lead) {
+
+        @include %PageContent__Lead;
+
+    }
+}

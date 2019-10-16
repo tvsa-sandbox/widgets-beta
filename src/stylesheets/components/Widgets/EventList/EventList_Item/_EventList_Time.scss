@@ -1,0 +1,19 @@
+// EventList Headline
+
+%EventList {
+	
+	&__TimeContainer {
+		
+		align-items: center;
+		display: flex;
+		height: 40px;
+		
+		@include Spacer(margin, all, md);
+		
+	}
+	
+	&__Time {
+		
+
+	}
+}

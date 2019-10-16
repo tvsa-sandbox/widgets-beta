@@ -1,0 +1,67 @@
+// VideoContainer Carousel Arrows
+
+.VideoContainer {
+
+    &__CarouselArrow {
+
+        &-Previous {
+
+            display: none;
+
+            @include Morpher(All-Desktop) {
+
+                cursor: pointer;
+                display: flex;
+                height: 60px;
+                justify-content: center;
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                z-index: 2;
+
+                @include Hover;
+                @include Themer(background, Color-2);
+
+            }
+
+            @include Morpher(Laptop) {
+
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+
+            }
+        }
+
+        &-Next {
+
+            display: none;
+
+            @include Morpher(All-Desktop) {
+
+                bottom: 0px;
+                cursor: pointer;
+                display: flex;
+                height: 60px;
+                justify-content: center;
+                position: absolute;
+                width: 100%;
+                z-index: 2;
+
+                @include Hover;
+                @include Themer(background, Color-2);
+
+            }
+
+            @include Morpher(Laptop) {
+
+                bottom: 50%;
+                right: 0px;
+                transform: translateY(50%);
+                width: 40px;
+
+            }
+        }
+    }
+}

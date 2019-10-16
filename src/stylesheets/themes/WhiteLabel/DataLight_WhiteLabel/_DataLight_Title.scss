@@ -1,0 +1,19 @@
+// DataLight Title
+
+@include ThemerUI(DataLight) {
+
+    @include Element(TitleContainer) {
+
+        @extend %DataLight__TitleContainer;
+
+    }
+
+    @include Element(Title) {
+
+        @extend %DataLight__Title;
+        
+        @include Typer(ItemTitle);
+        @include Themer(Color, White);
+
+    }
+};

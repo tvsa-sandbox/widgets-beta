@@ -1,0 +1,27 @@
+// VideoContainer Right Items Container
+
+.VideoContainer {
+
+    &__RightItemDescriptionContainer {
+
+        display: block;
+        padding: 5px;
+        width: 100%;
+
+    }
+
+    &__RightItemDescription {
+
+        line-height: 15px;
+        text-align: left;
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(ItemTitleDescription);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(ItemTitleDescriptionDesktop);
+
+        }
+    }
+}

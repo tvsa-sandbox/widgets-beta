@@ -1,0 +1,21 @@
+// SlideshowCard Aside Title
+
+%SlideshowCard {
+
+    &__AsideTitleContainer {
+
+        margin-bottom: 18px;
+        width: 70%;
+
+        @include Morpher(All-Desktop) {
+
+            width: 100%;
+
+        }
+    }
+
+    &__AsideTitle {
+
+        
+    }
+}

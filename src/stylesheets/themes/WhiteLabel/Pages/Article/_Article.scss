@@ -1,0 +1,41 @@
+// Article
+
+// Article Core
+
+/* critical:start */
+@import './Article_Core';
+/* critical:end */
+
+// Article Aside
+
+@import './Article_Aside';
+
+// Article Title
+
+/* critical:start */
+@import './Article_Title';
+/* critical:end */
+
+// Article SubTitle
+
+/* critical:start */
+@import './Article_SubTitle';
+/* critical:end */
+
+// Article Credits
+
+/* critical:start */
+@import './Article_Credits';
+/* critical:end */
+
+// Article Tag
+
+@import './Article_Tag';
+
+// Article ShareBar
+
+@import './Article_ShareBar/ArticleShareBar';
+
+// Article Text
+
+//@import './Article_Text';

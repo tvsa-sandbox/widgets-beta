@@ -1,0 +1,16 @@
+// SlideshowContainer Silder Counter Number
+
+.SlideshowContainer {
+
+    &__SliderCounterNumber {
+
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(SubTextInfo);
+
+        @include Morpher(All-Desktop) {
+
+            @include Typer(SubTextInfoDesktop);
+
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// Mosaic Core
+
+.MatchLive {
+    
+    display: block;
+    height: 186px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
+    width: 100%;
+    
+    background: #f5f5f5;
+
+    @include Spacer(margin,all, zero auto);
+
+    @include Morpher(All-Desktop) {
+
+        display: block;
+        text-align: left;
+
+    }
+}

@@ -1,0 +1,10 @@
+// ArticlePage Desktop
+
+@include ThemerUI(ArticlePage) {
+
+    @include Element(ShareBarDesktop) {
+
+        @extend %Article__ShareBarDesktop;
+
+    }
+}

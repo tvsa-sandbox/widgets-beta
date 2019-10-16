@@ -1,0 +1,23 @@
+// ArticleRight Left Content Info
+
+%ArticleRight {
+
+    &__InfoContainer {
+
+        margin-top: -20px; //Develop
+
+        @include Spacer(padding, all, zero lg lg lg);
+
+        @include Morpher(Desktop) {
+
+            @include Spacer(padding, all, zero);
+
+        }
+
+        @include Morpher(Desktop-HD) {
+
+            @include Spacer(padding, all, zero);
+
+        }
+    }
+}

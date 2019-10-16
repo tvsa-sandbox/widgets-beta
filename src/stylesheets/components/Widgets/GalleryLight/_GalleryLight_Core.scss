@@ -1,0 +1,15 @@
+// GalleryLight Core
+
+%GalleryLight {
+	
+	max-width: 1180px;
+    height: 100%;
+    max-height: 728px;
+    overflow: hidden;
+    position: relative;
+	
+	@include Spacer(margin, top, xl);
+	
+}
+
+

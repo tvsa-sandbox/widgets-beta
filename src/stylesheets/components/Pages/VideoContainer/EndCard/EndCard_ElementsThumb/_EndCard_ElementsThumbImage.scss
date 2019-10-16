@@ -1,0 +1,24 @@
+// EndCard ElementsThumbImage
+
+.EndCard {
+
+    &__ElementsThumbOverlayImageContainer {
+
+        @include Spekter(16_9);
+
+        &::before {
+
+            font-size: 40px !important; //Unique case for the font size of the placeholder
+
+        }
+
+    }
+
+    &__ThumbImage {
+
+        height: 100%;
+        width: 100%;
+
+    }
+
+}

@@ -1,0 +1,154 @@
+// Article Title
+
+%Article {
+
+  &__Paragraph {
+
+    margin-bottom: 1em;
+
+    @include Typer(md2, $FSMIN:$f-base);
+
+    &-Bold {
+
+      margin-bottom: 1em;
+      font-weight: bold;
+
+      @include Typer(md2, $FSMIN:$f-base);
+
+    }
+
+    &-Italic {
+
+      margin-bottom: 1em;
+      font-style: italic;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Cursive {
+
+      font-style: oblique;
+      margin-bottom: 1em;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Underline {
+
+      text-decoration: underline;
+      margin-bottom: 1em;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Stroke {
+
+      text-decoration: line-through;
+      margin-bottom: 1em;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Link {
+
+      text-decoration: none;
+      margin-bottom: 1em;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+      @include Themer(color, Color-3);
+
+    }
+
+    &-List {
+
+      list-style: none;
+      margin-bottom: 1em;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-ListElement {
+
+      list-style: none;
+      margin-bottom: 1em;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+  }
+
+  &__Text {
+
+    @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    &-Bold {
+
+      font-weight: bold;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Italic {
+
+      font-style: italic;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Cursive {
+
+      font-style: oblique;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Underline {
+
+      text-decoration: underline;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Stroke {
+
+      text-decoration: line-through;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-Link {
+
+      text-decoration: none;
+
+      @include Themer(color, Color-1);
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-List {
+
+      list-style: none;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+
+    &-ListElement {
+
+      list-style: none;
+
+      @include Typer(md2, $FSMIN:$f-base, $LS: 0.2px);
+
+    }
+  }
+}

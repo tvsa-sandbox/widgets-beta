@@ -1,0 +1,10 @@
+// SlideshowCard Slider Button
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(DataContainer) {
+
+        @extend %SlideshowCard__DataContainer;
+
+    }
+}

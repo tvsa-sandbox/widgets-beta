@@ -1,0 +1,28 @@
+// SlideshowContainer Aside Ads
+
+.SlideshowContainer {
+
+    &__AsideAdsContainer {
+
+        display: none;
+
+        @include Morpher(All-Desktop) {
+
+            align-items: flex-end;
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            margin-top: 18px;
+            text-align: center;
+
+            @include Themer(color, Mini-Text-Light);
+            @include Typer(SubTextInfo);
+
+            @include Morpher(All-Desktop) {
+
+                @include Typer (SubTextInfoDesktop);
+
+            }
+        }
+    }
+}

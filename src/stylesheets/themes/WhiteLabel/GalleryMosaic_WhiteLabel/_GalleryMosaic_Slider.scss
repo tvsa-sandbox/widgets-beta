@@ -1,0 +1,12 @@
+// GalleryMosaic Slider
+
+@include ThemerUI(GalleryMosaic){
+    
+    @include Element(SliderContainer) {
+		
+		@extend %GalleryMosaic__SliderContainer;
+		
+	}
+}
+
+

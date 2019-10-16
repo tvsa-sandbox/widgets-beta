@@ -1,0 +1,10 @@
+// MiniCard Item Core
+
+@include ThemerUI(MiniCard){
+
+    @include Element(Item) {
+
+        @extend %MiniCard__Item;
+
+    }
+};

@@ -1,0 +1,31 @@
+// SlideshowContainer Silder Counter
+
+.SlideshowContainer {
+
+    &__SliderCounterContainer {
+
+        position: absolute;
+        right: 30px;
+        top: 20px;
+
+        @include Morpher(All-Desktop) {
+
+            right: 60px;
+            top: 20px;
+
+        }
+    }
+
+    &__SliderCounter {
+
+        padding: 3px 8px;
+
+        @include Themer(background, Color-2);
+
+        @include Morpher(All-Desktop) {
+
+            padding: 5px 10px;
+
+        }
+    }
+}

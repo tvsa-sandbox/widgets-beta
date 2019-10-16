@@ -1,0 +1,10 @@
+// GalleryMosaic Item Core
+
+@include ThemerUI(GalleryMosaic){
+
+    @include Element(Item) {
+
+        @extend %GalleryMosaic__Item;
+
+    }
+};

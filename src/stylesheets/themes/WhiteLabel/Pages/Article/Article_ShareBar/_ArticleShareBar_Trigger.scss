@@ -1,0 +1,12 @@
+// Article Trigger
+
+@include ThemerUI(ArticlePage) {
+
+    @include Element(ShareBarTrigger) {
+
+        @extend %Article__ShareBarTrigger;
+
+        display: none;
+
+    }
+}

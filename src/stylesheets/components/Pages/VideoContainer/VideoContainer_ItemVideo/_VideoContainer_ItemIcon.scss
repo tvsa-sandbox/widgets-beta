@@ -1,0 +1,45 @@
+//VideoContainer Item Icon
+
+.VideoContainer {
+
+    &__ItemPlayerIconContainer {
+
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        z-index: 1;
+
+        @include Morpher(Tablet) {
+
+            top: 40%;
+
+        }
+
+        @include Morpher(All-Desktop) {
+
+            top: 43%;
+
+        }
+    }
+
+    &__ItemPlayerIcon {
+
+        border-radius: 50%;
+        height: 60px;
+        margin: auto;
+        width: 60px;
+
+        @include Themer(background, Color-10);
+        @include Themer(border, Color-1, 'solid 2px');
+
+    }
+
+    .Icn_Video {
+
+        &::before {
+
+            margin-left: 5px;
+
+        }
+    }
+}

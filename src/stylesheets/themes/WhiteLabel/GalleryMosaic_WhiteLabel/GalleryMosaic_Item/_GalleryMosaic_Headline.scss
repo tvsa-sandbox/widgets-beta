@@ -1,0 +1,19 @@
+// GalleryMosaic Headline
+
+@include ThemerUI(GalleryMosaic){
+    
+    @include Element(HeadlinesText) {
+        
+        @extend %GalleryMosaic__HeadlinesText;
+        
+        @include Themer(color, Text-Light-Headlines);
+        @include Typer(sm);
+        
+    }
+    
+    @include Element(HeadlinesImageContainer) {
+        
+        @extend %GalleryMosaic__HeadlinesImageContainer;
+        
+    }
+};

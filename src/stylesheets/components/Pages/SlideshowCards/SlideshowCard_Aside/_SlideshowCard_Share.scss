@@ -1,0 +1,15 @@
+// SlideshowCard Share
+
+%SlideshowCard {
+
+    &__ShareBarContainer {
+
+        order: 4;
+
+        @include Morpher(All-Desktop) {
+
+        	order: 0;
+        }
+
+    }
+}

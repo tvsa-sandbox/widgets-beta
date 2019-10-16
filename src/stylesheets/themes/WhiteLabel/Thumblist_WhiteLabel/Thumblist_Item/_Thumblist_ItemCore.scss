@@ -1,0 +1,11 @@
+// Thumblist Item Core
+
+@include ThemerUI(Thumblist){
+
+    @include Element(Item) {
+
+        @extend %Thumblist__Item;
+
+    }
+
+};

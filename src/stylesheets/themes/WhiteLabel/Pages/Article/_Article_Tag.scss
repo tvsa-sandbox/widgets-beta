@@ -1,0 +1,20 @@
+// Article Tag
+
+@include ThemerUI(Article) {
+
+  @include Element(TagContainer) {
+
+    @extend %Article__TagContainer;
+
+  }
+
+  @include Element(Tag) {
+
+    @extend %Article__Tag;
+
+    @include Themer(background, Color-1);
+    @include Themer(color, Text-Light-Headlines);
+    @include Typer(SubTextInfoDesktop);
+
+  }
+}

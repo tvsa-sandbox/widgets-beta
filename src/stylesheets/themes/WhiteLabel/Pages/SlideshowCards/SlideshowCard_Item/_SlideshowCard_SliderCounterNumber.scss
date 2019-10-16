@@ -1,0 +1,13 @@
+// SlideshowCard Silder Counter Number
+
+@include ThemerUI(SlideshowCard) {
+
+    @include Element(SliderCounterNumber) {
+
+        @extend %SlideshowCard__SliderCounterNumber !optional;
+
+        @include Themer(color, Color-16);
+        @include Typer(sm3);
+
+    }
+}

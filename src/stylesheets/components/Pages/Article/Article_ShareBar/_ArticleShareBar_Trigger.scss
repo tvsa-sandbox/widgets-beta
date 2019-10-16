@@ -1,0 +1,22 @@
+// Article Trigger
+
+%Article {
+
+    &__ShareBarTrigger {
+
+        cursor: pointer;
+        display: none !important;
+        font-size: 10px !important;
+        height: 40px !important;
+        width: 40px !important;
+
+        @include Themer(background, Color-1);
+        @include Themer(color, Text-Dark);
+
+        &:focus {
+
+            outline: none;
+
+        }
+    }
+}

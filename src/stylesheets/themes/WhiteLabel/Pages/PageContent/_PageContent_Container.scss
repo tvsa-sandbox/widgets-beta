@@ -1,0 +1,15 @@
+// Content Container
+
+@include ThemerUI(PageContent) {
+
+    @include Element(Container) {
+
+        @extend %PageContent__Container;
+
+
+        @include Modify(Left) {
+
+            @extend %PageContent__Container-Left;
+        }
+    }
+}

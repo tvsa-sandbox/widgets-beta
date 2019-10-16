@@ -1,0 +1,17 @@
+// Article SubTitle
+
+%Article {
+
+  &__SubTitleContainer {
+
+    @include Spacer(margin, all, lg zero);
+    @include Spacer(padding, all, zero base);
+
+  }
+
+  &__SubTitle {
+
+    @include Spacer(padding, all, zero);
+
+  }
+}

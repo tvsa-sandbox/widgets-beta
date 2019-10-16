@@ -1,0 +1,10 @@
+// ShareBar Link
+
+@include ThemerUI(ArticlePage) {
+
+    @include Element(ShareBarLink) {
+
+        @extend %Article__ShareBarLink;
+
+    }
+}
