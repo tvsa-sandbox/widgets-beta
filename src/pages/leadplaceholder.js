@@ -9,12 +9,14 @@ const ArticlePlaceholder = () => {
             <div className="Placeholder__LoadContainer">
                 <div className="Placeholder__Load" style={{ width: `${bar}vw` }}></div>
             </div>
+            <section className="PageContent__Lead WhiteLabel">
+                <div className="Placeholder__Leadfull WhiteLabel">
+
+                </div>
+            </section>
             <section className="PageContent__Container WhiteLabel">
                 <section className="PageContent__Body WhiteLabel">
                     <div className="Article WhiteLabel">
-                        <div className="Placeholder__Lead WhiteLabel">
-
-                        </div>
                         <div className="Placeholder__Title WhiteLabel">
 
                         </div>
