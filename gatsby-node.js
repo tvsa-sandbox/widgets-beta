@@ -2,6 +2,7 @@
  * Implement Gatsby's Node APIs in this file.
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
+ * imagemin-webp docs: https://github.com/imagemin/imagemin-webp
  */
 
 // You can delete this file if you're not using it
