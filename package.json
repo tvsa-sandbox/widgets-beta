@@ -5,6 +5,7 @@
   "version": "2.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "copy-webpack-plugin": "^5.0.4",
     "gatsby": "^2.3.15",
     "gatsby-cli": "^2.5.12",
     "gatsby-image": "^2.0.37",
@@ -15,20 +16,24 @@
     "gatsby-plugin-sharp": "^2.0.32",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.17",
+    "imagemin-webp": "^5.1.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "node-sass": "^4.11.0",
     "orcaslide": "^1.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "glob": "^7.1.5"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
     "gh-pages": "^2.0.1",
     "iltorb": "^2.4.3",
-    "imagemin-webpack-plugin": "^2.4.2",
     "prettier": "^1.16.4",
-    "sass": "^1.20.0"
+    "sass": "^1.20.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   },
   "keywords": [
     "gatsby"
