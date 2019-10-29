@@ -15,9 +15,10 @@ const ImageminWebP = require("imagemin-webp");
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
+const publicPath = path.join(__dirname, "public");
+
 exports.onPostBuild = () => new Promise((resolve, reject) => {
     try {
-        const publicPath = path.join(__dirname, "public");
         const options = { nodir: true };
         const gzippable = glob.sync(`${publicPath}/**/?(*.html|*.js|*.css|*.svg)`, options);
         gzippable.forEach((file) => {
@@ -30,14 +31,12 @@ exports.onPostBuild = () => new Promise((resolve, reject) => {
     } resolve();
 });
 
-exports.onCreateWebpackConfig = ({
-    actions,
-}) => {
+exports.onCreateWebpackConfig = ({ actions }) => {
     actions.setWebpackConfig({
         plugins: [
             new CopyWebpackPlugin([{
                 from: "./public/static/aspect-ratio-images/**/**",
-                to: "./static/aspect-ratio-images/webp/[name].webp",
+                to: `${publicPath}/static/aspect-ratio-images/webp/[name].webp`,
             }]),
             new ImageminPlugin({
                 plugins: [ImageminWebP({ quality: 50 })],
