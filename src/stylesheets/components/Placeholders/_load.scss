@@ -3,7 +3,7 @@
     &__LoadContainer {
 
         height: 5px;
-        width: 100vw;
+        width: 100%;
         position: absolute;
         top: 0px;
         z-index: 10;
@@ -14,7 +14,7 @@
 
         background: red;
         height: 100%;
-        transition: all 5s ease-in;
+        transition: all 2s ease-in;
 
      }
 }
