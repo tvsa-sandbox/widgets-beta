@@ -34,12 +34,54 @@ const ArticlePlaceholder = () => {
             <section className="PageContent__Container WhiteLabel">
                 <section className="PageContent__BodyFull WhiteLabel">
                     <div className="Placeholder__Carrousel WhiteLabel">
-                        <div className="Placeholder__Card WhiteLabel"></div>
-                        <div className="Placeholder__Card WhiteLabel"></div>
-                        <div className="Placeholder__Card WhiteLabel"></div>
-                        <div className="Placeholder__Card WhiteLabel"></div>
-                        <div className="Placeholder__Card WhiteLabel"></div>
-                        <div className="Placeholder__Card WhiteLabel"></div>
+                        <div className="Placeholder__Card WhiteLabel">
+                            <div className="Placeholder__Img WhiteLabel" />
+                            <div className="Placeholder__Title WhiteLabel" />
+                            <div className="Placeholder__SubTitle WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                        </div>
+                        <div className="Placeholder__Card WhiteLabel">
+                            <div className="Placeholder__Img WhiteLabel" />
+                            <div className="Placeholder__Title WhiteLabel" />
+                            <div className="Placeholder__SubTitle WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                        </div>
+                        <div className="Placeholder__Card WhiteLabel">
+                            <div className="Placeholder__Img WhiteLabel" />
+                            <div className="Placeholder__Title WhiteLabel" />
+                            <div className="Placeholder__SubTitle WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                        </div>
+                        <div className="Placeholder__Card WhiteLabel">
+                            <div className="Placeholder__Img WhiteLabel" />
+                            <div className="Placeholder__Title WhiteLabel" />
+                            <div className="Placeholder__SubTitle WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                        </div>
+                        <div className="Placeholder__Card WhiteLabel">
+                            <div className="Placeholder__Img WhiteLabel" />
+                            <div className="Placeholder__Title WhiteLabel" />
+                            <div className="Placeholder__SubTitle WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                        </div>
+                        <div className="Placeholder__Card WhiteLabel">
+                            <div className="Placeholder__Img WhiteLabel" />
+                            <div className="Placeholder__Title WhiteLabel" />
+                            <div className="Placeholder__SubTitle WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                            <div className="Placeholder__Paragraph WhiteLabel" />
+                        </div>
                     </div>
                 </section>
             </section>
