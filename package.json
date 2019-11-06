@@ -5,6 +5,7 @@
   "version": "2.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@marvelapp/react-ab-test": "^2.3.0",
     "gatsby": "^2.3.15",
     "gatsby-cli": "^2.5.12",
     "gatsby-image": "^2.0.37",
