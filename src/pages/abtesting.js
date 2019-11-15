@@ -6,11 +6,11 @@ import Related2 from "../components/Related2/";
 emitter.defineVariants("Prueba", ["A", "B"], [50, 50] );
 
 class App extends React.Component {
-  experimentRef = React.createRef();
+  //experimentRef = React.createRef();
 
-  onButtonClick(e) {
-    this.experimentRef.current.win();
-  }
+  //onButtonClick(e) {
+    //this.experimentRef.current.win();
+  //}
 
   render() {
     return (
@@ -24,17 +24,17 @@ class App extends React.Component {
             <Related2 />
           </Variant>
         </Experiment>
-        <button onClick={this.onButtonClick}>Boton</button>
+        // <button onClick={this.onButtonClick}>Boton</button>
       </div>
     );
   }
 }
 
 // Called when a 'win' is emitted, in this case by this.experimentRef.current.win()
-emitter.addWinListener(function(experimentName, variantName) {
-  console.log(
-    `Variant ${variantName} of experiment ${experimentName} was clicked`
-  );
-});
+//emitter.addWinListener(function(experimentName, variantName) {
+//  console.log(
+  //  `Variant ${variantName} of experiment ${experimentName} was clicked`
+  //);
+//});
 
 export default App;
