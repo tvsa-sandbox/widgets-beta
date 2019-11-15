@@ -24,7 +24,6 @@ class App extends React.Component {
             <Related2 />
           </Variant>
         </Experiment>
-        // <button onClick={this.onButtonClick}>Boton</button>
       </div>
     );
   }
