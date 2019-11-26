@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { withPrefix } from "gatsby";
 
 const Related1 = () => (
     <section className="RelatedContent1 WhiteLabel">
@@ -7,7 +8,9 @@ const Related1 = () => (
             <div className="RelatedContent1__Thumbnail WhiteLabel">
                 <div className="RelatedContent1__ImageContainer WhiteLabel">
                     <picture>
-                        <img className="RelatedContent1__Image WhiteLabel" src="./static/aspect-ratio-images/1x1-158x158.jpg" alt="ImageEvent" />
+                        <source media="(min-width: 0px) and (max-width: 768px)" srcSet={withPrefix("/static/aspect-ratio-images/1x1-158x158.jpg")} />
+                        <source media="(min-width: 769px)" srcSet={withPrefix("/static/aspect-ratio-images/1x1-158x158.jpg")} />
+                        <img className="RelatedContent1__Image WhiteLabel" src={withPrefix("/static/aspect-ratio-images/1x1-158x158.jpg")} alt="Preview" />
                     </picture>
                 </div>
             </div>

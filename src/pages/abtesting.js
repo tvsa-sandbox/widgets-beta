@@ -6,7 +6,7 @@ import Related2 from "../components/Related2/";
 emitter.defineVariants("Prueba", ["A", "B"], [50, 50] );
 
 class App extends React.Component {
-  //experimentRef = React.createRef();
+  experimentRef = React.createRef();
 
   //onButtonClick(e) {
     //this.experimentRef.current.win();
