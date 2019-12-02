@@ -5,6 +5,7 @@
 
         height: 2em;
         margin: 1em 0;
+        width: 90%;
 
         @include Themer(background-color, Color-10);
 
