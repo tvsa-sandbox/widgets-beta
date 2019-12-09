@@ -34,14 +34,14 @@ const Related2 = () => (
             <div className="RelatedContent2__Share WhiteLabel">
                 <ul className="RelatedContent2__ShareList WhiteLabel">
                     <li className="RelatedContent2__ShareItem WhiteLabel">
-                        <Link to="/" className="RelatedContent1__ShareLink Icn_WhiteLabel WhiteLabel">
+                        <Link to="/" className="RelatedContent2__ShareLink Icn_WhiteLabel WhiteLabel">
                             <span className="Display">
                                 Facebook
                                     </span>
                         </Link>
                     </li>
                     <li className="RelatedContent2__ShareItem WhiteLabel">
-                        <Link to="/" className="RelatedContent1__ShareLink Icn_WhiteLabel WhiteLabel">
+                        <Link to="/" className="RelatedContent2__ShareLink Icn_WhiteLabel WhiteLabel">
                             <span className="Display">
                                 Twitter
                                     </span>
@@ -49,14 +49,14 @@ const Related2 = () => (
                     </li>
 
                     <li className="RelatedContent2__ShareItem WhiteLabel">
-                        <Link to="/" className="RelatedContent1__ShareLink Icn_WhiteLabel WhiteLabel">
+                        <Link to="/" className="RelatedContent2__ShareLink Icn_WhiteLabel WhiteLabel">
                             <span className="Display">
                                 Mail
                                     </span>
                         </Link>
                     </li>
                     <li className="RelatedContent2__ShareItem WhiteLabel">
-                        <Link to="/" className="RelatedContent1__ShareLink Icn_WhiteLabel  whatsapp WhiteLabel">
+                        <Link to="/" className="RelatedContent2__ShareLink Icn_WhiteLabel  whatsapp WhiteLabel">
                             <span className="Display">
                                 WhatsApp
                                     </span>

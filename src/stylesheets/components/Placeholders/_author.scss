@@ -12,6 +12,17 @@
 
       }
 
+      &__Img {
+
+          width: 100%;
+          max-width: 826px;
+
+          @include Spekter(16_9);
+
+          @include Themer(background-color, Color-10);
+
+       }
+
       &__Carrousel {
 
           display: flex;
@@ -29,7 +40,6 @@
            min-height: 100%;
            margin: 1em;
 
-           @include Themer(background-color, Color-10);
        }
 
       &__Most {
