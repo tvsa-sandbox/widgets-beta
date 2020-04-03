@@ -15,3 +15,4 @@ public/*
 public/static/*
 !public/static/aspect-ratio-images/
 !public/static/sassdoc/
+!public/static/pwa/
