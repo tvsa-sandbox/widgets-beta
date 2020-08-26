@@ -39,6 +39,7 @@
         "storybook-dark-mode": "^0.3.0"
     },
     "scripts": {
-        "storybook": "start-storybook --ci -p 8888 -s ./lib"
+        "storybook": "start-storybook --ci -p 8888 -s ./lib",
+        "deploy": "storybook-to-ghpages -s public"
     }
 }
