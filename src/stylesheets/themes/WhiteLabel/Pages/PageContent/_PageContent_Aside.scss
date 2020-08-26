@@ -1,9 +1,0 @@
-// Content Aside
-
-@include ThemerUI(PageContent) {
-
-    @include Element(Aside) {
-
-        @extend %PageContent__Aside;
-    }
-}

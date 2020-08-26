@@ -1,9 +1,0 @@
-// GalleryMosaic Core
-
-@include ThemerUI(GalleryMosaic){
-
-    @extend %GalleryMosaic;
-
-    @include Themer(background, Color-1);
-
-};

@@ -1,9 +1,0 @@
-// SuperCard Core
-
-@include ThemerUI(SuperCard) {
-
-    @include Element(Thumbnail) {
-        @extend %SuperCard__Thumbnail;
-    }
-
-};

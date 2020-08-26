@@ -1,9 +1,0 @@
-// Inline Video Share Bar Mobile
-
-@include ThemerUI(Share) {
-    
-    @include Element(ShareMobile) {
-
-        @extend %Share__ShareMobile;
-    }
-}
