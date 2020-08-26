@@ -1,9 +1,0 @@
-//Share Bar Icons Mobile
-
-@include ThemerUI(Share) {
-
-    @include Element(ShareMobile) {
-
-        @extend %Share__ShareMobile;
-    }
-}
