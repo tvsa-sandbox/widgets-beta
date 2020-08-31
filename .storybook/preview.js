@@ -7,6 +7,11 @@ import { ThemeProvider } from "styled-components";
 import * as whiteLabel from "../lib/themes/whiteLabel";
 import * as lasEstrellas from "../lib/themes/lasEstrelllas";
 import * as TUDN from "../lib/themes/tudn";
+import * as Bandamax from "../lib/themes/bandamax";
+import * as Canal5 from "../lib/themes/canal5";
+import * as elnueve from "../lib/themes/elnueve";
+import * as telehit from "../lib/themes/telehit";
+import * as unicable from "../lib/themes/unicable";
 import GlobalStyle from "../lib/accessories/GlobalStyles";
 import { themes } from "@storybook/theming";
 import merge from "lodash.merge";
@@ -15,6 +20,11 @@ import get from "lodash.get";
 const wl = whiteLabel;
 const le = lasEstrellas;
 const tudn = TUDN;
+const bmx = Bandamax;
+const cinco = Canal5;
+const c9 = elnueve;
+const hit = telehit;
+const uni = unicable;
 
 const modes = ["light", "dark"];
 
@@ -28,12 +38,22 @@ const getTheme = (mode, btheme) =>
 const THEMES = {
     TUDN: getTheme(modes[0], tudn),
     "TUDN Dark": getTheme(modes[1], tudn),
+    "Bandamax Light": getTheme(modes[0], bmx),
+    "Bandamax Dark": getTheme(modes[1], bmx),
+    "Canal5 Light": getTheme(modes[0], cinco),
+    "Canal5 Dark": getTheme(modes[1], cinco),
+    "ElNueve Light": getTheme(modes[0], c9),
+    "ElNueve Dark": getTheme(modes[1], c9),
+    "Telehit Light": getTheme(modes[0], hit),
+    "Telehit Dark": getTheme(modes[1], hit),
+    "Unicable Light": getTheme(modes[0], uni),
+    "Unicable Dark": getTheme(modes[1], uni),
     "las Estrellas": getTheme(modes[1], le),
     "Las Estrellas Light": getTheme(modes[0], le),
     "White Label": getTheme(modes[0], wl),
     "White Label Darks": getTheme(modes[1], wl),
 };
-console.log("tema", THEMES["las Estrellas"].ui.name);
+// console.log("tema", THEMES["las Estrellas"].ui.name);
 addDecorator(withA11y);
 addParameters({
     backgrounds: [

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import { Title, Box, Text, Info, Time, Counter } from "accessories";
+import { IconDuration } from "../../lib/accessories";
 
 export default {
     decorators: [withKnobs],
@@ -73,6 +74,21 @@ export const DURATION = () => {
             </Box>
             <Box variant="Space">
                 <Time variant="DurationLight">{name}</Time>
+            </Box>
+        </div>
+    );
+};
+
+export const ICONDURATION = () => {
+    const name = text("Duracion", "24:00");
+    return (
+        <div>
+            <Title variant="h2">Duration</Title>
+            <Box variant="Space">
+                <IconDuration variant="Solid">{name}</IconDuration>
+            </Box>
+            <Box variant="Space">
+                <IconDuration variant="Transparent">{name}</IconDuration>
             </Box>
         </div>
     );

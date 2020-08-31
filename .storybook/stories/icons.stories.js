@@ -11,26 +11,27 @@ export default {
 export const ICONS = () => (
     <Fragment>
         <Title variant="h2">Icons</Title>
-        <Icons color="#fff" name="Instagram" />
-        <Icons color="#fff" name="Twitter" />
-        <Icons color="#fff" name="Facebook" />
-        <Icons color="#fff" name="Televisa" />
-        <Icons color="#fff" name="WhatsApp" />
-        <Icons color="#fff" name="YouTube" />
-        <Icons color="#fff" name="Pinterest" />
-        <Icons color="#fff" name="LasEstrellas" />
-        <Icons color="#fff" name="Menu" />
-        <Icons color="#fff" name="Close" />
-        <Icons color="#fff" name="Logo" />
-        <Icons color="#fff" name="Email" />
-        <Icons color="#fff" name="TelevisaFull" />
-        <Icons color="#fff" name="CEA" />
-        <Icons color="#fff" name="Deportes" />
-        <Icons color="#fff" name="Nueve" />
-        <Icons color="#fff" name="News" />
-        <Icons color="#fff" name="ForoTV" />
-        <Icons color="#fff" name="CanalCinco" />
-        <Icons color="#fff" name="Search" />
+        <Icons color="#ccc" name="Instagram" />
+        <Icons color="#ccc" name="Twitter" />
+        <Icons color="#ccc" name="Facebook" />
+        <Icons color="#ccc" name="Televisa" />
+        <Icons color="#ccc" name="WhatsApp" />
+        <Icons color="#ccc" name="YouTube" />
+        <Icons color="#ccc" name="Pinterest" />
+        <Icons color="#ccc" name="LasEstrellas" />
+        <Icons color="#ccc" name="Menu" />
+        <Icons color="#ccc" name="Close" />
+        <Icons color="#ccc" name="Logo" />
+        <Icons color="#ccc" name="Email" />
+        <Icons color="#ccc" name="TelevisaFull" />
+        <Icons color="#ccc" name="CEA" />
+        <Icons color="#ccc" name="Deportes" />
+        <Icons color="#ccc" name="Nueve" />
+        <Icons color="#ccc" name="News" />
+        <Icons color="#ccc" name="ForoTV" />
+        <Icons color="#ccc" name="CanalCinco" />
+        <Icons color="#ccc" name="Search" />
+        <Icons color="#ccc" name="Gallery" />
         <Icons variant="Inactive" name="Search" />
     </Fragment>
 );
