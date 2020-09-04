@@ -2,6 +2,7 @@ import React from "react";
 import { addParameters, addDecorator } from "@storybook/react";
 import { withKnobs, select } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
+import { withHTML } from "@whitespace/storybook-addon-html/react";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { ThemeProvider } from "styled-components";
 import * as whiteLabel from "../lib/themes/whiteLabel";
@@ -13,7 +14,8 @@ import * as elnueve from "../lib/themes/elnueve";
 import * as telehit from "../lib/themes/telehit";
 import * as unicable from "../lib/themes/unicable";
 import GlobalStyle from "../lib/accessories/GlobalStyles";
-import { themes } from "@storybook/theming";
+// import { themes } from "@storybook/theming";
+import desingsystem from "./desingsystem";
 import merge from "lodash.merge";
 import get from "lodash.get";
 
@@ -55,13 +57,14 @@ const THEMES = {
 };
 // console.log("tema", THEMES["las Estrellas"].ui.name);
 addDecorator(withA11y);
+addDecorator(withHTML);
 addParameters({
-    backgrounds: [
-        { name: "Light", value: "#f5f5f5", default: true },
-        { name: "Dark", value: "#000" },
-    ],
+    // backgrounds: [
+    //     { name: "Light", value: "#f5f5f5", default: true },
+    //     { name: "Dark", value: "#000" },
+    // ],
     options: {
-        theme: themes.dark,
+        theme: desingsystem,
     },
     parameters: {
         a11y: {
