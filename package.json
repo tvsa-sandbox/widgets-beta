@@ -24,6 +24,7 @@
         "@storybook/addon-viewport": "^5.3.13",
         "@storybook/react": "^5.3.12",
         "@whitespace/storybook-addon-html": "^2.0.0",
+        "@storybook/storybook-deployer": "^2.8.6",
         "babel-eslint": "^10.0.3",
         "babel-loader": "^8.0.6",
         "babel-plugin-lodash": "^3.3.4",
@@ -39,6 +40,7 @@
         "storybook-dark-mode": "^0.3.0"
     },
     "scripts": {
-        "storybook": "start-storybook --ci -p 3333 -s ./lib"
+        "storybook": "start-storybook --ci -p 3333 -s ./lib",
+        "deploy": "storybook-to-ghpages -s public"
     }
 }
