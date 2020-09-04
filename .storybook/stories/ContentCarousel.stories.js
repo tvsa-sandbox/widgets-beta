@@ -4,7 +4,7 @@ import { ContentCarousel } from "widgets";
 import { Title, Box } from "accessories";
 export default {
     decorators: [withKnobs],
-    title: "Content Carousel",
+    title: "Widgets/ContentCarousel",
 };
 
 export const CONTENTCAROUSEL = () => {
