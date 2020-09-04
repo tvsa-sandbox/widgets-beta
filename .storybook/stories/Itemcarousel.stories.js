@@ -6,7 +6,7 @@ import SkeletonCarousel from "../../lib/items/ItemCarousel/SkeletonCarousel";
 
 export default {
     decorators: [withKnobs],
-    title: "Item Carousel",
+    title: "Items/Carousel",
 };
 
 export const ITEMCAROUSEL = () => {

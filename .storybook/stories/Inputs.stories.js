@@ -4,7 +4,7 @@ import { Form, Title, Label, Box, Inputs, Icons } from "accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "A Inputs",
+    title: "Atoms/Inputs",
 };
 
 export const INPUTS = () => {

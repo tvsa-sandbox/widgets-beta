@@ -5,7 +5,7 @@ import { Image, Placeholder, Title, Box } from "accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "A Images",
+    title: "Atoms/Images",
 };
 
 export const PLACEHOLDER = () => (
@@ -14,6 +14,7 @@ export const PLACEHOLDER = () => (
 
         <Box my="lg">
             <Placeholder ratio="aspect1x1" />
+            <Image ratio="aspect16x9" />
         </Box>
 
         <Box my="lg">
