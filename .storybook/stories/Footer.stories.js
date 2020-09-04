@@ -7,7 +7,7 @@ import FooterAMP from "../../lib/widgets/Footer/FooterAMP";
 
 export default {
     decorators: [withKnobs],
-    title: "Footer",
+    title: "Widgets/Footer",
 };
 
 export const FOOTER = () => {

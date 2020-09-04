@@ -5,7 +5,7 @@ import { IconDuration } from "../../lib/accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "A Text",
+    title: "Atoms/Text",
 };
 
 export const LABEL = () => {
