@@ -5,7 +5,7 @@ import Layout from "../../lib/layout";
 
 export default {
     decorators: [withKnobs],
-    title: "Templete/Layout",
+    title: "Desing System/Template/Layout",
 };
 
 export const LAYOUT = () => {

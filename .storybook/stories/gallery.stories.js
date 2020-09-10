@@ -5,7 +5,7 @@ import Gallery from "../../lib/contentTypes/Gallery";
 
 export default {
     decorators: [withKnobs],
-    title: "Templete/CTGallery",
+    title: "Desing System/Template/CTGallery",
 };
 
 export const GALLERY = () => {

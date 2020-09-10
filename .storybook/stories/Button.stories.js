@@ -4,8 +4,15 @@ import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import { Button, Title, Box, Icons } from "accessories";
 
 export default {
-    decorators: [withKnobs , (Story) => <div style={{ margin: '5rem 2rem'}}><Story/></div>],
-    title: "Atoms/Buttons",
+    decorators: [
+        withKnobs,
+        Story => (
+            <div style={{ margin: "5rem 2rem" }}>
+                <Story />
+            </div>
+        ),
+    ],
+    title: "Desing System/Atoms/Buttons",
 };
 
 export const BUTTON = () => {
@@ -46,10 +53,9 @@ export const BUTTON = () => {
 
 export const BUTTONICON = () => (
     <div>
-
         <Box variant="Space">
             <Button disabled={boolean("Desactivado", false)}>
-                <Icons name="Instagram" variant="Active"/>
+                <Icons name="Instagram" variant="Active" />
             </Button>
         </Box>
 
@@ -83,7 +89,6 @@ export const BUTTONDOUBLE = () => {
     const name = text("Name", "Click Me!");
     return (
         <div>
-
             <Box variant="Space">
                 <Button disabled={boolean("Desactivado", false)}>
                     <Icons name="Instagram" />

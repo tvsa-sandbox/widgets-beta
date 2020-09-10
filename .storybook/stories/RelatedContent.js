@@ -5,10 +5,9 @@ import RelatedContent from "../../lib/items/RelatedContent";
 
 export default {
     decorators: [withKnobs],
-    title: "Related Content",
+    title: "Desing System/Related Content",
 };
 
 export const RELATEDCONTENT = () => {
     return <RelatedContent />;
 };
-

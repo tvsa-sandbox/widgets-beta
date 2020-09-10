@@ -5,7 +5,7 @@ import { Image, Placeholder, Title, Box } from "accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "Atoms/Images",
+    title: "Desing System/Atoms/Images",
 };
 
 export const PLACEHOLDER = () => (

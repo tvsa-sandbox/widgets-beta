@@ -5,7 +5,7 @@ import ArticlePWA from "../../lib/contentTypes/PWA/ArticlePWA";
 
 export default {
     decorators: [withKnobs],
-    title: "ArticlePWA",
+    title: "Desing System/Template/ArticlePWA",
 };
 
 export const ARTICLEPWA = () => {

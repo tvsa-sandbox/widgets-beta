@@ -5,7 +5,7 @@ import GridGallery from "../../lib/widgets/GridGallery";
 
 export default {
     decorators: [withKnobs],
-    title: "enhancement/GridGallery",
+    title: "Desing System/enhancement/GridGallery",
 };
 
 export const GRIDGALLERY = () => {

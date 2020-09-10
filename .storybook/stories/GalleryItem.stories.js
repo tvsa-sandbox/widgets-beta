@@ -6,7 +6,7 @@ import Skeleton from "../../lib/items/GalleryItem/Skeleton";
 
 export default {
     decorators: [withKnobs],
-    title: "Items/Gallery",
+    title: "Desing System/Items/Gallery",
 };
 
 export const GALLERYITEM = () => {

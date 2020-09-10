@@ -5,7 +5,7 @@ import { Title, Box } from "accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "Widgets/Privacy",
+    title: "Desing System/Widgets/PrivacyTUDN",
 };
 
 export const PRIVACYTUDN = () => {
