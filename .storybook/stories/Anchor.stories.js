@@ -5,7 +5,7 @@ import { Anchor, Title, Box } from "accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "Atoms/Anchor",
+    title: "Desing System/Atoms/Anchor",
 };
 
 export const ANCHOR = () => {

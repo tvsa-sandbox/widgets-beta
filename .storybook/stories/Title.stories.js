@@ -4,7 +4,7 @@ import { Title, Box } from "accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "Atoms/Title",
+    title: "Desing System/Atoms/Title",
 };
 
 export const TITLE = () => {

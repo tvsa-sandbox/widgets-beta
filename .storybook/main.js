@@ -1,13 +1,15 @@
-const path = require("path");
-
 module.exports = {
-    stories: ["./stories/**/*.stories.[tj]s"],
+    stories: ["./stories/**/*.stories.@(js|jsx|ts|tsx)"],
     addons: [
-        // "@storybook/addon-backgrounds/register",
+        {
+            name: "@storybook/addon-essentials",
+            options: {
+                backgrounds: false,
+            },
+        },
+        "@storybook/addon-links",
         "@storybook/addon-knobs/register",
-        "@storybook/addon-viewport/register",
         "@storybook/addon-a11y/register",
         "@whitespace/storybook-addon-html/register",
-        // "@storybook/addon-storysource",
     ],
 };

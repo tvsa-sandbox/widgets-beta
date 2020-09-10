@@ -5,7 +5,7 @@ import { Title, Box, Image, Carousel } from "accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "Atoms/Carousel",
+    title: "Desing System/Atoms/Carousel",
 };
 
 export const CAROUSEL = () => (

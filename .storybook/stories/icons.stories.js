@@ -5,7 +5,7 @@ import { Icons, Title, IconDuration } from "accessories";
 
 export default {
     decorators: [withKnobs],
-    title: "Atoms/Icons",
+    title: "Desing System/Atoms/Icons",
 };
 
 export const ICONS = () => (

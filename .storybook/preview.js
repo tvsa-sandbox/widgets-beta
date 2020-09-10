@@ -1,5 +1,4 @@
 import React from "react";
-import { addParameters, addDecorator } from "@storybook/react";
 import { withKnobs, select } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { withHTML } from "@whitespace/storybook-addon-html/react";
@@ -13,8 +12,16 @@ import * as Canal5 from "../lib/themes/canal5";
 import * as elnueve from "../lib/themes/elnueve";
 import * as telehit from "../lib/themes/telehit";
 import * as unicable from "../lib/themes/unicable";
+import * as losplayers from "../lib/themes/pleyers";
+import * as plumas from "../lib/themes/plumasatomicas";
+import * as Erizos from "../lib/themes/erizos";
+import * as Bitme from "../lib/themes/bitme";
+import * as espaguetti from "../lib/themes/codigoespaguetti";
+import * as frente from "../lib/themes/frentecreativo";
+import * as news from "../lib/themes/televisanews";
+import * as oink from "../lib/themes/oinkoink";
+import * as viviendoencasa from "../lib/themes/viviendoencasa";
 import GlobalStyle from "../lib/accessories/GlobalStyles";
-// import { themes } from "@storybook/theming";
 import desingsystem from "./desingsystem";
 import merge from "lodash.merge";
 import get from "lodash.get";
@@ -27,6 +34,15 @@ const cinco = Canal5;
 const c9 = elnueve;
 const hit = telehit;
 const uni = unicable;
+const lp = losplayers;
+const pa = plumas;
+const ez = Erizos;
+const bit = Bitme;
+const ce = espaguetti;
+const fc = frente;
+const tn = news;
+const ok = oink;
+const vc = viviendoencasa;
 
 const modes = ["light", "dark"];
 
@@ -54,15 +70,27 @@ const THEMES = {
     "Las Estrellas Light": getTheme(modes[0], le),
     "White Label": getTheme(modes[0], wl),
     "White Label Darks": getTheme(modes[1], wl),
+    "Los Pleyers Light": getTheme(modes[0], lp),
+    "Los Pleyers Dark": getTheme(modes[1], lp),
+    "Plumas Atomicas Light": getTheme(modes[0], pa),
+    "Plumas Atomicas Dark": getTheme(modes[1], pa),
+    "Erizos Light": getTheme(modes[0], ez),
+    "Erizos Dark": getTheme(modes[1], ez),
+    "Bitme Light": getTheme(modes[0], bit),
+    "Bitme Dark": getTheme(modes[1], bit),
+    "Codigo Espaguetti Light": getTheme(modes[0], ce),
+    "Codigo Espaguetti Dark": getTheme(modes[1], ce),
+    "Frente Creativo Light": getTheme(modes[0], fc),
+    "Frente Creativo Dark": getTheme(modes[1], fc),
+    "Televisa News Light": getTheme(modes[0], tn),
+    "Televisa News Dark": getTheme(modes[1], tn),
+    "Oink Oink Light": getTheme(modes[0], ok),
+    "Oink Oink Dark": getTheme(modes[1], ok),
+    "Viviendo Casa Light": getTheme(modes[0], vc),
+    "Viviendo Casa Dark": getTheme(modes[1], vc),
 };
 // console.log("tema", THEMES["las Estrellas"].ui.name);
-addDecorator(withA11y);
-addDecorator(withHTML);
-addParameters({
-    // backgrounds: [
-    //     { name: "Light", value: "#f5f5f5", default: true },
-    //     { name: "Dark", value: "#000" },
-    // ],
+export const parameters = {
     options: {
         theme: desingsystem,
     },
@@ -75,12 +103,16 @@ addParameters({
     },
     viewport: {
         viewports: INITIAL_VIEWPORTS,
-        defaultViewport: "iphone6",
+        defaultViewport: "galaxys5",
     },
-});
-addDecorator(storyFn => (
-    <ThemeProvider theme={select("Theme", THEMES, THEMES["TUDN"])}>
-        <GlobalStyle />
-        {storyFn()}
-    </ThemeProvider>
-));
+};
+export const decorators = [
+    withA11y,
+    withHTML,
+    storyFn => (
+        <ThemeProvider theme={select("Theme", THEMES, THEMES["Las Estrellas Light"])}>
+            <GlobalStyle />
+            {storyFn()}
+        </ThemeProvider>
+    ),
+];

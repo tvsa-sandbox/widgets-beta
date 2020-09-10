@@ -7,7 +7,7 @@ import Layout from "../../lib/layout";
 
 export default {
     decorators: [withKnobs],
-    title: "Widgets/Header",
+    title: "Desing System/Widgets/Header",
 };
 
 export const HEADERAMP = () => {
