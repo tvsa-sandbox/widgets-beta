@@ -2,6 +2,7 @@ import React from "react";
 import { withKnobs, select } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { withHTML } from "@whitespace/storybook-addon-html/react";
+// import { StoryContext, StoryGetter, StoryWrapper } from "@storybook/addons";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { ThemeProvider } from "styled-components";
 import * as whiteLabel from "../lib/themes/whiteLabel";
@@ -90,6 +91,16 @@ const THEMES = {
     "Viviendo Casa Dark": getTheme(modes[1], vc),
 };
 // console.log("tema", THEMES["las Estrellas"].ui.name);
+
+const withThemeProvider = (Story, context) => {
+    return (
+        <ThemeProvider theme={select("Theme", THEMES, THEMES["Las Estrellas Light"])}>
+            <GlobalStyle />
+            <Story {...context} />
+        </ThemeProvider>
+    );
+};
+
 export const parameters = {
     options: {
         theme: desingsystem,
@@ -106,13 +117,5 @@ export const parameters = {
         defaultViewport: "galaxys5",
     },
 };
-export const decorators = [
-    withA11y,
-    withHTML,
-    storyFn => (
-        <ThemeProvider theme={select("Theme", THEMES, THEMES["Las Estrellas Light"])}>
-            <GlobalStyle />
-            {storyFn()}
-        </ThemeProvider>
-    ),
-];
+
+export const decorators = [withA11y, withHTML, withThemeProvider];

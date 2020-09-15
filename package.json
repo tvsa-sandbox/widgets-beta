@@ -24,6 +24,7 @@
         "@storybook/addon-storysource": "^6.0.21",
         "@storybook/react": "^6.0.21",
         "@storybook/storybook-deployer": "^2.8.6",
+        "@televisadigital/nxtv-utilities": "1.0.1",
         "@whitespace/storybook-addon-html": "1.2.1",
         "babel-eslint": "^10.0.3",
         "babel-loader": "^8.0.6",
