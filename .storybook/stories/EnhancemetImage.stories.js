@@ -2,16 +2,17 @@ import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import Utils from "@televisadigital/nxtv-utilities";
 
-import GridGallery from "../../lib/widgets/GridGallery";
+import EnhancementImage from "../../lib/widgets/EnhancementImage";
+
 import Mock from "./imageMock.json";
 
 export default {
     decorators: [withKnobs],
-    title: "Desing System/enhancement/GridGallery",
+    title: "Desing System/enhancement/EnhancementImage",
 };
 
-export const GRIDGALLERY = args => {
-    const { aspect = "aspect1x1", bsp = "medium" } = args;
+export const ENHANCEMENTIMAGE = args => {
+    const { aspect = "aspect16x9", bsp = "medium" } = args;
     const SOURCES = [
         {
             aspect,
@@ -27,5 +28,5 @@ export const GRIDGALLERY = args => {
     const props = () => ({
         title: text("Titulo", "Titulo de test"),
     });
-    return <GridGallery ratio={aspect} src={SRC} {...props} />;
+    return <EnhancementImage ratio={aspect} src={SRC} {...props} />;
 };
