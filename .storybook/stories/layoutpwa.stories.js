@@ -9,7 +9,7 @@ export default {
     title: "Desing System/Template/ArticlePWA",
 };
 
-import Mock from "./imageMock.json";
+import Mock from "./imageMock-le.json";
 
 export const ARTICLEPWA = args => {
     const { aspect = "aspect16x9", bsp = "medium" } = args;

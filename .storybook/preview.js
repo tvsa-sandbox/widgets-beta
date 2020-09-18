@@ -17,11 +17,12 @@ import * as losplayers from "../lib/themes/pleyers";
 import * as plumas from "../lib/themes/plumasatomicas";
 import * as Erizos from "../lib/themes/erizos";
 import * as Bitme from "../lib/themes/bitme";
-import * as espaguetti from "../lib/themes/codigoespaguetti";
+import * as espagueti from "../lib/themes/codigoespagueti";
 import * as frente from "../lib/themes/frentecreativo";
 import * as news from "../lib/themes/televisanews";
 import * as oink from "../lib/themes/oinkoink";
 import * as viviendoencasa from "../lib/themes/viviendoencasa";
+import * as distrito from "../lib/themes/distritocomedia";
 import GlobalStyle from "../lib/accessories/GlobalStyles";
 import desingsystem from "./desingsystem";
 import merge from "lodash.merge";
@@ -39,11 +40,12 @@ const lp = losplayers;
 const pa = plumas;
 const ez = Erizos;
 const bit = Bitme;
-const ce = espaguetti;
+const ce = espagueti;
 const fc = frente;
 const tn = news;
 const ok = oink;
 const vc = viviendoencasa;
+const dc = distrito;
 
 const modes = ["light", "dark"];
 
@@ -55,6 +57,8 @@ const getTheme = (mode, btheme) =>
 // const [mode, setMode] = useState(modes[0]);
 
 const THEMES = {
+    "Las Estrellas": getTheme(modes[1], le),
+    "Las Estrellas Light": getTheme(modes[0], le),
     TUDN: getTheme(modes[0], tudn),
     "TUDN Dark": getTheme(modes[1], tudn),
     "Bandamax Light": getTheme(modes[0], bmx),
@@ -67,8 +71,6 @@ const THEMES = {
     "Telehit Dark": getTheme(modes[1], hit),
     "Unicable Light": getTheme(modes[0], uni),
     "Unicable Dark": getTheme(modes[1], uni),
-    "las Estrellas": getTheme(modes[1], le),
-    "Las Estrellas Light": getTheme(modes[0], le),
     "White Label": getTheme(modes[0], wl),
     "White Label Darks": getTheme(modes[1], wl),
     "Los Pleyers Light": getTheme(modes[0], lp),
@@ -79,8 +81,8 @@ const THEMES = {
     "Erizos Dark": getTheme(modes[1], ez),
     "Bitme Light": getTheme(modes[0], bit),
     "Bitme Dark": getTheme(modes[1], bit),
-    "Codigo Espaguetti Light": getTheme(modes[0], ce),
-    "Codigo Espaguetti Dark": getTheme(modes[1], ce),
+    "Codigo Espagueti Light": getTheme(modes[0], ce),
+    "Codigo Espagueti Dark": getTheme(modes[1], ce),
     "Frente Creativo Light": getTheme(modes[0], fc),
     "Frente Creativo Dark": getTheme(modes[1], fc),
     "Televisa News Light": getTheme(modes[0], tn),
@@ -89,6 +91,8 @@ const THEMES = {
     "Oink Oink Dark": getTheme(modes[1], ok),
     "Viviendo Casa Light": getTheme(modes[0], vc),
     "Viviendo Casa Dark": getTheme(modes[1], vc),
+    "Distrito Comedia Light": getTheme(modes[0], dc),
+    "Distrito Comedia Dark": getTheme(modes[1], dc),
 };
 // console.log("tema", THEMES["las Estrellas"].ui.name);
 
