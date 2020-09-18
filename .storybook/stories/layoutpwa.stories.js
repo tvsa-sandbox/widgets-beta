@@ -29,6 +29,16 @@ export const ARTICLEPWA = args => {
             query: "(min-width: 0px)",
             size: "medium",
         },
+        {
+            aspect: "aspect4x3",
+            query: "(min-width: 0px)",
+            size: "medium",
+        },
+        {
+            aspect: "aspect3x4",
+            query: "(min-width: 0px) and (max-width: 414px)",
+            size: "mobile-large",
+        },
     ];
     const IMG = Utils.getSources(Mock.renditions, SOURCES);
     const SRC = {
@@ -50,6 +60,12 @@ export const ARTICLEPWA = args => {
                 mobile: IMG[1],
             },
         ],
+        gridgal: [
+            {
+                desktop: IMG[3],
+                mobile: IMG[4],
+            },
+        ],
     };
     return (
         <ArticlePWA
@@ -57,6 +73,7 @@ export const ARTICLEPWA = args => {
             imgs={SRC.imgenhancement[0]}
             carrousel={SRC.carousel[0]}
             rel={SRC.imgenhancement[0]}
+            gal={SRC.gridgal[0]}
         />
     );
 };
