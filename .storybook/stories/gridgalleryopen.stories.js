@@ -24,5 +24,5 @@ export const GRIDGALLERYOPEN = args => {
         desktop: {},
         mobile: IMG[0],
     };
-    return <GridGalleryOpen slides={SRC} />;
+    return <GridGalleryOpen slides={SRC} active />;
 };
