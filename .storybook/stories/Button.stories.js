@@ -55,7 +55,7 @@ export const BUTTONICON = () => (
     <div>
         <Box variant="Space">
             <Button disabled={boolean("Desactivado", false)}>
-                <Icons name="Instagram" variant="Active" />
+                <Icons name="Instagram" color="#ffff" />
             </Button>
         </Box>
 
@@ -91,7 +91,7 @@ export const BUTTONDOUBLE = () => {
         <div>
             <Box variant="Space">
                 <Button disabled={boolean("Desactivado", false)}>
-                    <Icons name="Instagram" />
+                    <Icons name="Instagram" color="#ffff" />
                     {name}
                 </Button>
             </Box>

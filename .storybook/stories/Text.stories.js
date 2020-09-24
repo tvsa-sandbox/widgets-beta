@@ -84,11 +84,10 @@ export const ICONDURATION = () => {
     return (
         <div>
             <Title variant="h2">Duration</Title>
-            <Box variant="Space">
-                <IconDuration variant="Solid">{name}</IconDuration>
-            </Box>
-            <Box variant="Space">
-                <IconDuration variant="Transparent">{name}</IconDuration>
+            <Box variant="Transparent" style={{ height: "50px" }}>
+                <Box variant="Space">
+                    <IconDuration variant="Solid">{name}</IconDuration>
+                </Box>
             </Box>
         </div>
     );
@@ -100,7 +99,7 @@ export const COUNTER = () => {
         <>
             <Title variant="h2">Counter</Title>
 
-            <Box my="lg">
+            <Box variant="Space">
                 <Time>{name}</Time>
             </Box>
         </>
