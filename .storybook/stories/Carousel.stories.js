@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { withKnobs } from "@storybook/addon-knobs";
 import Utils from "@televisadigital/nxtv-utilities";
 
-import { Title, Box, Image, Carousel } from "accessories";
+import { Title, Anchor, Box, Image, Carousel } from "accessories";
 
 export default {
     decorators: [withKnobs],
@@ -31,21 +31,41 @@ export const CAROUSEL = args => {
 
             <Box my="lg">
                 <Carousel>
-                    <Box style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}>
+                    <Anchor
+                        href="http://google.com"
+                        style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}
+                        aria-label="link"
+                    >
                         <Image ratio={aspect} src={SRC} key="ejemplo" />
-                    </Box>
-                    <Box style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}>
+                    </Anchor>
+                    <Anchor
+                        href="http://google.com"
+                        style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}
+                        aria-label="link"
+                    >
                         <Image ratio={aspect} src={SRC} key="ejemplo" />
-                    </Box>
-                    <Box style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}>
+                    </Anchor>
+                    <Anchor
+                        href="http://google.com"
+                        style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}
+                        aria-label="link"
+                    >
                         <Image ratio={aspect} src={SRC} key="ejemplo" />
-                    </Box>
-                    <Box style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}>
+                    </Anchor>
+                    <Anchor
+                        href="http://google.com"
+                        style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}
+                        aria-label="link"
+                    >
                         <Image ratio={aspect} src={SRC} key="ejemplo" />
-                    </Box>
-                    <Box style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}>
+                    </Anchor>
+                    <Anchor
+                        href="http://google.com"
+                        style={{ width: "258px", marginRight: "4px", flex: "0 0 auto" }}
+                        aria-label="link"
+                    >
                         <Image ratio={aspect} src={SRC} key="ejemplo" />
-                    </Box>
+                    </Anchor>
                 </Carousel>
             </Box>
         </>
