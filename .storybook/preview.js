@@ -24,7 +24,6 @@ import * as oink from "../lib/themes/oinkoink";
 import * as viviendoencasa from "../lib/themes/viviendoencasa";
 import * as distrito from "../lib/themes/distritocomedia";
 import GlobalStyle from "../lib/accessories/GlobalStyles";
-import desingsystem from "./desingsystem";
 import merge from "lodash.merge";
 import get from "lodash.get";
 
@@ -91,9 +90,6 @@ const withThemeProvider = (Story, context) => {
 };
 
 export const parameters = {
-    options: {
-        theme: desingsystem,
-    },
     parameters: {
         a11y: {
             element: "#root",
