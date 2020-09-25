@@ -4,6 +4,7 @@ import { Title } from "accessories";
 
 import HeaderAMP from "../../lib/widgets/Header/HeaderAMP";
 import Layout from "../../lib/layout";
+import socialmedia from "../../lib/widgets/Header/social.json";
 
 export default {
     decorators: [withKnobs],
@@ -22,7 +23,13 @@ export const HEADERAMP = () => {
 export const HEADER = () => {
     return (
         <div>
-            <Layout foot={false} breadcrumbs={[]} />
+            <Layout
+                foot={false}
+                breadcrumbs={[]}
+                social={socialmedia}
+                uri="https://tvsa-sandbox.github.io/widgets-beta/"
+                filter=""
+            />
         </div>
     );
 };
