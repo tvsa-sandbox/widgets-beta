@@ -1,6 +1,7 @@
 import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import Utils from "@televisadigital/nxtv-utilities";
+import { Title } from "accessories";
 
 import LeadVideo from "../../lib/widgets/LeadVideo";
 
@@ -28,5 +29,10 @@ export const LEADVIDEO = args => {
     const props = () => ({
         title: text("Titulo", "Titulo de test"),
     });
-    return <LeadVideo ratio={aspect} src={SRC} {...props} />;
+    return (
+        <div>
+            <Title variant="h2">Lead Video</Title>
+            <LeadVideo ratio={aspect} src={SRC} {...props} />
+        </div>
+    );
 };

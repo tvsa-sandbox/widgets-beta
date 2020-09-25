@@ -6,7 +6,7 @@ import HomePWA from "../../lib/contentTypes/PWA/HomePWA";
 
 export default {
     decorators: [withKnobs],
-    title: "Desing System/Template/HomePWA",
+    title: "Desing System/TemplatePWA/HomePWA",
 };
 
 import Mock from "./imageMock.json";

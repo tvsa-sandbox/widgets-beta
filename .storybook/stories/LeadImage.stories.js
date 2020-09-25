@@ -1,6 +1,7 @@
 import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import Utils from "@televisadigital/nxtv-utilities";
+import { Title } from "accessories";
 
 import LeadImage from "../../lib/widgets/LeadImage";
 
@@ -28,5 +29,10 @@ export const LEADIMAGE = args => {
     const props = () => ({
         title: text("Titulo", "Titulo de test"),
     });
-    return <LeadImage ratio={aspect} src={SRC} {...props} />;
+    return (
+        <div>
+            <Title variant="h2">Lead Image</Title>
+            <LeadImage ratio={aspect} src={SRC} {...props} />
+        </div>
+    );
 };
