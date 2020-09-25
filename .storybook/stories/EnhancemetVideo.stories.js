@@ -1,6 +1,7 @@
 import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import Utils from "@televisadigital/nxtv-utilities";
+import { Title } from "accessories";
 
 import EnhancementVideo from "../../lib/widgets/EnhancementVideo";
 
@@ -28,5 +29,10 @@ export const ENHANCEMENTVIDEO = args => {
     const props = () => ({
         title: text("Titulo", "Titulo de test"),
     });
-    return <EnhancementVideo ratio={aspect} src={SRC} {...props} />;
+    return (
+        <div>
+            <Title variant="h2">Enhancement Video</Title>
+            <EnhancementVideo ratio={aspect} src={SRC} {...props} />;
+        </div>
+    );
 };

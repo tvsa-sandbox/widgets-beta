@@ -2,16 +2,16 @@ import React from "react";
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import Utils from "@televisadigital/nxtv-utilities";
 
-import ArticlePWA from "../../lib/contentTypes/PWA/ArticlePWA";
+import Article from "../../lib/contentTypes/Article";
 
 export default {
     decorators: [withKnobs],
-    title: "Desing System/TemplatePWA/ArticlePWA",
+    title: "Desing System/Template/Article",
 };
 
 import Mock from "./imageMock-le.json";
 
-export const ARTICLEPWA = args => {
+export const ARTICLE = args => {
     const { aspect = "aspect16x9", bsp = "medium" } = args;
     const SOURCES = [
         {
@@ -68,7 +68,7 @@ export const ARTICLEPWA = args => {
         ],
     };
     return (
-        <ArticlePWA
+        <Article
             grid={SRC.gridgallery[0]}
             imgs={SRC.imgenhancement[0]}
             carrousel={SRC.carousel[0]}

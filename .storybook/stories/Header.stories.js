@@ -22,7 +22,7 @@ export const HEADERAMP = () => {
 export const HEADER = () => {
     return (
         <div>
-            <Layout foot={false} />
+            <Layout foot={false} breadcrumbs={[]} />
         </div>
     );
 };

@@ -50,7 +50,7 @@ export const INPUTICON = () => (
             <Label>Error</Label>
             <Form>
                 <Inputs variant="Error" />
-                <Icons name="Video" variant="Outline" />
+                <Icons name="ArrowRight" variant="Outline" />
             </Form>
         </Box>
 
@@ -58,7 +58,7 @@ export const INPUTICON = () => (
             <Label>MyText</Label>
             <Form>
                 <Inputs variant="Done" />
-                <Icons name="Video" variant="Outline" />
+                <Icons name="ArrowRight" variant="Outline" />
             </Form>
         </Box>
 
@@ -66,7 +66,7 @@ export const INPUTICON = () => (
             <Label>MyText</Label>
             <Form>
                 <Inputs variant="Warning" />
-                <Icons name="Video" variant="Outline" />
+                <Icons name="ArrowRight" variant="Outline" />
             </Form>
         </Box>
 
@@ -74,7 +74,7 @@ export const INPUTICON = () => (
             <Label>MyText</Label>
             <Form>
                 <Inputs variant="Error" />
-                <Icons name="Video" variant="Outline" />
+                <Icons name="ArrowRight" variant="Outline" />
             </Form>
         </Box>
     </div>

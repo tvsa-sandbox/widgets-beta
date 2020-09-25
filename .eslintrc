@@ -2,6 +2,10 @@
     "extends": ["airbnb", "prettier", "prettier/react"],
     "parser": "babel-eslint",
     "plugins": ["prettier"],
+    "env": {
+        "browser": true,
+        "node": true
+    },
     "rules": {
         "prettier/prettier": "error",
         "react/jsx-filename-extension": [

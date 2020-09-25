@@ -7,7 +7,7 @@ import GalleryPWA from "../../lib/contentTypes/PWA/GalleryPWA";
 
 export default {
     decorators: [withKnobs],
-    title: "Desing System/Template/CTGalleryPWA",
+    title: "Desing System/TemplatePWA/CTGalleryPWA",
 };
 
 export const GALLERYPWA = args => {
