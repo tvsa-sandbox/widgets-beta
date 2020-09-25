@@ -34,7 +34,15 @@ export const GALLERYITEM = args => {
         desktop: IMG[0],
         mobile: IMG2[0],
     };
-    return <GalleryItem image={SRC} />;
+    return (
+        <GalleryItem
+            image={SRC}
+            domain="https://tvsa-sandbox.github.io/widgets-beta"
+            isAmp={false}
+            index="1/12"
+            uri="https://tvsa-sandbox.github.io/widgets-beta"
+        />
+    );
 };
 
 export const GALLERYITEMSKELETON = () => {
