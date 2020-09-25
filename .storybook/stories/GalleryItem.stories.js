@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { withKnobs, text, boolean } from "@storybook/addon-knobs";
+import React from "react";
+import { withKnobs } from "@storybook/addon-knobs";
 import Utils from "@televisadigital/nxtv-utilities";
 
 import GalleryItem from "../../lib/items/GalleryItem";
@@ -20,8 +20,6 @@ export const GALLERYITEM = args => {
             query: "(min-width: 415px)",
             size: bsp,
         },
-    ];
-    const SOURCESMB = [
         {
             aspect: "aspect3x4",
             query: "(min-width: 0px) and (max-width: 414px)",
@@ -29,10 +27,9 @@ export const GALLERYITEM = args => {
         },
     ];
     const IMG = Utils.getSources(Mock.renditions, SOURCES);
-    const IMG2 = Utils.getSources(Mock.renditions, SOURCESMB);
     const SRC = {
         desktop: IMG[0],
-        mobile: IMG2[0],
+        mobile: IMG[1],
     };
     return (
         <GalleryItem
