@@ -14,7 +14,7 @@ export default {
 };
 
 export const LEADGALLERY = args => {
-    const { aspect = "aspect16x9", bsp = "medium" } = args;
+    const { aspect = "aspect4x3", bsp = "medium" } = args;
     const SOURCES = [
         {
             aspect,
