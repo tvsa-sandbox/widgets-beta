@@ -5,7 +5,7 @@ import { InstallPWA } from "widgets";
 
 export default {
     decorators: [withKnobs],
-    title: "Desing System/Widgets/InstallPWA",
+    title: "Desing System/TemplatePWA/InstallPWA",
 };
 
 export const INSTALLPWA = () => {
