@@ -13,6 +13,7 @@ import * as Canal5 from "../lib/themes/canal5";
 import * as elnueve from "../lib/themes/elnueve";
 import * as telehit from "../lib/themes/telehit";
 import * as unicable from "../lib/themes/unicable";
+import * as video from "../lib/themes/videodigital";
 import * as losplayers from "../lib/themes/pleyers";
 import * as plumas from "../lib/themes/plumasatomicas";
 import * as Erizos from "../lib/themes/erizos";
@@ -35,6 +36,7 @@ const cinco = Canal5;
 const c9 = elnueve;
 const hit = telehit;
 const uni = unicable;
+const vd = video;
 const lp = losplayers;
 const pa = plumas;
 const ez = Erizos;
@@ -66,6 +68,7 @@ const THEMES = {
     "El Nueve": getTheme(modes[1], c9),
     Telehit: getTheme(modes[0], hit),
     Unicable: getTheme(modes[0], uni),
+    "Video Digital": getTheme(modes[0], vd),
     "White Label": getTheme(modes[0], wl),
     "White Label Dark": getTheme(modes[1], wl),
     "Los Pleyers": getTheme(modes[0], lp),
