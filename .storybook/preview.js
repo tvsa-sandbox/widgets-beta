@@ -13,6 +13,7 @@ import * as Canal5 from "../lib/themes/canal5";
 import * as elnueve from "../lib/themes/elnueve";
 import * as telehit from "../lib/themes/telehit";
 import * as unicable from "../lib/themes/unicable";
+import * as tvsacom from "../lib/themes/televisacom";
 import * as video from "../lib/themes/videodigital";
 import * as losplayers from "../lib/themes/pleyers";
 import * as plumas from "../lib/themes/plumasatomicas";
@@ -24,6 +25,7 @@ import * as news from "../lib/themes/televisanews";
 import * as oink from "../lib/themes/oinkoink";
 import * as viviendoencasa from "../lib/themes/viviendoencasa";
 import * as distrito from "../lib/themes/distritocomedia";
+import * as slang from "../lib/themes/slang";
 import GlobalStyle from "../lib/accessories/GlobalStyles";
 import merge from "lodash.merge";
 import get from "lodash.get";
@@ -47,6 +49,8 @@ const tn = news;
 const ok = oink;
 const vc = viviendoencasa;
 const dc = distrito;
+const sl = slang;
+const tvsa = tvsacom;
 
 const modes = ["light", "dark"];
 
@@ -68,6 +72,7 @@ const THEMES = {
     "El Nueve": getTheme(modes[1], c9),
     Telehit: getTheme(modes[0], hit),
     Unicable: getTheme(modes[0], uni),
+    TelevisaCom: getTheme(modes[0], tvsa),
     "Video Digital": getTheme(modes[0], vd),
     "White Label": getTheme(modes[0], wl),
     "White Label Dark": getTheme(modes[1], wl),
@@ -78,6 +83,7 @@ const THEMES = {
     "Codigo Espagueti": getTheme(modes[0], ce),
     "Frente Creativo": getTheme(modes[0], fc),
     "Oink Oink": getTheme(modes[0], ok),
+    Slang: getTheme(modes[0], sl),
     "Viviendo Casa": getTheme(modes[0], vc),
     "Distrito Comedia": getTheme(modes[0], dc),
 };
