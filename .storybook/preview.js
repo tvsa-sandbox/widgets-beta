@@ -2,7 +2,6 @@ import React from "react";
 import { withKnobs, select } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
 import { withHTML } from "@whitespace/storybook-addon-html/react";
-// import { StoryContext, StoryGetter, StoryWrapper } from "@storybook/addons";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { ThemeProvider } from "styled-components";
 import * as whiteLabel from "../lib/themes/whiteLabel";

@@ -1,97 +1,130 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
+    <img alt="Gatsby" src="https://televisa-digital.github.io/whitelabel-markup-core/static/aspect-ratio-images/Whitelabel.png" width="291" />
+
+# White Label Desing System Package
+
 </p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Desing System project for the TVSA sites syles. Front-end Styled Components framework for faster and easier web style development.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## 📖 Table of contents
+
+- [White Label Desing System Package](#white-label-desing-system-package)
+  - [📖 Table of contents](#-table-of-contents)
+  - [🚀 Quick start](#-quick-start)
+  - [👨‍💻 Unit Testing](#-unit-testing)
+  - [📦 What's inside](#-whats-inside)
+  - [📑 Documentation](#-documentation)
+  - [🤔 Versioning](#-versioning)
+  - [🤓 Learning WhiteLabel Desing System](#-learning-whitelabel-desing-system)
+  - [🔮 Copyright and license](#-copyright-and-license)
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Install the repository and run**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
-
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
-
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
+    Use the yarn build to create the css sample files.
 
     ```sh
-    cd my-default-starter/
-    gatsby develop
+    # install the repository
+    yarn install
+    yarn storybook
     ```
 
-1.  **Open the source code and start editing!**
+2.  **Start developing.**
 
-    Your site is now running at `http://localhost:8000`!
+    Navigate into our component directory.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    ```sh
+    cd lib/
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    ```
+    
+    Import in your project directory.
 
-## 🧐 What's inside?
+    ```sh
+    yarn add @televisadigital/nxtv-design-system
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+    ```
+
+## 👨‍💻 Unit Testing
+
+1.  **Run Unit Testing**
+
+    Use unit jest for testing components (in progress)
+
+    ```sh
+    # Run Unit Testing
+    yarn test
+    ```
+
+## 📦 What's inside
+
+A quick look at the top-level files structure and directories you'll see in a White Label Desing System Styles project.
 
     .
+    ├── .storybook
+    ├── assets
+    ├── lib
+        ├── __test__/
+    │   ├── accesories/
+    │   ├── contentTypes/
+    │   ├── helpers/
+    │   ├── items/
+    │   ├── layout/
+    │   ├── layoutPWA/
+    │   ├── mocks/
+    │   ├── themes/
+    │   ├── widgets/
     ├── node_modules
-    ├── src
+    ├── .babelrc
+    ├── .eslintrc
     ├── .gitignore
     ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
     ├── package.json
+    ├── LICENSE
     └── README.md
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+1.  **`/storybook`**: This directory contains the config files and the stories of the accesories, widgets, components and contentTypes for more info [storybook](http://storybook.js.org/).
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+2.  **`/assets`**: This directory contains all the assets like logo and fav icon.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+3.  **`/lib`**: This directory contains the files of accesories, widgets, components and contentTypes with the styles.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+5.  **`.babelrc`**: This file tells how trapiles the js file.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+6.  **`.eslintrc`**: This is a configuration file for [eslint](https://eslint.org/). eslint is a mighty, modern linter that helps you avoid errors and enforce conventions in your js files.
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+7.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+8.  **`.prettierrc`**: This is a configuration file for an opinionated code formatter. It enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary [prettier](https://prettier.io/).
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+9. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10.  **`LICENSE`**: WhiteLabel Desing System is licensed under the ISC license.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+11. **`README.md`**: A text file containing useful reference information about your project.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+##  📑 Documentation
 
-## 🎓 Learning Gatsby
+WhiteLabel documentation, included in this repo in the documentation directory, is built with [MDX](https://mdxjs.com/) is a standard file format that combines Markdown with JSX. This means you can use Markdown’s terse syntax (such as # heading) for your documentation, write stories that compile to our component story format, and freely embed JSX component blocks at any point in the file. All at once.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+## 🤔 Versioning
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+For transparency into our release cycle and in striving to maintain backward compatibility, WhiteLabel Desing System is maintained under [the Semantic Versioning guidelines](https://semver.org/).
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+## 🤓 Learning WhiteLabel Desing System
 
-## 💫 Deploy
+Looking for more guidance? Full documentation for General Guidelines lives [on the website](https://televisa-digital.github.io/whitelabel-markup-core/). Here are some places to start:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+- **To dive straight [to our documentation](https://televisa-digital.github.io/whitelabel/).** In particular, check out the _Guideline_, _Modules, and _Iconography_ sections in the sidebar.
+
+## 🔮 Copyright and license
+
+Code and documentation copyright 2020 the Code released under the [ISC License](https://github.com/televisa-digital/nxtv-design-system/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+
 
 <!-- AUTO-GENERATED-CONTENT:END -->
