@@ -41,6 +41,6 @@
     },
     "scripts": {
         "storybook": "start-storybook --ci -p 3333 -s ./assets",
-        "deploy": "storybook-to-ghpages -s public"
+        "deploy": "storybook-to-ghpages"
     }
 }
