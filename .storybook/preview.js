@@ -1,6 +1,5 @@
 import React from "react";
 import { withKnobs, select } from "@storybook/addon-knobs";
-import { withA11y } from "@storybook/addon-a11y";
 import { withHTML } from "@whitespace/storybook-addon-html/react";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { ThemeProvider } from "styled-components";
@@ -72,7 +71,7 @@ const THEMES = {
     Telehit: getTheme(modes[0], hit),
     Unicable: getTheme(modes[0], uni),
     TelevisaCom: getTheme(modes[0], tvsa),
-    "Video Digital": getTheme(modes[0], vd),
+    "Video Digital": getTheme(modes[1], vd),
     WhiteLabel: getTheme(modes[0], wl),
     "WhiteLabel Dark": getTheme(modes[1], wl),
     "Los Pleyers": getTheme(modes[0], lp),
@@ -98,12 +97,11 @@ const withThemeProvider = (Story, context) => {
 };
 
 export const parameters = {
-    parameters: {
-        a11y: {
-            element: "#root",
-            config: {},
-            options: {},
-        },
+    a11y: {
+        element: "#root",
+        config: {},
+        options: {},
+        manual: false,
     },
     viewport: {
         viewports: INITIAL_VIEWPORTS,
@@ -111,4 +109,4 @@ export const parameters = {
     },
 };
 
-export const decorators = [withA11y, withHTML, withThemeProvider];
+export const decorators = [withHTML, withThemeProvider];

@@ -1,4 +1,4 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) comentario de prueba -->
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
     <img alt="Gatsby" src="https://televisa-digital.github.io/whitelabel-markup-core/static/aspect-ratio-images/Whitelabel.png" width="291" />
 
