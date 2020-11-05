@@ -110,6 +110,7 @@ const ColorsType = styled(Title)(
 const ColorDrop = styled(Color)(
     ({ theme }) => css`
         margin-left: ${theme.space.zero};
+        border: 1px #cccccc solid;
     `,
 );
 
