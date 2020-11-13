@@ -1,14 +1,10 @@
 [
     {
         "path": "/tu-tv",
-        "name": "TU TV"
+        "name": "EPISODIOS"
     },
     {
         "path": "/telenovelas",
-        "name": "NOVELAS"
-    },
-    {
-        "path": "/en-vivo",
-        "name": "EN VIVO"
+        "name": "CLIPS"
     }
 ]
