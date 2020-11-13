@@ -106,7 +106,8 @@ export const BUTTON = () => {
                     <CaptionButton>
                         The buttons of an interface are vital elements, since in most cases they
                         have many of the navigation capabilities. These buttons are accompanied by
-                        an icon that represents their action, in addition to the text.
+                        an icon that represents their action, in addition to the text. The inactive
+                        version of the button can be activated on the knobs.
                     </CaptionButton>
                 </ButtonDescription>
                 <ButtonsContainer variant="Transparent">
@@ -144,7 +145,7 @@ export const BUTTON = () => {
                 <ButtonsContainer variant="Tranparent">
                     <ButtonTypeBox variant="Transparent">
                         <Button disabled={boolean("Desactivado", false)} aria-label="boton">
-                            <Icons name="Instagram" color="#ffff" />
+                            <Icons name="Search" color="#ffff" />
                         </Button>
                         <ButtonInfo>Active State</ButtonInfo>
                     </ButtonTypeBox>
@@ -155,7 +156,7 @@ export const BUTTON = () => {
                             disabled={boolean("Desactivado", false)}
                             aria-label="boton"
                         >
-                            <Icons name="Instagram" variant="Outline" />
+                            <Icons name="Search" variant="Outline" />
                         </Button>
                         <ButtonInfo>Button Outline</ButtonInfo>
                     </ButtonTypeBox>
@@ -165,7 +166,7 @@ export const BUTTON = () => {
                             disabled={boolean("Desactivado", false)}
                             aria-label="boton"
                         >
-                            <Icons name="Instagram" variant="Transparent" />
+                            <Icons name="Search" variant="Transparent" />
                         </Button>
                         <ButtonInfo>Button Transparent</ButtonInfo>
                     </ButtonTypeBox>
@@ -176,7 +177,7 @@ export const BUTTON = () => {
                 <ButtonsContainer variant="Tranparent">
                     <ButtonTypeBox variant="Transparent">
                         <Button disabled={boolean("Desactivado", false)}>
-                            <Icons name="Instagram" color="#ffff" />
+                            <Icons name="Search" color="#ffff" />
                             {name}
                         </Button>
                         <ButtonInfo>Active State</ButtonInfo>
@@ -184,7 +185,7 @@ export const BUTTON = () => {
 
                     <ButtonTypeBox variant="Transparent">
                         <Button variant="Outline" disabled={boolean("Desactivado", false)}>
-                            <Icons name="Instagram" variant="Outline" />
+                            <Icons name="Search" variant="Outline" />
                             {name}
                         </Button>
                         <ButtonInfo>Button Outline</ButtonInfo>
@@ -192,7 +193,7 @@ export const BUTTON = () => {
 
                     <ButtonTypeBox variant="Transparent">
                         <Button variant="Transparent" disabled={boolean("Desactivado", false)}>
-                            <Icons name="Instagram" variant="Transparent" />
+                            <Icons name="Search" variant="Transparent" />
                             {name}
                         </Button>
                         <ButtonInfo>Button Transparent</ButtonInfo>
