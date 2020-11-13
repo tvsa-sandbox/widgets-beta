@@ -50,7 +50,7 @@ const CaptionButton = styled(Text)(
         padding-right: ${theme.space.lg};
         font-size: ${theme.fontSizes.fsm};
         color: ${theme.colors.Dark};
-        line-height: ${theme.lineHeights.lsm};
+        line-height: ${theme.lineHeights.llg};
     `,
 );
 
@@ -87,14 +87,14 @@ const ButtonTypeBox = styled(Info)(
         display: inline-flex;
         color: #272733;
         align-items: center;
-        padding-left: ${theme.space.lg};
     `,
 );
 
 const ButtonInfo = styled(Info)(
     ({ theme }) => css`
         font-size: ${theme.fontSizes.fsm};
-        margin-left: ${theme.space.lg};
+        margin-left: ${theme.space.xxl};
+        color: ${theme.colors.graycataloge};
     `,
 );
 export const BUTTON = () => {

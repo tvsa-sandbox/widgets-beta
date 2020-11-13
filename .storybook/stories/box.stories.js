@@ -50,7 +50,7 @@ const BoxCaption = styled(Text)(
         padding-right: ${theme.space.lg};
         font-size: ${theme.fontSizes.fsm};
         color: ${theme.colors.Dark};
-        line-height: ${theme.lineHeights.lsm};
+        line-height: ${theme.lineHeights.llg};
     `,
 );
 
