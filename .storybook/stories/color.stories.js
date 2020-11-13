@@ -28,6 +28,7 @@ const ColorDescription = styled(Box)(
         display: block;
         position: relative;
         margin-top: ${theme.space.lg};
+        margin-bottom: ${theme.space.xxl};
         @media (min-width: ${theme.breakpoints.xl}) {
             max-width: 1024px;
         }
@@ -89,7 +90,7 @@ const ColorStyleForm = styled(Box)(
 
 const ColorsType = styled(Title)(
     ({ theme }) => css`
-        font-size: ${theme.fontSizes.fsm};
+        font-size: ${theme.fontSizes.fbase};
         color: ${theme.colors.graycataloge};
         line-height: ${theme.lineHeights.lsm};
         text-align: left;

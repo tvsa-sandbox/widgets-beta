@@ -59,7 +59,8 @@ const ButtonsContainer = styled(Box)(
         display: grid;
         gap: 24px 10px;
         width: 100%;
-        grid-template-columns: repeat(1, minmax(320px, 1fr));
+        max-width: 300px;
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
         grid-template-rows: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
