@@ -27,6 +27,7 @@ const ButtonDescription = styled(Box)(
         display: block;
         position: relative;
         margin-top: ${theme.space.lg};
+        margin-bottom: ${theme.space.xxl};
         @media (min-width: ${theme.breakpoints.xl}) {
             max-width: 1024px;
         }
@@ -44,8 +45,7 @@ const TitleButton = styled(Title)(
 
 const CaptionButton = styled(Text)(
     ({ theme }) => css`
-        margin-top: ${theme.space.lg};
-        margin-bottom: ${theme.space.lg};
+        padding-top: ${theme.space.lg};
         padding-left: ${theme.space.lg};
         padding-right: ${theme.space.lg};
         font-size: ${theme.fontSizes.fsm};
@@ -57,27 +57,26 @@ const CaptionButton = styled(Text)(
 const ButtonsContainer = styled(Box)(
     ({ theme }) => css`
         display: grid;
-        gap: 20px 10px;
+        gap: 24px 10px;
         width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, minmax(320px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
-        margin: 15px auto;
-        padding-right: ${theme.space.lg};
-        padding-left: ${theme.space.lg};
+        margin-right: ${theme.space.lg};
+        margin-left: ${theme.space.lg};
         margin-bottom: ${theme.space.xl3};
         @media (min-width: ${theme.breakpoints.md}) {
             max-width: 768px;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, minmax(320px, 1fr));
             grid-template-rows: repeat(2, 1fr);
-            gap: 20px 10px;
+            gap: 24px 10px;
         }
         @media (min-width: ${theme.breakpoints.xl}) {
             max-width: 1024px;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, minmax(320px, 1fr));
             grid-template-rows: repeat(2, 1fr);
-            gap: 20px 10px;
+            gap: 24px 10px;
         }
     `,
 );
@@ -92,7 +91,7 @@ const ButtonTypeBox = styled(Info)(
 
 const ButtonInfo = styled(Info)(
     ({ theme }) => css`
-        font-size: ${theme.fontSizes.fsm};
+        font-size: ${theme.fontSizes.fmd};
         margin-left: ${theme.space.xxl};
         color: ${theme.colors.graycataloge};
     `,
@@ -116,17 +115,6 @@ export const BUTTON = () => {
                             {name}
                         </Button>
                         <ButtonInfo>Active State</ButtonInfo>
-                    </ButtonTypeBox>
-
-                    <ButtonTypeBox variant="Transparent">
-                        <Button
-                            variant="Active"
-                            disabled={boolean("Desactivado", false)}
-                            aria-label="boton"
-                        >
-                            {name}
-                        </Button>
-                        <ButtonInfo>Inactive State</ButtonInfo>
                     </ButtonTypeBox>
 
                     <ButtonTypeBox variant="Transparent">
@@ -163,17 +151,6 @@ export const BUTTON = () => {
 
                     <ButtonTypeBox variant="Transparent">
                         <Button
-                            variant="Active"
-                            disabled={boolean("Desactivado", false)}
-                            aria-label="boton"
-                        >
-                            <Icons name="Instagram" variant="Active" />
-                        </Button>
-                        <ButtonInfo>Inactive State</ButtonInfo>
-                    </ButtonTypeBox>
-
-                    <ButtonTypeBox variant="Transparent">
-                        <Button
                             variant="Outline"
                             disabled={boolean("Desactivado", false)}
                             aria-label="boton"
@@ -203,14 +180,6 @@ export const BUTTON = () => {
                             {name}
                         </Button>
                         <ButtonInfo>Active State</ButtonInfo>
-                    </ButtonTypeBox>
-
-                    <ButtonTypeBox variant="Transparent">
-                        <Button variant="Active" disabled={boolean("Desactivado", false)}>
-                            <Icons name="Instagram" variant="Active" />
-                            {name}
-                        </Button>
-                        <ButtonInfo>Inactive State</ButtonInfo>
                     </ButtonTypeBox>
 
                     <ButtonTypeBox variant="Transparent">

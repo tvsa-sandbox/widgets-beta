@@ -3,6 +3,7 @@ import { withKnobs, text } from "@storybook/addon-knobs";
 import { Title } from "accessories";
 
 import { Tabs } from "../../lib/widgets";
+// import { TabPane } from "../../lib/widgets/Tabs/tabpane";
 
 export default {
     decorators: [withKnobs],
@@ -13,7 +14,8 @@ export const TABS = () => {
     return (
         <div>
             <Title variant="h2">Tabs</Title>
-            <Tabs>casa</Tabs>
+            <Tabs />
+            {/* <TabPane>texto</TabPane> */}
         </div>
     );
 };
