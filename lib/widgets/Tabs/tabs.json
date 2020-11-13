@@ -1,0 +1,14 @@
+[
+    {
+        "path": "/tu-tv",
+        "name": "TU TV"
+    },
+    {
+        "path": "/telenovelas",
+        "name": "NOVELAS"
+    },
+    {
+        "path": "/en-vivo",
+        "name": "EN VIVO"
+    }
+]
