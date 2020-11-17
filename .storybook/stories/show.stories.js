@@ -4,7 +4,7 @@ import Utils from "@televisadigital/nxtv-utilities";
 
 import Show from "../../lib/contentTypes/Show";
 
-import Mock from "./imageMock.json";
+import Mock from "./imageMock-le.json";
 
 export default {
     decorators: [withKnobs],
@@ -38,12 +38,12 @@ export const SHOW = args => {
                 mobile: IMG[0],
             },
         ],
-        carousel: [
+        items: [
             {
                 desktop: {},
                 mobile: IMG[2],
             },
         ],
     };
-    return <Show imgposter={SRC.poster[0]} items={SRC.carousel[0]} />;
+    return <Show imgposter={SRC.poster[0]} imgitems={SRC.items[0]} />;
 };
