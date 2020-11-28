@@ -2,17 +2,15 @@ import React from "react";
 import { withKnobs, text } from "@storybook/addon-knobs";
 import Utils from "@televisadigital/nxtv-utilities";
 import { Title } from "accessories";
-
-import News from "../../lib/widgets/News";
-
+import RelatedContent from "../../lib/widgets/RelatedContent";
 import Mock from "./imageMock.json";
 
 export default {
     decorators: [withKnobs],
-    title: "Desing System/Widgets/News",
+    title: "Desing System/enhancement/RelatedContent",
 };
 
-export const NEWS = args => {
+export const RELATEDCONTENT = args => {
     const { aspect = "aspect16x9", bsp = "medium" } = args;
     const SOURCES = [
         {
@@ -22,7 +20,7 @@ export const NEWS = args => {
         },
     ];
     const IMG = Utils.getSources(Mock.renditions, SOURCES);
-    const SRC = {
+    const src = {
         desktop: {},
         mobile: IMG[0],
     };
@@ -31,8 +29,8 @@ export const NEWS = args => {
     });
     return (
         <div>
-            <Title variant="h2">News</Title>
-            <News ratio={aspect} src={SRC} />
+            <Title variant="h2">RelatedContent</Title>
+            <RelatedContent ratio={aspect} src={src} {...props} />
         </div>
     );
 };
