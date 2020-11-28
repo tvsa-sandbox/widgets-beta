@@ -4,6 +4,7 @@ import Utils from "@televisadigital/nxtv-utilities";
 import { Video } from "../../lib/contentTypes";
 
 import Mock from "./imageMock.json";
+import social from "../../lib/items/SocialBox/social.json";
 
 export default {
     decorators: [withKnobs],
@@ -39,5 +40,5 @@ export const VIDEO = args => {
         desktop: {},
         mobile: IMG[0],
     };
-    return <Video vidimg={SRC} tabs={tablinks} />;
+    return <Video vidimg={SRC} tabs={tablinks} social={social} />;
 };
