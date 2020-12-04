@@ -142,6 +142,7 @@ export const BUTTON = () => {
                 </ButtonsContainer>
                 <ButtonDescription variant="Transparent">
                     <TitleButton variant="h1">Button Icon</TitleButton>
+                    <CaptionButton>Icon provides a visual clue.</CaptionButton>
                 </ButtonDescription>
                 <ButtonsContainer variant="Tranparent">
                     <ButtonTypeBox variant="Transparent">
@@ -176,6 +177,7 @@ export const BUTTON = () => {
                 </ButtonsContainer>
                 <ButtonDescription variant="Transparent">
                     <TitleButton variant="h1">Button Double</TitleButton>
+                    <CaptionButton>Provides supplementary meaning to the button.</CaptionButton>
                 </ButtonDescription>
                 <ButtonsContainer variant="Tranparent">
                     <ButtonTypeBox variant="Transparent">

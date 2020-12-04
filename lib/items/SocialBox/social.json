@@ -1,14 +1,14 @@
 [
     {
         "name": "Facebook",
-        "color": "white",
-        "bg": "facebook",
+        "color": "black",
+        "bg": "gray",
         "href": "https://www.facebook.com/canalestrellas/"
     },
     {
         "name": "Twitter",
-        "color": "white",
-        "bg": "twitter",
+        "color": "black",
+        "bg": "gray",
         "href": "https://twitter.com/Canal_Estrellas"
     },
     {

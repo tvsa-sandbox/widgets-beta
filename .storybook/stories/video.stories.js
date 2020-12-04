@@ -11,10 +11,10 @@ export default {
     title: "Desing System/Template/Video",
 };
 
-const tablinks = [
+const tabsl = [
     {
         tabid: "episodios",
-        name: "A CONTINUACION",
+        name: "EPISODIOS",
     },
     {
         tabid: "clips",
@@ -22,7 +22,7 @@ const tablinks = [
     },
     {
         tabid: "comentarios",
-        name: "COMENTARIOS",
+        name: "COMENTA",
     },
 ];
 
@@ -40,5 +40,5 @@ export const VIDEO = args => {
         desktop: {},
         mobile: IMG[0],
     };
-    return <Video vidimg={SRC} tabs={tablinks} social={social} />;
+    return <Video vidimg={SRC} tabs={tabsl} social={social} />;
 };
