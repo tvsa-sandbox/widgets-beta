@@ -69,11 +69,25 @@ const BoxType = styled(Box)(
     ({ theme }) => css`
         display: block;
         width: 100%;
-        max-width: 200px;
+        max-width: 150px;
         height: 100px;
         background-color: ${theme.colors.Dark};
-        margin-left: 0px;
         margin-bottom: ${theme.space.xxl};
+        @media (min-width: ${theme.breakpoints.xl}) {
+            max-width: 600px;
+        }
+    `,
+);
+
+const BoxTypeFlex = styled(Box)(
+    ({ theme }) => css`
+        display: block;
+        width: 100%;
+        max-width: 150px;
+        height: 100px;
+        background-color: ${theme.colors.Dark};
+        margin-bottom: ${theme.space.xxl};
+        margin-left: ${theme.space.lg};
         @media (min-width: ${theme.breakpoints.xl}) {
             max-width: 600px;
         }
@@ -105,6 +119,23 @@ const SubTitleTransparent = styled(Text)(
         padding: ${theme.space.lg};
     `,
 );
+
+const SubTitleText = styled(Text)(
+    ({ theme }) => css`
+        font-size: ${theme.fontSizes.fbase};
+        font-weight: ${theme.fontWeights.bold};
+        color: ${theme.colors.graycataloge};
+        padding-bottom: ${theme.space.base};
+    `,
+);
+
+const TextCopy = styled(Text)(
+    ({ theme }) => css`
+        line-height: ${theme.lineHeights.llg};
+        font-size: ${theme.fontSizes.fsm};
+    `,
+);
+
 export const BOX = () => {
     return (
         <BoxContainer variant="Transparent">
@@ -115,25 +146,38 @@ export const BOX = () => {
                 </BoxCaption>
             </BoxDescription>
             <BoxContent variant="Transparent">
+                <BoxDescription variant="Transparent">
+                    <SubTitleText variant="h2">Box Solid</SubTitleText>
+                    <TextCopy>Box with background color.</TextCopy>
+                </BoxDescription>
                 <BoxType variant="Solid">
                     <SubTitleBox>Solid</SubTitleBox>
                 </BoxType>
-
+                <BoxDescription variant="Transparent">
+                    <SubTitleText variant="h2">Box Space</SubTitleText>
+                    <TextCopy>Box with space.</TextCopy>
+                </BoxDescription>
                 <BoxType variant="Space">
                     <SubTitleBox>Space</SubTitleBox>
                 </BoxType>
-
+                <BoxDescription variant="Transparent">
+                    <SubTitleText variant="h2">Box Transparent</SubTitleText>
+                    <TextCopy>Box without background color.</TextCopy>
+                </BoxDescription>
                 <BoxTransparent variant="Transparent">
                     <SubTitleTransparent>Transparent</SubTitleTransparent>
                 </BoxTransparent>
-
+                <BoxDescription variant="Transparent">
+                    <SubTitleText variant="h2">Box Flex</SubTitleText>
+                    <TextCopy>Wrapper to combine the elements in one single row.</TextCopy>
+                </BoxDescription>
                 <Box variant="Flex">
-                    <BoxType variant="Space">
+                    <BoxType variant="Solid">
                         <SubTitleBox>Flex</SubTitleBox>
                     </BoxType>
-                    <BoxType variant="Space">
+                    <BoxTypeFlex variant="Solid">
                         <SubTitleBox>Flex</SubTitleBox>
-                    </BoxType>
+                    </BoxTypeFlex>
                 </Box>
             </BoxContent>
         </BoxContainer>
