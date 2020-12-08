@@ -106,9 +106,8 @@ export const BUTTON = () => {
                     <TitleButton variant="h1">Button</TitleButton>
                     <CaptionButton>
                         The buttons of an interface are vital elements, since in most cases they
-                        have many of the navigation capabilities. These buttons are accompanied by
-                        an icon that represents their action, in addition to the text. The inactive
-                        version of the button can be activated on the knobs.
+                        have many of the navigation capabilities. The inactive version of the button
+                        can be activated on the knobs.
                     </CaptionButton>
                 </ButtonDescription>
                 <ButtonsContainer variant="Transparent">
@@ -142,7 +141,9 @@ export const BUTTON = () => {
                 </ButtonsContainer>
                 <ButtonDescription variant="Transparent">
                     <TitleButton variant="h1">Button Icon</TitleButton>
-                    <CaptionButton>Icon provides a visual clue.</CaptionButton>
+                    <CaptionButton>
+                        These buttons only have the icon that represents their action.
+                    </CaptionButton>
                 </ButtonDescription>
                 <ButtonsContainer variant="Tranparent">
                     <ButtonTypeBox variant="Transparent">
@@ -177,7 +178,10 @@ export const BUTTON = () => {
                 </ButtonsContainer>
                 <ButtonDescription variant="Transparent">
                     <TitleButton variant="h1">Button Double</TitleButton>
-                    <CaptionButton>Provides supplementary meaning to the button.</CaptionButton>
+                    <CaptionButton>
+                        These buttons are accompanied by an icon that represents their action, in
+                        addition to the text.
+                    </CaptionButton>
                 </ButtonDescription>
                 <ButtonsContainer variant="Tranparent">
                     <ButtonTypeBox variant="Transparent">
