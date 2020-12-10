@@ -13,6 +13,6 @@ module.exports = {
         "@storybook/addon-links",
         "@storybook/addon-knobs/register",
         "@storybook/addon-a11y",
-        "@whitespace/storybook-addon-html/register",
+        "@whitespace/storybook-addon-html",
     ],
 };
