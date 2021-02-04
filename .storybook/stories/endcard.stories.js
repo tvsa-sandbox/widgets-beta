@@ -33,6 +33,10 @@ export const ENDCARD = args => {
             id: 1,
             src: SRC,
         },
+        {
+            id: 2,
+            src: SRC,
+        },
     ];
     return (
         <div>
