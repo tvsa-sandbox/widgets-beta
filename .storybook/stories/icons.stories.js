@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import styled, { css } from "styled-components";
-// import { withKnobs, text, select } from "@storybook/addon-knobs";
+import { withKnobs, text, select } from "@storybook/addon-knobs";
 
 import { Icons, Title, IconDuration, Box, Text, Info } from "accessories";
 
@@ -173,9 +173,9 @@ const IconsStyle = styled(Box)(
 );
 
 export const ICONS = args => {
-    // const KEY = Object.keys(select("Iconos", iconlist, iconlist["Las Estrellas"]));
-    // const Iconame = select("Iconos", iconlist, iconlist["Las Estrellas"]);
-    // const name = text("Duration", "12:30");
+    const KEY = Object.keys(select("Iconos", iconlist, iconlist["Las Estrellas"]));
+    const Iconame = select("Iconos", iconlist, iconlist["Las Estrellas"]);
+    const name = text("Duration", "12:30");
     return (
         <Fragment>
             <BoxIcons variant="Transparent">
@@ -187,18 +187,18 @@ export const ICONS = args => {
                     </CaptionIcons>
                 </IconsDescription>
                 <IconsContainer variant="Transparent">
-                    <Icons {...args} />
-                    {/* {KEY.map(key => (
+                    {/* <Icons {...args} /> */}
+                    {KEY.map(key => (
                         <IconsBox variant="Transparent" key={key}>
                             <IconsStyle variant="Transparent">
                                 <Icons name={Iconame[key].properties.name} {...args} />
                             </IconsStyle>
                             <IconsInfo>{Iconame[key].properties.name}</IconsInfo>
                         </IconsBox>
-                    ))} */}
+                    ))}
                 </IconsContainer>
             </BoxIcons>
-            {/* <BoxIcons variant="Transparent">
+            <BoxIcons variant="Transparent">
                 <IconsDescription variant="Transparent">
                     <TitleIcons variant="h1">Icon Duration</TitleIcons>
                     <CaptionIcons>Duration time icon.</CaptionIcons>
@@ -206,13 +206,13 @@ export const ICONS = args => {
                 <IconsDurationStyle variant="Transparent">
                     <IconDuration>{name}</IconDuration>
                 </IconsDurationStyle>
-            </BoxIcons> */}
+            </BoxIcons>
         </Fragment>
     );
 };
 ICONS.args = {
     // icons: "Active",
-    name: "search",
+    // name: "Search",
 };
 ICONS.argTypes = {
     // icons: {
@@ -222,5 +222,5 @@ ICONS.argTypes = {
     //         options: ["Active", "Focus"],
     //     },
     // },
-    name: { control: "text" },
+    // name: { control: "text" },
 };

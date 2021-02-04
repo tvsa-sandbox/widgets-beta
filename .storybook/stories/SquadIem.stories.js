@@ -1,15 +1,18 @@
 import React from "react";
 import Utils from "@televisadigital/nxtv-utilities";
-import { Title } from "../../lib/accessories";
-import Calendar from "../../lib/widgets/Calendar";
+import { Title } from "accessories";
+
+import SquadItem from "../../lib/items/SquadItem";
+
 import Mock from "./imageMock.json";
 
 export default {
-    title: "Desing System/TUDN/Calendar",
+    title: "Desing System/items/SquadItem",
+    component: SquadItem,
 };
 
-export const CALENDAR = args => {
-    const { aspect = "aspect1x1", bsp = "medium" } = args;
+export const SQUADITEM = args => {
+    const { aspect = "aspect1x1", bsp = "thumbnail" } = args;
     const SOURCES = [
         {
             aspect,
@@ -24,8 +27,8 @@ export const CALENDAR = args => {
     };
     return (
         <div>
-            <Title variant="h2">Ticker</Title>
-            <Calendar ratio={aspect} src={SRC} />
+            <Title variant="h2">Squad Item</Title>
+            <SquadItem {...args} />
         </div>
     );
 };

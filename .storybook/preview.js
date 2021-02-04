@@ -1,6 +1,6 @@
 import React from "react";
 // import { withKnobs, select } from "@storybook/addon-knobs";
-import { withHTML } from "@whitespace/storybook-addon-html/react";
+// import { withHTML } from "@whitespace/storybook-addon-html";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { ThemeProvider } from "styled-components";
 // import { StoryContext, StoryGetter, StoryWrapper } from "@storybook/addons";
@@ -122,6 +122,12 @@ export const parameters = {
         viewports: INITIAL_VIEWPORTS,
         defaultViewport: "galaxys5",
     },
+    html: {
+        highlighter: {
+            showLineNumbers: true, // default: false
+            wrapLines: false, // default: true
+        },
+    },
 };
 
-export const decorators = [withHTML, withThemeProvider];
+export const decorators = [withThemeProvider];

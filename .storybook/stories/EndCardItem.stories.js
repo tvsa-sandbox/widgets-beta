@@ -2,16 +2,16 @@ import React from "react";
 import Utils from "@televisadigital/nxtv-utilities";
 import { Title } from "accessories";
 
-import Mosaic from "../../lib/widgets/Mosaic";
+import EndCardItem from "../../lib/items/EndCardItem";
 
 import Mock from "./imageMock.json";
 
 export default {
-    title: "Desing System/TUDN/Mosaic",
+    title: "Desing System/items/EndCardItem",
 };
 
-export const MOSAIC = args => {
-    const { aspect = "aspect16x9", bsp = "medium" } = args;
+export const ENDCARDITEM = args => {
+    const { aspect = "aspect16x9", bsp = "thumbnail" } = args;
     const SOURCES = [
         {
             aspect,
@@ -24,13 +24,16 @@ export const MOSAIC = args => {
         desktop: {},
         mobile: IMG[0],
     };
-    const props = () => ({
-        title: text("Titulo", "Titulo de test"),
-    });
     return (
         <div>
-            <Title variant="h2">Mosaic</Title>
-            <Mosaic ratio={aspect} src={SRC} />
+            <Title variant="h2">End Card Item</Title>
+            <EndCardItem imgsrc={SRC} {...args} />
         </div>
     );
+};
+ENDCARDITEM.args = {
+    title: "Una Familia de Diez",
+};
+ENDCARDITEM.argTypes = {
+    title: { control: "text" },
 };
