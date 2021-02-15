@@ -1,17 +1,16 @@
 import React from "react";
 import Utils from "@televisadigital/nxtv-utilities";
 
-import Article from "../../lib/contentTypes/Article";
+import ArticleAMP from "../../lib/contentTypes/AMP/ArticleAMP";
 
 export default {
-    title: "Desing System/Template/Article",
-    component: Article,
+    title: "Desing System/TemplateAMP/ArticleAMP",
+    component: ArticleAMP
 };
 
 import Mock from "./imageMock-le.json";
-import slides from "../../lib/mocks/Mockup.json";
 
-export const ARTICLE = args => {
+export const ARTICLEAMP = args => {
     const { aspect = "aspect16x9", bsp = "medium" } = args;
     const SOURCES = [
         {
@@ -68,13 +67,12 @@ export const ARTICLE = args => {
         ],
     };
     return (
-        <Article
+        <ArticleAMP
+            grid={SRC.gridgallery[0]}
             imgs={SRC.imgenhancement[0]}
             carrousel={SRC.carousel[0]}
             rel={SRC.imgenhancement[0]}
-            grid={SRC.gridgallery[0]}
-            gal={slides.slides}
-            galimg={SRC.gridgal[0]}
+            gal={SRC.gridgal[0]}
         />
     );
 };
