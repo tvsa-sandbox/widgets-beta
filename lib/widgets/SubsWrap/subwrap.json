@@ -1,11 +1,10 @@
 [
     {  
         "id":0,
-        "team": "Manchester United",
-        "squad":{
+        "suplentes":{
             "Home": [
             {
-                "number":19,
+            "number":19,
             "name":"Ozan Kabak"
             },
             {

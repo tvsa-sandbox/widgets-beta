@@ -73,6 +73,7 @@ export const ARTICLEAMP = args => {
             carrousel={SRC.carousel[0]}
             rel={SRC.imgenhancement[0]}
             gal={SRC.gridgal[0]}
+            items={SRC.carousel[0]}
         />
     );
 };
