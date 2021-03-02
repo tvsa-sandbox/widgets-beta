@@ -8,7 +8,7 @@ export default {
     component: ArticleAMP
 };
 
-import Mock from "./imageMock-le.json";
+import Mock from "./imageMock.json";
 
 export const ARTICLEAMP = args => {
     const { aspect = "aspect16x9", bsp = "medium" } = args;
