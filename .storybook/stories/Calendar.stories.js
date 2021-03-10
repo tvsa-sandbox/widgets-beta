@@ -25,7 +25,7 @@ export const CALENDAR = args => {
     return (
         <div>
             <Title variant="h2">Ticker</Title>
-            <Calendar ratio={aspect} src={SRC} />
+            <Calendar ratio={aspect} src={SRC} bgcolor="#76b04d" />
         </div>
     );
 };
