@@ -4,7 +4,7 @@ import { Title, Box } from "accessories";
 import LoginItem from "../../lib/items/LoginItem";
 
 export default {
-    title: "Desing System/Items/LoginItem",
+    title: "Desing System/Login/LoginItem",
 };
 
 export const LOGINITEM = () => {
