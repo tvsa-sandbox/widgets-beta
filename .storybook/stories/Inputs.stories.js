@@ -5,7 +5,7 @@ import { Form, Title, Text, Box, Inputs } from "accessories";
 
 export default {
     title: "Desing System/Atoms/Inputs",
-    component: "Inputs"
+    component: "Inputs",
 };
 
 const BoxInput = styled(Box)(
@@ -138,7 +138,7 @@ export const INPUTS = args => {
                     <BoxInputsType variant="Transparent">
                         <SubTitleInput variant="h2">My Text</SubTitleInput>
                         <InputsForm>
-                            <Inputwhite />
+                            <Inputs />
                         </InputsForm>
                     </BoxInputsType>
 
@@ -200,7 +200,7 @@ export const INPUTS = args => {
 
                         <BoxInputsType variant="Transparent">
                             <SubTitleInput variant="h2"> Done </SubTitleInput>
-                            <InputsForm >
+                            <InputsForm>
                                 <Inputs variant="Done" icon="Search" />
                             </InputsForm>
                         </BoxInputsType>
