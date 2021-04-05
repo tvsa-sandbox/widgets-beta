@@ -2,16 +2,17 @@ import React from "react";
 import Utils from "@televisadigital/nxtv-utilities";
 import { Title } from "accessories";
 
-import Table from "../../lib/widgets/Table";
-
+import Standing from "../../lib/widgets/Standing";
+import standing from "../../lib/widgets/Standing/standing.json";
+import standingteam from "../../lib/widgets/Standing/standingteam.json";
 import Mock from "./imageMock.json";
 
 export default {
-    title: "Desing System/TUDN/Table",
-    component: Table,
+    title: "Desing System/TUDN/Standing",
+    component: Standing,
 };
 
-export const TABLE = args => {
+export const STANDING = args => {
     const { aspect = "aspect1x1", bsp = "thumbnail" } = args;
     const SOURCES = [
         {
@@ -27,8 +28,8 @@ export const TABLE = args => {
     };
     return (
         <div>
-            <Title variant="h2">Table</Title>
-            <Table ratio={aspect} src={SRC}/>
+            <Title variant="h2">Standing</Title>
+            <Standing ratio={aspect} src={SRC} datas={standing} teams={standingteam} {...args} />
         </div>
     );
 };

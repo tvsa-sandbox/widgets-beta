@@ -1,15 +1,16 @@
 import React from "react";
 import Utils from "@televisadigital/nxtv-utilities";
 import { Title } from "accessories";
-import TableItem from "../../lib/items/TableItem";
+import StandingItem from "../../lib/items/StandingItem";
 import Mock from "./imageMock.json";
+import standingitem from "../../lib/items/StandingItem/standingitem.json";
 
 export default {
-    title: "Desing System/Items/TableItem",
-    component: TableItem,
+    title: "Desing System/Items/StandingItem",
+    component: StandingItem,
 };
 
-export const TABLEITEM = args => {
+export const STANDINGITEM = args => {
     const { aspect = "aspect1x1", bsp = "thumbnail" } = args;
     const SOURCES = [
         {
@@ -25,8 +26,8 @@ export const TABLEITEM = args => {
     };
     return (
         <div>
-            <Title variant="h2">TableItem</Title>
-            <TableItem ratio={aspect} src={SRC} />
+            <Title variant="h2">StandingItem</Title>
+            <StandingItem ratio={aspect} src={SRC} counts={standingitem} />
         </div>
     );
 };
