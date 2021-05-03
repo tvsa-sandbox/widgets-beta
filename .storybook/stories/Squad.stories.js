@@ -1,5 +1,4 @@
 import React from "react";
-import Utils from "@televisadigital/nxtv-utilities";
 import { Title } from "accessories";
 
 import Squad from "../../lib/widgets/Squad";
