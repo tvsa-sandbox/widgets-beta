@@ -118,6 +118,7 @@ export const parameters = {
         options: {},
         manual: false,
     },
+    viewMode: "docs",
     viewport: {
         viewports: INITIAL_VIEWPORTS,
         defaultViewport: "galaxys5",
