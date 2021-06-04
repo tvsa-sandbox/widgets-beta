@@ -1,9 +1,6 @@
 import React from "react";
-// import { withKnobs, select } from "@storybook/addon-knobs";
-// import { withHTML } from "@whitespace/storybook-addon-html";
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { ThemeProvider } from "styled-components";
-// import { StoryContext, StoryGetter, StoryWrapper } from "@storybook/addons";
 import * as whiteLabel from "../lib/themes/whiteLabel";
 import * as lasEstrellas from "../lib/themes/lasEstrelllas";
 import * as TUDN from "../lib/themes/tudn";
@@ -26,8 +23,6 @@ import * as viviendoencasa from "../lib/themes/viviendoencasa";
 import * as distrito from "../lib/themes/distritocomedia";
 import * as slang from "../lib/themes/slang";
 import GlobalStyle from "../lib/accessories/GlobalStyles";
-import merge from "lodash.merge";
-import get from "lodash.get";
 
 const wl = whiteLabel;
 const le = lasEstrellas;
@@ -53,10 +48,12 @@ const tvsa = tvsacom;
 
 const modes = ["light", "dark"];
 
-const getThemeMode = (mode, btheme) =>
-    merge({}, btheme, {
-        colors: get(btheme.colors.modes, mode, btheme.colors),
-    });
+const getThemeMode = (mode, btheme) => {
+    const MODE = btheme.colors.modes[mode];
+    const COLORS = btheme.colors;
+    const MIXED = { ...btheme, colors: { ...COLORS, ...MODE } };
+    return MIXED;
+};
 
 // const [mode, setMode] = useState(modes[0]);
 

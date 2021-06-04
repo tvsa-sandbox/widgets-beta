@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-
 import { Box, Text } from "../../lib/accessories";
 import ModalSubsWrap from "../../lib/items/ModalSubsWrap";
 
