@@ -7,8 +7,14 @@ import typo from "../assets/Tech_Life_Remote.png";
 import inputs from "../assets/Tech_Life_Virtual_Reality.png";
 import aspect from "../assets/Tech-Life-MediaImg.png";
 import box from "../assets/Tech-Life-Mediabox.png";
+import SwitchToDocs from "../switchtoDocs.js";
 
-<Meta title="Home" />
+<Meta title="Home" 
+    parameters={{
+    viewMode: 'docs',
+    previewTabs: { canvas: { hidden: true } },
+  }}
+/>
 
 <style>{`
     h1{
@@ -77,6 +83,7 @@ import box from "../assets/Tech-Life-Mediabox.png";
 A Design System for business products. Creating an efficient and pleasant work experience.
 
 <>
+<SwitchToDocs/>
 <div class="Options">
     <a class="OptionHome" href="/?path=/story/desing-system-atoms-color--color">
     <img class="imagen" src={colors} alt="Colors" />

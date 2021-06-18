@@ -8,6 +8,7 @@ import Mock from "./imageMock.json";
 
 export default {
     title: "Desing System/enhancement/EnhancementImage",
+    component: EnhancementImage,
 };
 
 export const ENHANCEMENTIMAGE = args => {
