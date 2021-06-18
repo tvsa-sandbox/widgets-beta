@@ -88,7 +88,7 @@ export const globalTypes = {
     theme: {
         name: "Theme",
         description: "Global theme for components",
-        defaultValue: "TUDN",
+        defaultValue: "Las Estrellas Light",
         toolbar: {
             icon: "document",
             // array of plain string values or MenuItem shape (see below)
