@@ -8,6 +8,7 @@ import Mock from "./imageMock.json";
 
 export default {
     title: "Desing System/enhancement/EnhancementVideo",
+    component: EnhancementVideo,
 };
 
 export const ENHANCEMENTVIDEO = args => {

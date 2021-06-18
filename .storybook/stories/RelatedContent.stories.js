@@ -6,6 +6,7 @@ import Mock from "./imageMock.json";
 
 export default {
     title: "Desing System/enhancement/RelatedContent",
+    component: RelatedContent,
 };
 
 export const RELATEDCONTENT = args => {
