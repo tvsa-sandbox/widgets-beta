@@ -22,6 +22,7 @@ import * as oink from "../lib/themes/oinkoink";
 import * as viviendoencasa from "../lib/themes/viviendoencasa";
 import * as distrito from "../lib/themes/distritocomedia";
 import * as slang from "../lib/themes/slang";
+import * as feeds from "../lib/themes/feeds";
 import GlobalStyle from "../lib/accessories/GlobalStyles";
 
 const wl = whiteLabel;
@@ -45,6 +46,7 @@ const vc = viviendoencasa;
 const dc = distrito;
 const sl = slang;
 const tvsa = tvsacom;
+const fd = feeds;
 
 const modes = ["light", "dark"];
 
@@ -82,6 +84,7 @@ const THEMES = {
     Slang: getThemeMode(modes[0], sl),
     "Viviendo Casa": getThemeMode(modes[0], vc),
     "Distrito Comedia": getThemeMode(modes[0], dc),
+    "Sistema Feeds": getThemeMode(modes[0], fd),
 };
 
 export const globalTypes = {
