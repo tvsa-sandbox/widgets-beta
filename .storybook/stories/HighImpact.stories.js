@@ -1,17 +1,17 @@
 import React from "react";
 import Utils from "@televisadigital/nxtv-utilities";
 import { Title } from "accessories";
-
-import ChapterItem from "../../lib/items/ChapterItem";
-
+import HighImpact from "../../lib/widgets/HighImpact";
+import highimpact from "../../lib/widgets/HighImpact/highimpact.json";
+import news from "../../lib/widgets/HighImpact/news.json";
 import Mock from "./imageMock.json";
 
 export default {
-    title: "Desing System/items/ChapterItem",
-    component: ChapterItem,
+    title: "Desing System/TUDN/HighImpact",
+    component: HighImpact,
 };
 
-export const CHAPTERITEM = args => {
+export const HIGHIMPACT = args => {
     const { aspect = "aspect16x9", bsp = "mobile-large" } = args;
     const SOURCES = [
         {
@@ -28,8 +28,8 @@ export const CHAPTERITEM = args => {
 
     return (
         <div>
-            <Title variant="h2">ChapterItem</Title>
-            <ChapterItem ratio={aspect} src={SRC} />
+            <Title variant="h2">HighImpact</Title>
+            <HighImpact ratio={aspect} src={SRC} datas={highimpact} news={news} />
         </div>
     );
 };
