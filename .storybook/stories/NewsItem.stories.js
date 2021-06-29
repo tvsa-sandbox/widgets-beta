@@ -1,16 +1,16 @@
 import React from "react";
 import Utils from "@televisadigital/nxtv-utilities";
 import { Title } from "accessories";
-import News from "../../lib/widgets/News";
+import NewsItem from "../../lib/items/NewsItem";
 import Mock from "./imageMock.json";
-import news from "../../lib/widgets/News/news.json";
+import newsitem from "../../lib/items/NewsItem/newsitem.json";
 
 export default {
-    title: "Desing System/TUDN/News",
-    component: News,
+    title: "Desing System/items/NewsItem",
+    component: NewsItem,
 };
 
-export const NEWS = args => {
+export const NEWSITEM = args => {
     const { aspect = "aspect16x9", bsp = "medium" } = args;
     const SOURCES = [
         {
@@ -27,8 +27,8 @@ export const NEWS = args => {
 
     return (
         <div>
-            <Title variant="h2">News</Title>
-            <News ratio={aspect} src={SRC} datas={news} />
+            <Title variant="h2">News Item</Title>
+            <NewsItem ratio={aspect} src={SRC}  news={newsitem} />
         </div>
     );
 };

@@ -1,17 +1,17 @@
 import React from "react";
 import Utils from "@televisadigital/nxtv-utilities";
 import { Title } from "accessories";
-import News from "../../lib/widgets/News";
+import HighImpactItem from "../../lib/items/HighImpactItem";
+import highimpactitem from "../../lib/items/HighImpactItem/highimpactitem.json";
 import Mock from "./imageMock.json";
-import news from "../../lib/widgets/News/news.json";
 
 export default {
-    title: "Desing System/TUDN/News",
-    component: News,
+    title: "Desing System/items/HighImpactItem",
+    component: HighImpactItem,
 };
 
-export const NEWS = args => {
-    const { aspect = "aspect16x9", bsp = "medium" } = args;
+export const HIGHIMPACTITEM = args => {
+    const { aspect = "aspect16x9", bsp = "mobile-large" } = args;
     const SOURCES = [
         {
             aspect,
@@ -27,8 +27,8 @@ export const NEWS = args => {
 
     return (
         <div>
-            <Title variant="h2">News</Title>
-            <News ratio={aspect} src={SRC} datas={news} />
+            <Title variant="h2">HighImpactItem</Title>
+            <HighImpactItem ratio={aspect} src={SRC} datas={highimpactitem}  />
         </div>
     );
 };
